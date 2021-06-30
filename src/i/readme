@@ -1,0 +1,23 @@
+                            @@include('i/img.html',{
+                                src:'image-texture-2',
+                                type:'jpg',
+                                alt:'texture', 
+                                priority:'0',
+                                class:'     '
+                              }) 
+
+                         @@include('i/resp-img.html',{
+                            src:'Custom-Wedding-Albums',
+                            type:'jpg',
+                            alt:'Wedding Albums with custom designed covers', 
+                            priority:'2',
+                            width:'1600',
+                            height:'804'
+                          })
+
+
+                          node builder.js
+
+
+                          folder 
+                          './dist/images/towebp';
