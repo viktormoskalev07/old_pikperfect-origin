@@ -51,12 +51,11 @@ images.forEach(img => {
     const filename =  path.basename(img ,ext);
     const dirname =path.dirname(img); 
     const outputMin = dirname +'/'+'min-'+ filename + ext; 
-    const output480 = dirname +'/'+'480-'+ filename + ext; 
     const outputWebp = dirname +'/'+ filename +   '.webp'; 
     const outputWebpMin = dirname +'/'+'min-'+ filename +  '.webp'; 
-    const outputWebp480 = dirname +'/'+'480-'+ filename +  '.webp';  
+  
 
-    if((ext=='.jpg'||ext=='.jpeg'||ext=='.png'||ext=='.gif')&&!filename.includes('min-')&&!filename.includes('480-')){
+    if((ext=='.jpg'||ext=='.jpeg'||ext=='.png'||ext=='.gif')&&!filename.includes('min-')&&!filename.includes('480-')&&!filename.includes('376-')){
         
          
         const oldSize = sizeOf(img).width;
@@ -70,14 +69,12 @@ images.forEach(img => {
         if(err){
             console.log(chalk.red(err));
         } 
-    });   
-
+    });    
     sharp(img).webp().toFile(outputWebp, (err,info)=>{
         if(err){
             console.log(chalk.red(err));
         } 
-    }); 
-
+    });  
     sharp(img).webp().resize(newSize).toFile(outputWebpMin, (err,info)=>{
         if(err){
             console.log(chalk.red(err));
@@ -86,45 +83,46 @@ images.forEach(img => {
 
 
         //sizes in pixel
-        
-
-    if(oldSize>470){
-         sharp(img).webp().resize(480).toFile(outputWebp480, (err,info)=>{
-        if(err){
-            console.log(chalk.red(err));
-        }  
-     });  
-
-         sharp(img).resize(480).toFile(output480, (err,info)=>{
-        if(err){
-            console.log(chalk.red(err));
-        }  
-     });  
-    } else {
-        sharp(img).webp().resize(oldSize).toFile(outputWebp480, (err,info)=>{
-            if(err){
-                console.log(chalk.red(err));
-            } 
-         });
-         sharp(img).resize(oldSize).toFile(output480, (err,info)=>{
-            if(err){
-                console.log(chalk.red(err));
-            }  
-         });  
-        console.log(chalk.red('image smaller then 480!!!'));
-    }
+     const inpixel=  (size)=>{
+        if(oldSize>size-1){
+            sharp(img).webp().resize(size).toFile(dirname +'/'+size+'-'+ filename +  '.webp', (err,info)=>{
+           if(err){
+               console.log(chalk.red(err));
+           }  
+        });  
+   
+            sharp(img).resize(size).toFile(dirname +'/'+size+'-'+ filename + ext, (err,info)=>{
+           if(err){
+               console.log(chalk.red(err));
+           }  
+        });  
+       } else {
+           sharp(img).webp().resize(oldSize).toFile(dirname +'/'+size+'-'+ filename +  '.webp', (err,info)=>{
+               if(err){
+                   console.log(chalk.red(err));
+               } 
+            });
+            sharp(img).resize(oldSize).toFile(dirname +'/'+size+'-'+ filename + ext, (err,info)=>{
+               if(err){
+                   console.log(chalk.red(err));
+               }  
+            });  
+           console.log(chalk.red(`image smaller then ${size}!!!`));
+       }
+     }
+     inpixel(376);
+     inpixel(480);
+    
           //sizes in pixel 
   
 
     } else {
-        if (ext!=='.svg'&& ext!=='.webp'&&!filename.includes('min-')&&!filename.includes('480-')){
+        if (ext!=='.svg'&& ext!=='.webp'&&!filename.includes('min-')&&!filename.includes('480-')&&!filename.includes('376-')){
             console.log(ext)
             console.error(chalk.red('      builder.js            error in extname                         is it img ?  '+  img));
         }
     }
-//  if(current==max-1){
-    
-//  }
+ 
 }); 
  console.log(chalk.green('images done , copying to build...'));
 }
