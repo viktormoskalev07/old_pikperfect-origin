@@ -1,0 +1,53 @@
+.accordion {  
+  cursor: pointer;
+  width: 100%;
+  border: none;  
+
+  &__text{
+    transition: 0.6s;  
+    max-height: 0;
+    overflow: hidden;
+  }
+  &__title {
+    padding:10px 0px 10px 40px;
+    cursor: pointer; 
+    position: relative; 
+    &::before {
+      content:  '+';
+      font-size: 55px;
+      width: 33px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      top: 0;
+      transition: transform 0.3s ease-in;
+    } 
+    .is-open &::before {
+      content:'-';
+      transform: rotate(180deg); 
+    }
+  } 
+  &__item {
+    &.is-open{ 
+      .accordion {
+        &__text{
+             max-height: 300px;
+             animation-name: fullHeight;
+             animation-delay: 0.6s;
+             animation-fill-mode: forwards;
+             animation-duration: 0.3;
+
+        }
+      }
+    }
+  }  
+}
+
+@keyframes fullHeight {
+  100%{
+    max-height: 5000px; 
+  }
+}
