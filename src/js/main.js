@@ -1,219 +1,256 @@
-body=document.querySelector("body");
-html=document.querySelector("html");
-header=document.querySelector("header");
-btnMenu=document.querySelector(".btn-menu");
+const header = document.querySelector(".header");
+let scrollPos = 0;
+window.addEventListener("load", function () {
+  window.addEventListener("scroll", function () {
+    if (scrollPos < window.scrollY && scrollPos >= 50) {
+      header.classList.add("header-hide");
+      scrollPos = window.scrollY;
+    } else {
+      header.classList.remove("header-hide");
+      scrollPos = window.scrollY;
+    }
 
-window.onload= function(){
-  pagescroll(); 
-}
+    if (window.scrollY >= 50) {
+      header.classList.add("header-shadow");
 
-// мобильное меню
-nav = document.querySelector(".nav");
-document.querySelector(".btn-menu").addEventListener("click" , togglenav);
-document.querySelector(".nav-menu").onclick = closenav;
-
-document.querySelector(".nav-background").onclick = closenav;
-function closenav(){
-  nav.classList.remove("nav-open");
-  btnMenu.style.marginRight="0";
-  showscroll();
-  
-}
-function togglenav() {
-  nav.classList.toggle("nav-open");
-if(nav.classList.contains("nav-open")){
-  btnMenu.style.marginRight=window.innerWidth-html.offsetWidth +"px";
-  hidescroll();
-  
-} else {
-  showscroll();
-  btnMenu.style.marginRight="0";
-}
-}
-// мобильное меню
-
-
-// отключить прокрутку
-function hidescroll(){
-  body.style.paddingRight=window.innerWidth-html.offsetWidth +"px";
-  body.style.overflow="hidden";
-}
-
-function showscroll(){
-  body.style.paddingRight=0;
-  body.style.overflow="visible"
-}
-
-let scrolid = 0 ;
-function togglescroll(){
-  if (scrolid==0){
-    body.style.paddingRight=window.innerWidth-html.offsetWidth +"px";
-    body.style.overflow="hidden";
-    scrolid=1;
-  } else{
-    body.style.paddingRight=0;
-    body.style.overflow="visible"
-    scrolid=0;
-  }
-}
-
-// отключить прокрутку
-
- 
-
-
-
-
- // Появление меню при прокрутке 
-function pagescroll(){
-  header.classList.add("fixed-header"); //меняем хедер со статика на фиксед только после загрузки страници
-  hplace=document.querySelector(".header-place"); // вместо падинга на боди используем пустой блок
-  let headerheight=header.offsetHeight+"px"; //получаем текущую высоту хедера
-  hplace.style.height=headerheight;  //задаем пустому блоку высоту хедера
-  window.addEventListener('resize', function(event){
-    if(headerheight!==header.offsetHeight+"px"){
-   //меняем высоту пустого блока только если изменилась высота хедера
-      headerheight=header.offsetHeight+"px";
-      hplace.style.height=headerheight;
+      // document.querySelector("body").classList.add("fixed-header");
+    } else {
+      header.classList.remove("header-shadow");
+      // document.querySelector("body").classList.remove("fixed-header");
     }
   });
+  body = document.body;
+  html = document.querySelector("html");
+  openedNav = document.querySelector(".nav-wrap");
+  headerNav = document.querySelector(".header-nav");
+  let ii = 0;
+  document
+    .querySelector(".header .menu-btn")
+    .addEventListener("click", function (e) {
+      header.classList.toggle("menu-open");
+      if (header.classList.contains("menu-open")) {
+        scrollWidth = window.innerWidth - html.offsetWidth + "px";
+        body.style.paddingRight = scrollWidth;
+      } else {
+        body.style.paddingRight = 0;
+      }
+      document.querySelector("body").classList.toggle("overflow");
 
-  let pscroll = 0;
-  window.addEventListener('scroll', function() { 
-      if (pscroll<pageYOffset&pageYOffset>header.offsetHeight){
-               header.style.transform="translateY(-100%)"; //прячем хедер при прокрутке вниз            
-       }else { 
-            header.style.transform="none"; //показываем хедер при прокрутке вверх        
-       }  
-   pscroll=pageYOffset;
- });
-}
+      e.preventDefault();
+    });
 
- //Появление меню при прокрутке
+  const elems = document.querySelectorAll(".header .menu > .has-sub-menu");
+
+  elems.forEach((elem) =>
+    elem.addEventListener("click", function () {
+      if (this.classList.contains("active")) {
+        elems.forEach((elem) => elem.classList.remove("active"));
+      } else {
+        elems.forEach((elem) => elem.classList.remove("active"));
+        this.classList.add("active");
+      }
+    })
+  );
+});
 
 
 
 
 
+// share buttons 
+function shareButtons(){
 
-//отправка формы  
-let form = document.querySelectorAll('.order-form');
-
-const modal = document.getElementById("modal");
-
-function ajaxform(evt) {
-  gtag('event', 'submit', {
-    'event_category': 'Form'
-  });
-  evt.preventDefault();
-  let formstatus = this.querySelector('.formstatus');
-  formstatus.innerHTML = '<class="load-form">Соедиенеие ...';
-
-  let formData = {
-    desc: this.querySelector('input[name="description"]').value,
-    name: this.querySelector('input[name="name"]').value,
-
-    phone: this.querySelector('input[name="phone"]').value
-
+  var Shares = {
+    title: 'share',
+    width: 320,
+    height: 500,
+    init: function() {
+      var share = document.querySelectorAll('.social');
+      for (var i = 0, l = share.length; i < l; i++) {
+        var url = share[i].getAttribute('data-url') || location.href,
+          title = share[i].getAttribute('data-title') || '',
+          desc = share[i].getAttribute('data-desc') || '',
+          el = share[i].querySelectorAll('.push');
+        for (var a = 0, al = el.length; a < al; a++) {
+          var id = el[a].getAttribute('data-id');
+          if (id) this.addEventListener(el[a], 'click', {
+            id: id,
+            url: url,
+            title: title,
+            desc: desc
+          });
+        }
+      }
+    },
+    addEventListener: function(el, eventName, opt) {
+      var _this = this,
+        handler = function() {
+          _this.share(opt.id, opt.url, opt.title, opt.desc);
+        };
+      if (el.addEventListener) {
+        el.addEventListener(eventName, handler);
+      } else {
+        el.attachEvent('on' + eventName, function() {
+          handler.call(el);
+        });
+      }
+    },
+    share: function(id, url, title, desc) {
+      url = encodeURIComponent(url);
+      desc = encodeURIComponent(desc);
+      title = encodeURIComponent(title);
+      switch (id) {
+        case 'fb':
+          this.popupCenter('https://www.facebook.com/sharer/sharer.php?u=' + url, this.title, this.width, this.height);
+          break; 
+        case 'tw':
+          var text = title || desc || '';
+          if (title.length > 0 && desc.length > 0) text = title + ' - ' + desc;
+          if (text.length > 0) text = '&text=' + text;
+          this.popupCenter('https://twitter.com/intent/tweet?url=' + url + text, this.title, this.width, this.height);
+          break; 
+        case 'pin':
+          this.popupCenter('https://pinterest.com/pin/create/button/?url=' + url, this.title, this.width, this.height);
+          break; 	 
+        case 'lin':
+          this.popupCenter('https://www.linkedin.com/sharing/share-offsite/?url=' + url, this.title, this.width, this.height);
+          break; 	 
+      }
+    },
+    newTab: function(url) {
+      var win = window.open(url, '_blank');
+      win.focus();
+    },
+    popupCenter: function(url, title, w, h) {
+      var dualScreenLeft = window.screenLeft !== undefined ? window.screenLeft : screen.left;
+      var dualScreenTop = window.screenTop !== undefined ? window.screenTop : screen.top;
+      var width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
+      var height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
+      var left = ((width / 2) - (w / 2)) + dualScreenLeft;
+      var top = ((height / 3) - (h / 3)) + dualScreenTop;
+      var newWindow = window.open(url, title, 'scrollbars=yes, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);
+      if (window.focus) {
+        newWindow.focus();
+      }
+    }
   };
-  console.log(formData);
-  let request = new XMLHttpRequest();
-
-  request.addEventListener('load', function () {
-
-    formstatus.innerHTML = 'Ваша заявка успешно отправлена, ожидайте звонка';
-
-  });
-
-  request.open('POST', '/mail.php', true);
-  request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
-  request.send('name=' + encodeURIComponent(formData.name) + '&phone=' + encodeURIComponent(formData.phone) + '&desc=' + encodeURIComponent(formData.desc));
-
-
-};
-
-
-
-for (i = 0; i < form.length; i++) {
-  form[i].addEventListener('submit', ajaxform);
-} 
-//отправка формы
-
-// accordion
-
-// function accordionInit () {
-// 	window.addEventListener("load", function () {
-// 		const accordion = document.querySelector(".accordion");
-// 		const items = accordion.querySelectorAll(".accordion__item");
-	
-// 		items.forEach(function(item)  {
-// 			const title = item.querySelector(".accordion__title");
-	
-// 			title.addEventListener("click", (e) => {
-// 				const opened_item = accordion.querySelector(".is-open");
-	
-// 				toggle_item(item);
-	
-// 				if (opened_item && opened_item !== item) {
-// 					toggle_item(opened_item);
-// 				}
-// 			});
-// 		});
-	
-// 		const toggle_item = function(item)  {
-// 			const body = item.querySelector(".accordion__body");
- 
-	
-// 			if (item.classList.contains("is-open")) {
-// 				body.removeAttribute("style");
-// 				item.classList.remove("is-open");
-// 			} else {
-// 				body.style.height = body.scrollHeight + "px";
-// 				item.classList.add("is-open");
-// 			}
-// 		};
-// 	});
-// }
-
-// if (document.querySelector('.accordion')) {
-// 	accordionInit()
-// }
-// accordion
-
- //dropdown
-
-function dropdown() {
-  const drop = document.querySelector(".dropdown__activator");
-  drop.addEventListener("click", function () {
-    drop.classList.toggle("dropdown_open");
-  });
+   
+   
+  
+  window.addEventListener('load', forLoad)
+   
+  
+  function forLoad (){
+   const socialIinfo = document.getElementById('social-info');
+  const buttons =	document.querySelectorAll('.push-share');	
+        for(i=0 ; i < buttons.length ; i++){
+          buttons[i].addEventListener('click', function(){
+          const id =this.getAttribute('data-id');
+          if(id){ 
+           
+              const  url = socialIinfo.dataset.url || location.href;
+                 const title = socialIinfo.dataset.title || '';
+                 const	desc = socialIinfo.dataset.desc || ''; 
+               Shares.share(id, url, title, desc);
+          }
+  
+          })
+        }
+  } 
 }
 
-try {
-  dropdown();
-} catch (e) {
+
+try{
+  shareButtons();
+} catch (e){
   console.log(e);
 }
-//dropdown
+//share buttons 
 
 
-// toggle min-img 
-    function fullQuality(item){ 
-      const priority  = item.dataset.priority||0;
-      setTimeout(function() {
-      const webp = item.querySelector('.webp-img');
-      const noWebp = item.querySelector('.nowebp-img');
-      const fullWebp = webp.dataset.img;
-      const fullNoWebp = noWebp.dataset.img;  
-        webp.srcset=fullWebp; 
-        noWebp.src=fullNoWebp;
-      }, 1+300*priority);
-    }
-    function toggleMinImg(){ 
-        const pictures = document.querySelectorAll('.toggle-img--js');  
-        for (let i = 0; i < pictures.length; i++) {
-          const pic = pictures[i]; 
-          fullQuality(pic );  
-        } 
+// filter 
+ 
+function  showCard(item) { 
+  item.classList.remove('hided'); 
+  item.classList.remove('hided-safary-fix');
+}
+
+function hideCard(item) {
+  item.classList.add('hided') ;
+  setTimeout(() => {
+    item.classList.add('hided-safary-fix') ;
+  }, 450);
+}
+
+function cardFilter(){ 
+  if (document.querySelector(".section-blog__nav")) {
+    const cards = document.querySelectorAll(".blog-card"); 
+    document
+      .querySelector("#blog-item-filter")
+      .addEventListener("click", startFilter);
+  
+    function startFilter(e) {
+      target = e.target;
+      btnData = target.getAttribute('data-filter') 
+      if (target.classList.contains("filter-btn")) {
+        if(btnData.toLowerCase() == 'all') {
+          for (i = 0; i < cards.length; i++) {
+          showCard(cards[i]); 
+          }
+          return true; 
+        }
+  
+        for (i = 0; i < cards.length; i++) {
+          const cardData = cards[i].getAttribute("data-category").split(","); 
+          let counter = 0;  
+          for (x = 0; x < cardData.length; x++) { 
+            if (cardData[x].replace(/\s/g, '').toLowerCase() == btnData.replace(/\s/g, '').toLowerCase()) {
+              counter = 1;
+            }
+          }
+  
+          if (counter == 0) { 
+            hideCard(cards[i])
+          } else{
+            showCard(cards[i]);
+          }
+        }
+      }
     } 
-toggleMinImg();
+  } 
+}
+
+try{
+  cardFilter();
+} catch (e){
+ console.log(e);
+}
+
+// filter 
+
+//promobar
+const xhr = new XMLHttpRequest();
+const promoText = document.querySelector('#promo-place-text');
+const promoCode = document.querySelector('#promo-place-code');
+ 
+xhr.open('GET', 'https://www.pikperfect.com/get-discount' );  
+xhr.responseType='json';
+xhr.addEventListener('load', function(){
+  if (xhr.status < 400) { 
+   console.log(xhr.response.code); 
+   console.log(xhr.response.text); 
+   promoCode.innerHTML='Code:'+xhr.response.code;
+   promoText.innerHTML=' '+xhr.response.text;
+   promoText.classList.remove('promobar-hide');
+   setTimeout(() => {
+       promoCode.classList.remove('promobar-hide');
+   }, 600);
+  
+} 
+})
+xhr.send();
+
+//promobar
+
+
+ 
