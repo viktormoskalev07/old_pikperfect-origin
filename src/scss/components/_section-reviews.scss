@@ -6,8 +6,11 @@
   &__top{
     box-shadow: 1px 3px 20px #2F353A1F;
     padding: 25px 0;
-    margin-bottom: 40px;
+    margin-bottom: 23px;    
     align-items: center;
+    @include tablet{
+      margin-bottom: 40px;
+    }
     &__item{
       text-align: center;
       padding-bottom: 15px;

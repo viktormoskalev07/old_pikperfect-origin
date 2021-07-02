@@ -808,7 +808,7 @@ label {
 
 .section-subscribe {
 	background-color: #567C8B;
-	padding-top: 3.3rem;
+	padding-top: 3rem;
 	padding-bottom: 2.7rem;
 }
 
@@ -904,6 +904,9 @@ label {
 .footer {
 	padding-top: 4.1rem;
 	padding-bottom: 1.8rem;
+	.container{
+		max-width: 1285px !important;
+	}
 }
 
 .footer .row {
@@ -1337,13 +1340,18 @@ label {
 	}
 
 }
-
+.section-subscribe__container{
+	max-width: 1300px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
 @media(max-width: 991px) {
 	.section-subscribe {
 		text-align: center;
-		padding-top: 3.1rem;
+		padding-top: 3rem;
 		padding-bottom: 2.4rem;
 	}
+	
 
 	.section-subscribe h4 {
 		padding: 0 0.3rem;
