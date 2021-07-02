@@ -9,12 +9,13 @@
     padding: 40px 0;
 
     @include desktop-md {
-        padding: 40px 30px 90px 30px;
+        padding: 0px 113px 90px 68px;
     }
 
     &__grid {
         @include tabtoslide {
             display: flex;
+            align-items: center;
         }
 
     }
@@ -111,7 +112,9 @@
 
 .tab {
     &__title {
+        margin-bottom: 10px;
         font-size: 32px;
+        margin-bottom: 30px;
         @include tabtoslide{
             font-size: 40px;
         }
@@ -121,7 +124,10 @@
         font-weight: bold;
         font-size: 20px;
         font-family: 'Spectral', serif;
-        margin-bottom: 40px;
+        margin-bottom: 25px;
+        @include tablet{
+            margin-bottom: 40px;
+        }
     }
 
     &__starts {
@@ -146,19 +152,25 @@
     }
 
     &__text {
-        margin-bottom: 48px;
+        margin-bottom: 32px;
         font-size: 16px;
 
     }
 
     &__button {
-        margin-bottom: 26px;
+        margin-bottom: 20px;
+        @include tablet{
+            margin-bottom: 26px;
+        }        
     }
 
     &__check {
         display: flex;
         align-items: center;
-
+        justify-content: center;
+        @media screen and(min-width: 1200px) {
+            justify-content: flex-start; 
+        }
         img {
             display: block;
             margin-right: 8px;

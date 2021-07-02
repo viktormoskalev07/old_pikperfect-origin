@@ -2,14 +2,14 @@
   background: #F4F5F6;
   padding: 48px 0px;
   @include tablet{
-    padding: 112px 40px;
+    padding: 118px 70px 96px;
   }
   &__title{
     text-align: center;
     font-size: 32px;
     margin-bottom: 32px;
     @include tablet{
-      margin-bottom: 55px;
+      margin-bottom: 49px;
       font-size: 38px;
     }
     @include desktop-md{
