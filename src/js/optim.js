@@ -33,11 +33,15 @@
              addScript('js/slider.js'); 
            } 
 }
-      
+const mediaQuery2 = window.matchMedia('(max-width: 480px)');
+let baseDelay2 = 10;
+if (mediaQuery.matches) {
+       baseDelay2 = 700;
+}
 
     window.addEventListener('load', function(){ 
         addFont();       
-        scriptAsync(400);                
+        scriptAsync(baseDelay2);                
     })
 
 
