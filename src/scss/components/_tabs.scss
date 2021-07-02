@@ -1,5 +1,6 @@
 .tabs{
   display: flex;
+  align-items: center;
   margin: 0 40px 112px;
 }
 .tab {
@@ -27,20 +28,20 @@
     height: 90px;
     margin: 16px 0;
   }
-  &__content {
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    display: none;
-    border-top: none;
-  }
+  // &__content {
+  //   width: 100%;
+  //   justify-content: space-between;
+  //   align-items: center;
+  //   display: none;
+  //   border-top: none;
+  // }
   &__content-img{
     width: 620px;
     height: 620px;
   }
   &__block{
-    padding: 0 40px;
-    width: calc(100% - 620px);
+    padding-left: 40px;
+    width: calc(100% - 740px);
   }
   &__title{
     font-size: 40px;
