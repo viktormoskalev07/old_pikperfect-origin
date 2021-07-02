@@ -9,14 +9,12 @@ function srcSeter(tag) {
 
 function fullQuality(item,sizes) {
        const priority = item.dataset.priority || 0;
-       setTimeout(function () {
-              console.log(item , sizes) ;
+       setTimeout(function () { 
               srcSeter(item.querySelector('.nowebp-img')); 
               srcSeter(item.querySelector('.webp-img'));
               sizes.forEach(function(siz) {
                      srcSeter(item.querySelector('.webp-img-'+siz));
-              });
-    
+              }); 
        }, 1 + baseDelay * priority);
 }
 

@@ -1,0 +1,171 @@
+
+@mixin tabtoslide {
+    @media (min-width:1200px) {
+      @content;
+    }
+  }
+
+.section-hero {
+    padding: 40px 0;
+
+    @include desktop-md {
+        padding: 40px 30px 90px 30px;
+    }
+
+    &__grid {
+        @include tabtoslide {
+            display: flex;
+        }
+
+    }
+
+    &__left {
+        width: 100%;
+
+        @include tabtoslide {
+            width: 60%;
+        }
+
+        display: flex;
+    }
+
+    &__swiper {
+        width: 100%;
+        max-width: 700px;
+        margin-bottom: 40px;
+        @include tabtoslide {
+        width: 85%; 
+        margin: 0;
+        }
+    }
+ 
+
+    &__right {
+        width: 100%;
+        text-align: center;
+
+        @include tabtoslide {
+            text-align: left;
+            width: 40%;
+            padding-left: 40px;
+        }
+
+   
+    }
+
+    &__tab-activators {
+        display: none;
+        .swiper-slide{
+            opacity: 0.6;
+            &-thumb-active{
+                opacity: 1;
+                figure{
+                    border:solid #8BA4B4 1px;
+                }
+                
+            }
+        }
+
+        @include tabtoslide {
+            display: flex;
+        }
+
+        width: 12%;
+        margin-right: 16px;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__tab-activator {
+        width: 100%;
+    }
+
+    &__swiper-pagination {
+        position: absolute;
+        z-index: 4;
+        text-align: center;
+        display: block;
+        @include tabtoslide{
+            display:  none;
+        }
+    }
+
+    .swiper-pagination-bullet {
+  
+        height: 12px;
+        width: 12px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 0.5px solid #575D61;
+
+        &-active {
+            background: #8BA4B4 0% 0% no-repeat padding-box;
+            border: 0.5px solid #575D61;
+        }
+    }
+}
+
+
+
+
+.tab {
+    &__title {
+        font-size: 32px;
+        @include tabtoslide{
+            font-size: 40px;
+        }
+    }
+
+    &__price {
+        font-weight: bold;
+        font-size: 20px;
+        font-family: 'Spectral', serif;
+        margin-bottom: 40px;
+    }
+
+    &__starts {
+        justify-content: center;
+        @include tabtoslide{
+            justify-content: flex-start;
+        }
+        width: 100%;
+        display: flex;
+        align-items: center;
+        font-family: 'Open Sans';
+        font-size: 14px;
+        margin-bottom: 16px;
+
+        img {
+            padding: 0 2px;
+        }
+
+        span {
+            padding-left: 6px;
+        }
+    }
+
+    &__text {
+        margin-bottom: 48px;
+        font-size: 16px;
+        
+    }
+
+    &__button {
+        margin-bottom: 26px;
+    }
+
+    &__check {
+        display: flex;
+        align-items: center;
+
+        img {
+            display: block;
+            margin-right: 8px;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+}
