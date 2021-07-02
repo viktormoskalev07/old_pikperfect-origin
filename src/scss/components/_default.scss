@@ -191,6 +191,9 @@ h6 {
 	margin: 0 auto;
 
 }
+.overflow{
+	overflow: hidden;
+}
 
  
 
@@ -231,7 +234,7 @@ h6 {
 	opacity: 1;
 	visibility: visible;
 	transition: 0.4s;
-	display: block;
+	display: block; 
 }
 
 .dropdown-reviews .dropdown-toggle:focus {
@@ -424,6 +427,7 @@ h6 {
 	opacity: 1;
 	visibility: visible;
 	transition: 0.4s;
+ 
 }
 
 .header .dropdown-lang .dropdown-menu h6 {

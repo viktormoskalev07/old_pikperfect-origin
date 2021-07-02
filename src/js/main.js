@@ -26,10 +26,10 @@ window.addEventListener("load", function () {
     .addEventListener("click", function (e) {
       header.classList.toggle("menu-open");
       if (header.classList.contains("menu-open")) {
-        scrollWidth = window.innerWidth - html.offsetWidth + "px";
-        body.style.paddingRight = scrollWidth;
+        // scrollWidth = window.innerWidth - html.offsetWidth + "px";
+        // body.style.paddingRight = scrollWidth;
       } else {
-        body.style.paddingRight = 0;
+        // body.style.paddingRight = 0;
       }
       document.querySelector("body").classList.toggle("overflow");
 
@@ -82,5 +82,5 @@ window.addEventListener("load", function () {
  
 
 @@include('modules/imgpreloader.js')
-@@include('modules/accordion.js')
-@@include('modules/slider.js')
+@@include('modules/accordion.js') 
+@@include('modules/popup-mobile.js')

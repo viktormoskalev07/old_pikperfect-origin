@@ -1,0 +1,14 @@
+.menu-open{
+ .menu-fix{
+    
+     @media (max-width:1020px) {
+        height: 700px;
+    }
+ }
+ &.header{
+    
+    @media (max-width:1020px) {
+        overflow: auto;
+    }
+}
+}
