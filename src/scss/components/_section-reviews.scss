@@ -1,0 +1,104 @@
+.section-reviews{
+  padding: 65px 0 144px;
+  @include desktop-sm{
+    padding: 112px 0;
+  }  
+  &__top{
+    box-shadow: 1px 3px 20px #2F353A1F;
+    padding: 25px 0;
+    margin-bottom: 40px;
+    align-items: center;
+    &__item{
+      text-align: center;
+      padding-bottom: 15px;
+      font-size: 20px;
+      color: #6E777E;
+      font-weight: 500;
+      &_center{
+        padding-bottom: 25px;
+        font-size: 18px;
+        @include wide-screen-sm{
+          font-size: 20px;
+        } 
+      }
+      span, strong{
+        font-weight: 600;
+        color: #2F353A;
+      }
+      @include desktop-sm{
+        padding: 0;
+      }      
+    }
+  }
+  &__title{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Spectral';
+    margin-bottom: 16px;
+    font-size: 24px;
+    strong{
+      padding-bottom: 4px;
+    }
+    @include tablet{
+      display: block;
+    }
+  }
+  &__bottom{
+    position: relative;
+  }
+  &__slide{   
+    position: relative;     
+    min-height: 265px;
+    @include desktop-sm{
+      max-width: 280px;
+    }
+  }
+  &__time{
+    @include tablet{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+  .swiper-container{    
+    margin: 0 auto;
+    @include desktop-sm{
+      padding: 0 100px;
+    }
+  }
+  .swiper-button-next, .swiper-button-prev{
+    width: 48px;
+    height: 48px;
+    color: #6E777E;
+    background: #fff;
+    border-radius: 50px;
+    box-shadow: 1px 5px 12px #2F353A1F;
+    top: auto;
+    bottom: -80px;
+      @include desktop-sm{
+        top: 50%;
+        width: 72px;
+        height: 72px;
+      }
+    &::after{
+      font-size: 20px;
+      font-weight: 900;
+      @include desktop-sm{
+        font-size: 30px;
+        font-weight: 600;
+      }
+    }
+  }
+  .swiper-button-next{
+    right: 30%;
+    @include desktop-sm{
+      right: 0;
+    }
+  }
+  .swiper-button-prev{
+    left: 30%;
+    @include desktop-sm{
+      left: 0;
+    }
+  }
+}
