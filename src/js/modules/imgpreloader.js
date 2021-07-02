@@ -10,21 +10,16 @@ function srcSeter(tag) {
        tag.srcset = tag.dataset.img;
 }
 
-function fullQuality(item) {
+function fullQuality(item,sizes) {
        const priority = item.dataset.priority || 0;
        setTimeout(function () {
-              const webp = item.querySelector('.webp-img');
-              const webp480 = item.querySelector('.webp-img-480');
-              const noWebp = item.querySelector('.nowebp-img');
-              const noWebp480 = item.querySelector('.nowebp-img-480');
-              srcSeter(webp480);
-              srcSeter(noWebp);
-              srcSeter(noWebp480);
-              srcSeter(webp);
-              // const fullWebp = webp.dataset.img;
-              // const fullNoWebp = noWebp.dataset.img;  
-              //   webp.srcset=fullWebp; 
-              //   noWebp.src=fullNoWebp;
+              console.log(item , sizes) ;
+              srcSeter(item.querySelector('.nowebp-img')); 
+              srcSeter(item.querySelector('.webp-img'));
+              sizes.forEach(function(siz) {
+                     srcSeter(item.querySelector('.webp-img-'+siz));
+              });
+    
        }, 1 + baseDelay * priority);
 }
 
@@ -32,7 +27,7 @@ function toggleMinImg() {
        const pictures = document.querySelectorAll('.toggle-img--js');
        for (let i = 0; i < pictures.length; i++) {
               const pic = pictures[i];
-              fullQuality(pic);
+              fullQuality(pic , [376,480]);
        }
 }
 
