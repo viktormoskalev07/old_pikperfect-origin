@@ -12,4 +12,11 @@
        text-align: center;
        color: #fff;
        display: inline-block;
+       border: 1px solid transparent;
+       transition: .3s background;
+       &:hover{
+              color: #8BA4B4;
+              background: #fff;
+              border: 1px solid #8BA4B4;
+       }
 }

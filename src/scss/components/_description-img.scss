@@ -1,5 +1,8 @@
 .description-img{  
-  margin-bottom: 32px;
+  margin-bottom: 24px;
+  @include tablet{
+    margin-bottom: 32px;
+  }
   &__wrap{
     background-color: #EDECEE;    
     @include desktop-sm{
@@ -10,12 +13,12 @@
   &__order{
     @include desktop-sm{
       .description-img__img{
-        order: -1;
+        order: 1;
       }
     }
   }
   &__content{
-    padding: 20px;
+    padding:  40px 16px 24px;
     @include tablet{
       padding: 40px;
     }
@@ -28,15 +31,12 @@
     }
   }
   &__title{
-    line-height: 1.8rem;
-    text-align: center;
-    font-size: 18px;
+    font-size: 32px;
     @include desktop-sm{
       font-size: 30px;
     }
     @include wide-screen-sm{
       font-size: 40px;
-      line-height: 3rem;
     }
   }
   &__img{

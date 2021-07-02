@@ -1,0 +1,16 @@
+.section-accordion{
+  background: #F4F5F6;
+  padding: 48px 0px;
+  @include tablet{
+    padding: 112px 40px;
+  }
+  &__title{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 32px;
+    @include tablet{
+      margin-bottom: 55px;
+      font-size: 48px;
+    }
+  }
+}

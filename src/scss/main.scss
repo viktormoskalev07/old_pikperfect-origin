@@ -1,3 +1,6 @@
+@import "media-mixins";
+@import "variables.scss"; 
+@import "components/bootstrap/reboot";
 @import "components/bootstrap/grid";
 @import "components/bootstrap/dropdown";
 @import "components/bootstrap/utilites";
@@ -5,13 +8,11 @@
 @import "modules/img-min";
 @import "modules/accordion";
 @import "modules/swiper.min.css";
-@import "modules/section-accordion";
+@import "components/section-accordion";
 
 
 
-@import "media-mixins";
-@import "variables.scss"; 
-@import "components/bootstrap/reboot";
+
 
 @import "components/default";
 @import "button";
