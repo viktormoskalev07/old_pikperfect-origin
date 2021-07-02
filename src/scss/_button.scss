@@ -19,4 +19,13 @@
               background: #fff;
               border: 1px solid #8BA4B4;
        }
+       &__light{
+              background: #fff;
+              color: #2F353A;
+              &:hover{
+                     color: #fff;
+                     background: #8BA4B4;
+                     border: 1px solid #fff; 
+              }
+       }
 }

@@ -1,0 +1,25 @@
+.section-transition{
+  background: #567C8B;
+  padding: 45px 40px 48px;
+  text-align: center;
+  @include tablet{
+    padding: 80px 65px;    
+  }
+  &__title{
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 32px;
+    @include tablet{
+      font-size: 40px;  
+      margin-bottom: 40px; 
+    }
+    @include desktop-md{
+      font-size: 48px;   
+      margin-bottom: 48px;
+    }
+  }
+  &__button{
+    padding: 15px 61px;
+    font-size: 14px;
+  }
+}
