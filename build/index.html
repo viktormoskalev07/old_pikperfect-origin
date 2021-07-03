@@ -342,21 +342,10 @@
  
       </div>
       <div class= "   swiper-slide hero-tab-activator__js section-hero__tab-activator" >
-         
- <figure style='padding-bottom: calc(90% / 90 * 100)' class='figure-webp  '>
-        <picture  data-priority='2' class='picture-webp toggle-img--js '>
-            <source class='webp-img-376' media="(max-width: 376px)" srcset="images/towebp/min-wooden-photo-album-box.webp" data-img="images/towebp/376-wooden-photo-album-box.webp"   type="image/webp"> 
-            <source class='nowebp-img-376' media="(max-width: 376px)" srcset="images/towebp/min-wooden-photo-album-box.jpg" data-img="images/towebp/376-wooden-photo-album-box.jpg"   type="image/webp"> 
-            <source class='webp-img-480' media="(max-width: 480px)" srcset="images/towebp/min-wooden-photo-album-box.webp" data-img="images/towebp/480-wooden-photo-album-box.webp"   type="image/webp"> 
-            <source class='nowebp-img-480' media="(max-width: 480px)" srcset="images/towebp/min-wooden-photo-album-box.jpg" data-img="images/towebp/480-wooden-photo-album-box.jpg"   type="image/webp"> 
-
-            <source class='webp-img' srcset="images/towebp/min-wooden-photo-album-box.webp" data-img="images/towebp/wooden-photo-album-box.webp"   type="image/webp"> 
-            <img class='nowebp-img' src="images/towebp/min-wooden-photo-album-box.jpg" data-img="images/towebp/wooden-photo-album-box.jpg"  alt="video">
-        </picture>  
- </figure>
- 
- 
- 
+   <figure style='position: relative;'>
+     <img style="width: 100%; height:auto;" src="images/hero-tab-toggle-6.png"  >
+     <img style='position: absolute; top:50% ; left:50%; transform: translate(-50%, -50%); pointer-events: none; ' src="images/icons/button_play.svg" >
+   </figure>
       </div>
     </div>
   </div>
@@ -448,28 +437,25 @@
  
  
                 </div>
-                <div class="swiper-slide section-hero__slide">
-                     
- <figure style='padding-bottom: calc(620% / 620 * 100)' class='figure-webp  '>
-        <picture  data-priority='2' class='picture-webp toggle-img--js '>
-            <source class='webp-img-376' media="(max-width: 376px)" srcset="images/towebp/min-wooden-photo-album-box.webp" data-img="images/towebp/376-wooden-photo-album-box.webp"   type="image/webp"> 
-            <source class='nowebp-img-376' media="(max-width: 376px)" srcset="images/towebp/min-wooden-photo-album-box.jpg" data-img="images/towebp/376-wooden-photo-album-box.jpg"   type="image/webp"> 
-            <source class='webp-img-480' media="(max-width: 480px)" srcset="images/towebp/min-wooden-photo-album-box.webp" data-img="images/towebp/480-wooden-photo-album-box.webp"   type="image/webp"> 
-            <source class='nowebp-img-480' media="(max-width: 480px)" srcset="images/towebp/min-wooden-photo-album-box.jpg" data-img="images/towebp/480-wooden-photo-album-box.jpg"   type="image/webp"> 
-
-            <source class='webp-img' srcset="images/towebp/min-wooden-photo-album-box.webp" data-img="images/towebp/wooden-photo-album-box.webp"   type="image/webp"> 
-            <img class='nowebp-img' src="images/towebp/min-wooden-photo-album-box.jpg" data-img="images/towebp/wooden-photo-album-box.jpg"  alt="video">
-        </picture>  
- </figure>
- 
- 
- 
+                <div  class="swiper-slide section-hero__slide">
+                    <div  style="padding:100% 0 0 0;position:relative;"><iframe id='hero-video' src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="PikPerfect Premium Photo Albums.mp4"></iframe></div><script id='hero-video-script' src=""></script>
                 </div>
             </div>
             <div class="section-hero__swiper-pagination"></div> 
-        </div>
-     
-</div> 
+        </div> 
+</div>
+
+<script>
+    window.addEventListener('load', function(){
+        setTimeout(() => {
+            video=document.getElementById('hero-video');
+        video.src='https://player.vimeo.com/video/569981023?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'
+      videoScript=  document.getElementById('hero-video-script'); 
+      videoScript.src='https://player.vimeo.com/api/player.js';
+        }, 600);
+        
+    })
+</script>  
         <div class="section-hero__right">
     <h2 class="tab__title">Premium Layflat Album</h2>
     <p class="tab__price">From US $ 299.00.</p>
