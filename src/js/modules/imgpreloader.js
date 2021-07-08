@@ -1,5 +1,5 @@
 const mediaQuery = window.matchMedia('(max-width: 480px)');
-let baseDelay = 10;
+let baseDelay = 200;
 if (mediaQuery.matches) {
        baseDelay = 300;
 }  
