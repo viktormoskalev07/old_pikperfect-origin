@@ -39,6 +39,7 @@ var swiper = new Swiper(".section-reviews__swiper", {
 var swiperTabs = new Swiper(".section-hero__swiper", { 
     pagination: {
       el: ".section-hero__swiper-pagination",
+      clickable: true
     } ,
     thumbs: {
       swiper: swiperTabsControl
