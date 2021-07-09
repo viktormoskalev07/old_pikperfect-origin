@@ -18,6 +18,10 @@ var swiper = new Swiper(".section-reviews__swiper", {
       },
       1200: {
         slidesPerView: 3,
+        spaceBetween: 100
+      },
+      1400: {
+        slidesPerView: 3,
         spaceBetween: 115
       },
     }
