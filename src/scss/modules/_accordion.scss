@@ -20,11 +20,8 @@
     cursor: pointer; 
     position: relative; 
     @include tablet{
-      font-size: 28px;
+      font-size: 24px;
       padding: 20px 0px 16px 40px;
-    }
-    @include desktop-md{
-      font-size: 32px;
     }
     &::before {
       content:  '+';
