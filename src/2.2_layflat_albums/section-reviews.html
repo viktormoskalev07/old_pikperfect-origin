@@ -1,0 +1,54 @@
+<section class='section-reviews'>
+    <div class="container">
+        <h2 class='d-none'> reviews</h2>
+        <div class="row section-reviews__top">
+            <div class="col-lg-4 ">
+                <div class="section-reviews__top__item">
+                    <span>Excellent</span>
+                    <img src="images/icon-star.svg">
+                    <img src="images/icon-star.svg">
+                    <img src="images/icon-star.svg">
+                    <img src="images/icon-star.svg">
+                    <img src="images/icon-star.svg">
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="section-reviews__top__item section-reviews__top__item_center">
+                    <strong> 4.92 </strong> rating based on <strong> 2,034 </strong> reviews
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="section-reviews__top__item">
+                    @@include('svg/reviews-brand.svg')
+                </div>
+            </div>
+        </div>
+        <div class="section-reviews__bottom"> 
+            <div class="swiper-container section-reviews__swiper">
+                <div class="swiper-wrapper"> 
+                    @@include('items/section-reviews__slide.html',{
+                        name:'Lauren',
+                        description:"I created my best friend's wedding album with the help of PikPerfect as she wasn't happy with the one her wedding photographer provided. It was really simple to upload photos, choose design layouts and use the website to make amendments to...",
+                        time:'Posted 1h ago'
+                    }) 
+                    @@include('items/section-reviews__slide.html',{
+                        name:'Kelly E',
+                        description:"Our album (lay flat, LG square, printed cover, padded + presentation box) as well as 6* pocket books all arrived VERY quickly, and were of excellent finish and quality. The entire process was hassle free, and the final album is exactly as we...",
+                        time:'Posted 21h ago'
+                    }) 
+                    @@include('items/section-reviews__slide.html',{
+                        name:'Dede B',
+                        description:"Always a pleasure working with the team at PikPerfect. They are fast, friendly and very professional. I am always pleased with their services and my clients love their wedding albums.",
+                        time:'Posted 2 days ago'
+                    })
+              
+                </div>
+                
+            </div> 
+            <div class="swiper-button-next section-reviews__button-next"></div>
+            <div class="swiper-button-prev section-reviews__button-prev"></div>    
+        </div> 
+    </div>
+
+
+</section>
