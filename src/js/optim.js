@@ -40,15 +40,13 @@ if (mediaQuery2.matches) {
 } 
 document.addEventListener('DOMContentLoaded', function(){
   if (!mediaQuery2.matches) {
-    addFont();
-    console.log('fast')
+    addFont(); 
   }
 
 })
 window.addEventListener('load', function(){ 
   if (mediaQuery2.matches) {
-    addFont();
-    console.log('lazzy')
+    addFont(); 
   }
   scriptAsync(baseDelay2);                
 })
