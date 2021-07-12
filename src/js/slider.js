@@ -1,3 +1,22 @@
+
+if (document.querySelector('.swiperDescription')){
+  var swiper = new Swiper(".swiperDescription", {
+    pagination: {
+      el: ".swiperDescription-pagination",
+      clickable: true
+    } ,
+         
+  grabCursor:true,	
+  autoplay: {
+      delay: 3000,
+    } 
+});
+}
+
+
+
+
+
 var swiper = new Swiper(".section-reviews__swiper", {
     loop:true,
     autoplay: {
