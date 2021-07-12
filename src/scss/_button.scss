@@ -31,4 +31,8 @@
                      border: 1px solid #fff; 
               }
        }
+       &__green-opacity{
+              background: rgba($color: #7A8A6A, $alpha: .5);
+              opacity: 50;
+       }
 }

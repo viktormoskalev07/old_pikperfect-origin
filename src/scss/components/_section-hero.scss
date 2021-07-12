@@ -139,8 +139,44 @@
 			border: 0.5px solid #575D61;
 		}
 	}
-	.image-left{
+	&__image-left{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	&__wrap-flex{
+		display: flex;
+		align-content: center;
+	}
+	&__image-col{
+		width: 100%;
+		@include tabtoslide{
+			width: 60%;
+		}
+	}
+	&__content-col{
+		width: 100%;
+		background: rgba($color: #7A8A6A, $alpha: .15);
+		padding: 0 5%;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 		
+		@include tabtoslide{
+			width: 40%;
+		}
+		.button{
+			max-width: 210px;
+			margin: 0 auto;
+			margin-bottom: 24px;
+		}
+		h1{
+			margin-bottom: 5px;
+		}
+		p{
+			margin-bottom: 48px;
+		}
 	}
 }
 
