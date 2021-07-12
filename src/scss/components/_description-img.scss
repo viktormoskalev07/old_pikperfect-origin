@@ -40,6 +40,15 @@
     @include wide-screen-sm{
       font-size: 40px;
     }
+    span{
+      font-size: 24px;
+      font-style: italic;
+      display: block;
+    }
+  }
+  &__price{
+    font-size: 20px;
+    font-weight: bold;
   }
   &__img{
     @include desktop-sm{
