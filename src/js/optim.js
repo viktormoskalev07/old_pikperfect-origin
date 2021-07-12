@@ -35,14 +35,25 @@
 }
 const mediaQuery2 = window.matchMedia('(max-width: 480px)');
 let baseDelay2 = 10;
-if (mediaQuery.matches) {
-       baseDelay2 = 700;
-}
+if (mediaQuery2.matches) {
+  baseDelay2 = 700;
+} 
+document.addEventListener('DOMContentLoaded', function(){
+  if (!mediaQuery2.matches) {
+    addFont();
+    console.log('fast')
+  }
 
-    window.addEventListener('load', function(){ 
-        addFont();       
-        scriptAsync(baseDelay2);                
-    })
+})
+window.addEventListener('load', function(){ 
+  if (mediaQuery2.matches) {
+    addFont();
+    console.log('lazzy')
+  }
+  scriptAsync(baseDelay2);                
+})
+
+
 
 
  
