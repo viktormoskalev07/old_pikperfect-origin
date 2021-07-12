@@ -54,22 +54,10 @@
                     height:'620'
                     })
                 </div>
-                <div  class="swiper-slide section-hero__slide">
-                    <div  style="padding:100% 0 0 0;position:relative;"><iframe id='hero-video' src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="PikPerfect Premium Photo Albums.mp4"></iframe></div><script id='hero-video-script' src=""></script>
-                </div>
+                @@include('../../video-include/video.html',{
+                    src:'569981023'
+                })
             </div>
             <div class="section-hero__swiper-pagination"></div> 
         </div> 
 </div>
-
-<script>
-    window.addEventListener('load', function(){ 
-        setTimeout(() => { 
-            video=document.getElementById('hero-video');
-        video.src='https://player.vimeo.com/video/569981023?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'
-      videoScript=  document.getElementById('hero-video-script'); 
-    //   videoScript.src='https://player.vimeo.com/api/player.js';
-        }, 1400);
-        
-    })
-</script> 

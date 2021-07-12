@@ -12,15 +12,24 @@
     }
   
 }
+ .header-nav , .right-nav{
+   
+        pointer-events: all;
+   
+ }
 }
- 
-
-header{
-    @media (max-width:1224px) {
+.header{
+    @media (max-width:600px) {
         overflow: hidden;
     }
- 
 }
+ .header-nav , .right-nav{
+     pointer-events: none;
+     @media (min-width:1020px) {
+        pointer-events: all;
+    }
+ }
+ 
 .review-item{
     @media (max-width:375px) { 
         margin:10px 0;

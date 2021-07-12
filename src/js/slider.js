@@ -50,4 +50,4 @@ var swiperTabs = new Swiper(".section-hero__swiper", {
     } 
   });
 
-
+  @@include('../video-include/video.js')
