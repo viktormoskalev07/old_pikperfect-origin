@@ -31,6 +31,15 @@
                      border: 1px solid #fff; 
               }
        }
+       &__gray{
+              background: #EDECEE;
+              border: 1px solid #575D61;
+              color: #575D61;
+              &:hover{
+                     background: #575d61;
+                     color: #fff;
+              }
+       }
        &__green-opacity{
               background: rgba($color: #7A8A6A, $alpha: .5);
               opacity: 50;

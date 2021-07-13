@@ -1,8 +1,10 @@
 .section-logos{
   background: #EDECEE;
   padding: 40px 100px;
+  margin-bottom: 32px;
   &__container{
-
+    max-width: 1345px;
+    margin: 0 auto;
   }
   &__wrap{
     display: flex;
