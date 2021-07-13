@@ -1,0 +1,86 @@
+.section-album{
+  background-color: #F4F5F6;  
+  padding: 48px 15px 64px;  
+  @include tablet{
+    padding: 48px 15px 112px;
+  }
+  &__container{
+    margin: 0 auto;
+    max-width: 1376px;    
+  }
+  &__title{
+    font-size: 32px;
+    font-family: 'Spectral';
+    font-weight: 600;
+    text-align: center;
+    @include tablet{
+      font-size: 42px;
+    }
+    @include desktop-md{
+      font-size: 48px;
+    }
+  }
+  &__entered{
+    text-align: center;
+    max-width: 888px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    @include tablet{
+      margin-bottom: 56px;
+    }
+  }
+  &__name-title{
+    line-height: 1.8;
+    text-align: center;
+    font-family: 'open sans';
+    font-size: 18px;
+    font-weight: 800;
+    span{
+      display: block;
+      font-style: italic;
+      font-weight: 400;
+    }
+  }
+  &__button{
+    display: none;
+    text-align: center;
+    @media screen and(min-width: 1200px) {
+      display: block;
+    }
+    a{
+      background: #F4F5F6;
+    }
+  }
+  .swiper-wrapper{
+    @media screen and(min-width: 1200px) {
+      transform: none !important;
+    }
+  }
+  .swiper-slide{
+    position: relative;
+    padding-bottom: 24px;
+  }
+  .swiperDescription-pagination{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    text-align: center;
+  }
+  .swiper-pagination-bullet{
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid #575d61;
+    background-color: #fff;
+    margin: 0 .3rem;
+    opacity: 1;
+    &-active{
+      background-color: #8ba4b4;
+    }
+    @media screen and(min-width: 1200px) {
+      display: none;
+    }
+  }
+}

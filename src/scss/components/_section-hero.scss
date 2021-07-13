@@ -152,8 +152,11 @@
 		padding: 0;
 	}
 	&__wrap-flex{
-		display: flex;
-		align-content: center;
+		@include tabtoslide{
+			display: flex;
+			align-content: center;
+		}
+		
 	}
 	&__image-col{
 		width: 100%;
@@ -161,11 +164,20 @@
 			width: 60%;
 		}
 	}
+	&__bg{
+		position: absolute;
+		content: "";
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+	}
 	&__content-col{
+		padding: 32px 30px 8px;
 		position: relative;
 		width: 100%;
-		background-color: rgba($color: #7A8A6A, $alpha: .15);
-		padding: 0 5%;
+		background-color: rgba($color: #7A8A6A, $alpha: .15);		
 		text-align: center;
 		display: flex;
 		flex-direction: column;
@@ -180,29 +192,29 @@
 			z-index: 0;
 			opacity: .15;
 		}
-		&__bg{
-			position: absolute;
-			content: "";
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			z-index: -1;
+		@include tablet{
+			padding: 60px 0 0;
 		}
-		
 		@include tabtoslide{
 			width: 40%;
+			padding: 0 5%;
 		}
 		.button{
 			max-width: 210px;
 			margin: 0 auto;
-			margin-bottom: 24px;
+			margin-bottom: 10px;
+			@include tablet{
+				margin-bottom: 24px;
+			}
 		}
 		h1{
 			margin-bottom: 5px;
 		}
 		p{
-			margin-bottom: 48px;
+			margin-bottom: 32px;
+			@include tablet {
+				margin-bottom: 48px;
+			}			
 		}
 	}
 }
