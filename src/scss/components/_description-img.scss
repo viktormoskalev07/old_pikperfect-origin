@@ -123,4 +123,26 @@
       background-color: #8ba4b4;
     }
   }
+  &_opposite{
+    .description-img__img{
+      @include desktop-sm{
+        width: 50%;
+      }
+      @include wide-screen-sm{
+        width: 42.5%;
+      }
+    }
+    .description-img__content{
+      @include desktop-sm{
+        padding: 70px 5%;
+        width: 50%;
+      }
+      @include wide-screen-sm{
+        width: 57.5%;
+        img{
+          height: auto;
+        }
+      } 
+    }
+  }
 }
