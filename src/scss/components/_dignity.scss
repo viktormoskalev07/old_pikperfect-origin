@@ -1,13 +1,13 @@
 .dignity{
   background-color: #567C8B;
-  padding: 64px 15px 40px;
+  padding: 69px 15px 18px;
   color: #fff;
   margin-bottom: 32px;
   @include desktop-sm{
-    padding: 80px 32px 64px;
+    padding: 88px 32px 57px;
   }
   &__container{
-    max-width: 1345px;
+    max-width: 1200px;
     margin: 0 auto;
   }
   &__title{
@@ -32,16 +32,16 @@
     
   }
   &__block{
-    padding: 0 40px;
+    padding: 0 50px;
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 45px;
     @include tablet{
       width: 45%;
       padding: 0 15px;
     }
     @include desktop-md{
       display: flex;
-      width: 27%;
+      width: 30%;
       text-align: left;
       margin: 0;
     }
@@ -50,7 +50,7 @@
   &__img {
     width: 60px;
     height: 60px;
-    margin: 0 auto;    
+    margin: 0 auto 15px;  
     img{
       width: 100%;
       height: 100%;

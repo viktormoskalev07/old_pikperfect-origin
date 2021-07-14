@@ -32,18 +32,18 @@
       padding: 40px;
     }
     @include desktop-sm{
-      padding: 70px;
+      padding: 70px 8%;
       width: 50%;
     }
     @include wide-screen-sm{
-      width: 43%;
+      width: 42.5%;
     }
   }
   &__title{
     font-size: 32px;
     @include desktop-sm{
       font-size: 30px;
-      margin-bottom: 24px;
+      margin-bottom: 28px;
     }
     @include wide-screen-sm{
       font-size: 40px;
@@ -58,12 +58,13 @@
     }
   }
   &__price{
-    padding: 8px 0 48px;
+    margin: 24px 0 40px;
     font-size: 18px;
     font-weight: bold;
     font-family: 'Spectral', serif;
     @include tablet{
       font-size: 20px;
+      margin: 24px 0 48px;
     }
   }
   &__img{
@@ -72,7 +73,7 @@
       width: 50%;
     }
     @include wide-screen-sm{
-      width: 57%;
+      width: 57.5%;
       img{
         height: auto;
       }
@@ -92,7 +93,7 @@
         }
       }
       @include desktop-md{
-        max-width: 160px;
+        max-width: 168px;
       }
     }
   }

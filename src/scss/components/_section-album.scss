@@ -2,11 +2,11 @@
   background-color: #F4F5F6;  
   padding: 48px 15px 64px;  
   @include tablet{
-    padding: 48px 15px 112px;
+    padding: 127px 15px 112px;
   }
   &__container{
     margin: 0 auto;
-    max-width: 1376px;    
+    max-width: 1300px;    
   }
   &__title{
     font-size: 32px;
@@ -22,11 +22,11 @@
   }
   &__entered{
     text-align: center;
-    max-width: 888px;
+    max-width: 530px;
     margin: 0 auto;
     margin-bottom: 16px;
     @include tablet{
-      margin-bottom: 56px;
+      margin-bottom: 47px;
     }
   }
   &__name-title{
@@ -35,6 +35,7 @@
     font-family: 'open sans';
     font-size: 18px;
     font-weight: 800;
+    margin-top: 4px;
     span{
       display: block;
       font-style: italic;
@@ -49,9 +50,16 @@
     }
     a{
       background: #F4F5F6;
+      padding: 15px 38px;
     }
   }
+  .swiper-slide{
+    width: 24%;
+  }
   .swiper-wrapper{
+    @include tablet{
+      margin-bottom: 25px;
+    }
     @media screen and(min-width: 1200px) {
       transform: none !important;
     }

@@ -40,8 +40,6 @@
 			margin: 0;
 		}
 	}
-
-
 	&__right {
 		width: 100%;
 		text-align: center;
@@ -51,8 +49,6 @@
 			width: 40%;
 			padding-left: 40px;
 		}
-
-
 	}
 
 	&__tab-activators {
@@ -174,7 +170,7 @@
 		z-index: -1;
 	}
 	&__content-col{
-		padding: 32px 30px 8px;
+		padding: 32px 15px 45px;
 		position: relative;
 		width: 100%;
 		background-color: rgba($color: #7A8A6A, $alpha: .15);		
@@ -215,6 +211,9 @@
 			@include tablet {
 				margin-bottom: 48px;
 			}			
+		}
+		.small{
+			margin: 0;
 		}
 	}
 }

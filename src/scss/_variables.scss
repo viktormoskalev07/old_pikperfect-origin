@@ -10,6 +10,7 @@ $mobile-lg: 576px;
 $tablet: 768px;
 $desktop-sm: 992px;
 $desktop-md: 1024px;
+$tabtoslide: 1200px;
 $wide-screen-sm: 1280px;
 $wide-screen-md: 1360px;
 $wide-screen-lg: 1599px;
@@ -19,3 +20,9 @@ $wide-screen-lg: 1599px;
 // $clr-sub: #09354E;
 $clr-black: #000000;
 $clr-light: #ffffff; 
+
+@mixin tabtoslide {
+	@media (min-width:1200px) {
+		@content;
+	}
+}
