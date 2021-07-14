@@ -134,8 +134,11 @@
     }
     .description-img__content{
       @include desktop-sm{
-        padding: 70px 5%;
+        padding: 70px 6.5%;
         width: 50%;
+        p{
+          max-width: 520px;
+        }
       }
       @include wide-screen-sm{
         width: 57.5%;
