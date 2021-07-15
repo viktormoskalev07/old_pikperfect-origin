@@ -72,7 +72,7 @@ images.forEach(img => {
         const oldSize = sizeOf(img).width;
         
  
-        console.log (img +  ' file '+current+' from '+max+' change width from: ',chalk.blue(oldSize+'px'),'to', chalk.green(newSize+'px'));
+        // console.log (img +  ' file '+current+' from '+max+' change width from: ',chalk.blue(oldSize+'px'),'to', chalk.green(newSize+'px'));
        
      sharp(img)
      .resize(newSize)
@@ -118,7 +118,10 @@ images.forEach(img => {
                    console.log(chalk.red(err));
                }  
             });  
-           console.log(chalk.red(`image smaller then ${size}!!!`));
+            if(size <480){
+                console.log(chalk.red(`image smaller then ${size}!!!`+'   __'+img));
+            }
+           
        }
      }
      inpixel(376);
