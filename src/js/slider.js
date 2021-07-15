@@ -6,10 +6,7 @@ if (document.querySelector('.swiperDescription')){
       clickable: true
     } ,
          
-  grabCursor:true,	
-  autoplay: {
-      delay: 3000,
-    } 
+  grabCursor:true,	 
 });
 }
 
@@ -85,7 +82,7 @@ var swiper = new Swiper(".section-reviews__swiper", {
   function call (){ 
     if (checkVideo&&videoSlide){ 
       if( videoSlide.matches('.swiper-slide-active')){ 
-                   
+                    
                     video.src=video.dataset.src; 
                     checkVideo=0;
                     setTimeout(() => {
@@ -122,8 +119,9 @@ if (document.querySelector('.section-hero__tab-activators')){
     slidesPerView: 6,
     direction:'vertical',
     cssMode: true,
-    spaceBetween: 15
-
+    spaceBetween: 15,
+    allowTouchMove:false, 
+    touchStartForcePreventDefault:true,
   });
  
 
@@ -132,13 +130,11 @@ var swiperTabs = new Swiper(".section-hero__swiper", {
     pagination: {
       el: ".section-hero__swiper-pagination",
       clickable: true
-    } ,
+    } ,  
     thumbs: {
       swiper: swiperTabsControl
     } 
-  }); 
-
-    
+  });     
   videoInSlider(); 
 }
 
