@@ -1,6 +1,6 @@
 const newSize = 5 ; 
 const baseFolder = './dist/images/towebp'; 
- 
+ const maxsize = 100;
 
 
 const fs = require('fs');
@@ -12,7 +12,7 @@ const fsExtra = require('fs-extra')
 
 fsExtra.emptyDirSync('./build');
 let ncp = require('ncp').ncp;
- 
+let imageErrors=[] ;
 ncp.limit = 16;
  function copyToBuild(){
      
@@ -22,6 +22,7 @@ ncp.limit = 16;
         }
        });
        console.log(chalk.green('finish , wait a second ..'));
+       console.log(chalk.red(imageErrors));
  } 
  
 function makeImages(){ 
@@ -43,10 +44,20 @@ const getFiles = function (dir, files_){
 console.log(chalk.green('images build min to:'+newSize+' px'));
  
 const images = getFiles(baseFolder);
+ 
 let current =0;
 let max= images.length+1;
 images.forEach(img => {
     current++;
+    const sizebit= fs.statSync(img).size;
+    if(sizebit>maxsize*1000){
+        imageErrors.push('error!!!' + sizebit/1000 + 'kb it big!! ' );
+        imageErrors.push( img );
+        imageErrors.push( '\n');
+        imageErrors.push( '\n');
+
+    }
+    
     const ext = path.extname(img);
     const filename =  path.basename(img ,ext);
     const dirname =path.dirname(img); 
