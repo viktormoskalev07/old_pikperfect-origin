@@ -70,4 +70,23 @@
     color: #fff;
     margin-bottom: 5px;
   }
+  &_blocks{
+    padding: 32px 15px;
+    background: transparent;
+    color: #2E3031;
+    margin-bottom: 0;
+    h3{
+      color: #2E3031;
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+    .dignity__container{
+      max-width: 1376px;
+    }
+    .dignity__block{
+      background: #EDECEE;
+      padding: 40px 32px;
+      width: 32%;
+    }
+  }
 }
