@@ -82,12 +82,10 @@ function promobar (){
    
 }
  
-  // promobar();
- 
-
+  // promobar(); 
 // promobar
 
- 
+
  
 
 @@include('modules/imgpreloader.js')
