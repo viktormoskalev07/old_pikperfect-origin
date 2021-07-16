@@ -70,7 +70,7 @@
     color: #fff;
     margin-bottom: 5px;
   }
-  &_blocks{
+  &_blocks{    
     padding: 32px 15px;
     background: transparent;
     color: #2E3031;
@@ -80,13 +80,34 @@
       font-weight: 600;
       margin-bottom: 0;
     }
+    .dignity__content{
+      width: 100%;
+      @include tabtoslide{
+        width: calc(100% - 92px);
+      }
+    }
+    .dignity__img{
+      margin: 0 auto 15px;
+    }
     .dignity__container{
       max-width: 1376px;
     }
     .dignity__block{
+      display: block;
+      text-align: center;
+      width: 100%;
+      margin-bottom: 20px;
       background: #EDECEE;
       padding: 40px 32px;
-      width: 32%;
+      @include tablet{
+        margin-bottom: 45px;
+      }
+      @include tabtoslide{
+        display: flex;
+        text-align: left;
+        width: 32%;
+      }
+      
     }
   }
 }
