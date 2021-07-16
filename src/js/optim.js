@@ -48,7 +48,23 @@ window.addEventListener('load', function(){
   if (mediaQuery2.matches) {
     addFont(); 
   }
-  scriptAsync(baseDelay2);                
+  scriptAsync(baseDelay2);  
+  
+// section-video-content
+ setTimeout(() => {
+  if(document.querySelector('.section-video-content')){ 
+    const videoPreloader = document.querySelector('.hero-video-slide__preloader'); 
+    const video=document.getElementById('hero-video');                  
+       video.src=video.dataset.src; 
+     
+    setTimeout(() => {
+      videoPreloader.style.opacity=0;
+    }, 300);   
+  }
+ }, 3000);
+
+ 
+// section-video-content              
 })
 
 

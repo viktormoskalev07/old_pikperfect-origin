@@ -77,7 +77,7 @@ var swiper = new Swiper(".section-reviews__swiper", {
 
     const videoSlide = document.querySelector('.hero-video-slide'); 
     const videoPreloader = document.querySelector('.hero-video-slide__preloader'); 
-    video=document.getElementById('hero-video'); 
+    const video=document.getElementById('hero-video'); 
     let checkVideo =1 ;
   function call (){ 
     if (checkVideo&&videoSlide){ 
