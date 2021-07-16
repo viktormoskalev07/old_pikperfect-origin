@@ -103,7 +103,7 @@ gulp.task('image:build', async function() {
           //png
           imageminPngquant({
               speed: 1,
-              quality: [0.75, 1] //lossy settings
+              quality: [0.95, 1] //lossy settings
           }),
           imageminZopfli({
               more: true
@@ -132,7 +132,7 @@ gulp.task('image:build', async function() {
           }),
           //jpg very light lossy, use vs jpegtran
           imageminMozjpeg({
-              quality: 60
+              quality: 90
           })
       ])))
       .pipe(gulp.dest(path.build.img)); //И бросим в build
