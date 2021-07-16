@@ -36,7 +36,7 @@
 const mediaQuery2 = window.matchMedia('(max-width: 480px)');
 let baseDelay2 = 10;
 if (mediaQuery2.matches) {
-  baseDelay2 = 700;
+  baseDelay2 = 1000;
 } 
 document.addEventListener('DOMContentLoaded', function(){
   if (!mediaQuery2.matches) {
@@ -48,6 +48,19 @@ window.addEventListener('load', function(){
   if (mediaQuery2.matches) {
     addFont(); 
   }
+
+  const swipDelay = document.querySelector('.swiper-delay');
+  if(swipDelay){ 
+    const addtime= parseInt(swipDelay.dataset.time);
+    if(addtime>100){
+      baseDelay2= addtime/5;
+      if (mediaQuery2.matches) {
+        baseDelay2 = 1000+addtime;
+      } 
+    }
+
+  }
+  console.log(baseDelay2);
   scriptAsync(baseDelay2);  
   
 // section-video-content
@@ -61,7 +74,7 @@ window.addEventListener('load', function(){
       videoPreloader.style.opacity=0;
     }, 300);   
   }
- }, 3000);
+ }, baseDelay2);
 
  
 // section-video-content              
