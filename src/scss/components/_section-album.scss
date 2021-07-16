@@ -1,8 +1,10 @@
 .section-album{
-  background-color: #F4F5F6;  
   padding: 48px 15px 64px;  
   @include tablet{
     padding: 127px 15px 112px;
+  }
+  &_gray{
+    background-color: #F4F5F6; 
   }
   &__container{
     margin: 0 auto;
