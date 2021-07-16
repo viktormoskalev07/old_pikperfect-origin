@@ -36,7 +36,7 @@
 const mediaQuery2 = window.matchMedia('(max-width: 480px)');
 let baseDelay2 = 10;
 if (mediaQuery2.matches) {
-  baseDelay2 = 700;
+  baseDelay2 = 2700;
 } 
 document.addEventListener('DOMContentLoaded', function(){
   if (!mediaQuery2.matches) {
@@ -61,7 +61,7 @@ window.addEventListener('load', function(){
       videoPreloader.style.opacity=0;
     }, 300);   
   }
- }, 3000);
+ }, 4000);
 
  
 // section-video-content              
