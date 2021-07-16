@@ -1,8 +1,8 @@
 .promobar{
     text-align: center; 
-    min-height: 60px;
+    min-height: 30px;
     @media (min-width:425px) {
-        min-height:46px;
+        min-height:36px;
     }
     @media (min-width:768px) {
         min-height:24px;
@@ -17,3 +17,6 @@
     transform: scale(0); 
 }
  
+.pre-header{
+    padding:5px 0;
+}
