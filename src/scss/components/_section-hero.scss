@@ -203,6 +203,13 @@
 				color: #2E3031;
 			}
 		}
+		&_blue-gray{
+			background-color: rgba($color: 	#0086A9, $alpha: .3);	
+			color: #fff;
+			h1{
+				color: #fff;
+			}
+		}
 		@include tablet{
 			padding: 80px 0;
 		}

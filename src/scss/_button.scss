@@ -59,8 +59,11 @@
               background: #61AEB8;
               opacity: 50;
        }
+       &__blue-gray-opacity{
+              background: rgba($color: #547D8C, $alpha: .5);
+              opacity: 50;
+       }
        &__light-orange-opacity{
               background: #FBB695;
-              opacity: 100;
        }
 }
