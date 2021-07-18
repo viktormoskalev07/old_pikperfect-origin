@@ -196,6 +196,13 @@
 				color: #fff;
 			}
 		}
+		&_light-orange{
+			background-color: rgba($color: 	#FCCFBC, $alpha: .9);	
+			color: #2E3031;
+			h1{
+				color: #2E3031;
+			}
+		}
 		@include tablet{
 			padding: 80px 0;
 		}
