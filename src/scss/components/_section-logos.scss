@@ -5,6 +5,10 @@
     @include wide-screen-sm{
       padding: 40px;
     }
+    &_white{
+      background: #fff;
+      margin-bottom: 0;
+    }
     &__container{
       max-width: 1376px;
       margin: 0 auto;
