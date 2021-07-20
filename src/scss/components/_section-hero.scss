@@ -148,7 +148,7 @@
 		padding: 0;
 	}
 	&__wrap-flex{
-		@include tabtoslide{
+		@include desktop-sm{
 			display: flex;
 			align-content: center;
 		}
@@ -156,8 +156,17 @@
 	}
 	&__image-col{
 		width: 100%;
-		@include tabtoslide{
+		@include desktop-sm{
 			width: 60%;
+		} 
+		figure{
+			padding-bottom: calc(264% / 360 * 100);
+			@include desktop-sm{
+				padding-bottom: calc(670% / 880 * 100);
+			}		
+			@include wide-screen-sm{
+				padding-bottom: calc(505% / 880 * 100);
+			}		
 		}
 	}
 	&__bg{
@@ -188,7 +197,7 @@
 			height: 130px;
 			width: 175px;
 		}
-		@media screen and(min-width: 1200px) {
+		@include desktop-sm{
 			z-index: -1;
 		}
 		@media screen and(min-width: 1400px) {
@@ -261,7 +270,7 @@
 		@include tablet{
 			padding: 80px 0;
 		}
-		@include tabtoslide{
+		@include desktop-sm{
 			width: 40%;
 			padding: 0 5%;
 		}
