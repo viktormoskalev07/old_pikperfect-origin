@@ -4,10 +4,10 @@
       Photo Albums & Books
     </h2>
     <p class="section-album__entered">
-      From Photobooks to Premium Layflat Albums, our range of albums are suited for any occasion or budget. <br> Learn more about the <a href="#">differences between a photo book and a photo album</a>.
+      From Photobooks to Premium Layflat Albums, our range of albums are suited for any occasion or budget. <br> Learn more about the <a class="link" href="#">differences between a photo book and a photo album</a>.
     </p>
     <div class="section-album__wrap">
-      <div class="section-album__block">
+      <a href="#" class="section-album__block">
         @@include('../i/resp-img2.html',{
           src:'pikPerfect-premium-albums',
           type:'png', 
@@ -19,8 +19,9 @@
         })
         <h3 class="section-album__name-album">Premium Albums
         <span>The Luxury Option</span></h3>
-      </div>
-      <div class="section-album__block">
+        <p class="section-album__price">From $299</p>
+      </a>
+      <a href="#" class="section-album__block">
         @@include('../i/resp-img2.html',{
           src:'pikperfect-photo-albums',
           type:'png', 
@@ -32,8 +33,9 @@
         })
         <h3 class="section-album__name-album">Layflat Photo Albums
           <span>The Bestseller</span></h3>
-      </div> 
-      <div class="section-album__block">
+          <p class="section-album__price">From $149</p>
+      </a> 
+      <a href="#" class="section-album__block">
         @@include('../i/resp-img2.html',{
           src:'pikperfect-photobooks',
           type:'png', 
@@ -45,10 +47,8 @@
         })
         <h3 class="section-album__name-album">Photo Books
           <span>The Everyday Classic</span></h3>
-      </div>       
-    </div>
-    <div class="section-album__button">
-      <a href="#" class="button button__gray">view more</a>
+          <p class="section-album__price">From $69</p>
+        </a>       
     </div>
   </div> 
 </section>

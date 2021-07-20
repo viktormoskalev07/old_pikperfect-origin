@@ -147,6 +147,13 @@
 		margin: 0;
 		padding: 0;
 	}
+	&__image-right{
+		@include desktop-sm{
+			.section-hero__image-col{
+				order: 1;
+			}
+		}
+	}
 	&__wrap-flex{
 		@include desktop-sm{
 			display: flex;

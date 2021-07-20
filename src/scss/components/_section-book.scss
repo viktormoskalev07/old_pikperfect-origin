@@ -5,6 +5,9 @@
   @include tablet{
     padding: 112px 15px 112px;
   }
+  &_mb{
+    margin-bottom: 32px;
+  }
   &__container{
     max-width: 1376px;
     margin: 0 auto;

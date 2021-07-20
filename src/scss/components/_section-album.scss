@@ -1,4 +1,5 @@
 .section-album{
+  
   padding: 48px 15px 64px;  
   @include tablet{
     padding: 127px 15px 112px;
@@ -15,7 +16,9 @@
     justify-content: center;
     flex-wrap: wrap;
   }
-  &__block{    
+  &__block{ 
+    color: #2F353A;
+    text-decoration: none;  
     width: 330px;
     transition: .4s;
     margin-bottom: 40px;
@@ -25,10 +28,16 @@
     }
     @include tablet{
       width: 30%;
-      //margin: 0 20px;
     }
-
+    &:hover{
+      .section-album__name-album{
+        color: #567C8B;
+      }
+      span{
+        color: #2F353A;
+      }
     }
+  }
   &__title{
     font-size: 32px;
     font-family: 'Spectral';
@@ -121,27 +130,34 @@
     }
   }
   &__name-album{
+    margin-top: 24px;
+    margin-bottom: 6px;
     text-align: center;
     font-size: 24px;
     font-weight: 600;
     @include tablet{
+      margin-top: 32px;
+      margin-bottom: 10px;
       font-size: 32px;
     }
     span{
+      margin-top: 12px;
       font-weight: 400;
       display: block;
       font-size: 20px;
       font-style: italic;
       @include tablet{
+        margin-top: 20px;
         font-size: 24px;
       }
     }
   }
+  &__price{
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 18px;
+  }
   &_tree-block{
-    a{
-      color: #567C8B;
-      text-decoration: underline;
-    }
     background: #F4F5F6;
     .section-album__entered{
       max-width: 850px;
@@ -151,5 +167,9 @@
         font-size: 40px;
       }
     }
+  }
+  .link{
+    color: #567C8B;
+    text-decoration: underline;
   }
 }
