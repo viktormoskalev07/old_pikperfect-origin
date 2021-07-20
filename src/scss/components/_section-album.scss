@@ -10,6 +10,25 @@
     margin: 0 auto;
     max-width: 1300px;    
   }
+  &__wrap{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  &__block{    
+    width: 330px;
+    transition: .4s;
+    margin-bottom: 40px;
+    @include mobile-lg{
+      width: 43%;
+      margin: 20px;
+    }
+    @include tablet{
+      width: 30%;
+      //margin: 0 20px;
+    }
+
+    }
   &__title{
     font-size: 32px;
     font-family: 'Spectral';
@@ -99,6 +118,38 @@
     }
     .section-album__entered{
       max-width: 700px;
+    }
+  }
+  &__name-album{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    @include tablet{
+      font-size: 32px;
+    }
+    span{
+      font-weight: 400;
+      display: block;
+      font-size: 20px;
+      font-style: italic;
+      @include tablet{
+        font-size: 24px;
+      }
+    }
+  }
+  &_tree-block{
+    a{
+      color: #567C8B;
+      text-decoration: underline;
+    }
+    background: #F4F5F6;
+    .section-album__entered{
+      max-width: 850px;
+    }
+    .section-album__title{
+      @include tablet{
+        font-size: 40px;
+      }
     }
   }
 }
