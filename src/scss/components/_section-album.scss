@@ -171,5 +171,8 @@
   .link{
     color: #567C8B;
     text-decoration: underline;
+    &:hover{
+      text-decoration: none;
+    }
   }
 }
