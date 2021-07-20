@@ -66,21 +66,19 @@ images.forEach(img => {
     const outputWebpMin = dirname +'/'+'min-'+ filename +  '.webp'; 
   
 
-    if((ext=='.jpg'||ext=='.jpeg'||ext=='.png'||ext=='.gif')&&!filename.includes('min-')&&!filename.includes('480-')&&!filename.includes('376-')){
+    if((ext=='.jpg'||ext=='.jpeg'||ext=='.png'||ext=='.gif')&&!filename.includes('min-')&&!filename.includes('-480')&&!filename.includes('-376')){
         
          
         const oldSize = sizeOf(img).width;
         
- 
-        // console.log (img +  ' file '+current+' from '+max+' change width from: ',chalk.blue(oldSize+'px'),'to', chalk.green(newSize+'px'));
-       
-     sharp(img)
-     .resize(newSize)
-     .toFile(outputMin, (err,info)=>{
-        if(err){
-            console.log(chalk.red(err));
-        } 
-    });    
+  
+    //  sharp(img)
+    //  .resize(newSize)
+    //  .toFile(outputMin, (err,info)=>{
+    //     if(err){
+    //         console.log(chalk.red(err));
+    //     } 
+    // });    
     sharp(img).webp().toFile(outputWebp, (err,info)=>{
         if(err){
             console.log(chalk.red(err));
@@ -96,28 +94,28 @@ images.forEach(img => {
         //sizes in pixel
      const inpixel=  (size)=>{
         if(oldSize>size-1){
-            sharp(img).webp().resize(size).toFile(dirname +'/'+size+'-'+ filename +  '.webp', (err,info)=>{
+            sharp(img).webp().resize(size).toFile(dirname +'/'+ filename +'-'+size+  '.webp', (err,info)=>{
            if(err){
                console.log(chalk.red(err));
            }  
         });  
    
-            sharp(img).resize(size).toFile(dirname +'/'+size+'-'+ filename + ext, (err,info)=>{
-           if(err){
-               console.log(chalk.red(err));
-           }  
-        });  
+        //     sharp(img).resize(size).toFile(dirname +'/'+size+'-'+ filename + ext, (err,info)=>{
+        //    if(err){
+        //        console.log(chalk.red(err));
+        //    }  
+        // });  
        } else {
-           sharp(img).webp().resize(oldSize).toFile(dirname +'/'+size+'-'+ filename +  '.webp', (err,info)=>{
+           sharp(img).webp().resize(oldSize).toFile(dirname +'/'+ filename + '-'+size+ '.webp', (err,info)=>{
                if(err){
                    console.log(chalk.red(err));
                } 
             });
-            sharp(img).resize(oldSize).toFile(dirname +'/'+size+'-'+ filename + ext, (err,info)=>{
-               if(err){
-                   console.log(chalk.red(err));
-               }  
-            });  
+            // sharp(img).resize(oldSize).toFile(dirname +'/'+size+'-'+ filename + ext, (err,info)=>{
+            //    if(err){
+            //        console.log(chalk.red(err));
+            //    }  
+            // });  
             if(size <480){
                 console.log(chalk.red(`image smaller then ${size}!!!`+'   __'+img));
             }
