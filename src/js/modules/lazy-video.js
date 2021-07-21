@@ -7,5 +7,5 @@ setTimeout(() => {
         videoPreloader.style.opacity=0;
       }, 300);   
     }
-   }, 1); 
-   baseDelay2
+   }, baseDelay2); 
+   
