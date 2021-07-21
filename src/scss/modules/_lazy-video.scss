@@ -1,0 +1,27 @@
+.lazy-video{
+    position: relative;
+height: 0;
+padding-bottom: calc(360% / 660 *100); 
+    &__preloader{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        transition:0.3s;
+    } 
+    &__item{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        iframe{
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
