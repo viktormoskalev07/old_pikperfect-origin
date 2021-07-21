@@ -1,6 +1,6 @@
 const newSize = 5 ; 
 const baseFolder = './dist/images/towebp'; 
- const maxsize = 200;
+ const maxsize = 400;
 
 
 const fs = require('fs');
