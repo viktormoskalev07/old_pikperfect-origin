@@ -1,0 +1,82 @@
+.section-photobooks{
+  padding: 64px 15px;
+  &__wrap{
+    max-width: 1256px;
+    margin: 0 auto;
+    padding: 0 20px;
+    @include desktop-md{
+      display: flex;
+    }
+  }
+  &__title{
+    font-size: 24px;
+    text-align: center;
+    font-weight: 600;
+    @include tablet{
+      text-align: left;
+    }
+  }
+  &__sidebar{
+    @include desktop-md{
+      width: 290px;
+      margin-right: 40px;
+    }
+  }
+  &__list{
+    display: flex;
+    @include desktop-md{
+      display: block;
+    }
+  }
+  &__item{
+    a{
+      display: block;
+      font-size: 14px;
+      color: #2E3031;
+      &:hover{
+        color: #567C8B;
+      }
+      @include tablet{
+        font-size: 18px;
+        padding: 16px 0;
+      }
+    }
+  }
+  &__blocks{
+    @include mobile-lg{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    @include desktop-md{
+      width: calc( 100% - 290px);
+    }
+  }
+  &__block{
+    text-align: center;
+    font-size: 18px;
+    &:hover{
+      .section-photobooks__name-album{
+        color: #567C8B;
+      }
+    }
+    @include mobile-lg{
+      width: 48%;      
+    }
+    @include tablet{
+      text-align: left;
+    }
+    @include tabtoslide{
+      width: 31%;
+    }
+  }
+  &__name-album{
+    font-weight: 600;
+    font-size: 18px;
+    font-family: "Open Sans";
+    margin-bottom: 0;
+  }
+  &__price{
+    color: #2e3031;
+  }
+}

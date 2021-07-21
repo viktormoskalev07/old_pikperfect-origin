@@ -1,5 +1,4 @@
 .section-album{
-  
   padding: 48px 15px 64px;  
   @include tablet{
     padding: 127px 15px 112px;
@@ -56,7 +55,7 @@
     margin: 0 auto;
     margin-bottom: 16px;
     @include tablet{
-      margin-bottom: 47px;
+      margin-bottom: 45px;
     }
   }
   &__name-title{
@@ -121,6 +120,14 @@
       display: none;
     }
   }
+  &_size{
+    @include tablet{
+      padding: 125px 3px 112px;
+    }
+    .section-album__entered{
+      max-width: 700px;
+    }
+  }
   &_size-t{
     @include tablet{
       padding: 0px 15px 112px;
@@ -137,7 +144,7 @@
     font-weight: 600;
     @include tablet{
       margin-top: 32px;
-      margin-bottom: 10px;
+      margin-bottom: 4px;
       font-size: 32px;
     }
     span{
@@ -147,7 +154,7 @@
       font-size: 20px;
       font-style: italic;
       @include tablet{
-        margin-top: 20px;
+        margin-top: 13px;
         font-size: 24px;
       }
     }
@@ -159,14 +166,38 @@
   }
   &_tree-block{
     background: #F4F5F6;
+    @include tablet{
+      padding: 127px 15px 80px;
+    }
     .section-album__entered{
       max-width: 850px;
+      margin-bottom: 32px;
+      @include tablet{
+        margin-bottom: 26px;
+      }
+    }
+    .section-album__block{
+      margin-bottom: 24px;
     }
     .section-album__title{
       @include tablet{
         font-size: 40px;
+        margin-bottom: 13px;
       }
     }
+    .section-album__name-album {
+      margin-bottom: 0px;
+      @include  tablet{
+        margin-bottom: 4px;
+      }
+      span{
+        margin-top: 5px;
+        @include tablet{
+          margin-top: 13px;
+        }
+      }
+    }
+    
   }
   .link{
     color: #567C8B;
