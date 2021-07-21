@@ -84,8 +84,6 @@ function promobar (){
  
   // promobar(); 
 // promobar
-
-
  
 
 @@include('modules/imgpreloader.js')

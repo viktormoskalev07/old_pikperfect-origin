@@ -1178,25 +1178,62 @@ label {
 	}
 
 	.header .menu-btn {
-		margin-top: -0.1rem;
-		margin-right: 0.1rem;
+		// margin-top: -0.1rem;
+		// margin-right: 0.1rem;
+		// display: block;
+		// background-image: url(../images/hamburger.svg);
+		// width: 1.6rem;
+		// height: 1.6rem;
+		// background-repeat: no-repeat;
+		// background-size: contain;
+		// background-position: center;
+	}
+	// .header.menu-open .menu-btn {
+	// 	background-image: url(../images/icon-close.svg);
+	// }
+	.header .menu-btn{
 		display: block;
-		background-image: url(../images/hamburger.svg);
-		width: 1.6rem;
-		height: 1.6rem;
-		background-repeat: no-repeat;
-		background-size: contain;
-		background-position: center;
+		border: 0px;
+		background: transparent;
+		padding: 10px;
+		span{
+			position: relative;
+		}
+		span, span::after, span::before{
+			width: 23px;
+			height: 2px;
+			background: #000;
+			display: block;
+			
+		}
+		span::after, span::before{
+			position: absolute;
+			content: "";
+			transition: .3s;
+		}
+		span::after{
+			top: -7px;
+		}
+		span::before{
+			top: 7px;
+		}
 	}
-
-	.header.menu-open .menu-btn {
-		background-image: url(../images/icon-close.svg);
-	}
-
 	.header.menu-open {
 		background-color: #FFFFFF;
+		.menu-btn {
+			span{
+				height: 0;
+			}
+			span::after{
+				top: 0;
+				transform: rotate(135deg);
+			}
+			span::before{
+				top: 0;
+				transform: rotate(-135deg);
+			}
+		}
 	}
-
 	.header .header-nav {
 		margin: 0;
 		padding: 1.4rem 1rem;
@@ -1554,4 +1591,7 @@ label {
 
 .m-0{
 	margin: 0;
+}
+.m-auto{
+	margin: 0 auto;	
 }
