@@ -142,23 +142,52 @@
 			border: 0.5px solid #575D61;
 		}
 	}
+	&__image-col{
+		width: 100%;
+		@include desktop-sm{
+			width: 62%;
+		} 
+		figure{
+			padding-bottom: calc(278% / 360 * 100);
+			@include desktop-sm{
+				padding-bottom: calc(630% / 880 * 100);
+			}		
+			@include wide-screen-sm{
+				padding-bottom: calc(505% / 880 * 100);
+			}		
+		}
+	}
 	&__image-left{
 		width: 100%;
 		margin: 0;
 		padding: 0;
 	}
+	&__image-right{
+		@include desktop-sm{
+			.section-hero__image-col{
+				width: 60%;
+				order: 1;
+			}
+			.section-hero__content-col{
+				width: 40%;
+			}
+		}
+		figure{
+			padding-bottom: calc(278% / 360 * 100);
+			@include desktop-sm{
+				padding-bottom: calc(670% / 880 * 100);
+			}		
+			@include wide-screen-sm{
+				padding-bottom: calc(583% / 880 * 100);
+			}		
+		}
+	}
 	&__wrap-flex{
-		@include tabtoslide{
+		@include desktop-sm{
 			display: flex;
 			align-content: center;
 		}
 		
-	}
-	&__image-col{
-		width: 100%;
-		@include tabtoslide{
-			width: 60%;
-		}
 	}
 	&__bg{
 		position: absolute;
@@ -188,7 +217,7 @@
 			height: 130px;
 			width: 175px;
 		}
-		@media screen and(min-width: 1200px) {
+		@include desktop-sm{
 			z-index: -1;
 		}
 		@media screen and(min-width: 1400px) {
@@ -211,7 +240,7 @@
 		}
 	}
 	&__content-col{
-		padding: 32px 15px 45px;
+		padding: 32px 15px 52px;
 		position: relative;
 		width: 100%;
 		background-color: rgba($color: #7A8A6A, $alpha: .15);		
@@ -261,20 +290,20 @@
 		@include tablet{
 			padding: 80px 0;
 		}
-		@include tabtoslide{
-			width: 40%;
+		@include desktop-sm{
+			width: 38%;
 			padding: 0 5%;
 		}
 		.button{
 			max-width: 210px;
 			margin: 0 auto;
-			margin-bottom: 10px;
+			margin-bottom: 6px;
 			@include tablet{
 				margin-bottom: 24px;
 			}
 		}
 		h1{
-			margin-bottom: 5px;
+			margin-bottom: 10px;
 		}
 		p{
 			margin-bottom: 32px;

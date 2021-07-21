@@ -67,6 +67,11 @@
               background: #FBB695;
        }
        &__gray-dark{
-              background: #567C8B;
+              background: transparent;
+              border: 1px solid #fff;
+              &:hover{
+                     background: #567C8B;
+                     color: #fff;
+              }
        }
 }

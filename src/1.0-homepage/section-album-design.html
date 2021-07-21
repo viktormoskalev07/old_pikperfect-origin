@@ -1,70 +1,54 @@
-<section class="section-album section-album_size-t">
+<section class="section-album section-album_tree-block">
   <div class="section-album__container">
     <h2 class="section-album__title">
-      Family Yearbook Ideas
+      Photo Albums & Books
     </h2>
     <p class="section-album__entered">
-      Browse though some of our most popular family photo book design styles. <br> Or work with our design team to create one that is entirely unique to your style.
+      From Photobooks to Premium Layflat Albums, our range of albums are suited for any occasion or budget. <br> Learn more about the <a class="link" href="#">differences between a photo book and a photo album</a>.
     </p>
-    <div class="swiper-container swiperalbum ">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          @@include('../i/resp-img2.html',{
-            src:'album_2021_adventures',
-            type:'png', 
-            alt:'album 2021 adventures', 
-            priority:'1',
-            width:'330',
-            height:'330',
-            folder:'2.4_family_photo_albums',
-          })
-          <h3 class="section-album__name-title">2021 Adventures
-          <span>Family Album</span></h3>
-        </div>
-        <div class="swiper-slide">
-          @@include('../i/resp-img2.html',{
-            src:'album_life_in_pictures',
-            type:'png', 
-            alt:'album life in pictures', 
-            priority:'2',
-            width:'330',
-            height:'330', 
-            folder:'2.4_family_photo_albums',
-          })
-          <h3 class="section-album__name-title">Life in Pictures
-            <span>Family Album</span></h3>
-        </div> 
-        <div class="swiper-slide">
-          @@include('../i/resp-img2.html',{
-            src:'album_love_joy_2020',
-            type:'png', 
-            alt:'album love joy 2020', 
-            priority:'2',
-            width:'330',
-            height:'330',
-            folder:'2.4_family_photo_albums',
-          })
-          <h3 class="section-album__name-title">Love & Joy 2020
-            <span>Family Album</span></h3>
-        </div>
-        <div class="swiper-slide">
-          @@include('../i/resp-img2.html',{
-            src:'album_hello_adventure',
-            type:'png', 
-            alt:'album hello adventure', 
-            priority:'2',
-            width:'330',
-            height:'330',
-            folder:'2.4_family_photo_albums',
-          })
-          <h3 class="section-album__name-title">Hello, Adventures!
-            <span>Family Album</span></h3>
-        </div>        
-      </div>
-      <div class="swiper-pagination swiperalbum-pagination"></div>
-    </div>
-    <div class="section-album__button">
-      <a href="#" class="button button__gray">view more</a>
+    <div class="section-album__wrap">
+      <a href="#" class="section-album__block">
+        @@include('../i/resp-img2.html',{
+          src:'pikPerfect-premium-albums',
+          type:'png', 
+          alt:'White wedding album with presentation box', 
+          priority:'1',
+          width:'330',
+          height:'288',
+          folder:'1.0-homepage',
+        })
+        <h3 class="section-album__name-album">Premium Albums
+        <span>The Luxury Option</span></h3>
+        <p class="section-album__price">From $299</p>
+      </a>
+      <a href="#" class="section-album__block">
+        @@include('../i/resp-img2.html',{
+          src:'pikperfect-photo-albums',
+          type:'png', 
+          alt:'A blue linen layflat photo album', 
+          priority:'2',
+          width:'330',
+          height:'288', 
+          folder:'1.0-homepage',
+        })
+        <h3 class="section-album__name-album">Layflat Photo Albums
+          <span>The Bestseller</span></h3>
+          <p class="section-album__price">From $149</p>
+      </a> 
+      <a href="#" class="section-album__block">
+        @@include('../i/resp-img2.html',{
+          src:'pikperfect-photobooks',
+          type:'png', 
+          alt:'Professional photo book examples', 
+          priority:'2',
+          width:'330',
+          height:'288',
+          folder:'1.0-homepage',
+        })
+        <h3 class="section-album__name-album">Photo Books
+          <span>The Everyday Classic</span></h3>
+          <p class="section-album__price">From $69</p>
+        </a>       
     </div>
   </div> 
 </section>

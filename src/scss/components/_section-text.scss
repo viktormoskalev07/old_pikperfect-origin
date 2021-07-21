@@ -34,4 +34,17 @@
       color: #567c8b;
     }
   }
+  &_entered{    
+    @include desktop-md{
+      padding: 70px 23px 50px;
+    }
+    .section-text__container{
+      max-width: 1000px;
+    }
+    .section-text__content{
+      @include tablet{
+        font-size: 18px;
+      }
+    }
+  }
 }

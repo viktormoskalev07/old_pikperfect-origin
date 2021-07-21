@@ -1,9 +1,12 @@
 .section-book{
   background-color: #F4F5F6;
-  padding: 48px 15px 64px;
+  padding: 48px 15px 13px;
   
   @include tablet{
-    padding: 112px 15px 112px;
+    padding: 118px 15px 107px;
+  }
+  &_mb{
+    margin-bottom: 32px;
   }
   &__container{
     max-width: 1376px;
@@ -25,10 +28,8 @@
   }
   &__text{
     text-align: center;
-    font-size: 16px;
-    @include tablet{
-      font-size: 18px;
-    }
+    font-size: 18px;
+    padding: 0 12px;
   }
   &__img{
     position: relative;
@@ -41,7 +42,10 @@
     justify-content: center;
     flex-wrap: wrap;
     &_more{
-      margin-top: 55px;
+      margin-top: 39px;
+      @include tablet{
+        margin-top: 45px;
+      }      
     }
   }
   &__name-box{

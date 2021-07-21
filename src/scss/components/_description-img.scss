@@ -160,4 +160,25 @@
       } 
     }
   }
+  &_half{
+    .description-img__img{
+      @include desktop-sm{
+        width: 49%;
+      }
+    }
+    .description-img__content{
+      @include desktop-sm{
+        padding: 70px 8.5%;
+        width: 51%;
+        p{
+          font-size: 18px;
+        }
+      }
+    }
+    .description-img__buttons{
+      @include tablet{
+        margin-top: 70px;
+      }
+    }
+  }
 }
