@@ -73,25 +73,25 @@ var swiper = new Swiper(".section-reviews__swiper", {
  
 
 
-  function videoInSlider(){
-
+  function videoInSlider(){ 
     const videoSlide = document.querySelector('.hero-video-slide'); 
     const videoPreloader = document.querySelector('.hero-video-slide__preloader'); 
     const video=document.getElementById('hero-video'); 
     let checkVideo =1 ;
   function call (){ 
-    if (checkVideo&&videoSlide){ 
-      if( videoSlide.matches('.swiper-slide-active')){ 
-                    
-                    video.src=video.dataset.src; 
-                    checkVideo=0;
-                    setTimeout(() => {
-                      videoPreloader.style.opacity=0;
-                    }, 300); 
-                    observer.disconnect();
-      } 
-  }  
+        if (checkVideo&&videoSlide){ 
+          if( videoSlide.matches('.swiper-slide-active')){ 
+                        
+                        video.src=video.dataset.src; 
+                        checkVideo=0;
+                        setTimeout(() => {
+                          videoPreloader.style.opacity=0;
+                        }, 300); 
+                        observer.disconnect();
+          } 
+      }  
   }
+
   const observer = new MutationObserver(call)  
   observer.observe(videoSlide, {
     childList:false,
@@ -99,6 +99,7 @@ var swiper = new Swiper(".section-reviews__swiper", {
     characterData:false,
     attributeFilter:['class']
   })
+
      setTimeout(() => {
        if(checkVideo){
         video.src=video.dataset.src; 
@@ -113,8 +114,7 @@ var swiper = new Swiper(".section-reviews__swiper", {
 
 
  
-if (document.querySelector('.section-hero__tab-activators')){
- 
+if (document.querySelector('.section-hero__tab-activators')){ 
   var swiperTabsControl = new Swiper(".section-hero__tab-activators", {  
     slidesPerView: 6,
     direction:'vertical',
@@ -123,19 +123,17 @@ if (document.querySelector('.section-hero__tab-activators')){
     allowTouchMove:false, 
     touchStartForcePreventDefault:true,
   });
- 
-
-
-var swiperTabs = new Swiper(".section-hero__swiper", { 
-    pagination: {
-      el: ".section-hero__swiper-pagination",
-      clickable: true
-    } ,  
-    thumbs: {
-      swiper: swiperTabsControl
-    } 
-  });     
-  videoInSlider(); 
+  
+  var swiperTabs = new Swiper(".section-hero__swiper", { 
+      pagination: {
+        el: ".section-hero__swiper-pagination",
+        clickable: true
+      } ,  
+      thumbs: {
+        swiper: swiperTabsControl
+      } 
+    });     
+    videoInSlider(); 
 }
 
 
