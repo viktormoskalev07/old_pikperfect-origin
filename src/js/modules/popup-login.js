@@ -70,6 +70,28 @@ const popupLogin = (hasLogin) => {
 
 // forgot modal handler
 const popupForgot = () => {
+  const forgotForm = document.querySelector('.popup-forgot__form')
+
+  // show caption on submit form
+  forgotForm.addEventListener('submit', (e) => {
+    const forgotSuccess = document.querySelector('.popup-forgot__success')
+    const forgotEmail = document.querySelector('.popup-forgot__input input[type="email"]')
+
+    e.preventDefault()
+    forgotSuccess.classList.add('show')
+    forgotEmail.value = '';
+
+    setTimeout(() => {
+    forgotSuccess.classList.add('showing')
+    }, 0);
+    setTimeout(() => {
+    forgotSuccess.classList.remove('showing')
+    }, 3500);
+    setTimeout(() => {
+      forgotSuccess.classList.remove('show')
+    }, 4000);
+  })
+
   const closeModal = () => {
     body.style.overflow = "";
     parentForgot.classList.remove("active");

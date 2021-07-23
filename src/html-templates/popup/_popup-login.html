@@ -3,7 +3,9 @@
 
   <div class="popup__body">
     <h1>sdasd</h1>
-    <button class="popup__close close-login">&times;</button>
+    <button class="popup__close close-login">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><defs><style>.a,.b{fill:none;}.b{stroke:#2f353a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><rect class="a" width="24" height="24"/><g transform="translate(-0.662 -0.662)"><line class="b" x1="14" y2="14" transform="translate(5.662 5.662)"/><line class="b" x2="14" y2="14" transform="translate(5.662 5.662)"/></g></svg>
+    </button>
 
     <div class="popup-login__tab">
       <div class="popup-login__tab-bar">
@@ -23,8 +25,32 @@
   <div class="popup__overlay"></div>
 
   <div class="popup__body">
-    <button class="popup__close close-forgot">&times;</button>
+    <button class="popup__close close-forgot">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><defs><style>.a,.b{fill:none;}.b{stroke:#2f353a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><rect class="a" width="24" height="24"/><g transform="translate(-0.662 -0.662)"><line class="b" x1="14" y2="14" transform="translate(5.662 5.662)"/><line class="b" x2="14" y2="14" transform="translate(5.662 5.662)"/></g></svg>
+    </button>
 
-    <h1>forgot pass</h1>
+    <h2 class="popup__title">Forgot Password</h2>
+    <p class="popup__caption">Please enter an email address you signed up with.</p>
+
+    <form class=" popup-forgot__form" action="#" method="#">
+      <div class=" popup-forgot__input">
+        <label for="email">Email*</label>
+        <input type="email" name="email" placeholder="Enter Email" required>
+      </div>
+
+      <button class="popup-forgot__submit" type="submit">Submit</button>
+    </form>
+
+    <div class="popup-forgot__success">
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="border-radius: 50%;" viewBox="0 0 24 24">
+          <rect style="fill:#2DA148;" width="24" height="24"/><path style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;" d="M20,6,9,17,4,12" transform="translate(0.5 0.5)"/>
+        </svg>
+      </div>
+      <div class="popup-forgot__success-caption">
+        <p>E-mail successfully sent.</p>
+        <span>We have sent a recovery link to your e-mail address.</span>
+      </div>
+    </div>
   </div>
 </div>
