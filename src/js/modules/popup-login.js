@@ -3,6 +3,7 @@ const parentForgot = document.querySelector(".popup-forgot");
 const overlay = document.querySelectorAll(".popup__overlay");
 const closeLogin = document.querySelector(".close-login");
 const closeForgot = document.querySelector(".close-forgot");
+const showHidePasswordBtns = document.querySelectorAll('.show-hide-password')
 
 const loginBtn = '[data-for-tab="login"]',
       loginContent = '[data-tab="login"]',
@@ -16,8 +17,29 @@ const openModal = (elem) => {
   elem.classList.add("active");
 };
 
+// change password visibility
+const showHidePassword = () => {
+  showHidePasswordBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      let input = btn.parentElement.firstElementChild;
+      if (input.type === 'password') {
+        input.type = 'text'
+
+        setTimeout(() => {
+          input.type = 'password'
+        }, 5000);
+      } else {
+        input.type = 'password'
+      }
+    })
+  })
+}
+showHidePassword()
+
+
 // login modal handler
 const popupLogin = (hasLogin) => {
+  const loginTitle = document.querySelector('.popup-login__title')
 
   const tabAddActive = (btn, content) => {
     document.querySelector(btn).classList.add("active");
@@ -38,20 +60,24 @@ const popupLogin = (hasLogin) => {
   // checking if popupLogin parameter true/false
   if (hasLogin === false) {
     tabAddActive(registerBtn, registerContent);
+    loginTitle.innerHTML = 'Register'
   } else if (hasLogin === true) {
     tabAddActive(loginBtn, loginContent);
+    loginTitle.innerHTML = 'Login'
   }
 
   // click on register btn in tab
   document.querySelector(registerBtn).addEventListener("click", () => {
     tabAddActive(registerBtn, registerContent);
     tabRemoveActive(loginBtn, loginContent);
+    loginTitle.innerHTML = 'Register';
   });
 
   // click on login btn in tab
   document.querySelector(loginBtn).addEventListener("click", () => {
     tabRemoveActive(registerBtn, registerContent);
     tabAddActive(loginBtn, loginContent);
+    loginTitle.innerHTML = 'Login'
   });
 
   // closing listeners
@@ -68,9 +94,10 @@ const popupLogin = (hasLogin) => {
   openModal(parentLogin);
 };
 
+
 // forgot modal handler
 const popupForgot = () => {
-  const forgotForm = document.querySelector('.popup-forgot__form')
+  const forgotForm = document.querySelector('.popup-forgot__form');
 
   // show caption on submit form
   forgotForm.addEventListener('submit', (e) => {
@@ -108,3 +135,5 @@ const popupForgot = () => {
   }, 0);
 };
 
+
+// popupLogin(hasLogin = true)
