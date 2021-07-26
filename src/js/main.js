@@ -1,4 +1,5 @@
 const header = document.querySelector(".header");
+const body = document.querySelector("body");
 let scrollPos = 0;
 window.addEventListener("load", function () {
   window.addEventListener("scroll", function () {
@@ -16,7 +17,7 @@ window.addEventListener("load", function () {
       header.classList.remove("header-shadow"); 
     }
   });
-  body = document.body;
+  // body = document.body;
   html = document.querySelector("html");
   openedNav = document.querySelector(".nav-wrap");
   headerNav = document.querySelector(".header-nav");
@@ -89,3 +90,5 @@ function promobar (){
 @@include('modules/imgpreloader.js')
 @@include('modules/accordion.js') 
 @@include('modules/popup-mobile.js')
+@@include('modules/popup-login.js')
+@@include('modules/card-filter.js')

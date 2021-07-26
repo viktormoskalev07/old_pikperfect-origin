@@ -1,0 +1,61 @@
+<section class="section-photobooks">
+  <div class="section-photobooks__wrap">
+    <div class="section-photobooks__sidebar">
+      <h3 class="section-photobooks__title--radio">By occasion</h3>
+
+        <div class="photobook__radio__container">
+      @@loop('photobooks/radio.html', [ 
+      { type:"Wedding" }, 
+      { type:"Baby" },
+      { type:"Family" },
+      { type:"Travel" },
+      { type:"Other" }, 
+      ]) 
+      
+<label class='photobook__radio__label' for="radioAll"> 
+  <input class='photobook__radio__input' checked type="radio" id="radioAll" name="bookshort" value="All"> 
+  <span class='photobook__radio__checker'></span> 
+  <span class='photobook__radio__text'>  
+All
+</span> 
+</label>
+        </div>
+
+
+ 
+    </div>
+    <style>
+      .light-italic {
+        font-weight: 300;
+        font-style: italic;
+      }
+
+      .cursor-pointer {
+        cursor: pointer;
+      }
+    </style>
+    <div class="section-photobooks__blocks">
+
+
+      @@loop('photobooks/card.html', [
+      { type:"Travel" ,},
+      { type:"Wedding" },
+      { type:"Wedding" },
+      { type:"Wedding" },
+      { type:"Wedding" },
+      { type:"Travel" },
+      { type:"Family" },
+      { type:"Wedding" },
+      { type:"Wedding" },
+      { type:"Wedding" },
+      { type:"Wedding" },
+      { type:"Wedding" },
+      { type:"Wedding" },
+      { type:"Wedding" },
+      { type:"Wedding" },
+      { type:"Wedding" },
+      ])
+
+    </div>
+  </div>
+</section>

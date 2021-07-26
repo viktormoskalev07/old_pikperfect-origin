@@ -1,13 +1,12 @@
-  <!doctype html>
+<!doctype html>
 <html lang="en">
 
 <head>
 	<meta charset="utf-8">
 	<meta name="description"
-		content="With thick layflat pages and gorgeous album covers, PikPerfect's flush mount photo albums are designed to honor your most important milestones.">
-	<meta name="keywords" content="layflat wedding album, layflat photo book, layflat album">
+		content="Create professional photo books and photo albums online. Work with our design specialist to craft a photo album you'll cherish for life."> 
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-	<title>Flush Mount Albums | Premium Photo Books | PikPerfect</title>  
+	<title>Professional Photo Albums & Photobooks | PikPerfect</title>  
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="icon" href=" https://www.pikperfect.com/blog/wp-content/uploads/2019/04/favicon.ico " sizes="32x32">
 	<style>
@@ -87,9 +86,12 @@
         </li>
         <li><a href="https://www.pikperfect.com/album-design-service">design service</a></li>
         <li><a style='color:blue' href="./1.0-homepage.html">1.0</a></li>
+<li><a style='color:rgb(206, 76, 53)' href="./1.0-jq.html">1.0 jquery test</a></li>
 <li><a style='color:blue' href="./2.0a-photo-books.html">2.0a</a></li>
+<li><a style='color:blue' href="./2.0b-memory-books.html">2.0b</a></li>
+<li><a style='color:green' href="./2.1-premium-layflat-albums.html">2.1</a></li>
 <li><a style='color:green' href="./2.2-layflat-photo-albums.html">2.2</a></li>
-<li><a style='color:green' href="./2.3-custom-photo-books.html">2.3</a></li>
+<li><a style='color:green' href="./2.3-custom-photo-books.html">2.3</a></li> 
 <li><a style='color:blue' href="./2.4-family-photo-albums.html">2.4</a></li>
 <li><a style='color:blue' href="./2.5-travel-photo-books.html">2.5</a></li>
 <li><a style='color:green' href="./2.6-baby-photo-books.html">2.6</a></li>
@@ -98,6 +100,7 @@
 <li><a style='color:green' href="./3.1-premium-layflat-wedding-albums.html">3.1</a></li>
 <li><a style='color:green' href="./3.2-layflat-wedding-photo-albums.html">3.2</a></li>
 <li><a style='color:green' href="./3.3-wedding-photo-books.html">3.3</a></li>
+<li><a style='color:red' href="./8.0-photobook-sample-gallery.html">8.1</a></li>
  
 
       </ul>
@@ -173,11 +176,12 @@
         </div>
       </div>
       <div class="user-nav">
+
         <div class="dropdown dropdown-login">
-            <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="btn dropdown-toggle" onclick="popupLogin(hasLogin = true)" role="button" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <img loading="lazy" src="images/icon-user.svg" alt="icon-user" width="24" height="24">
             </a>
-            <div class="dropdown-menu" id='dropdownMenu2' aria-labelledby="dropdownMenuLink2" style="">
+            <div class="dropdown-menu" id='dropdownMenu2' aria-labelledby="dropdownMenuLink2">
                 <h4>Login</h4>
                 <form action="#">
                     <div class="form-group">
@@ -190,19 +194,20 @@
                             <input type="password" class="form-control" name="password" autocomplete="on" id="user-password">
                             <span><i class="far fa-eye-slash"></i></span>
                         </div>
-                        <a href="#" class="link-underline">Forgot password?</a>
+                        <a onclick="popupForgot()" class="link-underline">Forgot password?</a>
                     </div>
                     <button type="submit" class="btn btn-blue btn-block">login</button>
-                    <a href="#" class="link-underline text-center">New Customer? Register now</a>
+                    <a onclick="popupLogin(hasLogin = false)" class="link-underline text-center">New Customer? Register now</a>
                 </form>
             </div>
         </div>
+
         <div class="dropdown dropdown-lang">
             <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <img loading="lazy" src="images/icon-english.svg" alt="icon-english" width="18" height="18">
                 English
             </a>
-            <div class="dropdown-menu" id='dropdownMenu3' aria-labelledby="dropdownMenuLink3" style="">
+            <div class="dropdown-menu" id='dropdownMenu3' aria-labelledby="dropdownMenuLink3">
                 <div class="countries">
                     <h6 class="h6">Country</h6>
                     <ul>
@@ -263,155 +268,285 @@
 </header>
 
 <main class="main-content"> 
-  <section class="section-hero">
-    <div class="container">
-        <div class="section-hero__grid">
-        <div class="section-hero__left">
-    <div thumbsSlider="" class="swiper-container section-hero__tab-activators">    
-  <div class="swiper-wrapper">   
-    <div class="swiper-slide hero-tab-activator__js section-hero__tab-activator">
-       <figure style='padding-bottom: calc(90% / 90 * 100)' class='figure-webp  '>
-    <picture data-priority="0" class="picture-webp toggle-img--js">
-        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/min-premium-photo-album-covers.webp" data-img="images/towebp/premium-photo-album-covers-376.webp"  type="image/webp"> 
-        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/min-premium-photo-album-covers.webp" data-img="images/towebp/premium-photo-album-covers-480.webp"  type="image/webp"> 
-        <source class="webp-img" srcset="images/towebp/min-premium-photo-album-covers.webp" data-img="images/towebp/premium-photo-album-covers.webp" type="image/webp"> 
-        <img loading="lazy" class="nowebp-img" src="images/towebp/premium-photo-album-covers.jpg" alt="Premium photo book cover examples">
-      </picture>   
- </figure>
- 
- 
- 
+<section class="section-hero__image-right">
+  <div class="section-hero__wrap-flex">
+    <div class="section-hero__image-col px-0"> 
+      <figure class="figure-webp"> 
+        <picture  data-priority="0" class="picture-webp toggle-img--js">
+  <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/1.0-homepage/min-professional-photo-albums.webp" data-img="images/towebp/1.0-homepage/professional-photo-albums-376.webp" type="image/webp">  
+  <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/1.0-homepage/min-professional-photo-albums.webp" data-img="images/towebp/1.0-homepage/professional-photo-albums-480.webp" type="image/webp">  
+  <source class="webp-img" srcset="images/towebp/1.0-homepage/min-professional-photo-albums.webp" data-img="images/towebp/1.0-homepage/professional-photo-albums.webp" type="image/webp"> 
+  <img loading="lazy" class="nowebp-img" src="images/towebp/1.0-homepage/min-professional-photo-albums.jpg" data-img="images/towebp/1.0-homepage/professional-photo-albums.jpg" alt="Professional photo album samples on wooden table">
+</picture>   
+      </figure>       
     </div>
-    <div class="swiper-slide hero-tab-activator__js section-hero__tab-activator">
-       <figure style='padding-bottom: calc(90% / 90 * 100)' class='figure-webp  '>
-    <picture data-priority="2" class="picture-webp toggle-img--js">
-        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/min-flush-mount-album.webp" data-img="images/towebp/flush-mount-album-376.webp"  type="image/webp"> 
-        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/min-flush-mount-album.webp" data-img="images/towebp/flush-mount-album-480.webp"  type="image/webp"> 
-        <source class="webp-img" srcset="images/towebp/min-flush-mount-album.webp" data-img="images/towebp/flush-mount-album.webp" type="image/webp"> 
-        <img loading="lazy" class="nowebp-img" src="images/towebp/flush-mount-album.jpg" alt="Flush mount album laying open on box">
-      </picture>   
- </figure>
- 
- 
- 
-    </div>
-    <div class="swiper-slide hero-tab-activator__js section-hero__tab-activator">
-       <figure style='padding-bottom: calc(90% / 90 * 100)' class='figure-webp  '>
-    <picture data-priority="2" class="picture-webp toggle-img--js">
-        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/min-photo-album-thick.webp" data-img="images/towebp/photo-album-thick-376.webp"  type="image/webp"> 
-        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/min-photo-album-thick.webp" data-img="images/towebp/photo-album-thick-480.webp"  type="image/webp"> 
-        <source class="webp-img" srcset="images/towebp/min-photo-album-thick.webp" data-img="images/towebp/photo-album-thick.webp" type="image/webp"> 
-        <img loading="lazy" class="nowebp-img" src="images/towebp/photo-album-thick.jpg" alt="Close-up to show thick pages of a premium photo album">
-      </picture>   
- </figure>
- 
- 
- 
-    </div>
-    <div class="swiper-slide hero-tab-activator__js section-hero__tab-activator">
-       <figure style='padding-bottom: calc(90% / 90 * 100)' class='figure-webp  '>
-    <picture data-priority="2" class="picture-webp toggle-img--js">
-        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/min-glass-photo-album.webp" data-img="images/towebp/glass-photo-album-376.webp"  type="image/webp"> 
-        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/min-glass-photo-album.webp" data-img="images/towebp/glass-photo-album-480.webp"  type="image/webp"> 
-        <source class="webp-img" srcset="images/towebp/min-glass-photo-album.webp" data-img="images/towebp/glass-photo-album.webp" type="image/webp"> 
-        <img loading="lazy" class="nowebp-img" src="images/towebp/glass-photo-album.jpg" alt="Acrylic glass photo album cover">
-      </picture>   
- </figure>
- 
- 
- 
-    </div>
-    <div class="swiper-slide hero-tab-activator__js section-hero__tab-activator">
-       <figure style='padding-bottom: calc(90% / 90 * 100)' class='figure-webp  '>
-    <picture data-priority="2" class="picture-webp toggle-img--js">
-        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/min-high-end-photo-books.webp" data-img="images/towebp/high-end-photo-books-376.webp"  type="image/webp"> 
-        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/min-high-end-photo-books.webp" data-img="images/towebp/high-end-photo-books-480.webp"  type="image/webp"> 
-        <source class="webp-img" srcset="images/towebp/min-high-end-photo-books.webp" data-img="images/towebp/high-end-photo-books.webp" type="image/webp"> 
-        <img loading="lazy" class="nowebp-img" src="images/towebp/high-end-photo-books.jpg" alt="Women holding stack of high-end photo books">
-      </picture>   
- </figure>
- 
- 
- 
-    </div>
-    <div class="swiper-slide hero-tab-activator__js section-hero__tab-activator">
-      <figure style='position: relative;'>
-        <img style="width: 100%; height:auto;" src="images/hero-tab-toggle-6.png" alt="Flush Mount album example">
-        <img style='position: absolute; top:50% ; left:50%; transform: translate(-50%, -50%); pointer-events: none; ' src="images/icons/button_play.svg">
-      </figure>
+    <div class="section-hero__content-col section-hero__content-col_gray">
+      <div class="section-hero__bg">
+        <img src="./images/towebp/image_texture.jpg" alt="bg-hero">  
+      </div>      
+        <h1>Preserving Memories</h1>
+        <p>Our design specialists work with you to create a beautiful photo album, to cherish for life.</p>
+        <a href="#" class="button button__gray-dark">start now</a>
+        <p class="small">No advance payment required</p>
+      </div>      
+  </div>
+</section>
+<section class="section-logos section-logos_white">
+  <div class="section-logos__container">
+    <div class="section-logos__wrap">
+      <p>As featured in</p>
+      <div class="section-logos__img">
+        <img src="./images/logo_cosmopolitan.svg" alt="logo_cosmopolitan">
+      </div>
+      <div class="section-logos__img">
+        <img src="./images/logo_brides.svg" alt="logo_brides">
+      </div>
+      <div class="section-logos__img">
+        <img src="./images/logo_the_knot.svg" alt="logo_the_knot">
+      </div>
+      <div class="section-logos__img">
+        <img src="./images/logo-woman-getting-married.png" alt="logo-woman-getting-married">
+      </div>
     </div>
   </div>
-</div>
-    <div class="swiper-container section-hero__swiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide section-hero__slide">
-                 <figure style='padding-bottom: calc(620% / 620 * 100)' class='figure-webp  '>
-    <picture data-priority="0" class="picture-webp toggle-img--js">
-        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/min-premium-photo-album-covers.webp" data-img="images/towebp/premium-photo-album-covers-376.webp"  type="image/webp"> 
-        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/min-premium-photo-album-covers.webp" data-img="images/towebp/premium-photo-album-covers-480.webp"  type="image/webp"> 
-        <source class="webp-img" srcset="images/towebp/min-premium-photo-album-covers.webp" data-img="images/towebp/premium-photo-album-covers.webp" type="image/webp"> 
-        <img loading="lazy" class="nowebp-img" src="images/towebp/premium-photo-album-covers.jpg" alt="Premium photo book cover examples">
-      </picture>   
+</section>
+<section class="section-book section-book_mb">
+  <div class="section-book__container">
+    <h2 class="section-book__title section-book__title_mb">Moments Worth Remembering</h2>
+    <p class="section-book__text">A stunning collection of professional photo albums and books to record the moments that mean the most, preserved forever.</p>
+    <div class="section-book__wrap section-book__wrap_more">
+      <a href="#" target="_blank" class="section-book__block">
+        <div class="section-book__img">
+          <div class="section-book__active">
+            <p>Learn more</p> 
+            <img src="./images/arrow-right.svg" alt="arrow-right">
+          </div>
+             
+ <figure style='padding-bottom: calc(302% / 284 * 100)' class='figure-webp  '>
+    <picture  data-priority="2" class="picture-webp toggle-img--js">
+        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/1.0-homepage/min-wedding-photo-albums.webp" data-img="images/towebp/1.0-homepage/wedding-photo-albums-376.webp" type="image/webp">  
+        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/1.0-homepage/min-wedding-photo-albums.webp" data-img="images/towebp/1.0-homepage/wedding-photo-albums-480.webp" type="image/webp">  
+        <source class="webp-img" srcset="images/towebp/1.0-homepage/min-wedding-photo-albums.webp" data-img="images/towebp/1.0-homepage/wedding-photo-albums.webp" type="image/webp"> 
+        <img loading="lazy" class="nowebp-img" src="images/towebp/1.0-homepage/min-wedding-photo-albums.png" data-img="images/towebp/1.0-homepage/wedding-photo-albums.png" alt="Wedding photo album with custom embossing title">
+      </picture>  
  </figure>
  
  
  
-            </div>
-            <div class="swiper-slide section-hero__slide">
-                 <figure style='padding-bottom: calc(620% / 620 * 100)' class='figure-webp  '>
-    <picture data-priority="2" class="picture-webp toggle-img--js">
-        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/min-flush-mount-album.webp" data-img="images/towebp/flush-mount-album-376.webp"  type="image/webp"> 
-        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/min-flush-mount-album.webp" data-img="images/towebp/flush-mount-album-480.webp"  type="image/webp"> 
-        <source class="webp-img" srcset="images/towebp/min-flush-mount-album.webp" data-img="images/towebp/flush-mount-album.webp" type="image/webp"> 
-        <img loading="lazy" class="nowebp-img" src="images/towebp/flush-mount-album.jpg" alt="Flush mount album laying open on box">
-      </picture>   
+        </div>
+        <h3 class="section-book__name-box">
+          Wedding Albums
+        </h3>
+      </a>
+      <a href="#" target="_blank" class="section-book__block">
+        <div class="section-book__img">
+          <div class="section-book__active">
+            <p>Learn more</p> 
+            <img src="./images/arrow-right.svg" alt="arrow-right">
+          </div>
+           
+ <figure style='padding-bottom: calc(302% / 284 * 100)' class='figure-webp  '>
+    <picture  data-priority="2" class="picture-webp toggle-img--js">
+        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/1.0-homepage/min-baby-photo-books.webp" data-img="images/towebp/1.0-homepage/baby-photo-books-376.webp" type="image/webp">  
+        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/1.0-homepage/min-baby-photo-books.webp" data-img="images/towebp/1.0-homepage/baby-photo-books-480.webp" type="image/webp">  
+        <source class="webp-img" srcset="images/towebp/1.0-homepage/min-baby-photo-books.webp" data-img="images/towebp/1.0-homepage/baby-photo-books.webp" type="image/webp"> 
+        <img loading="lazy" class="nowebp-img" src="images/towebp/1.0-homepage/min-baby-photo-books.jpg" data-img="images/towebp/1.0-homepage/baby-photo-books.jpg" alt="An open baby photo book">
+      </picture>  
  </figure>
  
  
  
-            </div>
-            <div class="swiper-slide section-hero__slide">
-                 <figure style='padding-bottom: calc(620% / 620 * 100)' class='figure-webp  '>
-    <picture data-priority="2" class="picture-webp toggle-img--js">
-        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/min-photo-album-thick.webp" data-img="images/towebp/photo-album-thick-376.webp"  type="image/webp"> 
-        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/min-photo-album-thick.webp" data-img="images/towebp/photo-album-thick-480.webp"  type="image/webp"> 
-        <source class="webp-img" srcset="images/towebp/min-photo-album-thick.webp" data-img="images/towebp/photo-album-thick.webp" type="image/webp"> 
-        <img loading="lazy" class="nowebp-img" src="images/towebp/photo-album-thick.jpg" alt="Close-up to show thick pages of a premium photo album">
-      </picture>   
+        </div>
+        <h3 class="section-book__name-box">
+          Baby Photo Books
+        </h3>
+      </a>
+      <a href="#" target="_blank" class="section-book__block">        
+        <div class="section-book__img">
+          <div class="section-book__active">
+            <p>Learn more</p> 
+            <img src="./images/arrow-right.svg" alt="arrow-right">
+          </div>
+           
+ <figure style='padding-bottom: calc(302% / 284 * 100)' class='figure-webp  '>
+    <picture  data-priority="2" class="picture-webp toggle-img--js">
+        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/1.0-homepage/min-family-photo-albums.webp" data-img="images/towebp/1.0-homepage/family-photo-albums-376.webp" type="image/webp">  
+        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/1.0-homepage/min-family-photo-albums.webp" data-img="images/towebp/1.0-homepage/family-photo-albums-480.webp" type="image/webp">  
+        <source class="webp-img" srcset="images/towebp/1.0-homepage/min-family-photo-albums.webp" data-img="images/towebp/1.0-homepage/family-photo-albums.webp" type="image/webp"> 
+        <img loading="lazy" class="nowebp-img" src="images/towebp/1.0-homepage/min-family-photo-albums.jpg" data-img="images/towebp/1.0-homepage/family-photo-albums.jpg" alt="Family photo album cover">
+      </picture>  
  </figure>
  
  
  
-            </div>
-            <div class="swiper-slide section-hero__slide">
-                 <figure style='padding-bottom: calc(620% / 620 * 100)' class='figure-webp  '>
-    <picture data-priority="2" class="picture-webp toggle-img--js">
-        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/min-glass-photo-album.webp" data-img="images/towebp/glass-photo-album-376.webp"  type="image/webp"> 
-        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/min-glass-photo-album.webp" data-img="images/towebp/glass-photo-album-480.webp"  type="image/webp"> 
-        <source class="webp-img" srcset="images/towebp/min-glass-photo-album.webp" data-img="images/towebp/glass-photo-album.webp" type="image/webp"> 
-        <img loading="lazy" class="nowebp-img" src="images/towebp/glass-photo-album.jpg" alt="Acrylic glass photo album cover">
-      </picture>   
+        </div>
+        <h3 class="section-book__name-box">
+          Family Photo Albums
+        </h3>
+      </a>
+      <a href="#" target="_blank" class="section-book__block">
+        <div class="section-book__img">
+          <div class="section-book__active">
+            <p>Learn more</p> 
+            <img src="./images/arrow-right.svg" alt="arrow-right">
+          </div>
+           
+ <figure style='padding-bottom: calc(302% / 284 * 100)' class='figure-webp  '>
+    <picture  data-priority="2" class="picture-webp toggle-img--js">
+        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/1.0-homepage/min-travel-photo-books.webp" data-img="images/towebp/1.0-homepage/travel-photo-books-376.webp" type="image/webp">  
+        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/1.0-homepage/min-travel-photo-books.webp" data-img="images/towebp/1.0-homepage/travel-photo-books-480.webp" type="image/webp">  
+        <source class="webp-img" srcset="images/towebp/1.0-homepage/min-travel-photo-books.webp" data-img="images/towebp/1.0-homepage/travel-photo-books.webp" type="image/webp"> 
+        <img loading="lazy" class="nowebp-img" src="images/towebp/1.0-homepage/min-travel-photo-books.jpg" data-img="images/towebp/1.0-homepage/travel-photo-books.jpg" alt="Turquoise photo book cover">
+      </picture>  
  </figure>
  
  
  
-            </div>
-            <div class="swiper-slide section-hero__slide">
-                 <figure style='padding-bottom: calc(620% / 620 * 100)' class='figure-webp  '>
-    <picture data-priority="2" class="picture-webp toggle-img--js">
-        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/min-high-end-photo-books.webp" data-img="images/towebp/high-end-photo-books-376.webp"  type="image/webp"> 
-        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/min-high-end-photo-books.webp" data-img="images/towebp/high-end-photo-books-480.webp"  type="image/webp"> 
-        <source class="webp-img" srcset="images/towebp/min-high-end-photo-books.webp" data-img="images/towebp/high-end-photo-books.webp" type="image/webp"> 
-        <img loading="lazy" class="nowebp-img" src="images/towebp/high-end-photo-books.jpg" alt="Women holding stack of high-end photo books">
-      </picture>   
+        </div>
+        <h3 class="section-book__name-box">
+          Travel Photo Books
+        </h3>
+      </a>
+    </div>
+
+    <div class="section-book__wrap section-book__wrap_more">
+      <a href="#" target="_blank" class="section-book__block">
+        <div class="section-book__img">
+          <div class="section-book__active">
+            <p>Learn more</p> 
+            <img src="./images/arrow-right.svg" alt="arrow-right">
+          </div>
+             
+ <figure style='padding-bottom: calc(302% / 284 * 100)' class='figure-webp  '>
+    <picture  data-priority="2" class="picture-webp toggle-img--js">
+        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/1.0-homepage/min-wedding-guest-books.webp" data-img="images/towebp/1.0-homepage/wedding-guest-books-376.webp" type="image/webp">  
+        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/1.0-homepage/min-wedding-guest-books.webp" data-img="images/towebp/1.0-homepage/wedding-guest-books-480.webp" type="image/webp">  
+        <source class="webp-img" srcset="images/towebp/1.0-homepage/min-wedding-guest-books.webp" data-img="images/towebp/1.0-homepage/wedding-guest-books.webp" type="image/webp"> 
+        <img loading="lazy" class="nowebp-img" src="images/towebp/1.0-homepage/min-wedding-guest-books.png" data-img="images/towebp/1.0-homepage/wedding-guest-books.png" alt="Open wedding album guest book">
+      </picture>  
  </figure>
  
  
  
-            </div>
-            <div class="swiper-slide section-hero__slide hero-video-slide">
-    <div class="hero-video-slide__preloader">
-        <svg class='hero-video-slide__preloader-svg' width="60" height="60" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" stroke="#8ba4b4">
+        </div>
+        <h3 class="section-book__name-box">
+          Wedding Guest Book
+        </h3>
+      </a>
+      <a href="#" target="_blank" class="section-book__block">
+        <div class="section-book__img">
+          <div class="section-book__active">
+            <p>Learn more</p> 
+            <img src="./images/arrow-right.svg" alt="arrow-right">
+          </div>
+           
+ <figure style='padding-bottom: calc(302% / 284 * 100)' class='figure-webp  '>
+    <picture  data-priority="2" class="picture-webp toggle-img--js">
+        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/1.0-homepage/min-engagement-photo-albums.webp" data-img="images/towebp/1.0-homepage/engagement-photo-albums-376.webp" type="image/webp">  
+        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/1.0-homepage/min-engagement-photo-albums.webp" data-img="images/towebp/1.0-homepage/engagement-photo-albums-480.webp" type="image/webp">  
+        <source class="webp-img" srcset="images/towebp/1.0-homepage/min-engagement-photo-albums.webp" data-img="images/towebp/1.0-homepage/engagement-photo-albums.webp" type="image/webp"> 
+        <img loading="lazy" class="nowebp-img" src="images/towebp/1.0-homepage/min-engagement-photo-albums.jpg" data-img="images/towebp/1.0-homepage/engagement-photo-albums.jpg" alt="Engagement photo album cover">
+      </picture>  
+ </figure>
+ 
+ 
+ 
+        </div>
+        <h3 class="section-book__name-box">
+          Engagement Albums
+        </h3>
+      </a>
+      <a href="#" target="_blank" class="section-book__block">        
+        <div class="section-book__img">
+          <div class="section-book__active">
+            <p>Learn more</p> 
+            <img src="./images/arrow-right.svg" alt="arrow-right">
+          </div>
+           
+ <figure style='padding-bottom: calc(302% / 284 * 100)' class='figure-webp  '>
+    <picture  data-priority="2" class="picture-webp toggle-img--js">
+        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/1.0-homepage/min-cookbook-photobooks.webp" data-img="images/towebp/1.0-homepage/cookbook-photobooks-376.webp" type="image/webp">  
+        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/1.0-homepage/min-cookbook-photobooks.webp" data-img="images/towebp/1.0-homepage/cookbook-photobooks-480.webp" type="image/webp">  
+        <source class="webp-img" srcset="images/towebp/1.0-homepage/min-cookbook-photobooks.webp" data-img="images/towebp/1.0-homepage/cookbook-photobooks.webp" type="image/webp"> 
+        <img loading="lazy" class="nowebp-img" src="images/towebp/1.0-homepage/min-cookbook-photobooks.jpg" data-img="images/towebp/1.0-homepage/cookbook-photobooks.jpg" alt="DIY Cookbook on kitchen counter">
+      </picture>  
+ </figure>
+ 
+ 
+ 
+        </div>
+        <h3 class="section-book__name-box">
+          Cookbooks
+        </h3>
+      </a>
+      <a href="#" target="_blank" class="section-book__block">
+        <div class="section-book__img">
+          <div class="section-book__active">
+            <p>Learn more</p> 
+            <img src="./images/arrow-right.svg" alt="arrow-right">
+          </div>
+           
+ <figure style='padding-bottom: calc(302% / 284 * 100)' class='figure-webp  '>
+    <picture  data-priority="2" class="picture-webp toggle-img--js">
+        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/1.0-homepage/min-photographer-photo-albums.webp" data-img="images/towebp/1.0-homepage/photographer-photo-albums-376.webp" type="image/webp">  
+        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/1.0-homepage/min-photographer-photo-albums.webp" data-img="images/towebp/1.0-homepage/photographer-photo-albums-480.webp" type="image/webp">  
+        <source class="webp-img" srcset="images/towebp/1.0-homepage/min-photographer-photo-albums.webp" data-img="images/towebp/1.0-homepage/photographer-photo-albums.webp" type="image/webp"> 
+        <img loading="lazy" class="nowebp-img" src="images/towebp/1.0-homepage/min-photographer-photo-albums.jpg" data-img="images/towebp/1.0-homepage/photographer-photo-albums.jpg" alt="Professional photo album in presentation box">
+      </picture>  
+ </figure>
+ 
+ 
+ 
+        </div>
+        <h3 class="section-book__name-box">
+          Photographer Albums
+        </h3>
+      </a>
+    </div>
+  </div>  
+</section>
+<section class="dignity">
+  <div class="dignity__container">
+    <h2 class="dignity__title">
+      The PikPerfect Advantage
+    </h2>
+    <div class="dignity__wrap">
+      <div class="dignity__block">
+        <div class="dignity__img">
+          <img src="./images/circle_the_human_touch.svg" alt="circle_the_human_touch">
+        </div>
+        <div class="dignity__content">
+          <h3>We do the Work</h3>
+          <p>We help select the best photos and carefully design your album. Unlimited revisions included.</p>
+        </div>
+      </div>
+
+      <div class="dignity__block">
+        <div class="dignity__img">
+          <img src="./images/circle_attention_to_detail.svg" alt="circle_attention_to_detail">
+        </div>
+        <div class="dignity__content">
+          <h3>Quality Matters</h3>
+          <p>Handcrafted using only professional grade materials. Designed to last a lifetime.</p>
+        </div>
+      </div>
+
+      <div class="dignity__block">
+        <div class="dignity__img">
+          <img src="./images/circle_premium_materials.svg" alt="circle_premium_materials">
+        </div>
+        <div class="dignity__content">
+          <h3>Happiness Guaranteed</h3>
+          <p style="width: 90%;">Pay only when you love your photo album design. Quality guaranteed.</p>
+        </div>
+      </div>    
+    </div>
+  </div>  
+</section>
+<section class="section-img">
+  <div class="lazy-video">
+    <div class="lazy-video__preloader">
+        <svg class= "lazy-video__preloader-svg" width="60" height="60" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" stroke="#8ba4b4">
             <g fill="none" fill-rule="evenodd">
                 <g transform="translate(1 1)" stroke-width="2">
                     <circle stroke-opacity=".5" cx="18" cy="18" r="18"/>
@@ -427,142 +562,78 @@
                 </g>
             </g>
         </svg>
-    </div>
-
-         <div class='hero-video-slide__item'  title="PikPerfect Premium Photo Albums.mp4">   <iframe id='hero-video' src=""
-            data-src='https://player.vimeo.com/video/569981023?background=1'
-            frameborder="0" allow="autoplay; fullscreen; picture-in-picture"  
-            style="position:absolute;top:0;left:0;width:100%;height:100%;"
-            title="PikPerfect Photo Albums.mp4"></iframe>  
-        </div> 
-</div>
-        </div>
-        <div class="section-hero__swiper-pagination"></div> 
     </div> 
+         <div class= "lazy-video__item " ><iframe  class="lazy-video__activator-js" src=""
+            data-src= "https://player.vimeo.com/video/574906654?background=1 "
+            frameborder="0" allow="autoplay; fullscreen; picture-in-picture" 
+            title="Premium Photo Albums - PikPerfect"></iframe>  
+        </div> 
 </div> 
-        <div class="section-hero__right">
-  <h1 class="tab__title">Premium Layflat Album</h1>
-  <p class="tab__price">From US $ 299.00.</p>
-  <div class="stars tab__starts">
-    <img src="images/icon-star.svg" alt="icon-star" width="24" height="24">
-    <img  src="images/icon-star.svg" alt="icon-star" width="24" height="24">
-    <img src="images/icon-star.svg" alt="icon-star" width="24" height="24">
-    <img src="images/icon-star.svg" alt="icon-star" width="24" height="24">
-    <img src="images/icon-star.svg" alt="icon-star" width="24" height="24">
-    <span>120 reviews</span>
-  </div>
-  <p class="tab__text">These high-end photo albums offer thick layflat pages, gorgeous panoramic spreads, and a range of premium album covers. Made to last a lifetime, these luxury photo albums honor your most important milestones, from your baby’s first steps to anniversaries and other special occasions.</p>
-  <a href="#" class="tab__button button">make your album</a>
-  <div class="tab__check">
-    <img loading="lazy" src="images/icon-check.svg" alt="icon-check" width="24" height="24">
-    <p>Quality Guarantee included</p>
-  </div>      
-</div>  
-        </div>
-    </div>
 </section>
-  <section class="description-img description-img__order">
-  <div class="container">
-    <div class="description-img__wrap">
-      <div class="description-img__img">
-         <figure style='padding-bottom: calc(713% / 788 * 100)' class='figure-webp  '>
-    <picture data-priority="1" class="picture-webp toggle-img--js">
-        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/min-flush-mount-photo-book.webp" data-img="images/towebp/flush-mount-photo-book-376.webp"  type="image/webp"> 
-        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/min-flush-mount-photo-book.webp" data-img="images/towebp/flush-mount-photo-book-480.webp"  type="image/webp"> 
-        <source class="webp-img" srcset="images/towebp/min-flush-mount-photo-book.webp" data-img="images/towebp/flush-mount-photo-book.webp" type="image/webp"> 
-        <img loading="lazy" class="nowebp-img" src="images/towebp/flush-mount-photo-book.jpg" alt="Flush Mount Photo Book showing thick layflat pages">
-      </picture>   
+<section class="section-album section-album_tree-block">
+  <div class="section-album__container">
+    <h2 class="section-album__title">
+      Photo Albums & Books
+    </h2>
+    <p class="section-album__entered">
+      From Photobooks to Premium Layflat Albums, our range of albums are suited for any occasion or budget. <br> Learn more about the <a class="link" href="#">differences between a photo book and a photo album</a>.
+    </p>
+    <div class="section-album__wrap">
+      <a href="#" class="section-album__block">
+         
+ <figure style='padding-bottom: calc(288% / 330 * 100)' class='figure-webp  '>
+    <picture  data-priority="1" class="picture-webp toggle-img--js">
+        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/1.0-homepage/min-pikPerfect-premium-albums.webp" data-img="images/towebp/1.0-homepage/pikPerfect-premium-albums-376.webp" type="image/webp">  
+        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/1.0-homepage/min-pikPerfect-premium-albums.webp" data-img="images/towebp/1.0-homepage/pikPerfect-premium-albums-480.webp" type="image/webp">  
+        <source class="webp-img" srcset="images/towebp/1.0-homepage/min-pikPerfect-premium-albums.webp" data-img="images/towebp/1.0-homepage/pikPerfect-premium-albums.webp" type="image/webp"> 
+        <img loading="lazy" class="nowebp-img" src="images/towebp/1.0-homepage/min-pikPerfect-premium-albums.png" data-img="images/towebp/1.0-homepage/pikPerfect-premium-albums.png" alt="White wedding album with presentation box">
+      </picture>  
  </figure>
  
  
  
-      </div>
-      <div class="description-img__content">
-        <h2 class="description-img__title">What makes a Premium Photo Album so special?</h2>
-        <p>Also called a Flush Mount Photo Book, these professional photo albums are developed on Fuji photo paper which is then “mounted" on cardboard inserts to create thick layflat pages. The seamless spreads have a virtually invisible crease between the pages, making for stunning panoramic double-pages to display your most cherished photos.</p>
-        <p>Printed on archival photo papers and handcrafted by professionals, these luxury photo albums will stand the test of time, in style.</p>
-      </div>      
-    </div>
-  </div>  
-</section>
-<section class="description-img">
-  <div class="container">
-    <div class="description-img__wrap">    
-      <div class="description-img__img">
-         <figure style='padding-bottom: calc(713% / 788 * 100)' class='figure-webp  '>
-    <picture data-priority="2" class="picture-webp toggle-img--js">
-        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/min-luxury-photo-books.webp" data-img="images/towebp/luxury-photo-books-376.webp"  type="image/webp"> 
-        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/min-luxury-photo-books.webp" data-img="images/towebp/luxury-photo-books-480.webp"  type="image/webp"> 
-        <source class="webp-img" srcset="images/towebp/min-luxury-photo-books.webp" data-img="images/towebp/luxury-photo-books.webp" type="image/webp"> 
-        <img loading="lazy" class="nowebp-img" src="images/towebp/luxury-photo-books.jpg" alt="Luxury photo books from PikPerfect">
-      </picture>   
+        <h3 class="section-album__name-album">Premium Albums
+        <span>The Luxury Option</span></h3>
+        <p class="section-album__price">From $299</p>
+      </a>
+      <a href="#" class="section-album__block">
+         
+ <figure style='padding-bottom: calc(288% / 330 * 100)' class='figure-webp  '>
+    <picture  data-priority="2" class="picture-webp toggle-img--js">
+        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/1.0-homepage/min-pikperfect-photo-albums.webp" data-img="images/towebp/1.0-homepage/pikperfect-photo-albums-376.webp" type="image/webp">  
+        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/1.0-homepage/min-pikperfect-photo-albums.webp" data-img="images/towebp/1.0-homepage/pikperfect-photo-albums-480.webp" type="image/webp">  
+        <source class="webp-img" srcset="images/towebp/1.0-homepage/min-pikperfect-photo-albums.webp" data-img="images/towebp/1.0-homepage/pikperfect-photo-albums.webp" type="image/webp"> 
+        <img loading="lazy" class="nowebp-img" src="images/towebp/1.0-homepage/min-pikperfect-photo-albums.png" data-img="images/towebp/1.0-homepage/pikperfect-photo-albums.png" alt="A blue linen layflat photo album">
+      </picture>  
  </figure>
  
  
  
-      </div>  
-      <div class="description-img__content">
-        <h2 class="description-img__title">Gorgeous Album Covers</h2>
-        <p>Choose from our range of beautiful album covers to create an exquisitely finished flush mount photo album. Whether you're looking for premium linen, genuine leather or an acrylic glass photo book, we've got you covered.</p>
-        <p>Standard embossing is included on all fabric covers and is available in two different fonts and six different colours (Gold, Copper, Silver, white, black or transparent). Laser-etched photo album covers as well as custom embossed logos are also available.</p>
-      </div>      
-    </div>
-  </div>  
-</section>
-<section class="description-img description-img__order">
-  <div class="container">
-    <div class="description-img__wrap">
-      <div class="description-img__img">
-         <figure style='padding-bottom: calc(713% / 788 * 100)' class='figure-webp  '>
-    <picture data-priority="2" class="picture-webp toggle-img--js">
-        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/min-luxury-photo-albums.webp" data-img="images/towebp/luxury-photo-albums-376.webp"  type="image/webp"> 
-        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/min-luxury-photo-albums.webp" data-img="images/towebp/luxury-photo-albums-480.webp"  type="image/webp"> 
-        <source class="webp-img" srcset="images/towebp/min-luxury-photo-albums.webp" data-img="images/towebp/luxury-photo-albums.webp" type="image/webp"> 
-        <img loading="lazy" class="nowebp-img" src="images/towebp/luxury-photo-albums.jpg" alt="Luxury photo album laying on sofa cushion">
-      </picture>   
+        <h3 class="section-album__name-album">Layflat Photo Albums
+          <span>The Bestseller</span></h3>
+          <p class="section-album__price">From $149</p>
+      </a> 
+      <a href="#" class="section-album__block">
+         
+ <figure style='padding-bottom: calc(288% / 330 * 100)' class='figure-webp  '>
+    <picture  data-priority="2" class="picture-webp toggle-img--js">
+        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/1.0-homepage/min-pikperfect-photobooks.webp" data-img="images/towebp/1.0-homepage/pikperfect-photobooks-376.webp" type="image/webp">  
+        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/1.0-homepage/min-pikperfect-photobooks.webp" data-img="images/towebp/1.0-homepage/pikperfect-photobooks-480.webp" type="image/webp">  
+        <source class="webp-img" srcset="images/towebp/1.0-homepage/min-pikperfect-photobooks.webp" data-img="images/towebp/1.0-homepage/pikperfect-photobooks.webp" type="image/webp"> 
+        <img loading="lazy" class="nowebp-img" src="images/towebp/1.0-homepage/min-pikperfect-photobooks.png" data-img="images/towebp/1.0-homepage/pikperfect-photobooks.png" alt="Professional photo book examples">
+      </picture>  
  </figure>
  
  
  
-      </div>
-      <div class="description-img__content">
-        <h2 class="description-img__title">Archival Photo Papers</h2>
-        <p>PikPerfect flush mount photo books are printed on archival photo papers which are then mounted on rigid white board, resulting in beautiful seamless spreads.</p>
-        <p>Choose between Fuji Crystal Archive DP II photo paper pearl matte or glossy, which offer outstanding colours, natural skin tones and incredible definition. If you prefer a more subtle matte look with low sheen, our acid-free Fine Art Albums (smooth or eggshell finish) offer a lush tactility, archival quality and timeless appeal.</p>
-      </div>      
+        <h3 class="section-album__name-album">Photo Books
+          <span>The Everyday Classic</span></h3>
+          <p class="section-album__price">From $69</p>
+        </a>       
     </div>
-  </div>  
-</section>
-<section class="description-img">
-  <div class="container">
-    <div class="description-img__wrap"> 
-      <div class="description-img__img">
-         <figure style='padding-bottom: calc(713% / 788 * 100)' class='figure-webp  '>
-    <picture data-priority="2" class="picture-webp toggle-img--js">
-        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/min-wooden-photo-album-box.webp" data-img="images/towebp/wooden-photo-album-box-376.webp"  type="image/webp"> 
-        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/min-wooden-photo-album-box.webp" data-img="images/towebp/wooden-photo-album-box-480.webp"  type="image/webp"> 
-        <source class="webp-img" srcset="images/towebp/min-wooden-photo-album-box.webp" data-img="images/towebp/wooden-photo-album-box.webp" type="image/webp"> 
-        <img loading="lazy" class="nowebp-img" src="images/towebp/wooden-photo-album-box.jpg" alt="Acrylic glass photo book in presentation box">
-      </picture>   
- </figure>
- 
- 
- 
-      </div>     
-      <div class="description-img__content">
-        <h2 class="description-img__title">Premium Photo Album Box</h2>
-        <p>Add a matching luxury photo album presentation box as the perfect finishing touch. These gorgeous boxes have a wooden frame and your choice of fabric to protect your treasured memories for a lifetime.</p>
-      </div>      
-    </div>
-  </div>  
+  </div> 
 </section>  
-  <section class="section-transition">
-  <div class="container">
-    <h2 class="section-transition__title">Ready to make your Premium Layflat Album?</h2>
-    <a href="#" class="button button__light section-transition__button">start now</a>
-  </div>
-</section>
-  <section class="section-reviews">
+<section class="section-reviews">
     <div class="container">
         <h2 class="d-none"> reviews</h2>
         <div class="row section-reviews__top">
@@ -648,42 +719,44 @@
         </div> 
     </div>
 </section>
-  <section class="section-accordion">
+<section class="section-accordion">
         <div class="container">
-                <h2 class="section-accordion__title">More about our Premium Photo Albums </h2>
+                <h2 class="section-accordion__title">Frequently asked questions</h2>
                 <div class="accordion"> 
                         <div class="accordion__item"> 
-    <h3 class="accordion__title">How thick are the pages?</h3> 
-    <p class="accordion__text">Each flush mount album page is about 0.04" (1.1mm) thick which includes the white insert between the pages. At the 76-page maximum, your album will be approximately 2" (50mm) thick.</p> 
-</div> 
+    <h3 class="accordion__title">How do I start creating a photo album?</h3> 
+    <p class="accordion__text">Creating a professional photo album online is that simple: Just <a target="_blank" href="https://www.pikperfect.com/upload-photos">upload the photos</a> you’d like used in the album and then let our team of creative album designers get to work. We’ll email you a first draft of your photo album book in 2-4 working days. All designs include unlimited revisions, so we make sure you’re completely satisfied with the design before the album is sent to print.</p> 
+</div>
+  
                         <div class="accordion__item"> 
-    <h3 class="accordion__title">What is the best way to store my album?</h3> 
-    <p class="accordion__text">We recommend storing your premium layflat album in a cool, dry place, and away from direct sunlight. To avoid warping and undue pressure on the binding, it is best to store the album lying horizontally, ideally in one of our album boxes.</p> 
-</div> 
+    <h3 class="accordion__title">What photo album printing options do you offer?</h3> 
+    <p class="accordion__text">PikPerfect photo books are digitally printed on industry leading machines. Our layflat and premium photo albums are developed on Fuji photo papers, which offer the superb color and clarity of a professional photo print. Learn more about our papers and <a target="_blank" href="https://www.pikperfect.com/photo-book-vs-photo-album">photo album printing</a> options.</p> 
+</div>
+  
                         <div class="accordion__item"> 
-    <h3 class="accordion__title">Can I add a custom album title?</h3> 
-    <p class="accordion__text">All linen and leather premium photo albums can have standard embossed titles (two lines). We do also offer custom-embossed and laser-etched titles which can be designed with any font or logo of your choosing.</p> 
-</div> 
+    <h3 class="accordion__title">How much does a photo album cost?</h3> 
+    <p class="accordion__text">The cost of a photo album varies by album, type, size, cover option and number of pages. The price will automatically update on our website when you start to <a target="_blank" href="https://www.pikperfect.com/upload-photos">make a photo album</a>. You can also find details of all prices and shipping <a target="_blank" href="https://www.pikperfect.com/prices">here</a>.</p> 
+</div>
+  
                         <div class="accordion__item"> 
-    <h3 class="accordion__title">Will there be a PikPerfect logo on my album?</h3> 
-    <p class="accordion__text">Our premium photo albums do not have any branding in them, but the shipping box and attached commercial invoice will include the PikPerfect logo.</p> 
-</div> 
+    <h3 class="accordion__title">How many photos can I include in my album?</h3> 
+    <p class="accordion__text">While this depends on the album size and design you choose, we recommend an average of 2-3 photos per page. This is an average, on some pages where we want to focus on a special photo, we could have a single image on a page, or even across a double page, and on others, several smaller photos on a page. Keep in mind the more photos you try adding on a page, the smaller they will display and the more cramped the album will look.</p> 
+</div>
+  
                         <div class="accordion__item"> 
-    <h3 class="accordion__title">What is the maximum number of pages and photos I can use?</h3> 
-    <p class="accordion__text">Our premium layflat albums have a maximum of 76 pages and can include up to approximately 400 photos. If you would like to include more photos, we'd recommend choosing a layflat photo book or a custom photo book instead.</p> 
-</div> 
-                        <div class="accordion__item"> 
-    <h3 class="accordion__title">Which album paper is best?</h3> 
-    <p class="accordion__text">Fine art album paper offers a low-sheen matte finish, while the Fuji paper has more vibrant colors and depth. Either way, both papers make for a luxurious photo album.</p> 
-</div> 
-                        <div class="accordion__item"> 
-    <h3 class="accordion__title">What is the production time?</h3> 
-    <p class="accordion__text">Our flush mount books are handcrafted with the care and attention your photos deserve. We pride ourselves on fast turnarounds (9-12 working days) while offering affordable flat-rate shipping to destinations around the globe.</p> 
-</div> 
+    <h3 class="accordion__title">Can I include text in my photo album?</h3> 
+    <p class="accordion__text">Yes! All albums are designed from scratch and can include any combination of image and text. You can either include a Word file with the text you want when uploading your photos, or add the text along with your feedback after we send you the first online photo album draft.</p> 
+</div>
+  
+                        <p class="bottom-text">Did not find what you were looking for? Visit our <a target="_blank" href="https://www.pikperfect.com/help">HELP</a> page for details.</p>
                 </div>
         </div>
- </section>      
-  <section class="section-subscribe">
+</section>
+ 
+ 
+
+         
+<section class="section-subscribe">
   <div class="section-subscribe__container">
     <div class="row align-items-center">
       <div class="col-lg-6 col-xl-7">
@@ -699,6 +772,7 @@
   </div>
 </section>
 </main>
+<div class="swiper-delay" data-time='4000'></div>
 <footer class="footer">
   <div class="container">
     <div class="row">
@@ -847,6 +921,141 @@
     </div>
   </div>
 </footer>
+
+
+<div class="popup__item popup-login">
+  <div class="popup__overlay"></div>
+
+  <div class="popup__body">
+    <h1 class="popup-login__title"></h1>
+    <button class="popup__close close-login">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><defs><style>.a,.b{fill:none;}.b{stroke:#2f353a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><rect class="a" width="24" height="24"/><g transform="translate(-0.662 -0.662)"><line class="b" x1="14" y2="14" transform="translate(5.662 5.662)"/><line class="b" x2="14" y2="14" transform="translate(5.662 5.662)"/></g></svg>
+    </button>
+
+    <div class="popup-login__tab">
+      <div class="popup-login__tab-bar">
+        <button class="popup-login__tab-btn" data-for-tab='login'>
+          <span class="popup-login__tab-btn--after"></span>
+          Login</button>
+        <button class="popup-login__tab-btn" data-for-tab='register'>
+          <span class="popup-login__tab-btn--after"></span>
+          Create Account</button>
+      </div>
+
+      <!-- login tab content -->
+      <div class="popup-login__tab-content" data-tab='login'>
+        <div class="tab-content tab-content-login">
+
+          <form action="#" method="#" class="tab-content__form">
+            <div class="tab-content__row50">
+              <div class="tab-content__input">
+                <label for="login-email">Email *</label>
+                <input type="email" name="email" id="login-email" required>
+              </div>
+              <div class="tab-content__input">
+                <label for="login-password">Password *</label>
+                <div class="tab-content__pass">
+                  <input type="password" name="password" id="login-password" required>
+
+                  <svg class="show-hide-password" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                      <path
+                        d="m436.266 161.779c-10.11-9.821-20.363-18.84-30.708-27.052l106.442-106.443-28.284-28.284-111.382 111.382c-4.592-2.813-9.193-5.471-13.798-7.951-33.794-18.202-67.955-27.431-101.536-27.431-33.561 0-67.811 9.22-101.799 27.404-26.455 14.154-52.826 33.765-78.38 58.291-43.025 41.292-69.042 82.192-70.124 83.913l-6.697 10.659 6.712 10.649c1.082 1.716 27.102 42.494 70.131 83.661 9.919 9.49 19.962 18.231 30.083 26.213l-106.926 106.926 28.284 28.284 111.918-111.918c5.001 3.06 10.01 5.931 15.022 8.604 33.982 18.124 68.224 27.314 101.776 27.314 33.571 0 67.725-9.198 101.513-27.34 26.305-14.124 52.458-33.694 77.73-58.167 42.546-41.198 68.21-82.013 69.272-83.73l6.485-10.497-6.47-10.505c-1.061-1.722-26.722-42.659-69.264-83.982zm-300.808 186.479c-42.446-32.577-74.079-73.124-87.613-92.042 24.483-34.425 108.079-140.216 209.155-140.216 30.805 0 59.88 9.901 86.099 24.617l-31.588 31.588c-15.691-10.242-34.416-16.205-54.511-16.205-55.14 0-100 44.86-100 100 0 20.095 5.963 38.82 16.205 54.511zm175.345-118.777c3.96 8.002 6.197 17.003 6.197 26.519 0 33.084-26.916 60-60 60-9.516 0-18.517-2.237-26.519-6.197zm-108.251 51.683c-3.554-7.659-5.552-16.18-5.552-25.164 0-33.084 26.916-60 60-60 8.984 0 17.505 1.998 25.164 5.552zm54.448 114.836c-31.253 0-60.856-10.141-87.564-25.152l31.847-31.847c15.933 10.729 35.106 16.999 55.717 16.999 55.14 0 100-44.86 100-100 0-20.611-6.27-39.784-16.999-55.716l37.036-37.036c42.503 32.839 74.087 73.991 87.394 93.001-23.921 34.155-106.321 139.751-207.431 139.751z" />
+                    </g>
+                  </svg>
+                </div>
+
+                <button class="tab-content-login__forgot" data-ref="forgot">Forgot password?</button>
+              </div>
+            </div>
+
+            <button class="popup__submit" type="submit">login</button>
+          </form>
+
+        </div>
+      </div>
+
+      <!-- register tab content -->
+      <div class="popup-login__tab-content" data-tab='register'>
+    <div class="tab-content tab-content-register"> 
+      <form action="#" method="#" class="tab-content__form">
+        <div class="tab-content__row50">
+          <div class="tab-content__input">
+            <label for="register-first">First Name *</label>
+            <input type="text" name="first name" id="register-first" required>
+          </div>
+          <div class="tab-content__input">
+            <label for="register-last">Last Name *</label>
+            <input type="text" name="last name" id="register-last" required>
+          </div>
+        </div>
+        <div class="tab-content__row50">
+          <div class="tab-content__input">
+            <label for="register-email">Email *</label>
+            <input type="email" name="email" id="register-email" required>
+          </div>
+          <div class="tab-content__input">
+            <label for="register-email-repeat">Confirm Email *</label>
+            <input type="email" name="confirm email" id="register-email-repeat" required>
+          </div>
+        </div>
+        <div class="tab-content__input">
+          <label for="register-password">Password *</label>
+          <div class="tab-content__pass">
+            <input type="password" name="password" id="register-password" required>
+            <svg class="show-hide-password" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512"
+                xmlns="http://www.w3.org/2000/svg">
+                <g>
+                  <path
+                    d="m436.266 161.779c-10.11-9.821-20.363-18.84-30.708-27.052l106.442-106.443-28.284-28.284-111.382 111.382c-4.592-2.813-9.193-5.471-13.798-7.951-33.794-18.202-67.955-27.431-101.536-27.431-33.561 0-67.811 9.22-101.799 27.404-26.455 14.154-52.826 33.765-78.38 58.291-43.025 41.292-69.042 82.192-70.124 83.913l-6.697 10.659 6.712 10.649c1.082 1.716 27.102 42.494 70.131 83.661 9.919 9.49 19.962 18.231 30.083 26.213l-106.926 106.926 28.284 28.284 111.918-111.918c5.001 3.06 10.01 5.931 15.022 8.604 33.982 18.124 68.224 27.314 101.776 27.314 33.571 0 67.725-9.198 101.513-27.34 26.305-14.124 52.458-33.694 77.73-58.167 42.546-41.198 68.21-82.013 69.272-83.73l6.485-10.497-6.47-10.505c-1.061-1.722-26.722-42.659-69.264-83.982zm-300.808 186.479c-42.446-32.577-74.079-73.124-87.613-92.042 24.483-34.425 108.079-140.216 209.155-140.216 30.805 0 59.88 9.901 86.099 24.617l-31.588 31.588c-15.691-10.242-34.416-16.205-54.511-16.205-55.14 0-100 44.86-100 100 0 20.095 5.963 38.82 16.205 54.511zm175.345-118.777c3.96 8.002 6.197 17.003 6.197 26.519 0 33.084-26.916 60-60 60-9.516 0-18.517-2.237-26.519-6.197zm-108.251 51.683c-3.554-7.659-5.552-16.18-5.552-25.164 0-33.084 26.916-60 60-60 8.984 0 17.505 1.998 25.164 5.552zm54.448 114.836c-31.253 0-60.856-10.141-87.564-25.152l31.847-31.847c15.933 10.729 35.106 16.999 55.717 16.999 55.14 0 100-44.86 100-100 0-20.611-6.27-39.784-16.999-55.716l37.036-37.036c42.503 32.839 74.087 73.991 87.394 93.001-23.921 34.155-106.321 139.751-207.431 139.751z" />
+                </g>
+              </svg>
+          </div>
+        </div> 
+              <label> <input type="checkbox"> Receive emails about new products & special offers  </label> <br>
+              <label> <input type="checkbox"> I'm a professional photographer </label> <br>
+              <label> <input type="checkbox">I understand and agree to PikPerfect's Terms & Privacy Policy.</label><br> 
+
+        <button class="popup__submit" type="submit">create account</button>
+      </form>
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup__item popup-forgot">
+  <div class="popup__overlay"></div> 
+  <div class="popup__body">
+    <button class="popup__close close-forgot">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><defs><style>.a,.b{fill:none;}.b{stroke:#2f353a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><rect class="a" width="24" height="24"/><g transform="translate(-0.662 -0.662)"><line class="b" x1="14" y2="14" transform="translate(5.662 5.662)"/><line class="b" x2="14" y2="14" transform="translate(5.662 5.662)"/></g></svg>
+    </button>
+
+    <h2 class="popup__title">Forgot Password</h2>
+    <p class="popup__caption">Please enter an email address you signed up with.</p>
+
+    <form class=" popup-forgot__form" action="#" method="#">
+      <div class=" popup-forgot__input">
+        <label for="forgot-email">Email*</label>
+        <input type="email" name="email" id="forgot-email" required>
+      </div> 
+      <button class="popup__submit" type="submit">Submit</button>
+    </form>
+
+    <div class="popup-forgot__success">
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="border-radius: 50%;" viewBox="0 0 24 24">
+          <rect style="fill:#2DA148;" width="24" height="24"/><path style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;" d="M20,6,9,17,4,12" transform="translate(0.5 0.5)"/>
+        </svg>
+      </div>
+      <div class="popup-forgot__success-caption">
+        <p>E-mail successfully sent.</p>
+        <span>We have sent a recovery link to your e-mail address.</span>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div id="script-place"></div>
   <script src="js/main.js"></script> 
