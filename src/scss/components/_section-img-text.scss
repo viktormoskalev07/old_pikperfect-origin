@@ -1,0 +1,56 @@
+.section-img-text{
+    margin-bottom: 24px;
+    @include tablet{
+        margin-bottom: 32px;
+    }
+    &__wrap{         
+        @include desktop-sm{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }    
+    }
+    &__content{
+        max-height: 631px;
+        height: 100vh;
+        overflow: hidden;
+        background-color: #EDECEE; 
+        padding:  40px 16px 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @include tablet{
+          padding: 40px;
+        }
+        @include desktop-sm{
+          padding: 70px 9%;
+          width: 50%;
+          margin: 16px;
+        }
+        p{
+            max-width: 360px;
+            @include desktop-sm{
+                font-size: 18px;
+            }
+        }
+    }
+    &__img{
+        @include desktop-sm{
+            width: 50%;
+            margin: 16px;
+        }
+    }
+    &__title{
+        font-size: 32px;
+        @include desktop-sm{
+          font-size: 30px;
+          margin-bottom: 24px;
+        }
+        @include wide-screen-sm{
+          font-size: 40px;
+        }
+    }
+    &__button{
+        margin-top: 30px;
+    }
+}

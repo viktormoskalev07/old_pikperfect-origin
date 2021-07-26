@@ -94,4 +94,18 @@
       }
     }
   }
+  &_big-cards{
+    @include tablet{
+      padding: 16px 15px 32px;
+    }
+    .section-service__card{
+      @include wide-screen-md{
+        max-width: 430px;
+        width: 30%;
+        margin: 16px;
+        margin-bottom: 0;
+      }
+      
+    }
+  }
 }
