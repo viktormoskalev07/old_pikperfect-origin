@@ -3,7 +3,9 @@
     @include tablet{
         margin-bottom: 32px;
     }
-    &__wrap{         
+    &__wrap{     
+        max-width: 1440px;
+        margin: 0 auto;    
         @include desktop-sm{
             display: flex;
             align-items: center;
