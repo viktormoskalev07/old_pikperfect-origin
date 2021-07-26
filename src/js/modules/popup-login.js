@@ -1,6 +1,3 @@
-if (dropdownMenuLink2) {
-}
-
 const parentLogin = document.querySelector(".popup-login");
 const parentForgot = document.querySelector(".popup-forgot");
 const overlay = document.querySelectorAll(".popup__overlay");
@@ -27,17 +24,12 @@ const showHidePassword = () => {
       let input = btn.parentElement.firstElementChild;
       if (input.type === "password") {
         input.type = "text";
-
-        setTimeout(() => {
-          input.type = "password";
-        }, 5000);
       } else {
         input.type = "password";
       }
     });
   });
 };
-showHidePassword();
 
 // login modal handler
 const popupLogin = (hasLogin) => {
@@ -83,7 +75,7 @@ const popupLogin = (hasLogin) => {
   });
 
   // register photographer accordion handler
-  const accord = () => {
+  const photographerCheck = () => {
     const accordTrigger = document.querySelector(
       ".custom-checkbox__input[data-accord]"
     );
@@ -101,16 +93,19 @@ const popupLogin = (hasLogin) => {
       customFileUploadFileName.innerHTML = fileName;
       const removeBtn = document.createElement('button');
       removeBtn.classList.add('custom-file-upload__remove-btn');
-      removeBtn.setAttribute('type', 'button')
-      const removeImg = document.createElement('img');
-      removeImg.setAttribute('src', 'images/icons/ic-delete.svg')
-      removeBtn.insertAdjacentElement('beforeend', removeImg)
+      removeBtn.setAttribute('type', 'button');
+      removeBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <rect fill='none' width="24" height="24" />
+        <g style='fill:none;stroke: #575d61;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px;'>
+        <path d="M3,6H21" />
+        <path d="M19,6V20a2,2,0,0,1-2,2H7a2,2,0,0,1-2-2V6M8,6V4a2,2,0,0,1,2-2h4a2,2,0,0,1,2,2V6" />
+        </g>
+      </svg>`;
       customFileUploadFileName.insertAdjacentElement('beforeend', removeBtn);
 
-      removeImg.addEventListener('click', (e) => {
+      removeBtn.addEventListener('click', (e) => {
         e.preventDefault;
         customFileUploadBtn.value = null;
-        console.log(customFileUploadBtn.value);
         customFileUploadFileName.innerHTML = ''
       })
     })
@@ -118,37 +113,32 @@ const popupLogin = (hasLogin) => {
     accordTrigger.addEventListener("click", () => {
 
         if (accordTrigger.checked === true) {
-          // accordBody.style.display = 'block'
-          // setTimeout(() => {
+          accordBody.style.display = 'block'
+          setTimeout(() => {
             accordBody.classList.add("active");
             accordInputSocial.setAttribute('required', true)
             accordInputPurchase.setAttribute('required', true)
-          // }, 0);
+          }, 0);
         } else {
           accordBody.classList.remove("active");
           accordInputSocial.setAttribute('required', false)
           accordInputPurchase.setAttribute('required', false)
-          // setTimeout(() => {
-          //   accordBody.style.display = 'none'
-          // }, 300);
+          setTimeout(() => {
+            accordBody.style.display = 'none'
+          }, 300);
         }
     });
   };
-  accord();
 
   // closing listeners
   overlay.forEach((item) => {
     item.addEventListener("click", closeModal);
   });
   closeLogin.addEventListener("click", closeModal);
-  document
-    .querySelector(toForgotModalBtn)
-    .addEventListener("click", closeModal);
+  document.querySelector(toForgotModalBtn).addEventListener("click", closeModal);
+  document.querySelector(toForgotModalBtn).addEventListener("click", popupForgot);
 
-  document
-    .querySelector(toForgotModalBtn)
-    .addEventListener("click", popupForgot);
-
+  photographerCheck();
   openModal(parentLogin);
 };
 
@@ -194,4 +184,5 @@ const popupForgot = () => {
   }, 0);
 };
 
+showHidePassword();
 popupLogin((hasLogin = false));

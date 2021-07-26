@@ -24,7 +24,7 @@
         <div class="tab-content__input">
           <label for="register-password">Password *</label>
           <div class="tab-content__pass">
-            <input type="password" name="password" id="register-password" required>
+            <input type="password" name="password" id="register-password" required autocomplete="off">
             <svg class="show-hide-password" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512"
                 xmlns="http://www.w3.org/2000/svg">
                 <g>
@@ -57,7 +57,7 @@
                   I'm a professional photographer 
                 </label>
 
-                <div class="custom-checkbox__accord active">
+                <div class="custom-checkbox__accord">
                   <div class="custom-checkbox__accord-body">
                     <div class="tab-content__input">
                       <label for="register-social-page">Website or Social Media Page *</label>
@@ -69,19 +69,13 @@
                     </div>
 
                     <div class="custom-file-upload">
-                      <label class="custom-file-upload__body">
+                      <label class="custom-file-upload__body custom-checkbox__link">
                         <input type="file" class="custom-file-upload__btn"  />
                         Upload your logo - PNG only (optional)
                       </label>
                       
                       <span class="custom-file-upload__file-name"></span>
                     </div>
-                    <script>
-
-    // function processSelectedFiles(fileInput) {
-    //   console.log(fileInput);
-    // }
-                    </script>
                   </div>
                 </div>
               </div>

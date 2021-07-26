@@ -58,10 +58,6 @@
 
       &-content {
         display: none;
-        // overflow-y: auto;
-        // max-height: 60vh;
-
-        @import './tab-content';
 
         &.active {
           display: block;
