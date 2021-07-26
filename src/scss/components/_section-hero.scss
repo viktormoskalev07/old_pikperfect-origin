@@ -5,7 +5,6 @@
 }
 
 .section-hero {
-	// padding: 40px 0;
 	padding-bottom: 30px;
 	@include desktop-md {
 		padding: 0px 113px 90px 68px;
@@ -294,6 +293,13 @@
 				color: #fff;
 			}
 		}
+		&_khaki{
+			background-color: rgba($color: 	#647670, $alpha: .7);	
+			color: #fff;
+			h1{
+				color: #fff;
+			}
+		}
 		@include tablet{
 			padding: 80px 0;
 		}
@@ -321,10 +327,12 @@
 		.small{
 			margin: 0;
 		}
+		.price{
+			margin: 0;
+			font-style: italic;
+		}
 	}
 }
-
-
 
 
 .tab {

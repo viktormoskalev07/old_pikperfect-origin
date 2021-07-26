@@ -98,10 +98,15 @@
     @include tablet{
       padding: 16px 15px 32px;
     }
+    .section-service__cards{
+      @include wide-screen-md{
+        margin: 0 -16px;
+      }
+    }
     .section-service__card{
       @include wide-screen-md{
-        max-width: 430px;
-        width: 30%;
+        max-width: 437px;
+        width: 31%;
         margin: 16px;
         margin-bottom: 0;
       }

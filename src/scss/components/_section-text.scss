@@ -47,6 +47,13 @@
       }
     }
   }
+  &_padding{
+    @include tablet{
+      padding: 32px 15px 16px;
+    }
+
+    
+  }
   &_white{
     background-color: #fff;
   }

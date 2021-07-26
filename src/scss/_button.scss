@@ -81,4 +81,11 @@
                      color: #fff;
               }
        }
+       &__khaki{
+              background: rgba($color: #5A6865, $alpha: .7);            
+              &:hover{
+                     border: 1px solid #5A6865;
+                     color: #5A6865;
+              }
+       }
 }
