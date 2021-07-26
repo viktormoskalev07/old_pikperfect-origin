@@ -66,6 +66,13 @@
        &__light-orange-opacity{
               background: #FBB695;
        }
+       &__orange{
+              background: rgba($color: #D69D57, $alpha: .7);            
+              &:hover{
+                     border: 1px solid #D69D57;
+                     color: #D69D57;
+              }
+       }
        &__gray-dark{
               background: transparent;
               border: 1px solid #fff;
