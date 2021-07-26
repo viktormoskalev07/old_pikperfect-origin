@@ -185,4 +185,3 @@ const popupForgot = () => {
 };
 
 showHidePassword();
-popupLogin((hasLogin = false));
