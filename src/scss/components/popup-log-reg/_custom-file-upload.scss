@@ -1,0 +1,33 @@
+.custom-file-upload {
+  margin-top: -15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  input[type="file"] {
+    display: none;
+  }
+
+  &__body {
+    margin-right: 20px;
+    margin-bottom: 0;
+    cursor: pointer;
+    font-size: .875rem;
+  }
+
+  &__file-name {
+    font-size: .875rem;
+  }
+  &__remove-btn {
+    border: none;
+    background-color: transparent;
+    padding: 0 0 0 12px;
+    will-change: transform;
+    transition: transform .3s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
