@@ -1,15 +1,18 @@
+if (dropdownMenuLink2) {
+}
+
 const parentLogin = document.querySelector(".popup-login");
 const parentForgot = document.querySelector(".popup-forgot");
 const overlay = document.querySelectorAll(".popup__overlay");
 const closeLogin = document.querySelector(".close-login");
 const closeForgot = document.querySelector(".close-forgot");
-const showHidePasswordBtns = document.querySelectorAll('.show-hide-password')
+const showHidePasswordBtns = document.querySelectorAll(".show-hide-password");
 
 const loginBtn = '[data-for-tab="login"]',
-      loginContent = '[data-tab="login"]',
-      registerBtn = '[data-for-tab="register"]',
-      registerContent = '[data-tab="register"]',
-      toForgotModalBtn = '[data-ref="forgot"]';
+  loginContent = '[data-tab="login"]',
+  registerBtn = '[data-for-tab="register"]',
+  registerContent = '[data-tab="register"]',
+  toForgotModalBtn = '[data-ref="forgot"]';
 
 // opening function for both modals
 const openModal = (elem) => {
@@ -19,27 +22,26 @@ const openModal = (elem) => {
 
 // change password visibility
 const showHidePassword = () => {
-  showHidePasswordBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
+  showHidePasswordBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
       let input = btn.parentElement.firstElementChild;
-      if (input.type === 'password') {
-        input.type = 'text'
+      if (input.type === "password") {
+        input.type = "text";
 
         setTimeout(() => {
-          input.type = 'password'
+          input.type = "password";
         }, 5000);
       } else {
-        input.type = 'password'
+        input.type = "password";
       }
-    })
-  })
-}
-showHidePassword()
-
+    });
+  });
+};
+showHidePassword();
 
 // login modal handler
 const popupLogin = (hasLogin) => {
-  const loginTitle = document.querySelector('.popup-login__title')
+  const loginTitle = document.querySelector(".popup-login__title");
 
   const tabAddActive = (btn, content) => {
     document.querySelector(btn).classList.add("active");
@@ -60,80 +62,136 @@ const popupLogin = (hasLogin) => {
   // checking if popupLogin parameter true/false
   if (hasLogin === false) {
     tabAddActive(registerBtn, registerContent);
-    loginTitle.innerHTML = 'Register'
+    loginTitle.innerHTML = "Register";
   } else if (hasLogin === true) {
     tabAddActive(loginBtn, loginContent);
-    loginTitle.innerHTML = 'Login'
+    loginTitle.innerHTML = "Login";
   }
 
   // click on register btn in tab
   document.querySelector(registerBtn).addEventListener("click", () => {
     tabAddActive(registerBtn, registerContent);
     tabRemoveActive(loginBtn, loginContent);
-    loginTitle.innerHTML = 'Register';
+    loginTitle.innerHTML = "Register";
   });
 
   // click on login btn in tab
   document.querySelector(loginBtn).addEventListener("click", () => {
     tabRemoveActive(registerBtn, registerContent);
     tabAddActive(loginBtn, loginContent);
-    loginTitle.innerHTML = 'Login'
+    loginTitle.innerHTML = "Login";
   });
 
+  // register photographer accordion handler
+  const accord = () => {
+    const accordTrigger = document.querySelector(
+      ".custom-checkbox__input[data-accord]"
+    );
+    const accordBody = document.querySelector(".custom-checkbox__accord");
+    const accordInputSocial = document.querySelector('#register-social-page');
+    const accordInputPurchase = document.querySelector('#register-album-purchase');
+
+    const customFileUpload = document.querySelector('.custom-file-upload__body');
+    const customFileUploadBtn = document.querySelector('.custom-file-upload__btn');
+    const customFileUploadFileName = document.querySelector('.custom-file-upload__file-name');
+
+    // input image file handler
+    customFileUpload.addEventListener('change', function(e) {
+      const fileName = e.target.files[0].name;
+      customFileUploadFileName.innerHTML = fileName;
+      const removeBtn = document.createElement('button');
+      removeBtn.classList.add('custom-file-upload__remove-btn');
+      removeBtn.setAttribute('type', 'button')
+      const removeImg = document.createElement('img');
+      removeImg.setAttribute('src', 'images/icons/ic-delete.svg')
+      removeBtn.insertAdjacentElement('beforeend', removeImg)
+      customFileUploadFileName.insertAdjacentElement('beforeend', removeBtn);
+
+      removeImg.addEventListener('click', (e) => {
+        e.preventDefault;
+        customFileUploadBtn.value = null;
+        console.log(customFileUploadBtn.value);
+        customFileUploadFileName.innerHTML = ''
+      })
+    })
+
+    accordTrigger.addEventListener("click", () => {
+
+        if (accordTrigger.checked === true) {
+          // accordBody.style.display = 'block'
+          // setTimeout(() => {
+            accordBody.classList.add("active");
+            accordInputSocial.setAttribute('required', true)
+            accordInputPurchase.setAttribute('required', true)
+          // }, 0);
+        } else {
+          accordBody.classList.remove("active");
+          accordInputSocial.setAttribute('required', false)
+          accordInputPurchase.setAttribute('required', false)
+          // setTimeout(() => {
+          //   accordBody.style.display = 'none'
+          // }, 300);
+        }
+    });
+  };
+  accord();
+
   // closing listeners
-  overlay.forEach(item => {
+  overlay.forEach((item) => {
     item.addEventListener("click", closeModal);
-  })
+  });
   closeLogin.addEventListener("click", closeModal);
   document
     .querySelector(toForgotModalBtn)
     .addEventListener("click", closeModal);
 
-  document.querySelector(toForgotModalBtn).addEventListener("click", popupForgot);
+  document
+    .querySelector(toForgotModalBtn)
+    .addEventListener("click", popupForgot);
 
   openModal(parentLogin);
 };
 
-
 // forgot modal handler
 const popupForgot = () => {
-  const forgotForm = document.querySelector('.popup-forgot__form');
+  const forgotForm = document.querySelector(".popup-forgot__form");
 
   // show caption on submit form
-  forgotForm.addEventListener('submit', (e) => {
-    const forgotSuccess = document.querySelector('.popup-forgot__success')
-    const forgotEmail = document.querySelector('.popup-forgot__input input[type="email"]')
+  forgotForm.addEventListener("submit", (e) => {
+    const forgotSuccess = document.querySelector(".popup-forgot__success");
+    const forgotEmail = document.querySelector(
+      '.popup-forgot__input input[type="email"]'
+    );
 
-    e.preventDefault()
-    forgotSuccess.classList.add('show')
-    forgotEmail.value = '';
+    e.preventDefault();
+    forgotSuccess.classList.add("show");
+    forgotEmail.value = "";
 
     setTimeout(() => {
-    forgotSuccess.classList.add('showing')
+      forgotSuccess.classList.add("showing");
     }, 0);
     setTimeout(() => {
-    forgotSuccess.classList.remove('showing')
+      forgotSuccess.classList.remove("showing");
     }, 3500);
     setTimeout(() => {
-      forgotSuccess.classList.remove('show')
+      forgotSuccess.classList.remove("show");
     }, 4000);
-  })
+  });
 
   const closeModal = () => {
     body.style.overflow = "";
     parentForgot.classList.remove("active");
-  }
+  };
 
   // closing listeners
-  closeForgot.addEventListener('click', closeModal);
-  overlay.forEach(item => {
+  closeForgot.addEventListener("click", closeModal);
+  overlay.forEach((item) => {
     item.addEventListener("click", closeModal);
-  })
+  });
 
   setTimeout(() => {
     openModal(parentForgot);
   }, 0);
 };
 
-
-// popupLogin(hasLogin = true)
+popupLogin((hasLogin = false));

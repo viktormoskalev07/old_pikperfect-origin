@@ -34,9 +34,69 @@
               </svg>
           </div>
         </div> 
-              <label> <input type="checkbox"> Receive emails about new products & special offers  </label> <br>
-              <label> <input type="checkbox"> I'm a professional photographer </label> <br>
-              <label> <input type="checkbox">I understand and agree to PikPerfect's Terms & Privacy Policy.</label><br> 
+              <div>
+                <label class="custom-checkbox">
+                  <input class="custom-checkbox__input" type="checkbox" tabindex="-1">
+                  <span class="custom-checkbox__checkmark" tabindex="0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                      <rect style="fill:transparent;" width="24" height="24"/><path style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;" d="M20,6,9,17,4,12" transform="translate(0.5 0.5)"/>
+                    </svg>
+                  </span> 
+                  Receive emails about new products & special offers 
+                </label>
+              </div>
+
+              <div>
+                <label class="custom-checkbox">
+                  <input class="custom-checkbox__input" data-accord type="checkbox" tabindex="-1">
+                  <span class="custom-checkbox__checkmark" tabindex="0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                      <rect style="fill:transparent;" width="24" height="24"/><path style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;" d="M20,6,9,17,4,12" transform="translate(0.5 0.5)"/>
+                    </svg>
+                  </span> 
+                  I'm a professional photographer 
+                </label>
+
+                <div class="custom-checkbox__accord active">
+                  <div class="custom-checkbox__accord-body">
+                    <div class="tab-content__input">
+                      <label for="register-social-page">Website or Social Media Page *</label>
+                      <input type="text" name="social page" id="register-social-page">
+                    </div>
+                    <div class="tab-content__input">
+                      <label for="register-album-purchase">How Many Albums Do You Expect To Purchase Annually? *</label>
+                      <input type="text" name="how many album purchase" id="register-album-purchase">
+                    </div>
+
+                    <div class="custom-file-upload">
+                      <label class="custom-file-upload__body">
+                        <input type="file" class="custom-file-upload__btn"  />
+                        Upload your logo - PNG only (optional)
+                      </label>
+                      
+                      <span class="custom-file-upload__file-name"></span>
+                    </div>
+                    <script>
+
+    // function processSelectedFiles(fileInput) {
+    //   console.log(fileInput);
+    // }
+                    </script>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <label class="custom-checkbox">
+                  <input class="custom-checkbox__input" type="checkbox" tabindex="-1" required>
+                  <span class="custom-checkbox__checkmark" tabindex="0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                      <rect style="fill:transparent;" width="24" height="24"/><path style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;" d="M20,6,9,17,4,12" transform="translate(0.5 0.5)"/>
+                    </svg>
+                  </span> 
+                  I understand and agree to PikPerfect's <a class="custom-checkbox__link" href="#">Terms</a> & <a class="custom-checkbox__link" href="#">Privacy Policy</a>. 
+                </label>
+              </div>
 
         <button class="popup__submit" type="submit">create account</button>
       </form>
