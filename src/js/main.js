@@ -92,3 +92,4 @@ function promobar (){
 @@include('modules/accordion.js') 
 @@include('modules/popup-mobile.js')
 @@include('modules/popup-login.js')
+@@include('modules/card-filter.js')
