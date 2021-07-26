@@ -29,6 +29,12 @@ $accent-color: #8BA4B4;
     border: none;
     background-color: transparent;
     padding: 0;
+    will-change: transform;
+    transition: transform .3s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 
   &__item {
@@ -79,3 +85,10 @@ $accent-color: #8BA4B4;
     }
   }
 }
+
+
+@import 'tab-content';
+@import 'custom-checkbox';
+@import 'custom-file-upload';
+@import 'popup-login';
+@import 'popup-forgot';

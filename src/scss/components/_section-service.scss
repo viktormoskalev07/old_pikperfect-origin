@@ -94,4 +94,28 @@
       }
     }
   }
+  &_big-cards{
+    margin-top: 32px;
+    padding-bottom: 0;
+    @include tablet{
+      margin-top: 0;
+      padding: 0 15px;
+    }
+    @include wide-screen-md{
+      margin: 16px auto;
+    }
+    .section-service__cards{
+      @include wide-screen-md{
+        margin: 0 -16px;
+      }
+    }
+    .section-service__card{
+      @include wide-screen-md{
+        max-width: 437px;
+        width: 31%;
+        margin: 16px;
+      }
+      
+    }
+  }
 }

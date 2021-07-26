@@ -31,6 +31,9 @@
                      background: #8BA4B4;
                      border: 1px solid #fff; 
               }
+              &_br-none{
+                     border-radius: 0;
+              }
        }
        &__light_border{
               background: #fff;
@@ -66,12 +69,26 @@
        &__light-orange-opacity{
               background: #FBB695;
        }
+       &__orange{
+              background: rgba($color: #D69D57, $alpha: .7);            
+              &:hover{
+                     border: 1px solid #D69D57;
+                     color: #D69D57;
+              }
+       }
        &__gray-dark{
               background: transparent;
               border: 1px solid #fff;
               &:hover{
                      background: #567C8B;
                      color: #fff;
+              }
+       }
+       &__khaki{
+              background: rgba($color: #5A6865, $alpha: .7);            
+              &:hover{
+                     border: 1px solid #5A6865;
+                     color: #5A6865;
               }
        }
 }

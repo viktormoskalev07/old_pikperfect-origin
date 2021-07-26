@@ -21,6 +21,8 @@
 @import "components/section-video-content";
 @import "components/section-text";
 @import "components/section-photobooks";
+@import "components/login";
+@import "components/section-img-text";
 
 
 
@@ -43,6 +45,4 @@
 @import 'modules/lazy-video';
 
 @import 'components/popup-log-reg/popup';
-@import 'components/popup-log-reg/popup-login';
-@import 'components/popup-log-reg/popup-forgot';
 @import 'components/photobooks/photobooks';

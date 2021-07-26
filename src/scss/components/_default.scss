@@ -1595,3 +1595,11 @@ label {
 .m-auto{
 	margin: 0 auto;	
 }
+.link{
+	color: #567C8B;
+	text-decoration: underline;
+	cursor: pointer;
+	&:hover{
+		text-decoration: none;
+	}
+}

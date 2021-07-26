@@ -95,7 +95,9 @@
 <li><a style='color:blue' href="./2.4-family-photo-albums.html">2.4</a></li>
 <li><a style='color:blue' href="./2.5-travel-photo-books.html">2.5</a></li>
 <li><a style='color:green' href="./2.6-baby-photo-books.html">2.6</a></li>
-<li><a style='color:red' href="./2.7-cookbooks.html">2.7</a></li>
+<li><a style='color:red' href="./2.7-cookbook-recipe-photobooks.html">2.7</a></li>
+<li><a style='color:red' href="./2.10-wedding-guest-books.html">2.10</a></li>
+<li><a style='color:red' href="./2.12-boudoir-book.html">2.12</a></li>
 <li><a style='color:green' href="./3.0-wedding-albums.html">3.0</a></li>
 <li><a style='color:green' href="./3.1-premium-layflat-wedding-albums.html">3.1</a></li>
 <li><a style='color:green' href="./3.2-layflat-wedding-photo-albums.html">3.2</a></li>
@@ -917,7 +919,13 @@
   <div class="popup__body">
     <h1 class="popup-login__title"></h1>
     <button class="popup__close close-login">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><defs><style>.a,.b{fill:none;}.b{stroke:#2f353a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><rect class="a" width="24" height="24"/><g transform="translate(-0.662 -0.662)"><line class="b" x1="14" y2="14" transform="translate(5.662 5.662)"/><line class="b" x2="14" y2="14" transform="translate(5.662 5.662)"/></g></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <rect fill="transparent" width="24" height="24"/>
+        <g style="stroke:#2f353a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;" transform="translate(-0.662 -0.662)">
+        <line x1="14" y2="14" transform="translate(5.662 5.662)"/>
+        <line x2="14" y2="14" transform="translate(5.662 5.662)"/>
+        </g>
+      </svg>
     </button>
 
     <div class="popup-login__tab">
@@ -932,37 +940,37 @@
 
       <!-- login tab content -->
       <div class="popup-login__tab-content" data-tab='login'>
-        <div class="tab-content tab-content-login">
+  <div class="tab-content tab-content-login">
 
-          <form action="#" method="#" class="tab-content__form">
-            <div class="tab-content__row50">
-              <div class="tab-content__input">
-                <label for="login-email">Email *</label>
-                <input type="email" name="email" id="login-email" required>
-              </div>
-              <div class="tab-content__input">
-                <label for="login-password">Password *</label>
-                <div class="tab-content__pass">
-                  <input type="password" name="password" id="login-password" required>
+    <form action="#" method="#" class="tab-content__form">
+      <div class="tab-content__row50">
+        <div class="tab-content__input">
+          <label for="login-email">Email *</label>
+          <input type="email" name="email" id="login-email" required>
+        </div>
+        <div class="tab-content__input">
+          <label for="login-password">Password *</label>
+          <div class="tab-content__pass">
+            <input type="password" name="password" id="login-password" required autocomplete="off">
 
-                  <svg class="show-hide-password" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <g>
-                      <path
-                        d="m436.266 161.779c-10.11-9.821-20.363-18.84-30.708-27.052l106.442-106.443-28.284-28.284-111.382 111.382c-4.592-2.813-9.193-5.471-13.798-7.951-33.794-18.202-67.955-27.431-101.536-27.431-33.561 0-67.811 9.22-101.799 27.404-26.455 14.154-52.826 33.765-78.38 58.291-43.025 41.292-69.042 82.192-70.124 83.913l-6.697 10.659 6.712 10.649c1.082 1.716 27.102 42.494 70.131 83.661 9.919 9.49 19.962 18.231 30.083 26.213l-106.926 106.926 28.284 28.284 111.918-111.918c5.001 3.06 10.01 5.931 15.022 8.604 33.982 18.124 68.224 27.314 101.776 27.314 33.571 0 67.725-9.198 101.513-27.34 26.305-14.124 52.458-33.694 77.73-58.167 42.546-41.198 68.21-82.013 69.272-83.73l6.485-10.497-6.47-10.505c-1.061-1.722-26.722-42.659-69.264-83.982zm-300.808 186.479c-42.446-32.577-74.079-73.124-87.613-92.042 24.483-34.425 108.079-140.216 209.155-140.216 30.805 0 59.88 9.901 86.099 24.617l-31.588 31.588c-15.691-10.242-34.416-16.205-54.511-16.205-55.14 0-100 44.86-100 100 0 20.095 5.963 38.82 16.205 54.511zm175.345-118.777c3.96 8.002 6.197 17.003 6.197 26.519 0 33.084-26.916 60-60 60-9.516 0-18.517-2.237-26.519-6.197zm-108.251 51.683c-3.554-7.659-5.552-16.18-5.552-25.164 0-33.084 26.916-60 60-60 8.984 0 17.505 1.998 25.164 5.552zm54.448 114.836c-31.253 0-60.856-10.141-87.564-25.152l31.847-31.847c15.933 10.729 35.106 16.999 55.717 16.999 55.14 0 100-44.86 100-100 0-20.611-6.27-39.784-16.999-55.716l37.036-37.036c42.503 32.839 74.087 73.991 87.394 93.001-23.921 34.155-106.321 139.751-207.431 139.751z" />
-                    </g>
-                  </svg>
-                </div>
+            <svg class="show-hide-password" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512"
+              xmlns="http://www.w3.org/2000/svg">
+              <g>
+                <path
+                  d="m436.266 161.779c-10.11-9.821-20.363-18.84-30.708-27.052l106.442-106.443-28.284-28.284-111.382 111.382c-4.592-2.813-9.193-5.471-13.798-7.951-33.794-18.202-67.955-27.431-101.536-27.431-33.561 0-67.811 9.22-101.799 27.404-26.455 14.154-52.826 33.765-78.38 58.291-43.025 41.292-69.042 82.192-70.124 83.913l-6.697 10.659 6.712 10.649c1.082 1.716 27.102 42.494 70.131 83.661 9.919 9.49 19.962 18.231 30.083 26.213l-106.926 106.926 28.284 28.284 111.918-111.918c5.001 3.06 10.01 5.931 15.022 8.604 33.982 18.124 68.224 27.314 101.776 27.314 33.571 0 67.725-9.198 101.513-27.34 26.305-14.124 52.458-33.694 77.73-58.167 42.546-41.198 68.21-82.013 69.272-83.73l6.485-10.497-6.47-10.505c-1.061-1.722-26.722-42.659-69.264-83.982zm-300.808 186.479c-42.446-32.577-74.079-73.124-87.613-92.042 24.483-34.425 108.079-140.216 209.155-140.216 30.805 0 59.88 9.901 86.099 24.617l-31.588 31.588c-15.691-10.242-34.416-16.205-54.511-16.205-55.14 0-100 44.86-100 100 0 20.095 5.963 38.82 16.205 54.511zm175.345-118.777c3.96 8.002 6.197 17.003 6.197 26.519 0 33.084-26.916 60-60 60-9.516 0-18.517-2.237-26.519-6.197zm-108.251 51.683c-3.554-7.659-5.552-16.18-5.552-25.164 0-33.084 26.916-60 60-60 8.984 0 17.505 1.998 25.164 5.552zm54.448 114.836c-31.253 0-60.856-10.141-87.564-25.152l31.847-31.847c15.933 10.729 35.106 16.999 55.717 16.999 55.14 0 100-44.86 100-100 0-20.611-6.27-39.784-16.999-55.716l37.036-37.036c42.503 32.839 74.087 73.991 87.394 93.001-23.921 34.155-106.321 139.751-207.431 139.751z" />
+              </g>
+            </svg>
+          </div>
 
-                <button class="tab-content-login__forgot" data-ref="forgot">Forgot password?</button>
-              </div>
-            </div>
-
-            <button class="popup__submit" type="submit">login</button>
-          </form>
-
+          <button class="tab-content-login__forgot" type="button" data-ref="forgot">Forgot password?</button>
         </div>
       </div>
+
+      <button class="popup__submit" type="submit">login</button>
+    </form>
+
+  </div>
+</div>
 
       <!-- register tab content -->
       <div class="popup-login__tab-content" data-tab='register'>
@@ -991,7 +999,7 @@
         <div class="tab-content__input">
           <label for="register-password">Password *</label>
           <div class="tab-content__pass">
-            <input type="password" name="password" id="register-password" required>
+            <input type="password" name="password" id="register-password" required autocomplete="off">
             <svg class="show-hide-password" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512"
                 xmlns="http://www.w3.org/2000/svg">
                 <g>
@@ -1001,9 +1009,63 @@
               </svg>
           </div>
         </div> 
-              <label> <input type="checkbox"> Receive emails about new products & special offers  </label> <br>
-              <label> <input type="checkbox"> I'm a professional photographer </label> <br>
-              <label> <input type="checkbox">I understand and agree to PikPerfect's Terms & Privacy Policy.</label><br> 
+              <div>
+                <label class="custom-checkbox">
+                  <input class="custom-checkbox__input" type="checkbox" tabindex="-1">
+                  <span class="custom-checkbox__checkmark" tabindex="0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                      <rect style="fill:transparent;" width="24" height="24"/><path style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;" d="M20,6,9,17,4,12" transform="translate(0.5 0.5)"/>
+                    </svg>
+                  </span> 
+                  Receive emails about new products & special offers 
+                </label>
+              </div>
+
+              <div>
+                <label class="custom-checkbox">
+                  <input class="custom-checkbox__input" data-accord type="checkbox" tabindex="-1">
+                  <span class="custom-checkbox__checkmark" tabindex="0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                      <rect style="fill:transparent;" width="24" height="24"/><path style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;" d="M20,6,9,17,4,12" transform="translate(0.5 0.5)"/>
+                    </svg>
+                  </span> 
+                  I'm a professional photographer 
+                </label>
+
+                <div class="custom-checkbox__accord">
+                  <div class="custom-checkbox__accord-body">
+                    <div class="tab-content__input">
+                      <label for="register-social-page">Website or Social Media Page *</label>
+                      <input type="text" name="social page" id="register-social-page">
+                    </div>
+                    <div class="tab-content__input">
+                      <label for="register-album-purchase">How Many Albums Do You Expect To Purchase Annually? *</label>
+                      <input type="text" name="how many album purchase" id="register-album-purchase">
+                    </div>
+
+                    <div class="custom-file-upload">
+                      <label class="custom-file-upload__body custom-checkbox__link">
+                        <input type="file" class="custom-file-upload__btn"  />
+                        Upload your logo - PNG only (optional)
+                      </label>
+                      
+                      <span class="custom-file-upload__file-name"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <label class="custom-checkbox">
+                  <input class="custom-checkbox__input" type="checkbox" tabindex="-1" required>
+                  <span class="custom-checkbox__checkmark" tabindex="0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                      <rect style="fill:transparent;" width="24" height="24"/><path style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;" d="M20,6,9,17,4,12" transform="translate(0.5 0.5)"/>
+                    </svg>
+                  </span> 
+                  I understand and agree to PikPerfect's <a class="custom-checkbox__link" href="#">Terms</a> & <a class="custom-checkbox__link" href="#">Privacy Policy</a>. 
+                </label>
+              </div>
 
         <button class="popup__submit" type="submit">create account</button>
       </form>
@@ -1013,11 +1075,18 @@
   </div>
 </div>
 
+<!-- popup forgot password  -->
 <div class="popup__item popup-forgot">
   <div class="popup__overlay"></div> 
   <div class="popup__body">
     <button class="popup__close close-forgot">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><defs><style>.a,.b{fill:none;}.b{stroke:#2f353a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><rect class="a" width="24" height="24"/><g transform="translate(-0.662 -0.662)"><line class="b" x1="14" y2="14" transform="translate(5.662 5.662)"/><line class="b" x2="14" y2="14" transform="translate(5.662 5.662)"/></g></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <rect fill="transparent" width="24" height="24"/>
+        <g style="stroke:#2f353a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;" transform="translate(-0.662 -0.662)">
+        <line x1="14" y2="14" transform="translate(5.662 5.662)"/>
+        <line x2="14" y2="14" transform="translate(5.662 5.662)"/>
+        </g>
+      </svg>
     </button>
 
     <h2 class="popup__title">Forgot Password</h2>
