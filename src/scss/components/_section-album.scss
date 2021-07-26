@@ -137,6 +137,7 @@
     }
   }
   &_size-lx{
+    padding-bottom: 0;
     @include tablet{
       padding: 95px 15px 0px;
     }
