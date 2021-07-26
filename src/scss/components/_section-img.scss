@@ -2,4 +2,14 @@
   max-width: 1440px;
   margin: 0 auto;
   margin-bottom: 32px;
+  &_size-m{ 
+    margin: 0 15px 15px;   
+    @include wide-screen-md{
+      margin: 0 auto 15px;
+    }
+  }
+  &__container{    
+    margin: 0 auto; 
+    max-width: 1376px;
+  }
 }
