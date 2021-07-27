@@ -27,5 +27,8 @@
     @include desktop-md{
       font-size: 18px;
     }
+    &_big{
+      padding: 15px 110px;
+    }
   }
 }

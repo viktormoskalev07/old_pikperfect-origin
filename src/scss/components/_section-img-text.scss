@@ -25,8 +25,11 @@
         }  
     }
     &__content-wrap{
-        max-width: 360px;
+        
         margin: 0 auto;
+        p{
+          max-width: 360px;  
+        }
     }
     &__content{
         max-height: 631px;        
@@ -49,6 +52,8 @@
             max-width: 360px;
             @include desktop-sm{
                 font-size: 18px;
+                line-height: 1.5;
+                margin-bottom: 0;
             }
         }
     }

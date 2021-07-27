@@ -95,7 +95,9 @@
 <li><a style='color:blue' href="./2.4-family-photo-albums.html">2.4</a></li>
 <li><a style='color:blue' href="./2.5-travel-photo-books.html">2.5</a></li>
 <li><a style='color:green' href="./2.6-baby-photo-books.html">2.6</a></li>
-<li><a style='color:red' href="./2.7-cookbooks.html">2.7</a></li>
+<li><a style='color:red' href="./2.7-cookbook-recipe-photobooks.html">2.7</a></li>
+<li><a style='color:red' href="./2.10-wedding-guest-books.html">2.10</a></li>
+<li><a style='color:red' href="./2.12-boudoir-book.html">2.12</a></li>
 <li><a style='color:green' href="./3.0-wedding-albums.html">3.0</a></li>
 <li><a style='color:green' href="./3.1-premium-layflat-wedding-albums.html">3.1</a></li>
 <li><a style='color:green' href="./3.2-layflat-wedding-photo-albums.html">3.2</a></li>
@@ -294,239 +296,314 @@
   <section class="section-photobooks">
   <div class="section-photobooks__wrap">
     <div class="section-photobooks__sidebar">
-      <h3 class="section-photobooks__title">Photobooks & Albums</h3>
-      <ul class="section-photobooks__list">
-        <li class="section-photobooks__item"><a href="#">Baby Photo Book</a></li>
-        <li class="section-photobooks__item"><a href="#">Travel Photo Album</a></li>
-        <li class="section-photobooks__item"><a href="#">Family Photo Book</a></li>
-        <li class="section-photobooks__item"><a href="#">Premium Layflat Album</a></li>
-        <li class="section-photobooks__item"><a href="#">Layflat Photo Album</a></li>
-        <li class="section-photobooks__item"><a href="#">Custom Photo Book</a></li>
-        <li class="section-photobooks__item"><a href="#">Wedding Photo Book</a></li>
-        <li class="section-photobooks__item"><a href="#">Premium Layflat Wedding Album</a></li>
-        <li class="section-photobooks__item"><a href="#">Layflat Wedding Photo Album</a></li>
-        <li class="section-photobooks__item"><a href="#">Engagement Photo Book</a></li>
-        <li class="section-photobooks__item"><a href="#">Wedding Guest Book</a></li>
-        <li class="section-photobooks__item"><a href="#">Gift Cards</a></li>
-        <li class="section-photobooks__item"><a href="#">Photo Book Design Service</a></li>
-      </ul>
+      <h3 class="section-photobooks__title--radio">By occasion</h3>
+
+        <div class="photobook__radio__container">
+      
+<label class='photobook__radio__label' for="radioWedding"> 
+    <input class='photobook__radio__input' type="radio" id="radioWedding" name="bookshort" value="Wedding"> 
+    <span class='photobook__radio__checker'></span> 
+    <span class='photobook__radio__text'>  
+    Wedding
+</span> 
+</label>
+<label class='photobook__radio__label' for="radioBaby"> 
+    <input class='photobook__radio__input' type="radio" id="radioBaby" name="bookshort" value="Baby"> 
+    <span class='photobook__radio__checker'></span> 
+    <span class='photobook__radio__text'>  
+    Baby
+</span> 
+</label>
+<label class='photobook__radio__label' for="radioFamily"> 
+    <input class='photobook__radio__input' type="radio" id="radioFamily" name="bookshort" value="Family"> 
+    <span class='photobook__radio__checker'></span> 
+    <span class='photobook__radio__text'>  
+    Family
+</span> 
+</label>
+<label class='photobook__radio__label' for="radioTravel"> 
+    <input class='photobook__radio__input' type="radio" id="radioTravel" name="bookshort" value="Travel"> 
+    <span class='photobook__radio__checker'></span> 
+    <span class='photobook__radio__text'>  
+    Travel
+</span> 
+</label>
+<label class='photobook__radio__label' for="radioOther"> 
+    <input class='photobook__radio__input' type="radio" id="radioOther" name="bookshort" value="Other"> 
+    <span class='photobook__radio__checker'></span> 
+    <span class='photobook__radio__text'>  
+    Other
+</span> 
+</label> 
+      
+<label class='photobook__radio__label' for="radioAll"> 
+  <input class='photobook__radio__input' checked type="radio" id="radioAll" name="bookshort" value="All"> 
+  <span class='photobook__radio__checker'></span> 
+  <span class='photobook__radio__text'>  
+All
+</span> 
+</label>
+        </div>
+
+
+ 
     </div>
     <style>
-      .light-italic{
+      .light-italic {
         font-weight: 300;
         font-style: italic;
       }
+
+      .cursor-pointer {
+        cursor: pointer;
+      }
     </style>
     <div class="section-photobooks__blocks">
-      <div href="#" class="section-photobooks__block">
+
+
+      <div  data-type="Travel" class="cursor-pointer filtered-card-js section-photobooks__block">
      
  <figure style='padding-bottom: calc(310% / 290 * 100)' class='figure-webp  '>
     <picture  data-priority="2" class="picture-webp toggle-img--js">
         <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp" type="image/webp">  
         <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp" type="image/webp">  
         <source class="webp-img" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.webp" type="image/webp"> 
-        <img loading="lazy" class="nowebp-img" src="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.jpg" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.jpg" alt="Flip book of wedding photo book sample">
+        <img loading="lazy" class="nowebp-img" src="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.jpg" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.jpg" alt="Flip book of Travel photo book sample">
       </picture>  
  </figure>
  
  
  
-    <h3 class="section-photobooks__name-album">Our Summer Adventures</h3>
-    <p class="section-photobooks__price light-italic"> Travel  </p>
+    <h4 class="section-photobooks__name-album">Our Summer Adventures</h4>
+    <p class="section-photobooks__price light-italic">  Travel </p>
+  </div><div  data-type="Wedding" class="cursor-pointer filtered-card-js section-photobooks__block">
+     
+ <figure style='padding-bottom: calc(310% / 290 * 100)' class='figure-webp  '>
+    <picture  data-priority="2" class="picture-webp toggle-img--js">
+        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp" type="image/webp">  
+        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp" type="image/webp">  
+        <source class="webp-img" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.webp" type="image/webp"> 
+        <img loading="lazy" class="nowebp-img" src="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.jpg" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.jpg" alt="Flip book of Wedding photo book sample">
+      </picture>  
+ </figure>
+ 
+ 
+ 
+    <h4 class="section-photobooks__name-album">Our Summer Adventures</h4>
+    <p class="section-photobooks__price light-italic">  Wedding </p>
+  </div><div  data-type="Wedding" class="cursor-pointer filtered-card-js section-photobooks__block">
+     
+ <figure style='padding-bottom: calc(310% / 290 * 100)' class='figure-webp  '>
+    <picture  data-priority="2" class="picture-webp toggle-img--js">
+        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp" type="image/webp">  
+        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp" type="image/webp">  
+        <source class="webp-img" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.webp" type="image/webp"> 
+        <img loading="lazy" class="nowebp-img" src="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.jpg" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.jpg" alt="Flip book of Wedding photo book sample">
+      </picture>  
+ </figure>
+ 
+ 
+ 
+    <h4 class="section-photobooks__name-album">Our Summer Adventures</h4>
+    <p class="section-photobooks__price light-italic">  Wedding </p>
+  </div><div  data-type="Wedding" class="cursor-pointer filtered-card-js section-photobooks__block">
+     
+ <figure style='padding-bottom: calc(310% / 290 * 100)' class='figure-webp  '>
+    <picture  data-priority="2" class="picture-webp toggle-img--js">
+        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp" type="image/webp">  
+        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp" type="image/webp">  
+        <source class="webp-img" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.webp" type="image/webp"> 
+        <img loading="lazy" class="nowebp-img" src="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.jpg" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.jpg" alt="Flip book of Wedding photo book sample">
+      </picture>  
+ </figure>
+ 
+ 
+ 
+    <h4 class="section-photobooks__name-album">Our Summer Adventures</h4>
+    <p class="section-photobooks__price light-italic">  Wedding </p>
+  </div><div  data-type="Wedding" class="cursor-pointer filtered-card-js section-photobooks__block">
+     
+ <figure style='padding-bottom: calc(310% / 290 * 100)' class='figure-webp  '>
+    <picture  data-priority="2" class="picture-webp toggle-img--js">
+        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp" type="image/webp">  
+        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp" type="image/webp">  
+        <source class="webp-img" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.webp" type="image/webp"> 
+        <img loading="lazy" class="nowebp-img" src="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.jpg" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.jpg" alt="Flip book of Wedding photo book sample">
+      </picture>  
+ </figure>
+ 
+ 
+ 
+    <h4 class="section-photobooks__name-album">Our Summer Adventures</h4>
+    <p class="section-photobooks__price light-italic">  Wedding </p>
+  </div><div  data-type="Travel" class="cursor-pointer filtered-card-js section-photobooks__block">
+     
+ <figure style='padding-bottom: calc(310% / 290 * 100)' class='figure-webp  '>
+    <picture  data-priority="2" class="picture-webp toggle-img--js">
+        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp" type="image/webp">  
+        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp" type="image/webp">  
+        <source class="webp-img" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.webp" type="image/webp"> 
+        <img loading="lazy" class="nowebp-img" src="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.jpg" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.jpg" alt="Flip book of Travel photo book sample">
+      </picture>  
+ </figure>
+ 
+ 
+ 
+    <h4 class="section-photobooks__name-album">Our Summer Adventures</h4>
+    <p class="section-photobooks__price light-italic">  Travel </p>
+  </div><div  data-type="Family" class="cursor-pointer filtered-card-js section-photobooks__block">
+     
+ <figure style='padding-bottom: calc(310% / 290 * 100)' class='figure-webp  '>
+    <picture  data-priority="2" class="picture-webp toggle-img--js">
+        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp" type="image/webp">  
+        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp" type="image/webp">  
+        <source class="webp-img" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.webp" type="image/webp"> 
+        <img loading="lazy" class="nowebp-img" src="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.jpg" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.jpg" alt="Flip book of Family photo book sample">
+      </picture>  
+ </figure>
+ 
+ 
+ 
+    <h4 class="section-photobooks__name-album">Our Summer Adventures</h4>
+    <p class="section-photobooks__price light-italic">  Family </p>
+  </div><div  data-type="Wedding" class="cursor-pointer filtered-card-js section-photobooks__block">
+     
+ <figure style='padding-bottom: calc(310% / 290 * 100)' class='figure-webp  '>
+    <picture  data-priority="2" class="picture-webp toggle-img--js">
+        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp" type="image/webp">  
+        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp" type="image/webp">  
+        <source class="webp-img" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.webp" type="image/webp"> 
+        <img loading="lazy" class="nowebp-img" src="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.jpg" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.jpg" alt="Flip book of Wedding photo book sample">
+      </picture>  
+ </figure>
+ 
+ 
+ 
+    <h4 class="section-photobooks__name-album">Our Summer Adventures</h4>
+    <p class="section-photobooks__price light-italic">  Wedding </p>
+  </div><div  data-type="Wedding" class="cursor-pointer filtered-card-js section-photobooks__block">
+     
+ <figure style='padding-bottom: calc(310% / 290 * 100)' class='figure-webp  '>
+    <picture  data-priority="2" class="picture-webp toggle-img--js">
+        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp" type="image/webp">  
+        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp" type="image/webp">  
+        <source class="webp-img" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.webp" type="image/webp"> 
+        <img loading="lazy" class="nowebp-img" src="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.jpg" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.jpg" alt="Flip book of Wedding photo book sample">
+      </picture>  
+ </figure>
+ 
+ 
+ 
+    <h4 class="section-photobooks__name-album">Our Summer Adventures</h4>
+    <p class="section-photobooks__price light-italic">  Wedding </p>
+  </div><div  data-type="Wedding" class="cursor-pointer filtered-card-js section-photobooks__block">
+     
+ <figure style='padding-bottom: calc(310% / 290 * 100)' class='figure-webp  '>
+    <picture  data-priority="2" class="picture-webp toggle-img--js">
+        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp" type="image/webp">  
+        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp" type="image/webp">  
+        <source class="webp-img" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.webp" type="image/webp"> 
+        <img loading="lazy" class="nowebp-img" src="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.jpg" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.jpg" alt="Flip book of Wedding photo book sample">
+      </picture>  
+ </figure>
+ 
+ 
+ 
+    <h4 class="section-photobooks__name-album">Our Summer Adventures</h4>
+    <p class="section-photobooks__price light-italic">  Wedding </p>
+  </div><div  data-type="Wedding" class="cursor-pointer filtered-card-js section-photobooks__block">
+     
+ <figure style='padding-bottom: calc(310% / 290 * 100)' class='figure-webp  '>
+    <picture  data-priority="2" class="picture-webp toggle-img--js">
+        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp" type="image/webp">  
+        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp" type="image/webp">  
+        <source class="webp-img" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.webp" type="image/webp"> 
+        <img loading="lazy" class="nowebp-img" src="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.jpg" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.jpg" alt="Flip book of Wedding photo book sample">
+      </picture>  
+ </figure>
+ 
+ 
+ 
+    <h4 class="section-photobooks__name-album">Our Summer Adventures</h4>
+    <p class="section-photobooks__price light-italic">  Wedding </p>
+  </div><div  data-type="Wedding" class="cursor-pointer filtered-card-js section-photobooks__block">
+     
+ <figure style='padding-bottom: calc(310% / 290 * 100)' class='figure-webp  '>
+    <picture  data-priority="2" class="picture-webp toggle-img--js">
+        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp" type="image/webp">  
+        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp" type="image/webp">  
+        <source class="webp-img" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.webp" type="image/webp"> 
+        <img loading="lazy" class="nowebp-img" src="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.jpg" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.jpg" alt="Flip book of Wedding photo book sample">
+      </picture>  
+ </figure>
+ 
+ 
+ 
+    <h4 class="section-photobooks__name-album">Our Summer Adventures</h4>
+    <p class="section-photobooks__price light-italic">  Wedding </p>
+  </div><div  data-type="Wedding" class="cursor-pointer filtered-card-js section-photobooks__block">
+     
+ <figure style='padding-bottom: calc(310% / 290 * 100)' class='figure-webp  '>
+    <picture  data-priority="2" class="picture-webp toggle-img--js">
+        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp" type="image/webp">  
+        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp" type="image/webp">  
+        <source class="webp-img" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.webp" type="image/webp"> 
+        <img loading="lazy" class="nowebp-img" src="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.jpg" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.jpg" alt="Flip book of Wedding photo book sample">
+      </picture>  
+ </figure>
+ 
+ 
+ 
+    <h4 class="section-photobooks__name-album">Our Summer Adventures</h4>
+    <p class="section-photobooks__price light-italic">  Wedding </p>
+  </div><div  data-type="Wedding" class="cursor-pointer filtered-card-js section-photobooks__block">
+     
+ <figure style='padding-bottom: calc(310% / 290 * 100)' class='figure-webp  '>
+    <picture  data-priority="2" class="picture-webp toggle-img--js">
+        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp" type="image/webp">  
+        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp" type="image/webp">  
+        <source class="webp-img" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.webp" type="image/webp"> 
+        <img loading="lazy" class="nowebp-img" src="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.jpg" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.jpg" alt="Flip book of Wedding photo book sample">
+      </picture>  
+ </figure>
+ 
+ 
+ 
+    <h4 class="section-photobooks__name-album">Our Summer Adventures</h4>
+    <p class="section-photobooks__price light-italic">  Wedding </p>
+  </div><div  data-type="Wedding" class="cursor-pointer filtered-card-js section-photobooks__block">
+     
+ <figure style='padding-bottom: calc(310% / 290 * 100)' class='figure-webp  '>
+    <picture  data-priority="2" class="picture-webp toggle-img--js">
+        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp" type="image/webp">  
+        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp" type="image/webp">  
+        <source class="webp-img" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.webp" type="image/webp"> 
+        <img loading="lazy" class="nowebp-img" src="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.jpg" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.jpg" alt="Flip book of Wedding photo book sample">
+      </picture>  
+ </figure>
+ 
+ 
+ 
+    <h4 class="section-photobooks__name-album">Our Summer Adventures</h4>
+    <p class="section-photobooks__price light-italic">  Wedding </p>
+  </div><div  data-type="Wedding" class="cursor-pointer filtered-card-js section-photobooks__block">
+     
+ <figure style='padding-bottom: calc(310% / 290 * 100)' class='figure-webp  '>
+    <picture  data-priority="2" class="picture-webp toggle-img--js">
+        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp" type="image/webp">  
+        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp" type="image/webp">  
+        <source class="webp-img" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.webp" type="image/webp"> 
+        <img loading="lazy" class="nowebp-img" src="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.jpg" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.jpg" alt="Flip book of Wedding photo book sample">
+      </picture>  
+ </figure>
+ 
+ 
+ 
+    <h4 class="section-photobooks__name-album">Our Summer Adventures</h4>
+    <p class="section-photobooks__price light-italic">  Wedding </p>
   </div>
-      <a href="#" class="section-photobooks__block">
-         
- <figure style='padding-bottom: calc(310% / 290 * 100)' class='figure-webp  '>
-    <picture  data-priority="2" class="picture-webp toggle-img--js">
-        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.0b-memory-books/min-travel-photo-album.webp" data-img="images/towebp/2.0b-memory-books/travel-photo-album-376.webp" type="image/webp">  
-        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.0b-memory-books/min-travel-photo-album.webp" data-img="images/towebp/2.0b-memory-books/travel-photo-album-480.webp" type="image/webp">  
-        <source class="webp-img" srcset="images/towebp/2.0b-memory-books/min-travel-photo-album.webp" data-img="images/towebp/2.0b-memory-books/travel-photo-album.webp" type="image/webp"> 
-        <img loading="lazy" class="nowebp-img" src="images/towebp/2.0b-memory-books/min-travel-photo-album.jpg" data-img="images/towebp/2.0b-memory-books/travel-photo-album.jpg" alt="Travel photo book with pictures from Berlin">
-      </picture>  
- </figure>
- 
- 
- 
-        <h3 class="section-photobooks__name-album">Tumiga and Susana</h3>
-        <p class="section-photobooks__price">From $49</p>
-      </a>
-      <a href="#" class="section-photobooks__block">
-         
- <figure style='padding-bottom: calc(310% / 290 * 100)' class='figure-webp  '>
-    <picture  data-priority="2" class="picture-webp toggle-img--js">
-        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.0b-memory-books/min-family-photo-book.webp" data-img="images/towebp/2.0b-memory-books/family-photo-book-376.webp" type="image/webp">  
-        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.0b-memory-books/min-family-photo-book.webp" data-img="images/towebp/2.0b-memory-books/family-photo-book-480.webp" type="image/webp">  
-        <source class="webp-img" srcset="images/towebp/2.0b-memory-books/min-family-photo-book.webp" data-img="images/towebp/2.0b-memory-books/family-photo-book.webp" type="image/webp"> 
-        <img loading="lazy" class="nowebp-img" src="images/towebp/2.0b-memory-books/min-family-photo-book.jpg" data-img="images/towebp/2.0b-memory-books/family-photo-book.jpg" alt="Kids looking at photos in a family photo book">
-      </picture>  
- </figure>
- 
- 
- 
-        <h3 class="section-photobooks__name-album">Taylor + Charlie</h3>
-        <p class="section-photobooks__price">From $39.90</p>
-      </a>
-      <a href="#" class="section-photobooks__block">
-         
- <figure style='padding-bottom: calc(310% / 290 * 100)' class='figure-webp  '>
-    <picture  data-priority="1" class="picture-webp toggle-img--js">
-        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.0b-memory-books/min-premium-photo-albums.webp" data-img="images/towebp/2.0b-memory-books/premium-photo-albums-376.webp" type="image/webp">  
-        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.0b-memory-books/min-premium-photo-albums.webp" data-img="images/towebp/2.0b-memory-books/premium-photo-albums-480.webp" type="image/webp">  
-        <source class="webp-img" srcset="images/towebp/2.0b-memory-books/min-premium-photo-albums.webp" data-img="images/towebp/2.0b-memory-books/premium-photo-albums.webp" type="image/webp"> 
-        <img loading="lazy" class="nowebp-img" src="images/towebp/2.0b-memory-books/min-premium-photo-albums.jpg" data-img="images/towebp/2.0b-memory-books/premium-photo-albums.jpg" alt="Premium photo album with custom laser etched title">
-      </picture>  
- </figure>
- 
- 
- 
-        <h3 class="section-photobooks__name-album">Mr. & Mrs. Branson</h3>
-        <p class="section-photobooks__price">From $299</p>
-      </a>
-      <a href="#" class="section-photobooks__block">
-         
- <figure style='padding-bottom: calc(310% / 290 * 100)' class='figure-webp  '>
-    <picture  data-priority="1" class="picture-webp toggle-img--js">
-        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.0b-memory-books/min-layflat-photo-book.webp" data-img="images/towebp/2.0b-memory-books/layflat-photo-book-376.webp" type="image/webp">  
-        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.0b-memory-books/min-layflat-photo-book.webp" data-img="images/towebp/2.0b-memory-books/layflat-photo-book-480.webp" type="image/webp">  
-        <source class="webp-img" srcset="images/towebp/2.0b-memory-books/min-layflat-photo-book.webp" data-img="images/towebp/2.0b-memory-books/layflat-photo-book.webp" type="image/webp"> 
-        <img loading="lazy" class="nowebp-img" src="images/towebp/2.0b-memory-books/min-layflat-photo-book.jpg" data-img="images/towebp/2.0b-memory-books/layflat-photo-book.jpg" alt="Layflat photo book with family photos">
-      </picture>  
- </figure>
- 
- 
- 
-        <h3 class="section-photobooks__name-album">Hello Adventures</h3>
-        <p class="section-photobooks__price">From $74.90</p>
-      </a>
-      <a href="#" class="section-photobooks__block">
-         
- <figure style='padding-bottom: calc(310% / 290 * 100)' class='figure-webp  '>
-    <picture  data-priority="1" class="picture-webp toggle-img--js">
-        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.0b-memory-books/min-custom-photo-book.webp" data-img="images/towebp/2.0b-memory-books/custom-photo-book-376.webp" type="image/webp">  
-        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.0b-memory-books/min-custom-photo-book.webp" data-img="images/towebp/2.0b-memory-books/custom-photo-book-480.webp" type="image/webp">  
-        <source class="webp-img" srcset="images/towebp/2.0b-memory-books/min-custom-photo-book.webp" data-img="images/towebp/2.0b-memory-books/custom-photo-book.webp" type="image/webp"> 
-        <img loading="lazy" class="nowebp-img" src="images/towebp/2.0b-memory-books/min-custom-photo-book.jpg" data-img="images/towebp/2.0b-memory-books/custom-photo-book.jpg" alt="Custom designed photobook laying on marbel table">
-      </picture>  
- </figure>
- 
- 
- 
-        <h3 class="section-photobooks__name-album">Staycation 2020</h3>
-        <p class="section-photobooks__price">From $49</p>
-      </a>
-      <a href="#" class="section-photobooks__block">
-         
- <figure style='padding-bottom: calc(310% / 290 * 100)' class='figure-webp  '>
-    <picture  data-priority="2" class="picture-webp toggle-img--js">
-        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.0b-memory-books/min-wedding-photo-book.webp" data-img="images/towebp/2.0b-memory-books/wedding-photo-book-376.webp" type="image/webp">  
-        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.0b-memory-books/min-wedding-photo-book.webp" data-img="images/towebp/2.0b-memory-books/wedding-photo-book-480.webp" type="image/webp">  
-        <source class="webp-img" srcset="images/towebp/2.0b-memory-books/min-wedding-photo-book.webp" data-img="images/towebp/2.0b-memory-books/wedding-photo-book.webp" type="image/webp"> 
-        <img loading="lazy" class="nowebp-img" src="images/towebp/2.0b-memory-books/min-wedding-photo-book.jpg" data-img="images/towebp/2.0b-memory-books/wedding-photo-book.jpg" alt="Large wedding photo book with pictures of bride">
-      </picture>  
- </figure>
- 
- 
- 
-        <h3 class="section-photobooks__name-album">On This Day</h3>
-        <p class="section-photobooks__price">From $99</p>
-      </a>
-      <a href="#" class="section-photobooks__block">
-         
- <figure style='padding-bottom: calc(310% / 290 * 100)' class='figure-webp  '>
-    <picture  data-priority="2" class="picture-webp toggle-img--js">
-        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.0b-memory-books/min-premium-wedding-albums.webp" data-img="images/towebp/2.0b-memory-books/premium-wedding-albums-376.webp" type="image/webp">  
-        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.0b-memory-books/min-premium-wedding-albums.webp" data-img="images/towebp/2.0b-memory-books/premium-wedding-albums-480.webp" type="image/webp">  
-        <source class="webp-img" srcset="images/towebp/2.0b-memory-books/min-premium-wedding-albums.webp" data-img="images/towebp/2.0b-memory-books/premium-wedding-albums.webp" type="image/webp"> 
-        <img loading="lazy" class="nowebp-img" src="images/towebp/2.0b-memory-books/min-premium-wedding-albums.jpg" data-img="images/towebp/2.0b-memory-books/premium-wedding-albums.jpg" alt="Flushmount wedding album with cameo window">
-      </picture>  
- </figure>
- 
- 
- 
-        <h3 class="section-photobooks__name-album">Willian & Emma</h3>
-        <p class="section-photobooks__price">From $49</p>
-      </a>
-      <a href="#" class="section-photobooks__block">
-         
- <figure style='padding-bottom: calc(310% / 290 * 100)' class='figure-webp  '>
-    <picture  data-priority="2" class="picture-webp toggle-img--js">
-        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.0b-memory-books/min-wedding-photo-albums.webp" data-img="images/towebp/2.0b-memory-books/wedding-photo-albums-376.webp" type="image/webp">  
-        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.0b-memory-books/min-wedding-photo-albums.webp" data-img="images/towebp/2.0b-memory-books/wedding-photo-albums-480.webp" type="image/webp">  
-        <source class="webp-img" srcset="images/towebp/2.0b-memory-books/min-wedding-photo-albums.webp" data-img="images/towebp/2.0b-memory-books/wedding-photo-albums.webp" type="image/webp"> 
-        <img loading="lazy" class="nowebp-img" src="images/towebp/2.0b-memory-books/min-wedding-photo-albums.jpg" data-img="images/towebp/2.0b-memory-books/wedding-photo-albums.jpg" alt="Flat lay wedding album open on table">
-      </picture>  
- </figure>
- 
- 
- 
-        <h3 class="section-photobooks__name-album">Marion & Phillipp</h3>
-        <p class="section-photobooks__price">From $74.90</p>
-      </a>
-      <a href="#" class="section-photobooks__block">
-         
- <figure style='padding-bottom: calc(310% / 290 * 100)' class='figure-webp  '>
-    <picture  data-priority="2" class="picture-webp toggle-img--js">
-        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.0b-memory-books/min-engagement-photo-book.webp" data-img="images/towebp/2.0b-memory-books/engagement-photo-book-376.webp" type="image/webp">  
-        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.0b-memory-books/min-engagement-photo-book.webp" data-img="images/towebp/2.0b-memory-books/engagement-photo-book-480.webp" type="image/webp">  
-        <source class="webp-img" srcset="images/towebp/2.0b-memory-books/min-engagement-photo-book.webp" data-img="images/towebp/2.0b-memory-books/engagement-photo-book.webp" type="image/webp"> 
-        <img loading="lazy" class="nowebp-img" src="images/towebp/2.0b-memory-books/min-engagement-photo-book.jpg" data-img="images/towebp/2.0b-memory-books/engagement-photo-book.jpg" alt="Engagement photo book cover examples on table">
-      </picture>  
- </figure>
- 
- 
- 
-        <h3 class="section-photobooks__name-album">Christian & Michelle</h3>
-        <p class="section-photobooks__price">From $49</p>
-      </a>
-      <a href="#" class="section-photobooks__block">
-         
- <figure style='padding-bottom: calc(310% / 290 * 100)' class='figure-webp  '>
-    <picture  data-priority="2" class="picture-webp toggle-img--js">
-        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.0b-memory-books/min-wedding-guest-book.webp" data-img="images/towebp/2.0b-memory-books/wedding-guest-book-376.webp" type="image/webp">  
-        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.0b-memory-books/min-wedding-guest-book.webp" data-img="images/towebp/2.0b-memory-books/wedding-guest-book-480.webp" type="image/webp">  
-        <source class="webp-img" srcset="images/towebp/2.0b-memory-books/min-wedding-guest-book.webp" data-img="images/towebp/2.0b-memory-books/wedding-guest-book.webp" type="image/webp"> 
-        <img loading="lazy" class="nowebp-img" src="images/towebp/2.0b-memory-books/min-wedding-guest-book.jpg" data-img="images/towebp/2.0b-memory-books/wedding-guest-book.jpg" alt="Open wedding guest book with messages and signatures">
-      </picture>  
- </figure>
- 
- 
- 
-        <h3 class="section-photobooks__name-album">Wedding Guest Book</h3>
-        <p class="section-photobooks__price">From $49</p>
-      </a>
-      <a href="#" class="section-photobooks__block">
-         
- <figure style='padding-bottom: calc(310% / 290 * 100)' class='figure-webp  '>
-    <picture  data-priority="2" class="picture-webp toggle-img--js">
-        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.0b-memory-books/min-photo-book-gift-cards.webp" data-img="images/towebp/2.0b-memory-books/photo-book-gift-cards-376.webp" type="image/webp">  
-        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.0b-memory-books/min-photo-book-gift-cards.webp" data-img="images/towebp/2.0b-memory-books/photo-book-gift-cards-480.webp" type="image/webp">  
-        <source class="webp-img" srcset="images/towebp/2.0b-memory-books/min-photo-book-gift-cards.webp" data-img="images/towebp/2.0b-memory-books/photo-book-gift-cards.webp" type="image/webp"> 
-        <img loading="lazy" class="nowebp-img" src="images/towebp/2.0b-memory-books/min-photo-book-gift-cards.jpg" data-img="images/towebp/2.0b-memory-books/photo-book-gift-cards.jpg" alt="Photo book gift card example">
-      </picture>  
- </figure>
- 
- 
- 
-        <h3 class="section-photobooks__name-album">Gift Cards</h3>
-        <p class="section-photobooks__price">From $49</p>
-      </a>
-      <a href="#" class="section-photobooks__block">
-         
- <figure style='padding-bottom: calc(310% / 290 * 100)' class='figure-webp  '>
-    <picture  data-priority="2" class="picture-webp toggle-img--js">
-        <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.0b-memory-books/min-photobook-design-service.webp" data-img="images/towebp/2.0b-memory-books/photobook-design-service-376.webp" type="image/webp">  
-        <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.0b-memory-books/min-photobook-design-service.webp" data-img="images/towebp/2.0b-memory-books/photobook-design-service-480.webp" type="image/webp">  
-        <source class="webp-img" srcset="images/towebp/2.0b-memory-books/min-photobook-design-service.webp" data-img="images/towebp/2.0b-memory-books/photobook-design-service.webp" type="image/webp"> 
-        <img loading="lazy" class="nowebp-img" src="images/towebp/2.0b-memory-books/min-photobook-design-service.jpg" data-img="images/towebp/2.0b-memory-books/photobook-design-service.jpg" alt="Photo book design service examples">
-      </picture>  
- </figure>
- 
- 
- 
-        <h3 class="section-photobooks__name-album">Photo Book Design Service</h3>
-        <p class="section-photobooks__price"> </p>
-      </a>
-    </div>    
+
+    </div>
   </div>
 </section>
   <section class="dignity m-0">
@@ -752,7 +829,13 @@
   <div class="popup__body">
     <h1 class="popup-login__title"></h1>
     <button class="popup__close close-login">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><defs><style>.a,.b{fill:none;}.b{stroke:#2f353a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><rect class="a" width="24" height="24"/><g transform="translate(-0.662 -0.662)"><line class="b" x1="14" y2="14" transform="translate(5.662 5.662)"/><line class="b" x2="14" y2="14" transform="translate(5.662 5.662)"/></g></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <rect fill="transparent" width="24" height="24"/>
+        <g style="stroke:#2f353a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;" transform="translate(-0.662 -0.662)">
+        <line x1="14" y2="14" transform="translate(5.662 5.662)"/>
+        <line x2="14" y2="14" transform="translate(5.662 5.662)"/>
+        </g>
+      </svg>
     </button>
 
     <div class="popup-login__tab">
@@ -767,37 +850,37 @@
 
       <!-- login tab content -->
       <div class="popup-login__tab-content" data-tab='login'>
-        <div class="tab-content tab-content-login">
+  <div class="tab-content tab-content-login">
 
-          <form action="#" method="#" class="tab-content__form">
-            <div class="tab-content__row50">
-              <div class="tab-content__input">
-                <label for="login-email">Email *</label>
-                <input type="email" name="email" id="login-email" required>
-              </div>
-              <div class="tab-content__input">
-                <label for="login-password">Password *</label>
-                <div class="tab-content__pass">
-                  <input type="password" name="password" id="login-password" required>
+    <form action="#" method="#" class="tab-content__form">
+      <div class="tab-content__row50">
+        <div class="tab-content__input">
+          <label for="login-email">Email *</label>
+          <input type="email" name="email" id="login-email" required>
+        </div>
+        <div class="tab-content__input">
+          <label for="login-password">Password *</label>
+          <div class="tab-content__pass">
+            <input type="password" name="password" id="login-password" required autocomplete="off">
 
-                  <svg class="show-hide-password" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <g>
-                      <path
-                        d="m436.266 161.779c-10.11-9.821-20.363-18.84-30.708-27.052l106.442-106.443-28.284-28.284-111.382 111.382c-4.592-2.813-9.193-5.471-13.798-7.951-33.794-18.202-67.955-27.431-101.536-27.431-33.561 0-67.811 9.22-101.799 27.404-26.455 14.154-52.826 33.765-78.38 58.291-43.025 41.292-69.042 82.192-70.124 83.913l-6.697 10.659 6.712 10.649c1.082 1.716 27.102 42.494 70.131 83.661 9.919 9.49 19.962 18.231 30.083 26.213l-106.926 106.926 28.284 28.284 111.918-111.918c5.001 3.06 10.01 5.931 15.022 8.604 33.982 18.124 68.224 27.314 101.776 27.314 33.571 0 67.725-9.198 101.513-27.34 26.305-14.124 52.458-33.694 77.73-58.167 42.546-41.198 68.21-82.013 69.272-83.73l6.485-10.497-6.47-10.505c-1.061-1.722-26.722-42.659-69.264-83.982zm-300.808 186.479c-42.446-32.577-74.079-73.124-87.613-92.042 24.483-34.425 108.079-140.216 209.155-140.216 30.805 0 59.88 9.901 86.099 24.617l-31.588 31.588c-15.691-10.242-34.416-16.205-54.511-16.205-55.14 0-100 44.86-100 100 0 20.095 5.963 38.82 16.205 54.511zm175.345-118.777c3.96 8.002 6.197 17.003 6.197 26.519 0 33.084-26.916 60-60 60-9.516 0-18.517-2.237-26.519-6.197zm-108.251 51.683c-3.554-7.659-5.552-16.18-5.552-25.164 0-33.084 26.916-60 60-60 8.984 0 17.505 1.998 25.164 5.552zm54.448 114.836c-31.253 0-60.856-10.141-87.564-25.152l31.847-31.847c15.933 10.729 35.106 16.999 55.717 16.999 55.14 0 100-44.86 100-100 0-20.611-6.27-39.784-16.999-55.716l37.036-37.036c42.503 32.839 74.087 73.991 87.394 93.001-23.921 34.155-106.321 139.751-207.431 139.751z" />
-                    </g>
-                  </svg>
-                </div>
+            <svg class="show-hide-password" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512"
+              xmlns="http://www.w3.org/2000/svg">
+              <g>
+                <path
+                  d="m436.266 161.779c-10.11-9.821-20.363-18.84-30.708-27.052l106.442-106.443-28.284-28.284-111.382 111.382c-4.592-2.813-9.193-5.471-13.798-7.951-33.794-18.202-67.955-27.431-101.536-27.431-33.561 0-67.811 9.22-101.799 27.404-26.455 14.154-52.826 33.765-78.38 58.291-43.025 41.292-69.042 82.192-70.124 83.913l-6.697 10.659 6.712 10.649c1.082 1.716 27.102 42.494 70.131 83.661 9.919 9.49 19.962 18.231 30.083 26.213l-106.926 106.926 28.284 28.284 111.918-111.918c5.001 3.06 10.01 5.931 15.022 8.604 33.982 18.124 68.224 27.314 101.776 27.314 33.571 0 67.725-9.198 101.513-27.34 26.305-14.124 52.458-33.694 77.73-58.167 42.546-41.198 68.21-82.013 69.272-83.73l6.485-10.497-6.47-10.505c-1.061-1.722-26.722-42.659-69.264-83.982zm-300.808 186.479c-42.446-32.577-74.079-73.124-87.613-92.042 24.483-34.425 108.079-140.216 209.155-140.216 30.805 0 59.88 9.901 86.099 24.617l-31.588 31.588c-15.691-10.242-34.416-16.205-54.511-16.205-55.14 0-100 44.86-100 100 0 20.095 5.963 38.82 16.205 54.511zm175.345-118.777c3.96 8.002 6.197 17.003 6.197 26.519 0 33.084-26.916 60-60 60-9.516 0-18.517-2.237-26.519-6.197zm-108.251 51.683c-3.554-7.659-5.552-16.18-5.552-25.164 0-33.084 26.916-60 60-60 8.984 0 17.505 1.998 25.164 5.552zm54.448 114.836c-31.253 0-60.856-10.141-87.564-25.152l31.847-31.847c15.933 10.729 35.106 16.999 55.717 16.999 55.14 0 100-44.86 100-100 0-20.611-6.27-39.784-16.999-55.716l37.036-37.036c42.503 32.839 74.087 73.991 87.394 93.001-23.921 34.155-106.321 139.751-207.431 139.751z" />
+              </g>
+            </svg>
+          </div>
 
-                <button class="tab-content-login__forgot" data-ref="forgot">Forgot password?</button>
-              </div>
-            </div>
-
-            <button class="popup__submit" type="submit">login</button>
-          </form>
-
+          <button class="tab-content-login__forgot" type="button" data-ref="forgot">Forgot password?</button>
         </div>
       </div>
+
+      <button class="popup__submit" type="submit">login</button>
+    </form>
+
+  </div>
+</div>
 
       <!-- register tab content -->
       <div class="popup-login__tab-content" data-tab='register'>
@@ -826,7 +909,7 @@
         <div class="tab-content__input">
           <label for="register-password">Password *</label>
           <div class="tab-content__pass">
-            <input type="password" name="password" id="register-password" required>
+            <input type="password" name="password" id="register-password" required autocomplete="off">
             <svg class="show-hide-password" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512"
                 xmlns="http://www.w3.org/2000/svg">
                 <g>
@@ -836,9 +919,63 @@
               </svg>
           </div>
         </div> 
-              <label> <input type="checkbox"> Receive emails about new products & special offers  </label> <br>
-              <label> <input type="checkbox"> I'm a professional photographer </label> <br>
-              <label> <input type="checkbox">I understand and agree to PikPerfect's Terms & Privacy Policy.</label><br> 
+              <div>
+                <label class="custom-checkbox">
+                  <input class="custom-checkbox__input" type="checkbox" tabindex="-1">
+                  <span class="custom-checkbox__checkmark" tabindex="0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                      <rect style="fill:transparent;" width="24" height="24"/><path style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;" d="M20,6,9,17,4,12" transform="translate(0.5 0.5)"/>
+                    </svg>
+                  </span> 
+                  Receive emails about new products & special offers 
+                </label>
+              </div>
+
+              <div>
+                <label class="custom-checkbox">
+                  <input class="custom-checkbox__input" data-accord type="checkbox" tabindex="-1">
+                  <span class="custom-checkbox__checkmark" tabindex="0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                      <rect style="fill:transparent;" width="24" height="24"/><path style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;" d="M20,6,9,17,4,12" transform="translate(0.5 0.5)"/>
+                    </svg>
+                  </span> 
+                  I'm a professional photographer 
+                </label>
+
+                <div class="custom-checkbox__accord">
+                  <div class="custom-checkbox__accord-body">
+                    <div class="tab-content__input">
+                      <label for="register-social-page">Website or Social Media Page *</label>
+                      <input type="text" name="social page" id="register-social-page">
+                    </div>
+                    <div class="tab-content__input">
+                      <label for="register-album-purchase">How Many Albums Do You Expect To Purchase Annually? *</label>
+                      <input type="text" name="how many album purchase" id="register-album-purchase">
+                    </div>
+
+                    <div class="custom-file-upload">
+                      <label class="custom-file-upload__body custom-checkbox__link">
+                        <input type="file" class="custom-file-upload__btn"  />
+                        Upload your logo - PNG only (optional)
+                      </label>
+                      
+                      <span class="custom-file-upload__file-name"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <label class="custom-checkbox">
+                  <input class="custom-checkbox__input" type="checkbox" tabindex="-1" required>
+                  <span class="custom-checkbox__checkmark" tabindex="0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                      <rect style="fill:transparent;" width="24" height="24"/><path style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;" d="M20,6,9,17,4,12" transform="translate(0.5 0.5)"/>
+                    </svg>
+                  </span> 
+                  I understand and agree to PikPerfect's <a class="custom-checkbox__link" href="#">Terms</a> & <a class="custom-checkbox__link" href="#">Privacy Policy</a>. 
+                </label>
+              </div>
 
         <button class="popup__submit" type="submit">create account</button>
       </form>
@@ -848,11 +985,18 @@
   </div>
 </div>
 
+<!-- popup forgot password  -->
 <div class="popup__item popup-forgot">
   <div class="popup__overlay"></div> 
   <div class="popup__body">
     <button class="popup__close close-forgot">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><defs><style>.a,.b{fill:none;}.b{stroke:#2f353a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><rect class="a" width="24" height="24"/><g transform="translate(-0.662 -0.662)"><line class="b" x1="14" y2="14" transform="translate(5.662 5.662)"/><line class="b" x2="14" y2="14" transform="translate(5.662 5.662)"/></g></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <rect fill="transparent" width="24" height="24"/>
+        <g style="stroke:#2f353a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;" transform="translate(-0.662 -0.662)">
+        <line x1="14" y2="14" transform="translate(5.662 5.662)"/>
+        <line x2="14" y2="14" transform="translate(5.662 5.662)"/>
+        </g>
+      </svg>
     </button>
 
     <h2 class="popup__title">Forgot Password</h2>
