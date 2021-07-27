@@ -15,6 +15,11 @@
     justify-content: center;
     flex-wrap: wrap;
   }
+  &__wrap-content{
+    @include tablet{
+      margin-bottom: 56px;
+    }    
+  }
   &__entered-wrap{
     @include tablet{
       margin-bottom: 48px;
@@ -149,7 +154,7 @@
   &_size-lx{
     padding-bottom: 0;
     @include tablet{
-      padding: 95px 15px 0px;
+      padding: 80px 15px 0px;
     }
     .section-album__entered{
       max-width: 980px;

@@ -180,6 +180,9 @@
 				padding-bottom: calc(583% / 880 * 100);
 			}		
 		}
+		p{
+			padding: 0 15px;
+		}
 	}
 	&__wrap-flex{
 		@include desktop-sm{
@@ -264,6 +267,13 @@
 			z-index: -1;
 			opacity: .15;
 		}
+		@include tablet{
+			padding: 80px 0;
+		}
+		@include desktop-sm{
+			width: 38%;
+			padding: 0 5%;
+		}
 		&_blue{
 			background-color: rgba($color: #69C2CE, $alpha: .7);	
 			color: #fff;
@@ -307,18 +317,12 @@
 			}
 		}
 		&_khaki{
+			padding: 0 4%;
 			background-color: rgba($color: 	#647670, $alpha: .7);	
 			color: #fff;
 			h1{
 				color: #fff;
 			}
-		}
-		@include tablet{
-			padding: 80px 0;
-		}
-		@include desktop-sm{
-			width: 38%;
-			padding: 0 5%;
 		}
 		.button{
 			max-width: 210px;
@@ -340,6 +344,7 @@
 		}
 		.small{
 			margin: 0;
+			font-size: 14px;
 		}
 		.price{
 			margin: 0;
