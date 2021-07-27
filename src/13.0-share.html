@@ -1,0 +1,27 @@
+@@include('./html-templates/head.html',{
+    title:'Refer a Friend and Earn Photo Book Credit | PikPerfect',
+    desc:"It pays to spread the love: earn credits every time a friend purchases their first PikPerfect photo book.",
+  })
+<main class="main-content"> 
+  <section class="discount">
+    <div class="discount__wrap">
+        <div class="discount__img">
+            @@include('./i/resp-img2.html',{
+                src:'wedding-photo-book',
+                type:'jpg',
+                alt:'An open wedding photo book',
+                priority:'0',  
+                width:'688',
+                height:'895',
+                folder:'13.0-share',
+            })    
+        </div>
+        <div class="discount__content">
+            <h1 class="discount__title">Refer a Friend</h1>
+        </div>
+    </div>
+  </section>
+  @@include('./html-templates/section-subscribe.html')
+</main>
+<div class="swiper-delay" data-time='4000'></div>
+@@include('./html-templates/footer.html' )

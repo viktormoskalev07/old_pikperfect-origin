@@ -1,0 +1,22 @@
+.discount{
+    &__wrap{
+        max-width: 1376px;
+        margin: 0 auto;
+        background: #EDECEE;
+        @include desktop-sm{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    &__title{
+        font-family: 'Spectral';
+        font-size: 32px;
+        @include tablet{
+            font-size: 40px;
+        }
+        @include desktop-sm{
+            font-size: 48px;
+        }
+    }
+}
