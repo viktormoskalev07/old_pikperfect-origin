@@ -1,6 +1,6 @@
 @@include('./html-templates/head.html',{
-    title:'Photo Book Gift Vouchers | PikPerfect',
-    desc:"PikPerfect digital photo book Gift Cards are the ideal way to gift someone a photobook, while allowing them to choose the type and how it is designed.",
+    title:'My Account | PikPerfect',
+    desc:"",
   })
 <main class="main-content"> 
     <section class="section-form section-form_800">
@@ -8,83 +8,85 @@
         <form action="#" method="#" class="tab-content__form">
             <div class="tab-content__row50">
                 <div class="tab-content__input">
-                <label for="register-first">First Name</label>
-                <input type="text" name="first name" id="register-first">
+                <label for="register-first-name">First Name</label>
+                <input type="text" name="first name" id="register-first-name">
                 </div>
                 <div class="tab-content__input">
-                <label for="register-last">Last Name</label>
-                <input type="text" name="last name" id="register-last">
+                <label for="register-last-name">Last Name</label>
+                <input type="text" name="last name" id="register-last-name">
                 </div>
             </div>
             <div class="tab-content__input">
-                <label for="register-email">Email</label>
-                <input type="email" name="email" id="register-email">
+                <label for="register-email-user">Email</label>
+                <input type="email" name="email" id="register-email-user">
             </div>
             </div>
             <div class="tab-content__input">
-                <label for="register-password">Password</label>
+                <label for="register-password-user">Password</label>
                 <div class="tab-content__pass">
-                    <input type="password" name="password" id="register-password" autocomplete="off">
+                    <input type="password" name="password" id="register-password-user" autocomplete="off">
                     <svg class="show-hide-password" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
                         <g>
                             <path d="m436.266 161.779c-10.11-9.821-20.363-18.84-30.708-27.052l106.442-106.443-28.284-28.284-111.382 111.382c-4.592-2.813-9.193-5.471-13.798-7.951-33.794-18.202-67.955-27.431-101.536-27.431-33.561 0-67.811 9.22-101.799 27.404-26.455 14.154-52.826 33.765-78.38 58.291-43.025 41.292-69.042 82.192-70.124 83.913l-6.697 10.659 6.712 10.649c1.082 1.716 27.102 42.494 70.131 83.661 9.919 9.49 19.962 18.231 30.083 26.213l-106.926 106.926 28.284 28.284 111.918-111.918c5.001 3.06 10.01 5.931 15.022 8.604 33.982 18.124 68.224 27.314 101.776 27.314 33.571 0 67.725-9.198 101.513-27.34 26.305-14.124 52.458-33.694 77.73-58.167 42.546-41.198 68.21-82.013 69.272-83.73l6.485-10.497-6.47-10.505c-1.061-1.722-26.722-42.659-69.264-83.982zm-300.808 186.479c-42.446-32.577-74.079-73.124-87.613-92.042 24.483-34.425 108.079-140.216 209.155-140.216 30.805 0 59.88 9.901 86.099 24.617l-31.588 31.588c-15.691-10.242-34.416-16.205-54.511-16.205-55.14 0-100 44.86-100 100 0 20.095 5.963 38.82 16.205 54.511zm175.345-118.777c3.96 8.002 6.197 17.003 6.197 26.519 0 33.084-26.916 60-60 60-9.516 0-18.517-2.237-26.519-6.197zm-108.251 51.683c-3.554-7.659-5.552-16.18-5.552-25.164 0-33.084 26.916-60 60-60 8.984 0 17.505 1.998 25.164 5.552zm54.448 114.836c-31.253 0-60.856-10.141-87.564-25.152l31.847-31.847c15.933 10.729 35.106 16.999 55.717 16.999 55.14 0 100-44.86 100-100 0-20.611-6.27-39.784-16.999-55.716l37.036-37.036c42.503 32.839 74.087 73.991 87.394 93.001-23.921 34.155-106.321 139.751-207.431 139.751z"></path>
                         </g>
                     </svg>
-                    <button class="tab-content__change-pass">Change password</button>
+                    <button class="tab-content__change-pass" id="change-pass">Change password</button>
                 </div>
             </div>  
-            <div class="tab-content__row50">
-                <div class="tab-content__input">
-                    <label for="register-current-password">current password</label>
-                    <div class="tab-content__pass">
-                        <input type="password" name="register-current-password" id="register-password" autocomplete="off">
-                        <svg class="show-hide-password" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
-                            <g>
-                                <path d="m436.266 161.779c-10.11-9.821-20.363-18.84-30.708-27.052l106.442-106.443-28.284-28.284-111.382 111.382c-4.592-2.813-9.193-5.471-13.798-7.951-33.794-18.202-67.955-27.431-101.536-27.431-33.561 0-67.811 9.22-101.799 27.404-26.455 14.154-52.826 33.765-78.38 58.291-43.025 41.292-69.042 82.192-70.124 83.913l-6.697 10.659 6.712 10.649c1.082 1.716 27.102 42.494 70.131 83.661 9.919 9.49 19.962 18.231 30.083 26.213l-106.926 106.926 28.284 28.284 111.918-111.918c5.001 3.06 10.01 5.931 15.022 8.604 33.982 18.124 68.224 27.314 101.776 27.314 33.571 0 67.725-9.198 101.513-27.34 26.305-14.124 52.458-33.694 77.73-58.167 42.546-41.198 68.21-82.013 69.272-83.73l6.485-10.497-6.47-10.505c-1.061-1.722-26.722-42.659-69.264-83.982zm-300.808 186.479c-42.446-32.577-74.079-73.124-87.613-92.042 24.483-34.425 108.079-140.216 209.155-140.216 30.805 0 59.88 9.901 86.099 24.617l-31.588 31.588c-15.691-10.242-34.416-16.205-54.511-16.205-55.14 0-100 44.86-100 100 0 20.095 5.963 38.82 16.205 54.511zm175.345-118.777c3.96 8.002 6.197 17.003 6.197 26.519 0 33.084-26.916 60-60 60-9.516 0-18.517-2.237-26.519-6.197zm-108.251 51.683c-3.554-7.659-5.552-16.18-5.552-25.164 0-33.084 26.916-60 60-60 8.984 0 17.505 1.998 25.164 5.552zm54.448 114.836c-31.253 0-60.856-10.141-87.564-25.152l31.847-31.847c15.933 10.729 35.106 16.999 55.717 16.999 55.14 0 100-44.86 100-100 0-20.611-6.27-39.784-16.999-55.716l37.036-37.036c42.503 32.839 74.087 73.991 87.394 93.001-23.921 34.155-106.321 139.751-207.431 139.751z"></path>
-                            </g>
-                        </svg>
-                    </div>
+            <div class="tab-content__wrap-block">
+                <div class="tab-content__row50">
+                    <div class="tab-content__input">
+                        <label for="register-current-password">current password</label>
+                        <div class="tab-content__pass">
+                            <input type="password" name="register-current-password" id="register-current-password" autocomplete="off">
+                            <svg class="show-hide-password" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path d="m436.266 161.779c-10.11-9.821-20.363-18.84-30.708-27.052l106.442-106.443-28.284-28.284-111.382 111.382c-4.592-2.813-9.193-5.471-13.798-7.951-33.794-18.202-67.955-27.431-101.536-27.431-33.561 0-67.811 9.22-101.799 27.404-26.455 14.154-52.826 33.765-78.38 58.291-43.025 41.292-69.042 82.192-70.124 83.913l-6.697 10.659 6.712 10.649c1.082 1.716 27.102 42.494 70.131 83.661 9.919 9.49 19.962 18.231 30.083 26.213l-106.926 106.926 28.284 28.284 111.918-111.918c5.001 3.06 10.01 5.931 15.022 8.604 33.982 18.124 68.224 27.314 101.776 27.314 33.571 0 67.725-9.198 101.513-27.34 26.305-14.124 52.458-33.694 77.73-58.167 42.546-41.198 68.21-82.013 69.272-83.73l6.485-10.497-6.47-10.505c-1.061-1.722-26.722-42.659-69.264-83.982zm-300.808 186.479c-42.446-32.577-74.079-73.124-87.613-92.042 24.483-34.425 108.079-140.216 209.155-140.216 30.805 0 59.88 9.901 86.099 24.617l-31.588 31.588c-15.691-10.242-34.416-16.205-54.511-16.205-55.14 0-100 44.86-100 100 0 20.095 5.963 38.82 16.205 54.511zm175.345-118.777c3.96 8.002 6.197 17.003 6.197 26.519 0 33.084-26.916 60-60 60-9.516 0-18.517-2.237-26.519-6.197zm-108.251 51.683c-3.554-7.659-5.552-16.18-5.552-25.164 0-33.084 26.916-60 60-60 8.984 0 17.505 1.998 25.164 5.552zm54.448 114.836c-31.253 0-60.856-10.141-87.564-25.152l31.847-31.847c15.933 10.729 35.106 16.999 55.717 16.999 55.14 0 100-44.86 100-100 0-20.611-6.27-39.784-16.999-55.716l37.036-37.036c42.503 32.839 74.087 73.991 87.394 93.001-23.921 34.155-106.321 139.751-207.431 139.751z"></path>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>  
+                    <div class="tab-content__input">
+                        <label for="register-new-password">new password</label>
+                        <div class="tab-content__pass">
+                            <input type="password" name="register-new-password" id="register-new-password" autocomplete="off">
+                            <svg class="show-hide-password" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path d="m436.266 161.779c-10.11-9.821-20.363-18.84-30.708-27.052l106.442-106.443-28.284-28.284-111.382 111.382c-4.592-2.813-9.193-5.471-13.798-7.951-33.794-18.202-67.955-27.431-101.536-27.431-33.561 0-67.811 9.22-101.799 27.404-26.455 14.154-52.826 33.765-78.38 58.291-43.025 41.292-69.042 82.192-70.124 83.913l-6.697 10.659 6.712 10.649c1.082 1.716 27.102 42.494 70.131 83.661 9.919 9.49 19.962 18.231 30.083 26.213l-106.926 106.926 28.284 28.284 111.918-111.918c5.001 3.06 10.01 5.931 15.022 8.604 33.982 18.124 68.224 27.314 101.776 27.314 33.571 0 67.725-9.198 101.513-27.34 26.305-14.124 52.458-33.694 77.73-58.167 42.546-41.198 68.21-82.013 69.272-83.73l6.485-10.497-6.47-10.505c-1.061-1.722-26.722-42.659-69.264-83.982zm-300.808 186.479c-42.446-32.577-74.079-73.124-87.613-92.042 24.483-34.425 108.079-140.216 209.155-140.216 30.805 0 59.88 9.901 86.099 24.617l-31.588 31.588c-15.691-10.242-34.416-16.205-54.511-16.205-55.14 0-100 44.86-100 100 0 20.095 5.963 38.82 16.205 54.511zm175.345-118.777c3.96 8.002 6.197 17.003 6.197 26.519 0 33.084-26.916 60-60 60-9.516 0-18.517-2.237-26.519-6.197zm-108.251 51.683c-3.554-7.659-5.552-16.18-5.552-25.164 0-33.084 26.916-60 60-60 8.984 0 17.505 1.998 25.164 5.552zm54.448 114.836c-31.253 0-60.856-10.141-87.564-25.152l31.847-31.847c15.933 10.729 35.106 16.999 55.717 16.999 55.14 0 100-44.86 100-100 0-20.611-6.27-39.784-16.999-55.716l37.036-37.036c42.503 32.839 74.087 73.991 87.394 93.001-23.921 34.155-106.321 139.751-207.431 139.751z"></path>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>  
                 </div>  
-                <div class="tab-content__input">
-                    <label for="register-new-password">new password</label>
-                    <div class="tab-content__pass">
-                        <input type="password" name="register-new-password" id="register-password" autocomplete="off">
-                        <svg class="show-hide-password" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
-                            <g>
-                                <path d="m436.266 161.779c-10.11-9.821-20.363-18.84-30.708-27.052l106.442-106.443-28.284-28.284-111.382 111.382c-4.592-2.813-9.193-5.471-13.798-7.951-33.794-18.202-67.955-27.431-101.536-27.431-33.561 0-67.811 9.22-101.799 27.404-26.455 14.154-52.826 33.765-78.38 58.291-43.025 41.292-69.042 82.192-70.124 83.913l-6.697 10.659 6.712 10.649c1.082 1.716 27.102 42.494 70.131 83.661 9.919 9.49 19.962 18.231 30.083 26.213l-106.926 106.926 28.284 28.284 111.918-111.918c5.001 3.06 10.01 5.931 15.022 8.604 33.982 18.124 68.224 27.314 101.776 27.314 33.571 0 67.725-9.198 101.513-27.34 26.305-14.124 52.458-33.694 77.73-58.167 42.546-41.198 68.21-82.013 69.272-83.73l6.485-10.497-6.47-10.505c-1.061-1.722-26.722-42.659-69.264-83.982zm-300.808 186.479c-42.446-32.577-74.079-73.124-87.613-92.042 24.483-34.425 108.079-140.216 209.155-140.216 30.805 0 59.88 9.901 86.099 24.617l-31.588 31.588c-15.691-10.242-34.416-16.205-54.511-16.205-55.14 0-100 44.86-100 100 0 20.095 5.963 38.82 16.205 54.511zm175.345-118.777c3.96 8.002 6.197 17.003 6.197 26.519 0 33.084-26.916 60-60 60-9.516 0-18.517-2.237-26.519-6.197zm-108.251 51.683c-3.554-7.659-5.552-16.18-5.552-25.164 0-33.084 26.916-60 60-60 8.984 0 17.505 1.998 25.164 5.552zm54.448 114.836c-31.253 0-60.856-10.141-87.564-25.152l31.847-31.847c15.933 10.729 35.106 16.999 55.717 16.999 55.14 0 100-44.86 100-100 0-20.611-6.27-39.784-16.999-55.716l37.036-37.036c42.503 32.839 74.087 73.991 87.394 93.001-23.921 34.155-106.321 139.751-207.431 139.751z"></path>
-                            </g>
-                        </svg>
+                <div class="tab-content__row50">
+                    <div class="tab-content__input">
+                    <label for="register-street-name">street name</label>
+                    <input type="text" name="street name" id="register-street-name">
                     </div>
-                </div>  
-            </div>  
-            <div class="tab-content__row50">
-                <div class="tab-content__input">
-                <label for="register-street-name">street name</label>
-                <input type="text" name="street name" id="">
-                </div>
-                <div class="tab-content__input">
-                <label for="register-street-number">Street Number</label>
-                <input type="number" name="street number" id="">
-                </div>
-            </div>    
+                    <div class="tab-content__input">
+                    <label for="register-street-number">Street Number</label>
+                    <input type="number" name="street number" id="register-street-number">
+                    </div>
+                </div> 
+            </div>               
             <div class="tab-content__row50">
                 <div class="tab-content__input">
                 <label for="register-address2">Address 2</label>
-                <input type="text" name="rregister-address2" id="" placeholder="e.g Apartment, Suite or Unit">
+                <input type="text" name="register-address2" id="register-address2" placeholder="e.g Apartment, Suite or Unit">
                 </div>
                 <div class="tab-content__input">
                 <label for="register-postal-code">postal code</label>
-                <input type="number" name="register-postal-code" id="">
+                <input type="number" name="register-postal-code" id="register-postal-code">
                 </div>
             </div> 
             <div class="tab-content__row50">
                 <div class="tab-content__input">
                 <label for="register-city">city</label>
-                <input type="text" name="register-city" id="">
+                <input type="text" name="register-city" id="register-city">
                 </div>
                 <div class="tab-content__input">
                 <label for="register-country">country</label>
-                <select name="register-country" id="" class="tab-content__select">
+                <select name="register-country" class="tab-content__select" id="register-country">
                     <option value="country">Country</option>
                     <option value="$25">$25</option>
                     <option value="$50">$55</option>
@@ -103,11 +105,11 @@
             <div class="tab-content__row50">
                 <div class="tab-content__input">
                 <label for="register-phone-number">phone number</label>
-                <input type="number" name="register-phone-number" id="">
+                <input type="number" name="register-phone-number" id="register-phone-number">
                 </div>
                 <div class="tab-content__input">
-                <label for="register-language">language</label>
-                <select name="register-language" id="" class="tab-content__select">
+                <label for="register-language-user">language</label>
+                <select name="register-language" class="tab-content__select" id="register-language-user">
                     <option value="english">English</option>
                     <option value="$25">$25</option>
                     <option value="$50">$55</option>

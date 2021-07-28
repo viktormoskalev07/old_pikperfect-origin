@@ -1,5 +1,6 @@
 const header = document.querySelector(".header");
 const body = document.querySelector("body");
+
 let scrollPos = 0;
 window.addEventListener("load", function () {
   window.addEventListener("scroll", function () {
@@ -76,15 +77,17 @@ function promobar (){
      }, 600); 
   } 
   })
-  
-      
     xhr.send();
-  
-   
 }
  
   // promobar(); 
 // promobar
+ 
+const changePass = document.querySelector("#change-pass"); 
+changePass.addEventListener('click', function(){
+   
+  document.querySelector('.tab-content__wrap-block').classList.toggle('block');
+})
  
 
 

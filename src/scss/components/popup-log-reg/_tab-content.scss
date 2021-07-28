@@ -99,4 +99,10 @@
       font-weight: 600;
     }
   }
+  &__wrap-block{
+    display: none;
+    &.block{
+      display: block;
+    }
+  }
 }
