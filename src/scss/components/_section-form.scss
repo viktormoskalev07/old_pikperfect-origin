@@ -54,7 +54,7 @@
     }
     &__button{
         max-width: 250px;
-        margin: 0 auto;
+        margin: 30px auto;
         width: 100%;
         &:hover{
             background: #575D6199;
@@ -69,5 +69,6 @@
     }
     .popup__submit{
         margin: 30px 0;
-    }    
+    }   
+     
 }
