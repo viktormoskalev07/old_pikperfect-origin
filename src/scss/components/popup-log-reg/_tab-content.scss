@@ -73,4 +73,18 @@
       }
     }
   }
+  &__select{
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    font-family: 'Open Sans';
+  }
+  &__textarea{
+    width: 100%;
+  }  
+  &__counter{
+    display: block;
+    font-size: 14px;
+    margin-top: 5px;
+  }
 }
