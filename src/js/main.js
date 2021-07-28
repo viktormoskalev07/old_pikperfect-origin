@@ -82,12 +82,16 @@ function promobar (){
  
   // promobar(); 
 // promobar
- 
-const changePass = document.querySelector("#change-pass"); 
-changePass.addEventListener('click', function(){
-   
-  document.querySelector('.tab-content__wrap-block').classList.toggle('block');
-})
+
+ (function(){
+const changePass = document.querySelector("#change-pass");
+ if(changePass){
+  changePass.addEventListener('click', function(){
+    document.querySelector('.tab-content__wrap-block').classList.toggle('block');
+  })
+ }else{}
+ }())
+
  
 
 
