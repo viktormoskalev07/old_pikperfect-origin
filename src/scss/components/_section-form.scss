@@ -3,6 +3,16 @@
     @include desktop-sm{
         margin: 112px 32px;
     }
+    &_800{
+        max-width: 865px;
+        margin: 64px auto;
+        .tab-content__form{
+            margin: 0 16px;
+            @include tablet{
+                margin: 0 32px;
+            }
+        }
+    }
     &__wrap{
         max-width: 1252px;
         margin: 0 auto;
@@ -15,6 +25,17 @@
     &__banner{
         @include desktop-sm{
             width: 45%;
+        }
+    }
+    &__title{
+        text-align: center;
+        font-size: 32px;
+        @include tablet{
+            font-size: 40px;    
+            margin-bottom: 56px;
+        }
+        @include desktop-sm{
+            font-size: 48px;
         }
     }
     &__form{
@@ -31,6 +52,15 @@
             text-align: left;
         }
     }
+    &__button{
+        max-width: 250px;
+        margin: 0 auto;
+        width: 100%;
+        &:hover{
+            background: #575D6199;
+            color: #FFFFFF80;
+        }
+    }
     .tab-content__input{
         margin-bottom: 32px;
         input{
@@ -39,6 +69,5 @@
     }
     .popup__submit{
         margin: 30px 0;
-    }
-    
+    }    
 }
