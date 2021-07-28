@@ -25,9 +25,13 @@ if (document.querySelector('.swiperalbum')){
         slidesPerView: 2,
         spaceBetween: 100
       },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 50
+      },
       1200: {
         slidesPerView: 4,
-        spaceBetween: 5
+        spaceBetween: 30
       }, 
     }, 
 });

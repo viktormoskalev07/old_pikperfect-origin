@@ -67,6 +67,9 @@
     @include tablet{
       margin-bottom: 24px;
     }
+    @include desktop-md{
+      margin-bottom: 40px;
+    }
     &_italic{
       font-style: italic;
       font-weight: 300;
