@@ -108,11 +108,12 @@ if(textareaCount&&textCounter){
   (function(){
     const copyText = document.getElementById("copyCode");
     const copyLink = document.getElementById("copyLink");
-
-    copyLink.addEventListener('click', function(){
+    if(copyText&&copyLink){
+      copyLink.addEventListener('click', function(){
       window.navigator.clipboard.writeText(copyText.innerText)
     })
-  }())
+  }    
+}())
 
 
 @@include('modules/imgpreloader.js')
