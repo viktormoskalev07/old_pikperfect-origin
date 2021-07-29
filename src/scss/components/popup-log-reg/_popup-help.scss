@@ -1,0 +1,33 @@
+.popup-help{
+    border-radius: 5px;
+    max-width: 355px;
+    position: none;
+    top: 200px;
+    right: 20px;
+    background: #fff;
+    z-index: 11;
+    &__text{
+        border-radius: 5px 5px 0 0;
+        padding: 24px;
+        background: #8BA4B4;
+        color: #fff;
+        p{
+            margin-bottom: 0;
+        }
+    }
+    &__form{
+        padding: 24px;
+    }
+    &__link{
+        color: #fff;
+        text-decoration: underline;
+        font-weight: 500;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    &__button{
+        width: 100%;
+        margin-top: 32px;
+    }
+}

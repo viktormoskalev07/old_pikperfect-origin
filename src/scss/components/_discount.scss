@@ -143,11 +143,36 @@
         }
         .btn{
             width: 100%;
+            margin-top: 16px;
             @include tablet{
-                max-width: 165px;
+                max-width: 150px;
+                margin-top: 0;
                 padding: 0;
                 border-radius: 0 5px 5px 0;
             }
+        }
+    }
+    &__copy-link{
+        border: 1px solid #70707080;
+        border-radius: 5px;
+        display: block;
+        width: 100%;
+        padding: 15px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        @include tablet{
+            font-size: 14px;
+            border-radius: 5px 0 0 5px;
+        }
+        @include desktop-sm{              
+            border-radius: 5px 0 0 5px;
+        }
+        @include tabtoslide{
+            font-size: 16px;
         }
     }
 

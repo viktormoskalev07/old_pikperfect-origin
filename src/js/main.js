@@ -102,14 +102,17 @@ if(textareaCount&&textCounter){
    textCounter.innerText = textareaCount.value.length;
   })
 }
-}())
+}());
 
 
-function copyLink() {
-  var copyText = document.getElementById("myInput");
-  copyText.select();
-  document.execCommand("copy");
-}
+  (function(){
+    const copyText = document.getElementById("copyCode");
+    const copyLink = document.getElementById("copyLink");
+
+    copyLink.addEventListener('click', function(){
+      window.navigator.clipboard.writeText(copyText.innerText)
+    })
+  }())
 
 
 @@include('modules/imgpreloader.js')
@@ -117,3 +120,4 @@ function copyLink() {
 @@include('modules/popup-mobile.js')
 @@include('modules/popup-login.js')
 @@include('modules/card-filter.js')
+
