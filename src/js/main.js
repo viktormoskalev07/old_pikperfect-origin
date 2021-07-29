@@ -113,7 +113,29 @@ if(textareaCount&&textCounter){
       window.navigator.clipboard.writeText(copyText.innerText)
     })
   }    
+}());
+
+(function(){
+  const btnPopupHelp = document.querySelector('#popupHelp');
+  const PopupHelp = document.querySelector('.popup-help');
+  function helpPopupClose(e){
+    if(!(e.target.matches('.popup-help *'))){
+    PopupHelp.classList.remove('active');
+    btnPopupHelp.classList.remove('active');
+    document.body.removeEventListener('click',helpPopupClose)
+    }    
+  }
+  if(btnPopupHelp&&PopupHelp){
+    btnPopupHelp.addEventListener('click', function(e){
+      e.stopPropagation()
+      PopupHelp.classList.toggle('active');
+      btnPopupHelp.classList.toggle('active');
+      document.body.addEventListener('click' ,helpPopupClose )
+    })
+  }
 }())
+
+
 
 
 @@include('modules/imgpreloader.js')
@@ -121,4 +143,3 @@ if(textareaCount&&textCounter){
 @@include('modules/popup-mobile.js')
 @@include('modules/popup-login.js')
 @@include('modules/card-filter.js')
-
