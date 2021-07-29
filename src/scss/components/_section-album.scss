@@ -107,10 +107,13 @@
     position: relative;
     padding-bottom: 24px;
     @include tablet{
-      width: 50%;
+      width: 43%;
+    }
+    @include desktop-sm{
+      width: 30%;
     }
     @include tabtoslide{
-      width: 24%;
+      width: 23%;
     }
     .figure-webp{
       //box-shadow: 5px 10px 15px #191b1d33;

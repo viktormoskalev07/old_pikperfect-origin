@@ -1,0 +1,43 @@
+.section-comment{
+    padding: 60px 15px;
+    @include tablet{
+        padding: 112px 20px;
+    }
+    &__wrap{
+        max-width: 1376px;
+        margin: 0 auto;
+        @include tablet{
+            display: flex;
+            justify-content: space-between;            
+            align-items: center;
+            flex-wrap: wrap;
+        }
+    }
+    &__card{
+        min-height: 386px;
+        box-shadow: 1px 3px 20px #2F353A1F;
+        text-align: center;
+        padding: 40px 30px 48px;
+        margin-bottom: 24px;
+        @include tablet{
+            padding: 40px 35px 48px;
+            width: 46%;
+            margin-bottom: 32px;
+        }
+        @include desktop-sm{
+            width: 31%;
+            margin-bottom: 0;
+        }
+    }
+    &__img{
+        margin-bottom: 40px;
+    }
+    &__name-user{
+        font-weight: 800;
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+    &__text{
+        margin-bottom: 0;
+    }
+}

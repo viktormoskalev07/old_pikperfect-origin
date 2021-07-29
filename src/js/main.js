@@ -89,10 +89,27 @@ const changePass = document.querySelector("#change-pass");
   changePass.addEventListener('click', function(){
     document.querySelector('.tab-content__wrap-block').classList.toggle('block');
   })
- }else{}
- }())
+ }
+ }());
 
  
+
+(function(){
+const textareaCount = document.querySelector("#textareaCount");
+const textCounter = document.querySelector("#textCounter");
+if(textareaCount&&textCounter){
+  textareaCount.addEventListener('input', function(){
+   textCounter.innerText = textareaCount.value.length;
+  })
+}
+}())
+
+
+function copyLink() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  document.execCommand("copy");
+}
 
 
 @@include('modules/imgpreloader.js')
