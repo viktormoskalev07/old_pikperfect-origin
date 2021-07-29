@@ -1,0 +1,41 @@
+<section class="section-photobooks">
+  <div class="section-photobooks__wrap">
+       <style>
+      .light-italic {
+        font-weight: 300;
+        font-style: italic;
+      }
+      .cursor-pointer {
+        cursor: pointer;
+      }
+    </style>
+    <div class="section-photobooks__blocks section-photobooks__blocks_more">
+      @@loop('photobooks/card.html', [
+      { type:"Wedding" , name:"On This Day"},
+      { type:"Travel" , name:"Our Summer Adventures"},
+      { type:"Wedding" , name:"Tumiga and Susana"},
+      { type:"Wedding" , name:"Taylor + Charlie"},
+
+      { type:"Wedding" , name:"Marion & Phillipp"},
+      { type:"Wedding" , name:"Mr. & Mrs. Branson"},
+      { type:"Travel" , name:"Hello Adventures"},
+      { type:"Family" , name:"Staycation 2020"},
+
+      { type:"Wedding" , name:"Christian & Michelle"},
+      { type:"Wedding" , name:"On This Day"},
+      { type:"Wedding" , name:"Willian & Emma"},
+      { type:"Wedding" , name:"Marion & Phillipp"},
+
+      { type:"Wedding" , name:"Patricia & Dominik"},
+      { type:"Wedding" , name:"Christian & Michelle"},
+      { type:"Wedding" , name:"Kayla + Adam"},
+      { type:"Wedding" , name:"On This Day"},
+
+      { type:"Wedding" , name:"Taylor & Charlie"},
+      { type:"Wedding" , name:"Love"},
+      { type:"Wedding" , name:"Patricia & Dominik"},
+      { type:"Wedding" , name:"Taylor & Charlie"},
+      ])
+    </div>
+  </div>
+</section>

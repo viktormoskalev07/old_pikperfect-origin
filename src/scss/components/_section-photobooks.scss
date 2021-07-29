@@ -61,6 +61,13 @@
     @include desktop-md{
       width: calc( 100% - 290px);
     }
+    &_more{
+      justify-content: space-between;
+      @include desktop-md{
+        width: auto;
+        margin: 0 auto;
+      }
+    }
   }
   &__block{
     display: block;
@@ -83,6 +90,20 @@
     }
     @include tabtoslide{
       width: 29.5%;
+    }
+    &_more{
+      @include mobile-lg{
+        width: 45%;      
+        margin: 0 auto 40px;
+      }
+      @include tablet{
+        width: 29.5%;
+        text-align: left;
+        margin: 0 15px 40px;
+      }
+      @include tabtoslide{
+        width: 22%;
+      }
     }
   }
   &__name-album{
