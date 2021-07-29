@@ -67,6 +67,9 @@
     @include tablet{
       margin-bottom: 24px;
     }
+    @include desktop-md{
+      margin-bottom: 40px;
+    }
     &_italic{
       font-style: italic;
       font-weight: 300;
@@ -80,6 +83,9 @@
     font-size: 18px;
     font-weight: 800;
     margin-top: 4px;
+    @include tablet{
+      margin-top: 30px;
+    }
     span{
       display: block;
       font-style: italic;
@@ -93,12 +99,22 @@
       display: block;
     }
     a{
-      background: #F4F5F6;
       padding: 15px 38px;
     }
   }
   .swiper-slide{
-    width: 24%;
+    width: 100%;
+    position: relative;
+    padding-bottom: 24px;
+    @include tablet{
+      width: 50%;
+    }
+    @include tabtoslide{
+      width: 24%;
+    }
+    .figure-webp{
+      //box-shadow: 5px 10px 15px #191b1d33;
+    }
   }
   .swiper-wrapper{
     @include tablet{
@@ -107,10 +123,6 @@
     @media screen and(min-width: 1200px) {
       transform: none !important;
     }
-  }
-  .swiper-slide{
-    position: relative;
-    padding-bottom: 24px;
   }
   .swiperDescription-pagination{
     position: absolute;

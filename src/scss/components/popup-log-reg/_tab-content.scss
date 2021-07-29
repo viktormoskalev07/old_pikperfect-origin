@@ -21,6 +21,7 @@
 
     label {
       font-weight: 400;
+      text-transform: capitalize;
     }
 
     input {
@@ -71,6 +72,37 @@
       &:hover {
         color: $accent-color;
       }
+    }
+  }
+  &__select{
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-family: 'Open Sans';
+  }
+  &__textarea{
+    width: 100%;
+  }  
+  &__counter{
+    display: block;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  &__change-pass{
+    border: 0;
+    background: transparent;
+    color: #567C8B;
+    text-decoration: underline;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    &:hover{
+      font-weight: 600;
+    }
+  }
+  &__wrap-block{
+    display: none;
+    &.block{
+      display: block;
     }
   }
 }

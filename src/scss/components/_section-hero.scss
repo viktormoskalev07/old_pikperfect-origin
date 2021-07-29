@@ -243,7 +243,7 @@
 			right: 0;
 		}		
 		img{
-			width: 100%;
+			width: 100%; 
 			height: 100%;
 		}
 	}
@@ -272,7 +272,7 @@
 		}
 		@include desktop-sm{
 			width: 38%;
-			padding: 0 5%;
+			padding: 30px 5%;
 		}
 		&_blue{
 			background-color: rgba($color: #69C2CE, $alpha: .7);	
@@ -317,11 +317,13 @@
 			}
 		}
 		&_khaki{
-			padding: 0 4%;
 			background-color: rgba($color: 	#647670, $alpha: .7);	
 			color: #fff;
 			h1{
 				color: #fff;
+			}
+			@include tabtoslide{
+				padding: 0 4%;
 			}
 		}
 		.button{

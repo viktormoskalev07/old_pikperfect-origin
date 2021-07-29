@@ -19,16 +19,19 @@
     }
   }
   &__button{
-    padding: 10px 73px;    
+    padding: 10px 15px; 
+    max-width: 230px;
+    width: 100%;
     font-size: 14px;
     @include tablet{
-      padding: 15px 61px;
     }
     @include desktop-md{
       font-size: 18px;
     }
     &_big{
-      padding: 15px 110px;
+      @include tablet{
+        max-width: 330px;
+      }      
     }
   }
 }

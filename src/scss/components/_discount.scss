@@ -1,0 +1,154 @@
+.discount{
+    margin-bottom: 64px;
+    @include desktop-sm{
+        margin-bottom: 110px;
+    }
+    &__wrap{
+        max-width: 1376px;
+        margin: 0 auto;
+        background: #EDECEE;
+        @include desktop-sm{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    &__title{
+        font-family: 'Spectral';
+        font-size: 32px;
+        margin-bottom: 12px;
+        @include tablet{
+            font-size: 40px;
+            margin-bottom: 25px;
+        }
+        @include desktop-sm{
+            font-size: 48px;
+        }
+    }
+    &__img{
+		position: relative;
+		width: 100%;	
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		overflow: hidden;
+		&::before{
+			position: absolute;
+			content: "";
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+			opacity: .15;
+		}
+        @include desktop-sm{
+            width: 50%;
+        }
+    }
+    &__content{
+        padding: 48px 20px 0;
+        width: 100%;
+        text-align: center;   
+        max-width: 570px;
+        margin: 0 auto;    
+        @include desktop-sm{
+            width: 50%;
+            max-width: 630px;
+        }
+    }
+    &__wrap-content{
+        max-width: 520px;
+        margin: 0 auto;
+    }
+    &__ad{
+        clip-path: polygon(0 0, 100% 0, 95% 50%, 100% 100%, 0 100%, 5% 50%);
+        background: #8BA4B4;
+        color: #fff;
+        padding: 12px 30px;  
+        margin-bottom: 32px;      
+        h2{
+            color: #fff;
+            font-size: 24px;
+            margin-bottom: 0;
+            @include desktop-sm{
+                font-size: 32px;
+            }
+        }
+        p{
+            margin-bottom: 0;
+        }
+    }
+    &__size-s{
+        margin: 0;
+        font-size: 12px;
+        font-weight: 300;
+        padding-bottom: 24px;
+        line-height: 1.4;
+        @include desktop-sm{
+            padding-top: 32px;
+        }
+    }
+    &__size-m{
+        margin: 0;
+        font-size: 20px;
+        font-weight: 500;
+        padding-top: 55px;
+        padding-bottom: 24px;
+        line-height: 1.4;
+        @include desktop-sm{
+            padding-top: 72px;
+        }
+    }
+    &__size-l{
+        margin: 0;
+        font-size: 24px;
+        font-weight: 600;
+        font-family: 'Spectral';
+        padding-bottom: 64px;
+        @include tablet{
+            font-size: 32px;
+        }
+        @include desktop-sm{
+            padding-bottom: 16%;
+        }
+    }
+    &__form{
+        padding-bottom: 48px;
+        @include tablet{
+            display: flex;
+            padding-bottom: 56px;
+        }
+        .form-control{
+            padding: 25px 10px;
+            border: 1px solid #70707080;
+            margin-bottom: 16px;
+            font-size: 12px;
+            font-family: 'Open Sans';
+            font-weight: 300;
+            text-align: center;
+            @include tablet{
+                font-size: 14px;
+                border-radius: 5px 0 0 5px;
+                margin-bottom: 0;
+            }
+            @include desktop-sm{
+                padding: 30px 20px;                
+                border-radius: 5px 0 0 5px;
+            }
+            @include tabtoslide{
+                font-size: 16px;
+            }
+        }
+        .btn{
+            width: 100%;
+            @include tablet{
+                max-width: 165px;
+                padding: 0;
+                border-radius: 0 5px 5px 0;
+            }
+        }
+    }
+
+}

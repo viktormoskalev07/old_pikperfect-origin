@@ -1,0 +1,51 @@
+<section class="section-form">
+    <div class="section-form__wrap">
+        <div class="section-form__banner">
+            @@include('../i/resp-img2.html',{
+                src:'image_gift_card',
+                type:'jpg',
+                alt:'wedding guest books',
+                priority:'0',  
+                width:'610',
+                height:'837',
+                folder:'7.0-gift-vouchers',
+            }) 
+        </div>
+        <div class="section-form__form">
+            <form action="#" method="#" class="tab-content__form">
+                <div class="tab-content__input">
+                    <label for="select-an-amount">Choose Amount</label>
+                    <select name="select-an-amount" id="" class="tab-content__select">Select an amount
+                        <option value="Select an amount">Select an amount</option>
+                        <option value="$25">$25</option>
+                        <option value="$50">$55</option>
+                        <option value="$100">$100</option>
+                        <option value="$150">$150</option>
+                        <option value="$200">$200</option>
+                        <option value="$250">$250</option>
+                        <option value="$300">$300</option>
+                        <option value="$350">$350</option>
+                        <option value="$400">$400</option>
+                        <option value="$450">$450</option>
+                        <option value="$500">$500</option>
+                    </select>
+                </div>
+                <div class="tab-content__input">
+                    <label for="register-to">To</label>
+                    <input type="text" name="to" id="" required="" autocomplete="off" placeholder="Hi Mom">
+                </div> 
+                <div class="tab-content__input">
+                    <label for="register-message">Your Message</label>
+                    <textarea name="message" id="" class="tab-content__textarea" cols="30" rows="8" maxlength="180"></textarea>
+                    <span class="tab-content__counter">0/180</span>
+                </div> 
+                <div class="tab-content__input">
+                    <label for="register-from">From</label>
+                    <input type="text" name="from" id="" required="" autocomplete="off" placeholder="Love Christy">
+                </div>       
+                <button class="popup__submit" type="submit">proceed to checkout</button>
+                <p class="section-form__text">Discounts and promotions cannot be applied on gift cards purchases. But they can be applied in the shopping cart when the gift card is redeemed.</p>
+            </form>
+        </div>
+    </div>
+</section>
