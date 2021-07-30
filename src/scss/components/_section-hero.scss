@@ -144,7 +144,7 @@
 	&__image-col{
 		width: 100%;
 		@include desktop-sm{
-			width: 62%;
+			width: 61%;
 		} 
 		figure{
 			padding-bottom: calc(278% / 360 * 100);
@@ -158,8 +158,9 @@
 	}
 	&__image-left{
 		width: 100%;
-		margin: 0;
+		margin: 0 auto;
 		padding: 0;
+		max-width: 1440px;
 	}
 	&__image-right{
 		@include desktop-sm{
@@ -177,7 +178,7 @@
 				padding-bottom: calc(670% / 880 * 100);
 			}		
 			@include wide-screen-sm{
-				padding-bottom: calc(583% / 880 * 100);
+				padding-bottom: calc(565% / 880 * 100);
 			}		
 		}
 		p{
@@ -271,7 +272,7 @@
 			padding: 80px 25px;
 		}
 		@include desktop-sm{
-			width: 38%;
+			width: 39%;
 			padding: 30px 5%;
 		}
 		&_blue{
@@ -314,6 +315,13 @@
 			color: #fff;
 			h1{
 				color: #fff;
+			}
+		}
+		&_gray-brown{
+			background-color: rgba($color: 	#C2BBB3, $alpha: .7);	
+			color: #2E3031;
+			h1{
+				color: #2E3031;
 			}
 		}
 		&_khaki{
