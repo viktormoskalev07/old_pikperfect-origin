@@ -9,21 +9,21 @@ const sharp = require('sharp');
 const chalk = require('chalk')
 const sizeOf = require('image-size');
 const fsExtra = require('fs-extra')
-
-fsExtra.emptyDirSync('./build');
-let ncp = require('ncp').ncp;
 let imageErrors=[] ;
-ncp.limit = 16;
- function copyToBuild(){
+// fsExtra.emptyDirSync('./build');
+// let ncp = require('ncp').ncp;
+
+// ncp.limit = 16;
+//  function copyToBuild(){
      
-    ncp('./dist', 'build', function (err) {
-        if (err) {
-          return console.error(err);
-        }
-       });
-       console.log(chalk.green('finish , wait a second ..'));
-       console.log(chalk.red(imageErrors));
- } 
+//     ncp('./dist', 'build', function (err) {
+//         if (err) {
+//           return console.error(err);
+//         }
+//        });
+//        console.log(chalk.green('finish , wait a second ..'));
+//        console.log(chalk.red(imageErrors));
+//  } 
  
 function makeImages(){ 
 const getFiles = function (dir, files_){
@@ -126,14 +126,14 @@ images.forEach(img => {
     }
  
 }); 
- console.log(chalk.green('images done , copying to build...'));
+ console.log(chalk.green('converting .. '));
 }
  
  makeImages();
- console.log('it can work in background');
- setTimeout(() => {
+//  console.log('it can work in background');
+//  setTimeout(() => {
     
-    copyToBuild();
- }, 2000);
+//     copyToBuild();
+//  }, 2000);
 
  
