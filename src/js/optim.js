@@ -57,8 +57,7 @@ window.addEventListener('load', function(){
       if (mediaQuery2.matches) {
         baseDelay2 = 1000+addtime;
       } 
-    }
-
+    } 
   } 
   scriptAsync(baseDelay2);  
   

@@ -20,7 +20,7 @@ $wide-screen-lg: 1599px;
 // $clr-sub: #09354E;
 $clr-black: #000000;
 $clr-light: #ffffff; 
-
+$primary:#567C8B;
 @mixin tabtoslide {
 	@media (min-width:1200px) {
 		@content;

@@ -33,15 +33,8 @@
 
 @import "components/default";
 @import "components/section-hero";
-
-  
-// @import "components/blog-nav"; 
-// @import "components/text-box";
-// @import "components/share-btns";
-// @import 'blog-card';
-// @import 'blog';
-@import 'header-sticky';
-// @import 'breadcrumbs';
+ 
+@import 'header-sticky'; 
 @import 'promobar';
 @import "components/description-img"; 
 
@@ -51,3 +44,10 @@
 @import 'components/popup-log-reg/popup';
 @import 'components/popup-log-reg/popup-help';
 @import 'components/photobooks/photobooks';
+
+
+
+
+
+@import 'gallery.scss';
+ 
