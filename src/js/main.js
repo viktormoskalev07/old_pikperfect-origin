@@ -102,14 +102,40 @@ if(textareaCount&&textCounter){
    textCounter.innerText = textareaCount.value.length;
   })
 }
+}());
+
+
+  (function(){
+    const copyText = document.getElementById("copyCode");
+    const copyLink = document.getElementById("copyLink");
+    if(copyText&&copyLink){
+      copyLink.addEventListener('click', function(){
+      window.navigator.clipboard.writeText(copyText.innerText)
+    })
+  }    
+}());
+
+(function(){
+  const btnPopupHelp = document.querySelector('#popupHelp');
+  const PopupHelp = document.querySelector('.popup-help');
+  function helpPopupClose(e){
+    if(!(e.target.matches('.popup-help *'))){
+    PopupHelp.classList.remove('active');
+    btnPopupHelp.classList.remove('active');
+    document.body.removeEventListener('click',helpPopupClose)
+    }    
+  }
+  if(btnPopupHelp&&PopupHelp){
+    btnPopupHelp.addEventListener('click', function(e){
+      e.stopPropagation()
+      PopupHelp.classList.toggle('active');
+      btnPopupHelp.classList.toggle('active');
+      document.body.addEventListener('click' ,helpPopupClose )
+    })
+  }
 }())
 
 
-function copyLink() {
-  var copyText = document.getElementById("myInput");
-  copyText.select();
-  document.execCommand("copy");
-}
 
 
 @@include('modules/imgpreloader.js')

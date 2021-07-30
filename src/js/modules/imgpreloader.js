@@ -1,7 +1,7 @@
 const mediaQuery = window.matchMedia('(max-width: 480px)');
-let baseDelay = 200; 
+let baseDelay = 100; 
 if (mediaQuery.matches) {
-       baseDelay = 1300;
+       baseDelay = 800;
 }  
 function srcSeter(tag) {
        tag.srcset = tag.dataset.img;
@@ -22,7 +22,7 @@ function toggleMinImg() {
        const pictures = document.querySelectorAll('.toggle-img--js');
        for (let i = 0; i < pictures.length; i++) {
               const pic = pictures[i];
-              fullQuality(pic , [376,480]);
+              fullQuality(pic , [376,480,768]);
        }
 }  
 

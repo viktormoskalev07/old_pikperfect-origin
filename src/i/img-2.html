@@ -1,6 +1,9 @@
-<picture  data-priority="@@priority" class="picture-webp toggle-img--js">
-  <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/@@folder/min-@@src.webp" data-img="images/towebp/@@folder/@@src-376.webp" type="image/webp">  
-  <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/@@folder/min-@@src.webp" data-img="images/towebp/@@folder/@@src-480.webp" type="image/webp">  
-  <source class="webp-img" srcset="images/towebp/@@folder/min-@@src.webp" data-img="images/towebp/@@folder/@@src.webp" type="image/webp"> 
-  <img loading="lazy" class="nowebp-img" src="images/towebp/@@folder/min-@@src.@@type" data-img="images/towebp/@@folder/@@src.@@type" alt="@@alt">
-</picture>  
+   <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
+      @@for(var i =0 , u=[376,480,768]; i <u.length ;i++){
+          <source class="webp-img-${u[i]}" media="(max-width: ${u[i]}px)" srcset="images/towebp/@@folder/min-@@src.webp" data-img="images/towebp/@@folder/@@src-${u[i]}.webp" type="image/webp">  
+      }  
+      <source class="webp-img" srcset="images/towebp/@@folder/min-@@src.webp" data-img="images/towebp/@@folder/@@src-5120.webp 2x , images/towebp/@@folder/@@src-1440.webp 1x" type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/@@folder/min-@@src.@@type" data-img="images/towebp/@@folder/@@src.@@type" alt="@@alt">
+    </picture>   
+
+
