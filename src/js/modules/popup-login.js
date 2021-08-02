@@ -24,8 +24,12 @@ const showHidePassword = () => {
       let input = btn.parentElement.firstElementChild;
       if (input.type === "password") {
         input.type = "text";
+        btn.querySelector('.password-pass').style = 'display:none';
+        btn.querySelector('.password-text').style = 'display:block';
       } else {
         input.type = "password";
+        btn.querySelector('.password-pass').style.display = 'block';
+        btn.querySelector('.password-text').style.display = 'none';
       }
     });
   });

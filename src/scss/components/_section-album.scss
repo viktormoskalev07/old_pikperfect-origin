@@ -1,4 +1,6 @@
 .section-album{
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 48px 15px 64px;  
   @include tablet{
     padding: 127px 15px 112px;

@@ -88,6 +88,7 @@ const changePass = document.querySelector("#change-pass");
  if(changePass){
   changePass.addEventListener('click', function(){
     document.querySelector('.tab-content__wrap-block').classList.toggle('block');
+    document.querySelector("#register-current-password").focus();
   })
  }
  }());
@@ -118,6 +119,8 @@ if(textareaCount&&textCounter){
 (function(){
   const btnPopupHelp = document.querySelector('#popupHelp');
   const PopupHelp = document.querySelector('.popup-help');
+  const PopuopHelpName = document.querySelector("#popup-help-name");
+  
   function helpPopupClose(e){
     if(!(e.target.matches('.popup-help *'))){
     PopupHelp.classList.remove('active');
@@ -130,7 +133,8 @@ if(textareaCount&&textCounter){
       e.stopPropagation()
       PopupHelp.classList.toggle('active');
       btnPopupHelp.classList.toggle('active');
-      document.body.addEventListener('click' ,helpPopupClose )
+      document.body.addEventListener('click' ,helpPopupClose );
+      PopuopHelpName.focus();
     })
   }
 }())
