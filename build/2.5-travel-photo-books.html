@@ -17,11 +17,14 @@
 </head>
 
 <body class="no-transition">
-	<script> 
+	<script>
+	 function addFont(e){setTimeout(()=>{const e=document.createElement("link"),t=document.createElement("link");t.rel="preconnect",t.href="https://fonts.gstatic.com",e.rel="stylesheet",e.href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Spectral:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap",document.querySelector("head").append(t),document.querySelector("head").append(e),localStorage.setItem("font","1")},e)}localStorage.getItem("font")?addFont(0):window.matchMedia("(max-width: 480px)").matches?addFont(1e3):addFont(0);
+
 		window.addEventListener('load' , function(){
 			document.body.classList.remove('no-transition');
 		})
 	</script> 
+
     <div class="pre-header">
     <div class="container">
       <div class="promobar"> 
@@ -85,8 +88,7 @@
           </div>
         </li>
         <li><a href="https://www.pikperfect.com/album-design-service">design service</a></li>
-        <li><a style='color:blue' href="./1.0-homepage.html">1.0</a></li>
-<li><a style='color:rgb(206, 76, 53)' href="./1.0-jq.html">1.0 jquery test</a></li>
+        <li><a style='color:blue' href="./1.0-homepage.html">1.0</a></li> 
 <li><a style='color:blue' href="./2.0a-photo-books.html">2.0a</a></li>
 <li><a style='color:blue' href="./2.0b-memory-books.html">2.0b</a></li>
 <li><a style='color:green' href="./2.1-premium-layflat-albums.html">2.1</a></li>
@@ -107,8 +109,9 @@
 <li><a style='color:rgb(174, 0, 255)' href="./8.2-photo-book-example.html">8.2</a></li>
 <li><a style='color:rgb(174, 0, 255)' href="./9.0-about-us.html">9.0</a></li>
 <li><a style='color:rgb(174, 0, 255)' href="./10.0-contact-us.html">10.0</a></li>
+<li><a style='color:red' href="./12.0-photographer-photo-albums.html">12.0</a></li>
 <li><a style='color:rgb(174, 0, 255)' href="./13.0-share.html">13.0</a></li>
-<li><a style='color:rgb(174, 0, 255)' href="./15.0-myprofile.html">15.0</a></li> 
+<li><a style='color:rgb(174, 0, 255)' href="./15.0-myprofile.html">15.0</a></li>  
  
 
       </ul>
@@ -282,18 +285,17 @@
       <figure class="figure-webp">
            <picture  data-priority="0" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.5_travel_photo_books/min-luxury-travel-photo-books.webp" data-img="images/towebp/2.5_travel_photo_books/luxury-travel-photo-books-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.5_travel_photo_books/min-luxury-travel-photo-books.webp" data-img="images/towebp/2.5_travel_photo_books/luxury-travel-photo-books-376.webp , images/towebp/2.5_travel_photo_books/luxury-travel-photo-books-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.5_travel_photo_books/min-luxury-travel-photo-books.webp" data-img="images/towebp/2.5_travel_photo_books/luxury-travel-photo-books-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.5_travel_photo_books/min-luxury-travel-photo-books.webp" data-img="images/towebp/2.5_travel_photo_books/luxury-travel-photo-books-480.webp , images/towebp/2.5_travel_photo_books/luxury-travel-photo-books-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.5_travel_photo_books/min-luxury-travel-photo-books.webp" data-img="images/towebp/2.5_travel_photo_books/luxury-travel-photo-books-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.5_travel_photo_books/min-luxury-travel-photo-books.webp" data-img="images/towebp/2.5_travel_photo_books/luxury-travel-photo-books-768.webp , images/towebp/2.5_travel_photo_books/luxury-travel-photo-books-1440.webp 2x" type="image/webp">  
         
       <source class="webp-img" srcset="images/towebp/2.5_travel_photo_books/min-luxury-travel-photo-books.webp" data-img="images/towebp/2.5_travel_photo_books/luxury-travel-photo-books-5120.webp 2x , images/towebp/2.5_travel_photo_books/luxury-travel-photo-books-1440.webp 1x" type="image/webp"> 
       <img loading="lazy" class="nowebp-img" src="images/towebp/2.5_travel_photo_books/min-luxury-travel-photo-books.jpg" data-img="images/towebp/2.5_travel_photo_books/luxury-travel-photo-books.jpg" alt="Luxury travel photo book on rustic wooden table">
     </picture>   
 
-
-  
+   
       </figure>
            
     </div>
@@ -301,18 +303,17 @@
       <div class="section-hero__bg">
            <picture  data-priority="0" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp//min-image_texture.webp" data-img="images/towebp//image_texture-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp//min-image_texture.webp" data-img="images/towebp//image_texture-376.webp , images/towebp//image_texture-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp//min-image_texture.webp" data-img="images/towebp//image_texture-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp//min-image_texture.webp" data-img="images/towebp//image_texture-480.webp , images/towebp//image_texture-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp//min-image_texture.webp" data-img="images/towebp//image_texture-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp//min-image_texture.webp" data-img="images/towebp//image_texture-768.webp , images/towebp//image_texture-1440.webp 2x" type="image/webp">  
         
       <source class="webp-img" srcset="images/towebp//min-image_texture.webp" data-img="images/towebp//image_texture-5120.webp 2x , images/towebp//image_texture-1440.webp 1x" type="image/webp"> 
       <img loading="lazy" class="nowebp-img" src="images/towebp//min-image_texture.jpg" data-img="images/towebp//image_texture.jpg" alt="bg-hero">
     </picture>   
 
-
-  
+   
       </div>
       <div class="section-hero__picture section-hero__picture_map">
         <img src="./images/towebp/2.5_travel_photo_books/illustration_map.png" alt="picture map">
@@ -365,35 +366,39 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
                
- <figure style="padding-bottom: calc(713% / 788 * 100)" class="figure-webp  ">
-  <picture  data-priority="1" class="picture-webp toggle-img--js">
+ <figure style="padding-bottom: calc(713% / 788 * 100)" class="figure-webp  "> 
+       <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.5_travel_photo_books/min-travel-photo-book.webp" data-img="images/towebp/2.5_travel_photo_books/travel-photo-book-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.5_travel_photo_books/min-travel-photo-book.webp" data-img="images/towebp/2.5_travel_photo_books/travel-photo-book-376.webp , images/towebp/2.5_travel_photo_books/travel-photo-book-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.5_travel_photo_books/min-travel-photo-book.webp" data-img="images/towebp/2.5_travel_photo_books/travel-photo-book-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.5_travel_photo_books/min-travel-photo-book.webp" data-img="images/towebp/2.5_travel_photo_books/travel-photo-book-480.webp , images/towebp/2.5_travel_photo_books/travel-photo-book-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.5_travel_photo_books/min-travel-photo-book.webp" data-img="images/towebp/2.5_travel_photo_books/travel-photo-book-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.5_travel_photo_books/min-travel-photo-book.webp" data-img="images/towebp/2.5_travel_photo_books/travel-photo-book-768.webp , images/towebp/2.5_travel_photo_books/travel-photo-book-1440.webp 2x" type="image/webp">  
         
       <source class="webp-img" srcset="images/towebp/2.5_travel_photo_books/min-travel-photo-book.webp" data-img="images/towebp/2.5_travel_photo_books/travel-photo-book-5120.webp 2x , images/towebp/2.5_travel_photo_books/travel-photo-book-1440.webp 1x" type="image/webp"> 
       <img loading="lazy" class="nowebp-img" src="images/towebp/2.5_travel_photo_books/min-travel-photo-book.jpg" data-img="images/towebp/2.5_travel_photo_books/travel-photo-book.jpg" alt="Photo book with vacation photos">
-    </picture>  
+    </picture>   
+
+ 
 </figure>
 
 </div>
             <div class="swiper-slide">
                
- <figure style="padding-bottom: calc(713% / 788 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
+ <figure style="padding-bottom: calc(713% / 788 * 100)" class="figure-webp  "> 
+       <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.5_travel_photo_books/min-travel-photobooks.webp" data-img="images/towebp/2.5_travel_photo_books/travel-photobooks-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.5_travel_photo_books/min-travel-photobooks.webp" data-img="images/towebp/2.5_travel_photo_books/travel-photobooks-376.webp , images/towebp/2.5_travel_photo_books/travel-photobooks-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.5_travel_photo_books/min-travel-photobooks.webp" data-img="images/towebp/2.5_travel_photo_books/travel-photobooks-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.5_travel_photo_books/min-travel-photobooks.webp" data-img="images/towebp/2.5_travel_photo_books/travel-photobooks-480.webp , images/towebp/2.5_travel_photo_books/travel-photobooks-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.5_travel_photo_books/min-travel-photobooks.webp" data-img="images/towebp/2.5_travel_photo_books/travel-photobooks-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.5_travel_photo_books/min-travel-photobooks.webp" data-img="images/towebp/2.5_travel_photo_books/travel-photobooks-768.webp , images/towebp/2.5_travel_photo_books/travel-photobooks-1440.webp 2x" type="image/webp">  
         
       <source class="webp-img" srcset="images/towebp/2.5_travel_photo_books/min-travel-photobooks.webp" data-img="images/towebp/2.5_travel_photo_books/travel-photobooks-5120.webp 2x , images/towebp/2.5_travel_photo_books/travel-photobooks-1440.webp 1x" type="image/webp"> 
       <img loading="lazy" class="nowebp-img" src="images/towebp/2.5_travel_photo_books/min-travel-photobooks.jpg" data-img="images/towebp/2.5_travel_photo_books/travel-photobooks.jpg" alt="Photo book with holiday photos">
-    </picture>  
+    </picture>   
+
+ 
 </figure>
 
 </div> 
@@ -422,35 +427,39 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
                
- <figure style="padding-bottom: calc(713% / 788 * 100)" class="figure-webp  ">
-  <picture  data-priority="1" class="picture-webp toggle-img--js">
+ <figure style="padding-bottom: calc(713% / 788 * 100)" class="figure-webp  "> 
+       <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.5_travel_photo_books/min-layflat-travel-photo-album.webp" data-img="images/towebp/2.5_travel_photo_books/layflat-travel-photo-album-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.5_travel_photo_books/min-layflat-travel-photo-album.webp" data-img="images/towebp/2.5_travel_photo_books/layflat-travel-photo-album-376.webp , images/towebp/2.5_travel_photo_books/layflat-travel-photo-album-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.5_travel_photo_books/min-layflat-travel-photo-album.webp" data-img="images/towebp/2.5_travel_photo_books/layflat-travel-photo-album-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.5_travel_photo_books/min-layflat-travel-photo-album.webp" data-img="images/towebp/2.5_travel_photo_books/layflat-travel-photo-album-480.webp , images/towebp/2.5_travel_photo_books/layflat-travel-photo-album-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.5_travel_photo_books/min-layflat-travel-photo-album.webp" data-img="images/towebp/2.5_travel_photo_books/layflat-travel-photo-album-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.5_travel_photo_books/min-layflat-travel-photo-album.webp" data-img="images/towebp/2.5_travel_photo_books/layflat-travel-photo-album-768.webp , images/towebp/2.5_travel_photo_books/layflat-travel-photo-album-1440.webp 2x" type="image/webp">  
         
       <source class="webp-img" srcset="images/towebp/2.5_travel_photo_books/min-layflat-travel-photo-album.webp" data-img="images/towebp/2.5_travel_photo_books/layflat-travel-photo-album-5120.webp 2x , images/towebp/2.5_travel_photo_books/layflat-travel-photo-album-1440.webp 1x" type="image/webp"> 
       <img loading="lazy" class="nowebp-img" src="images/towebp/2.5_travel_photo_books/min-layflat-travel-photo-album.jpg" data-img="images/towebp/2.5_travel_photo_books/layflat-travel-photo-album.jpg" alt="Women viewing a travel photo album">
-    </picture>  
+    </picture>   
+
+ 
 </figure>
 
 </div>
             <div class="swiper-slide">
                
- <figure style="padding-bottom: calc(713% / 788 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
+ <figure style="padding-bottom: calc(713% / 788 * 100)" class="figure-webp  "> 
+       <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.5_travel_photo_books/min-travel-photo-album.webp" data-img="images/towebp/2.5_travel_photo_books/travel-photo-album-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.5_travel_photo_books/min-travel-photo-album.webp" data-img="images/towebp/2.5_travel_photo_books/travel-photo-album-376.webp , images/towebp/2.5_travel_photo_books/travel-photo-album-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.5_travel_photo_books/min-travel-photo-album.webp" data-img="images/towebp/2.5_travel_photo_books/travel-photo-album-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.5_travel_photo_books/min-travel-photo-album.webp" data-img="images/towebp/2.5_travel_photo_books/travel-photo-album-480.webp , images/towebp/2.5_travel_photo_books/travel-photo-album-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.5_travel_photo_books/min-travel-photo-album.webp" data-img="images/towebp/2.5_travel_photo_books/travel-photo-album-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.5_travel_photo_books/min-travel-photo-album.webp" data-img="images/towebp/2.5_travel_photo_books/travel-photo-album-768.webp , images/towebp/2.5_travel_photo_books/travel-photo-album-1440.webp 2x" type="image/webp">  
         
       <source class="webp-img" srcset="images/towebp/2.5_travel_photo_books/min-travel-photo-album.webp" data-img="images/towebp/2.5_travel_photo_books/travel-photo-album-5120.webp 2x , images/towebp/2.5_travel_photo_books/travel-photo-album-1440.webp 1x" type="image/webp"> 
       <img loading="lazy" class="nowebp-img" src="images/towebp/2.5_travel_photo_books/min-travel-photo-album.jpg" data-img="images/towebp/2.5_travel_photo_books/travel-photo-album.jpg" alt="Open travel photo album">
-    </picture>  
+    </picture>   
+
+ 
 </figure>
 
 </div> 
@@ -478,35 +487,39 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
                
- <figure style="padding-bottom: calc(713% / 788 * 100)" class="figure-webp  ">
-  <picture  data-priority="1" class="picture-webp toggle-img--js">
+ <figure style="padding-bottom: calc(713% / 788 * 100)" class="figure-webp  "> 
+       <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.5_travel_photo_books/min-premium-travel-photo-album.webp" data-img="images/towebp/2.5_travel_photo_books/premium-travel-photo-album-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.5_travel_photo_books/min-premium-travel-photo-album.webp" data-img="images/towebp/2.5_travel_photo_books/premium-travel-photo-album-376.webp , images/towebp/2.5_travel_photo_books/premium-travel-photo-album-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.5_travel_photo_books/min-premium-travel-photo-album.webp" data-img="images/towebp/2.5_travel_photo_books/premium-travel-photo-album-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.5_travel_photo_books/min-premium-travel-photo-album.webp" data-img="images/towebp/2.5_travel_photo_books/premium-travel-photo-album-480.webp , images/towebp/2.5_travel_photo_books/premium-travel-photo-album-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.5_travel_photo_books/min-premium-travel-photo-album.webp" data-img="images/towebp/2.5_travel_photo_books/premium-travel-photo-album-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.5_travel_photo_books/min-premium-travel-photo-album.webp" data-img="images/towebp/2.5_travel_photo_books/premium-travel-photo-album-768.webp , images/towebp/2.5_travel_photo_books/premium-travel-photo-album-1440.webp 2x" type="image/webp">  
         
       <source class="webp-img" srcset="images/towebp/2.5_travel_photo_books/min-premium-travel-photo-album.webp" data-img="images/towebp/2.5_travel_photo_books/premium-travel-photo-album-5120.webp 2x , images/towebp/2.5_travel_photo_books/premium-travel-photo-album-1440.webp 1x" type="image/webp"> 
       <img loading="lazy" class="nowebp-img" src="images/towebp/2.5_travel_photo_books/min-premium-travel-photo-album.jpg" data-img="images/towebp/2.5_travel_photo_books/premium-travel-photo-album.jpg" alt="Premium travel photo album with thick pages">
-    </picture>  
+    </picture>   
+
+ 
 </figure>
 
 </div>
             <div class="swiper-slide">
                
- <figure style="padding-bottom: calc(713% / 788 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
+ <figure style="padding-bottom: calc(713% / 788 * 100)" class="figure-webp  "> 
+       <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.5_travel_photo_books/min-premium-travel-photo-book.webp" data-img="images/towebp/2.5_travel_photo_books/premium-travel-photo-book-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.5_travel_photo_books/min-premium-travel-photo-book.webp" data-img="images/towebp/2.5_travel_photo_books/premium-travel-photo-book-376.webp , images/towebp/2.5_travel_photo_books/premium-travel-photo-book-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.5_travel_photo_books/min-premium-travel-photo-book.webp" data-img="images/towebp/2.5_travel_photo_books/premium-travel-photo-book-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.5_travel_photo_books/min-premium-travel-photo-book.webp" data-img="images/towebp/2.5_travel_photo_books/premium-travel-photo-book-480.webp , images/towebp/2.5_travel_photo_books/premium-travel-photo-book-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.5_travel_photo_books/min-premium-travel-photo-book.webp" data-img="images/towebp/2.5_travel_photo_books/premium-travel-photo-book-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.5_travel_photo_books/min-premium-travel-photo-book.webp" data-img="images/towebp/2.5_travel_photo_books/premium-travel-photo-book-768.webp , images/towebp/2.5_travel_photo_books/premium-travel-photo-book-1440.webp 2x" type="image/webp">  
         
       <source class="webp-img" srcset="images/towebp/2.5_travel_photo_books/min-premium-travel-photo-book.webp" data-img="images/towebp/2.5_travel_photo_books/premium-travel-photo-book-5120.webp 2x , images/towebp/2.5_travel_photo_books/premium-travel-photo-book-1440.webp 1x" type="image/webp"> 
       <img loading="lazy" class="nowebp-img" src="images/towebp/2.5_travel_photo_books/min-premium-travel-photo-book.jpg" data-img="images/towebp/2.5_travel_photo_books/premium-travel-photo-book.jpg" alt="Travel photo book with thick layflat pages">
-    </picture>  
+    </picture>   
+
+ 
 </figure>
 
 </div> 
@@ -528,18 +541,20 @@
 </section>  
   <section class="section-img">
    
- <figure style="padding-bottom: calc(731% / 1440 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
+ <figure style="padding-bottom: calc(731% / 1440 * 100)" class="figure-webp  "> 
+       <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.5_travel_photo_books/min-travel-photo-album-designs.webp" data-img="images/towebp/2.5_travel_photo_books/travel-photo-album-designs-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.5_travel_photo_books/min-travel-photo-album-designs.webp" data-img="images/towebp/2.5_travel_photo_books/travel-photo-album-designs-376.webp , images/towebp/2.5_travel_photo_books/travel-photo-album-designs-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.5_travel_photo_books/min-travel-photo-album-designs.webp" data-img="images/towebp/2.5_travel_photo_books/travel-photo-album-designs-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.5_travel_photo_books/min-travel-photo-album-designs.webp" data-img="images/towebp/2.5_travel_photo_books/travel-photo-album-designs-480.webp , images/towebp/2.5_travel_photo_books/travel-photo-album-designs-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.5_travel_photo_books/min-travel-photo-album-designs.webp" data-img="images/towebp/2.5_travel_photo_books/travel-photo-album-designs-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.5_travel_photo_books/min-travel-photo-album-designs.webp" data-img="images/towebp/2.5_travel_photo_books/travel-photo-album-designs-768.webp , images/towebp/2.5_travel_photo_books/travel-photo-album-designs-1440.webp 2x" type="image/webp">  
         
       <source class="webp-img" srcset="images/towebp/2.5_travel_photo_books/min-travel-photo-album-designs.webp" data-img="images/towebp/2.5_travel_photo_books/travel-photo-album-designs-5120.webp 2x , images/towebp/2.5_travel_photo_books/travel-photo-album-designs-1440.webp 1x" type="image/webp"> 
       <img loading="lazy" class="nowebp-img" src="images/towebp/2.5_travel_photo_books/min-travel-photo-album-designs.jpg" data-img="images/towebp/2.5_travel_photo_books/travel-photo-album-designs.jpg" alt="Travel photo album cover designs">
-    </picture>  
+    </picture>   
+
+ 
 </figure>
 
   
@@ -577,18 +592,20 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide">
            
- <figure style="padding-bottom: calc(330% / 330 * 100)" class="figure-webp  ">
-  <picture  data-priority="1" class="picture-webp toggle-img--js">
+ <figure style="padding-bottom: calc(330% / 330 * 100)" class="figure-webp  "> 
+       <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.5_travel_photo_books/min-image_travel_book_ideas_1.webp" data-img="images/towebp/2.5_travel_photo_books/image_travel_book_ideas_1-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.5_travel_photo_books/min-image_travel_book_ideas_1.webp" data-img="images/towebp/2.5_travel_photo_books/image_travel_book_ideas_1-376.webp , images/towebp/2.5_travel_photo_books/image_travel_book_ideas_1-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.5_travel_photo_books/min-image_travel_book_ideas_1.webp" data-img="images/towebp/2.5_travel_photo_books/image_travel_book_ideas_1-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.5_travel_photo_books/min-image_travel_book_ideas_1.webp" data-img="images/towebp/2.5_travel_photo_books/image_travel_book_ideas_1-480.webp , images/towebp/2.5_travel_photo_books/image_travel_book_ideas_1-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.5_travel_photo_books/min-image_travel_book_ideas_1.webp" data-img="images/towebp/2.5_travel_photo_books/image_travel_book_ideas_1-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.5_travel_photo_books/min-image_travel_book_ideas_1.webp" data-img="images/towebp/2.5_travel_photo_books/image_travel_book_ideas_1-768.webp , images/towebp/2.5_travel_photo_books/image_travel_book_ideas_1-1440.webp 2x" type="image/webp">  
         
       <source class="webp-img" srcset="images/towebp/2.5_travel_photo_books/min-image_travel_book_ideas_1.webp" data-img="images/towebp/2.5_travel_photo_books/image_travel_book_ideas_1-5120.webp 2x , images/towebp/2.5_travel_photo_books/image_travel_book_ideas_1-1440.webp 1x" type="image/webp"> 
       <img loading="lazy" class="nowebp-img" src="images/towebp/2.5_travel_photo_books/min-image_travel_book_ideas_1.png" data-img="images/towebp/2.5_travel_photo_books/image_travel_book_ideas_1.png" alt="album travel book ideas">
-    </picture>  
+    </picture>   
+
+ 
 </figure>
 
 
@@ -596,18 +613,20 @@
         </div>
         <div class="swiper-slide">
            
- <figure style="padding-bottom: calc(330% / 330 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
+ <figure style="padding-bottom: calc(330% / 330 * 100)" class="figure-webp  "> 
+       <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.5_travel_photo_books/min-album_travel_book_ideas_2.webp" data-img="images/towebp/2.5_travel_photo_books/album_travel_book_ideas_2-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.5_travel_photo_books/min-album_travel_book_ideas_2.webp" data-img="images/towebp/2.5_travel_photo_books/album_travel_book_ideas_2-376.webp , images/towebp/2.5_travel_photo_books/album_travel_book_ideas_2-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.5_travel_photo_books/min-album_travel_book_ideas_2.webp" data-img="images/towebp/2.5_travel_photo_books/album_travel_book_ideas_2-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.5_travel_photo_books/min-album_travel_book_ideas_2.webp" data-img="images/towebp/2.5_travel_photo_books/album_travel_book_ideas_2-480.webp , images/towebp/2.5_travel_photo_books/album_travel_book_ideas_2-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.5_travel_photo_books/min-album_travel_book_ideas_2.webp" data-img="images/towebp/2.5_travel_photo_books/album_travel_book_ideas_2-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.5_travel_photo_books/min-album_travel_book_ideas_2.webp" data-img="images/towebp/2.5_travel_photo_books/album_travel_book_ideas_2-768.webp , images/towebp/2.5_travel_photo_books/album_travel_book_ideas_2-1440.webp 2x" type="image/webp">  
         
       <source class="webp-img" srcset="images/towebp/2.5_travel_photo_books/min-album_travel_book_ideas_2.webp" data-img="images/towebp/2.5_travel_photo_books/album_travel_book_ideas_2-5120.webp 2x , images/towebp/2.5_travel_photo_books/album_travel_book_ideas_2-1440.webp 1x" type="image/webp"> 
       <img loading="lazy" class="nowebp-img" src="images/towebp/2.5_travel_photo_books/min-album_travel_book_ideas_2.png" data-img="images/towebp/2.5_travel_photo_books/album_travel_book_ideas_2.png" alt="album travel book ideas green">
-    </picture>  
+    </picture>   
+
+ 
 </figure>
 
 
@@ -615,18 +634,20 @@
         </div> 
         <div class="swiper-slide">
            
- <figure style="padding-bottom: calc(330% / 330 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
+ <figure style="padding-bottom: calc(330% / 330 * 100)" class="figure-webp  "> 
+       <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.5_travel_photo_books/min-album_travel_book_ideas_1.webp" data-img="images/towebp/2.5_travel_photo_books/album_travel_book_ideas_1-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.5_travel_photo_books/min-album_travel_book_ideas_1.webp" data-img="images/towebp/2.5_travel_photo_books/album_travel_book_ideas_1-376.webp , images/towebp/2.5_travel_photo_books/album_travel_book_ideas_1-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.5_travel_photo_books/min-album_travel_book_ideas_1.webp" data-img="images/towebp/2.5_travel_photo_books/album_travel_book_ideas_1-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.5_travel_photo_books/min-album_travel_book_ideas_1.webp" data-img="images/towebp/2.5_travel_photo_books/album_travel_book_ideas_1-480.webp , images/towebp/2.5_travel_photo_books/album_travel_book_ideas_1-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.5_travel_photo_books/min-album_travel_book_ideas_1.webp" data-img="images/towebp/2.5_travel_photo_books/album_travel_book_ideas_1-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.5_travel_photo_books/min-album_travel_book_ideas_1.webp" data-img="images/towebp/2.5_travel_photo_books/album_travel_book_ideas_1-768.webp , images/towebp/2.5_travel_photo_books/album_travel_book_ideas_1-1440.webp 2x" type="image/webp">  
         
       <source class="webp-img" srcset="images/towebp/2.5_travel_photo_books/min-album_travel_book_ideas_1.webp" data-img="images/towebp/2.5_travel_photo_books/album_travel_book_ideas_1-5120.webp 2x , images/towebp/2.5_travel_photo_books/album_travel_book_ideas_1-1440.webp 1x" type="image/webp"> 
       <img loading="lazy" class="nowebp-img" src="images/towebp/2.5_travel_photo_books/min-album_travel_book_ideas_1.png" data-img="images/towebp/2.5_travel_photo_books/album_travel_book_ideas_1.png" alt="album travel book ideas">
-    </picture>  
+    </picture>   
+
+ 
 </figure>
 
 
@@ -634,18 +655,20 @@
         </div>
         <div class="swiper-slide">
            
- <figure style="padding-bottom: calc(330% / 330 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
+ <figure style="padding-bottom: calc(330% / 330 * 100)" class="figure-webp  "> 
+       <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.5_travel_photo_books/min-album_travel_book_ideas_4.webp" data-img="images/towebp/2.5_travel_photo_books/album_travel_book_ideas_4-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.5_travel_photo_books/min-album_travel_book_ideas_4.webp" data-img="images/towebp/2.5_travel_photo_books/album_travel_book_ideas_4-376.webp , images/towebp/2.5_travel_photo_books/album_travel_book_ideas_4-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.5_travel_photo_books/min-album_travel_book_ideas_4.webp" data-img="images/towebp/2.5_travel_photo_books/album_travel_book_ideas_4-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.5_travel_photo_books/min-album_travel_book_ideas_4.webp" data-img="images/towebp/2.5_travel_photo_books/album_travel_book_ideas_4-480.webp , images/towebp/2.5_travel_photo_books/album_travel_book_ideas_4-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.5_travel_photo_books/min-album_travel_book_ideas_4.webp" data-img="images/towebp/2.5_travel_photo_books/album_travel_book_ideas_4-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.5_travel_photo_books/min-album_travel_book_ideas_4.webp" data-img="images/towebp/2.5_travel_photo_books/album_travel_book_ideas_4-768.webp , images/towebp/2.5_travel_photo_books/album_travel_book_ideas_4-1440.webp 2x" type="image/webp">  
         
       <source class="webp-img" srcset="images/towebp/2.5_travel_photo_books/min-album_travel_book_ideas_4.webp" data-img="images/towebp/2.5_travel_photo_books/album_travel_book_ideas_4-5120.webp 2x , images/towebp/2.5_travel_photo_books/album_travel_book_ideas_4-1440.webp 1x" type="image/webp"> 
       <img loading="lazy" class="nowebp-img" src="images/towebp/2.5_travel_photo_books/min-album_travel_book_ideas_4.png" data-img="images/towebp/2.5_travel_photo_books/album_travel_book_ideas_4.png" alt="album travel book adventure">
-    </picture>  
+    </picture>   
+
+ 
 </figure>
 
 

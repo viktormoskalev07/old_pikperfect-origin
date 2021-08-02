@@ -17,11 +17,14 @@
 </head>
 
 <body class="no-transition">
-	<script> 
+	<script>
+	 function addFont(e){setTimeout(()=>{const e=document.createElement("link"),t=document.createElement("link");t.rel="preconnect",t.href="https://fonts.gstatic.com",e.rel="stylesheet",e.href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Spectral:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap",document.querySelector("head").append(t),document.querySelector("head").append(e),localStorage.setItem("font","1")},e)}localStorage.getItem("font")?addFont(0):window.matchMedia("(max-width: 480px)").matches?addFont(1e3):addFont(0);
+
 		window.addEventListener('load' , function(){
 			document.body.classList.remove('no-transition');
 		})
 	</script> 
+
     <div class="pre-header">
     <div class="container">
       <div class="promobar"> 
@@ -85,8 +88,7 @@
           </div>
         </li>
         <li><a href="https://www.pikperfect.com/album-design-service">design service</a></li>
-        <li><a style='color:blue' href="./1.0-homepage.html">1.0</a></li>
-<li><a style='color:rgb(206, 76, 53)' href="./1.0-jq.html">1.0 jquery test</a></li>
+        <li><a style='color:blue' href="./1.0-homepage.html">1.0</a></li> 
 <li><a style='color:blue' href="./2.0a-photo-books.html">2.0a</a></li>
 <li><a style='color:blue' href="./2.0b-memory-books.html">2.0b</a></li>
 <li><a style='color:green' href="./2.1-premium-layflat-albums.html">2.1</a></li>
@@ -107,8 +109,9 @@
 <li><a style='color:rgb(174, 0, 255)' href="./8.2-photo-book-example.html">8.2</a></li>
 <li><a style='color:rgb(174, 0, 255)' href="./9.0-about-us.html">9.0</a></li>
 <li><a style='color:rgb(174, 0, 255)' href="./10.0-contact-us.html">10.0</a></li>
+<li><a style='color:red' href="./12.0-photographer-photo-albums.html">12.0</a></li>
 <li><a style='color:rgb(174, 0, 255)' href="./13.0-share.html">13.0</a></li>
-<li><a style='color:rgb(174, 0, 255)' href="./15.0-myprofile.html">15.0</a></li> 
+<li><a style='color:rgb(174, 0, 255)' href="./15.0-myprofile.html">15.0</a></li>  
  
 
       </ul>
@@ -278,18 +281,20 @@
   <main class="main-content"> 
   <section class="section-img m-auto">
    
- <figure style="padding-bottom: calc(505% / 1440 * 100)" class="figure-webp  ">
-  <picture  data-priority="0" class="picture-webp toggle-img--js">
+ <figure style="padding-bottom: calc(505% / 1440 * 100)" class="figure-webp  "> 
+       <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/min-wedding-photo-book-sample.webp" data-img="images/towebp/8.0-photobook-sample-gallery/wedding-photo-book-sample-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/min-wedding-photo-book-sample.webp" data-img="images/towebp/8.0-photobook-sample-gallery/wedding-photo-book-sample-376.webp , images/towebp/8.0-photobook-sample-gallery/wedding-photo-book-sample-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/min-wedding-photo-book-sample.webp" data-img="images/towebp/8.0-photobook-sample-gallery/wedding-photo-book-sample-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/min-wedding-photo-book-sample.webp" data-img="images/towebp/8.0-photobook-sample-gallery/wedding-photo-book-sample-480.webp , images/towebp/8.0-photobook-sample-gallery/wedding-photo-book-sample-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/8.0-photobook-sample-gallery/min-wedding-photo-book-sample.webp" data-img="images/towebp/8.0-photobook-sample-gallery/wedding-photo-book-sample-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/8.0-photobook-sample-gallery/min-wedding-photo-book-sample.webp" data-img="images/towebp/8.0-photobook-sample-gallery/wedding-photo-book-sample-768.webp , images/towebp/8.0-photobook-sample-gallery/wedding-photo-book-sample-1440.webp 2x" type="image/webp">  
         
       <source class="webp-img" srcset="images/towebp/8.0-photobook-sample-gallery/min-wedding-photo-book-sample.webp" data-img="images/towebp/8.0-photobook-sample-gallery/wedding-photo-book-sample-5120.webp 2x , images/towebp/8.0-photobook-sample-gallery/wedding-photo-book-sample-1440.webp 1x" type="image/webp"> 
       <img loading="lazy" class="nowebp-img" src="images/towebp/8.0-photobook-sample-gallery/min-wedding-photo-book-sample.jpg" data-img="images/towebp/8.0-photobook-sample-gallery/wedding-photo-book-sample.jpg" alt="Flip book of wedding photo book sample">
-    </picture>  
+    </picture>   
+
+ 
 </figure>
 
   
@@ -373,18 +378,20 @@ All
 
       <div  data-type="Travel" class="cursor-pointer filtered-card-js section-photobooks__block">
      
- <figure style="padding-bottom: calc(310% / 290 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
+ <figure style="padding-bottom: calc(310% / 290 * 100)" class="figure-webp  "> 
+       <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-1440.webp 2x" type="image/webp">  
         
       <source class="webp-img" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-5120.webp 2x , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-1440.webp 1x" type="image/webp"> 
       <img loading="lazy" class="nowebp-img" src="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.jpg" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.jpg" alt="Flip book of Travel photo book sample">
-    </picture>  
+    </picture>   
+
+ 
 </figure>
 
 
@@ -392,18 +399,20 @@ All
     <p class="section-photobooks__price light-italic">  Travel </p>
   </div><div  data-type="Wedding" class="cursor-pointer filtered-card-js section-photobooks__block">
      
- <figure style="padding-bottom: calc(310% / 290 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
+ <figure style="padding-bottom: calc(310% / 290 * 100)" class="figure-webp  "> 
+       <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-1440.webp 2x" type="image/webp">  
         
       <source class="webp-img" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-5120.webp 2x , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-1440.webp 1x" type="image/webp"> 
       <img loading="lazy" class="nowebp-img" src="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.jpg" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.jpg" alt="Flip book of Wedding photo book sample">
-    </picture>  
+    </picture>   
+
+ 
 </figure>
 
 
@@ -411,18 +420,20 @@ All
     <p class="section-photobooks__price light-italic">  Wedding </p>
   </div><div  data-type="Wedding" class="cursor-pointer filtered-card-js section-photobooks__block">
      
- <figure style="padding-bottom: calc(310% / 290 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
+ <figure style="padding-bottom: calc(310% / 290 * 100)" class="figure-webp  "> 
+       <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-1440.webp 2x" type="image/webp">  
         
       <source class="webp-img" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-5120.webp 2x , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-1440.webp 1x" type="image/webp"> 
       <img loading="lazy" class="nowebp-img" src="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.jpg" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.jpg" alt="Flip book of Wedding photo book sample">
-    </picture>  
+    </picture>   
+
+ 
 </figure>
 
 
@@ -430,18 +441,20 @@ All
     <p class="section-photobooks__price light-italic">  Wedding </p>
   </div><div  data-type="Wedding" class="cursor-pointer filtered-card-js section-photobooks__block">
      
- <figure style="padding-bottom: calc(310% / 290 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
+ <figure style="padding-bottom: calc(310% / 290 * 100)" class="figure-webp  "> 
+       <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-1440.webp 2x" type="image/webp">  
         
       <source class="webp-img" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-5120.webp 2x , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-1440.webp 1x" type="image/webp"> 
       <img loading="lazy" class="nowebp-img" src="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.jpg" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.jpg" alt="Flip book of Wedding photo book sample">
-    </picture>  
+    </picture>   
+
+ 
 </figure>
 
 
@@ -449,18 +462,20 @@ All
     <p class="section-photobooks__price light-italic">  Wedding </p>
   </div><div  data-type="Wedding" class="cursor-pointer filtered-card-js section-photobooks__block">
      
- <figure style="padding-bottom: calc(310% / 290 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
+ <figure style="padding-bottom: calc(310% / 290 * 100)" class="figure-webp  "> 
+       <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-1440.webp 2x" type="image/webp">  
         
       <source class="webp-img" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-5120.webp 2x , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-1440.webp 1x" type="image/webp"> 
       <img loading="lazy" class="nowebp-img" src="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.jpg" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.jpg" alt="Flip book of Wedding photo book sample">
-    </picture>  
+    </picture>   
+
+ 
 </figure>
 
 
@@ -468,18 +483,20 @@ All
     <p class="section-photobooks__price light-italic">  Wedding </p>
   </div><div  data-type="Travel" class="cursor-pointer filtered-card-js section-photobooks__block">
      
- <figure style="padding-bottom: calc(310% / 290 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
+ <figure style="padding-bottom: calc(310% / 290 * 100)" class="figure-webp  "> 
+       <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-1440.webp 2x" type="image/webp">  
         
       <source class="webp-img" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-5120.webp 2x , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-1440.webp 1x" type="image/webp"> 
       <img loading="lazy" class="nowebp-img" src="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.jpg" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.jpg" alt="Flip book of Travel photo book sample">
-    </picture>  
+    </picture>   
+
+ 
 </figure>
 
 
@@ -487,18 +504,20 @@ All
     <p class="section-photobooks__price light-italic">  Travel </p>
   </div><div  data-type="Family" class="cursor-pointer filtered-card-js section-photobooks__block">
      
- <figure style="padding-bottom: calc(310% / 290 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
+ <figure style="padding-bottom: calc(310% / 290 * 100)" class="figure-webp  "> 
+       <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-1440.webp 2x" type="image/webp">  
         
       <source class="webp-img" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-5120.webp 2x , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-1440.webp 1x" type="image/webp"> 
       <img loading="lazy" class="nowebp-img" src="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.jpg" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.jpg" alt="Flip book of Family photo book sample">
-    </picture>  
+    </picture>   
+
+ 
 </figure>
 
 
@@ -506,18 +525,20 @@ All
     <p class="section-photobooks__price light-italic">  Family </p>
   </div><div  data-type="Wedding" class="cursor-pointer filtered-card-js section-photobooks__block">
      
- <figure style="padding-bottom: calc(310% / 290 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
+ <figure style="padding-bottom: calc(310% / 290 * 100)" class="figure-webp  "> 
+       <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-1440.webp 2x" type="image/webp">  
         
       <source class="webp-img" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-5120.webp 2x , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-1440.webp 1x" type="image/webp"> 
       <img loading="lazy" class="nowebp-img" src="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.jpg" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.jpg" alt="Flip book of Wedding photo book sample">
-    </picture>  
+    </picture>   
+
+ 
 </figure>
 
 
@@ -525,18 +546,20 @@ All
     <p class="section-photobooks__price light-italic">  Wedding </p>
   </div><div  data-type="Wedding" class="cursor-pointer filtered-card-js section-photobooks__block">
      
- <figure style="padding-bottom: calc(310% / 290 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
+ <figure style="padding-bottom: calc(310% / 290 * 100)" class="figure-webp  "> 
+       <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-1440.webp 2x" type="image/webp">  
         
       <source class="webp-img" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-5120.webp 2x , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-1440.webp 1x" type="image/webp"> 
       <img loading="lazy" class="nowebp-img" src="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.jpg" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.jpg" alt="Flip book of Wedding photo book sample">
-    </picture>  
+    </picture>   
+
+ 
 </figure>
 
 
@@ -544,18 +567,20 @@ All
     <p class="section-photobooks__price light-italic">  Wedding </p>
   </div><div  data-type="Wedding" class="cursor-pointer filtered-card-js section-photobooks__block">
      
- <figure style="padding-bottom: calc(310% / 290 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
+ <figure style="padding-bottom: calc(310% / 290 * 100)" class="figure-webp  "> 
+       <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-1440.webp 2x" type="image/webp">  
         
       <source class="webp-img" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-5120.webp 2x , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-1440.webp 1x" type="image/webp"> 
       <img loading="lazy" class="nowebp-img" src="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.jpg" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.jpg" alt="Flip book of Wedding photo book sample">
-    </picture>  
+    </picture>   
+
+ 
 </figure>
 
 
@@ -563,18 +588,20 @@ All
     <p class="section-photobooks__price light-italic">  Wedding </p>
   </div><div  data-type="Wedding" class="cursor-pointer filtered-card-js section-photobooks__block">
      
- <figure style="padding-bottom: calc(310% / 290 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
+ <figure style="padding-bottom: calc(310% / 290 * 100)" class="figure-webp  "> 
+       <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-1440.webp 2x" type="image/webp">  
         
       <source class="webp-img" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-5120.webp 2x , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-1440.webp 1x" type="image/webp"> 
       <img loading="lazy" class="nowebp-img" src="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.jpg" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.jpg" alt="Flip book of Wedding photo book sample">
-    </picture>  
+    </picture>   
+
+ 
 </figure>
 
 
@@ -582,18 +609,20 @@ All
     <p class="section-photobooks__price light-italic">  Wedding </p>
   </div><div  data-type="Wedding" class="cursor-pointer filtered-card-js section-photobooks__block">
      
- <figure style="padding-bottom: calc(310% / 290 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
+ <figure style="padding-bottom: calc(310% / 290 * 100)" class="figure-webp  "> 
+       <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-1440.webp 2x" type="image/webp">  
         
       <source class="webp-img" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-5120.webp 2x , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-1440.webp 1x" type="image/webp"> 
       <img loading="lazy" class="nowebp-img" src="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.jpg" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.jpg" alt="Flip book of Wedding photo book sample">
-    </picture>  
+    </picture>   
+
+ 
 </figure>
 
 
@@ -601,18 +630,20 @@ All
     <p class="section-photobooks__price light-italic">  Wedding </p>
   </div><div  data-type="Wedding" class="cursor-pointer filtered-card-js section-photobooks__block">
      
- <figure style="padding-bottom: calc(310% / 290 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
+ <figure style="padding-bottom: calc(310% / 290 * 100)" class="figure-webp  "> 
+       <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-1440.webp 2x" type="image/webp">  
         
       <source class="webp-img" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-5120.webp 2x , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-1440.webp 1x" type="image/webp"> 
       <img loading="lazy" class="nowebp-img" src="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.jpg" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.jpg" alt="Flip book of Wedding photo book sample">
-    </picture>  
+    </picture>   
+
+ 
 </figure>
 
 
@@ -620,18 +651,20 @@ All
     <p class="section-photobooks__price light-italic">  Wedding </p>
   </div><div  data-type="Wedding" class="cursor-pointer filtered-card-js section-photobooks__block">
      
- <figure style="padding-bottom: calc(310% / 290 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
+ <figure style="padding-bottom: calc(310% / 290 * 100)" class="figure-webp  "> 
+       <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-1440.webp 2x" type="image/webp">  
         
       <source class="webp-img" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-5120.webp 2x , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-1440.webp 1x" type="image/webp"> 
       <img loading="lazy" class="nowebp-img" src="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.jpg" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.jpg" alt="Flip book of Wedding photo book sample">
-    </picture>  
+    </picture>   
+
+ 
 </figure>
 
 
@@ -639,18 +672,20 @@ All
     <p class="section-photobooks__price light-italic">  Wedding </p>
   </div><div  data-type="Wedding" class="cursor-pointer filtered-card-js section-photobooks__block">
      
- <figure style="padding-bottom: calc(310% / 290 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
+ <figure style="padding-bottom: calc(310% / 290 * 100)" class="figure-webp  "> 
+       <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-1440.webp 2x" type="image/webp">  
         
       <source class="webp-img" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-5120.webp 2x , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-1440.webp 1x" type="image/webp"> 
       <img loading="lazy" class="nowebp-img" src="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.jpg" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.jpg" alt="Flip book of Wedding photo book sample">
-    </picture>  
+    </picture>   
+
+ 
 </figure>
 
 
@@ -658,18 +693,20 @@ All
     <p class="section-photobooks__price light-italic">  Wedding </p>
   </div><div  data-type="Wedding" class="cursor-pointer filtered-card-js section-photobooks__block">
      
- <figure style="padding-bottom: calc(310% / 290 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
+ <figure style="padding-bottom: calc(310% / 290 * 100)" class="figure-webp  "> 
+       <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-376.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-480.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-768.webp , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-1440.webp 2x" type="image/webp">  
         
       <source class="webp-img" srcset="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.webp" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-5120.webp 2x , images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1-1440.webp 1x" type="image/webp"> 
       <img loading="lazy" class="nowebp-img" src="images/towebp/8.0-photobook-sample-gallery/cards/min-image_sample_gallery_1.jpg" data-img="images/towebp/8.0-photobook-sample-gallery/cards/image_sample_gallery_1.jpg" alt="Flip book of Wedding photo book sample">
-    </picture>  
+    </picture>   
+
+ 
 </figure>
 
 

@@ -17,11 +17,14 @@
 </head>
 
 <body class="no-transition">
-	<script> 
+	<script>
+	 function addFont(e){setTimeout(()=>{const e=document.createElement("link"),t=document.createElement("link");t.rel="preconnect",t.href="https://fonts.gstatic.com",e.rel="stylesheet",e.href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Spectral:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap",document.querySelector("head").append(t),document.querySelector("head").append(e),localStorage.setItem("font","1")},e)}localStorage.getItem("font")?addFont(0):window.matchMedia("(max-width: 480px)").matches?addFont(1e3):addFont(0);
+
 		window.addEventListener('load' , function(){
 			document.body.classList.remove('no-transition');
 		})
 	</script> 
+
     <div class="pre-header">
     <div class="container">
       <div class="promobar"> 
@@ -85,8 +88,7 @@
           </div>
         </li>
         <li><a href="https://www.pikperfect.com/album-design-service">design service</a></li>
-        <li><a style='color:blue' href="./1.0-homepage.html">1.0</a></li>
-<li><a style='color:rgb(206, 76, 53)' href="./1.0-jq.html">1.0 jquery test</a></li>
+        <li><a style='color:blue' href="./1.0-homepage.html">1.0</a></li> 
 <li><a style='color:blue' href="./2.0a-photo-books.html">2.0a</a></li>
 <li><a style='color:blue' href="./2.0b-memory-books.html">2.0b</a></li>
 <li><a style='color:green' href="./2.1-premium-layflat-albums.html">2.1</a></li>
@@ -107,8 +109,9 @@
 <li><a style='color:rgb(174, 0, 255)' href="./8.2-photo-book-example.html">8.2</a></li>
 <li><a style='color:rgb(174, 0, 255)' href="./9.0-about-us.html">9.0</a></li>
 <li><a style='color:rgb(174, 0, 255)' href="./10.0-contact-us.html">10.0</a></li>
+<li><a style='color:red' href="./12.0-photographer-photo-albums.html">12.0</a></li>
 <li><a style='color:rgb(174, 0, 255)' href="./13.0-share.html">13.0</a></li>
-<li><a style='color:rgb(174, 0, 255)' href="./15.0-myprofile.html">15.0</a></li> 
+<li><a style='color:rgb(174, 0, 255)' href="./15.0-myprofile.html">15.0</a></li>  
  
 
       </ul>
@@ -284,90 +287,100 @@
   <div class="swiper-wrapper">   
     <div class="swiper-slide hero-tab-activator__js section-hero__tab-activator">
        
- <figure style="padding-bottom: calc(90% / 90 * 100)" class="figure-webp  ">
-    <picture  data-priority="0" class="picture-webp toggle-img--js">
+ <figure style="padding-bottom: calc(90% / 90 * 100)" class="figure-webp  "> 
+       <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/min-premium-photo-album-covers.webp" data-img="images/towebp/premium-photo-album-covers-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.1/min-premium-photo-album-covers.webp" data-img="images/towebp/2.1/premium-photo-album-covers-376.webp , images/towebp/2.1/premium-photo-album-covers-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/min-premium-photo-album-covers.webp" data-img="images/towebp/premium-photo-album-covers-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.1/min-premium-photo-album-covers.webp" data-img="images/towebp/2.1/premium-photo-album-covers-480.webp , images/towebp/2.1/premium-photo-album-covers-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/min-premium-photo-album-covers.webp" data-img="images/towebp/premium-photo-album-covers-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.1/min-premium-photo-album-covers.webp" data-img="images/towebp/2.1/premium-photo-album-covers-768.webp , images/towebp/2.1/premium-photo-album-covers-1440.webp 2x" type="image/webp">  
         
-      <source class="webp-img" srcset="images/towebp/min-premium-photo-album-covers.webp" data-img="images/towebp/premium-photo-album-covers-5120.webp 2x , images/towebp/premium-photo-album-covers-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/min-premium-photo-album-covers.jpg" data-img="images/towebp/premium-photo-album-covers.jpg" alt="Premium photo book cover examples">
-    </picture>  
+      <source class="webp-img" srcset="images/towebp/2.1/min-premium-photo-album-covers.webp" data-img="images/towebp/2.1/premium-photo-album-covers-5120.webp 2x , images/towebp/2.1/premium-photo-album-covers-1440.webp 1x" type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/2.1/min-premium-photo-album-covers.jpg" data-img="images/towebp/2.1/premium-photo-album-covers.jpg" alt="Premium photo book cover examples">
+    </picture>   
+
+ 
 </figure>
 
 
     </div>
     <div class="swiper-slide hero-tab-activator__js section-hero__tab-activator">
        
- <figure style="padding-bottom: calc(90% / 90 * 100)" class="figure-webp  ">
-    <picture  data-priority="1" class="picture-webp toggle-img--js">
+ <figure style="padding-bottom: calc(90% / 90 * 100)" class="figure-webp  "> 
+       <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/min-flush-mount-album.webp" data-img="images/towebp/flush-mount-album-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.1/min-flush-mount-album.webp" data-img="images/towebp/2.1/flush-mount-album-376.webp , images/towebp/2.1/flush-mount-album-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/min-flush-mount-album.webp" data-img="images/towebp/flush-mount-album-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.1/min-flush-mount-album.webp" data-img="images/towebp/2.1/flush-mount-album-480.webp , images/towebp/2.1/flush-mount-album-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/min-flush-mount-album.webp" data-img="images/towebp/flush-mount-album-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.1/min-flush-mount-album.webp" data-img="images/towebp/2.1/flush-mount-album-768.webp , images/towebp/2.1/flush-mount-album-1440.webp 2x" type="image/webp">  
         
-      <source class="webp-img" srcset="images/towebp/min-flush-mount-album.webp" data-img="images/towebp/flush-mount-album-5120.webp 2x , images/towebp/flush-mount-album-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/min-flush-mount-album.jpg" data-img="images/towebp/flush-mount-album.jpg" alt="Flush mount album laying open on box">
-    </picture>  
+      <source class="webp-img" srcset="images/towebp/2.1/min-flush-mount-album.webp" data-img="images/towebp/2.1/flush-mount-album-5120.webp 2x , images/towebp/2.1/flush-mount-album-1440.webp 1x" type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/2.1/min-flush-mount-album.jpg" data-img="images/towebp/2.1/flush-mount-album.jpg" alt="Flush mount album laying open on box">
+    </picture>   
+
+ 
 </figure>
 
 
     </div>
     <div class="swiper-slide hero-tab-activator__js section-hero__tab-activator">
        
- <figure style="padding-bottom: calc(90% / 90 * 100)" class="figure-webp  ">
-    <picture  data-priority="1" class="picture-webp toggle-img--js">
+ <figure style="padding-bottom: calc(90% / 90 * 100)" class="figure-webp  "> 
+       <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/min-photo-album-thick.webp" data-img="images/towebp/photo-album-thick-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.1/min-photo-album-thick.webp" data-img="images/towebp/2.1/photo-album-thick-376.webp , images/towebp/2.1/photo-album-thick-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/min-photo-album-thick.webp" data-img="images/towebp/photo-album-thick-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.1/min-photo-album-thick.webp" data-img="images/towebp/2.1/photo-album-thick-480.webp , images/towebp/2.1/photo-album-thick-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/min-photo-album-thick.webp" data-img="images/towebp/photo-album-thick-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.1/min-photo-album-thick.webp" data-img="images/towebp/2.1/photo-album-thick-768.webp , images/towebp/2.1/photo-album-thick-1440.webp 2x" type="image/webp">  
         
-      <source class="webp-img" srcset="images/towebp/min-photo-album-thick.webp" data-img="images/towebp/photo-album-thick-5120.webp 2x , images/towebp/photo-album-thick-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/min-photo-album-thick.jpg" data-img="images/towebp/photo-album-thick.jpg" alt="Close-up to show thick pages of a premium photo album">
-    </picture>  
+      <source class="webp-img" srcset="images/towebp/2.1/min-photo-album-thick.webp" data-img="images/towebp/2.1/photo-album-thick-5120.webp 2x , images/towebp/2.1/photo-album-thick-1440.webp 1x" type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/2.1/min-photo-album-thick.jpg" data-img="images/towebp/2.1/photo-album-thick.jpg" alt="Close-up to show thick pages of a premium photo album">
+    </picture>   
+
+ 
 </figure>
 
 
     </div>
     <div class="swiper-slide hero-tab-activator__js section-hero__tab-activator">
        
- <figure style="padding-bottom: calc(90% / 90 * 100)" class="figure-webp  ">
-    <picture  data-priority="1" class="picture-webp toggle-img--js">
+ <figure style="padding-bottom: calc(90% / 90 * 100)" class="figure-webp  "> 
+       <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/min-glass-photo-album.webp" data-img="images/towebp/glass-photo-album-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.1/min-glass-photo-album.webp" data-img="images/towebp/2.1/glass-photo-album-376.webp , images/towebp/2.1/glass-photo-album-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/min-glass-photo-album.webp" data-img="images/towebp/glass-photo-album-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.1/min-glass-photo-album.webp" data-img="images/towebp/2.1/glass-photo-album-480.webp , images/towebp/2.1/glass-photo-album-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/min-glass-photo-album.webp" data-img="images/towebp/glass-photo-album-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.1/min-glass-photo-album.webp" data-img="images/towebp/2.1/glass-photo-album-768.webp , images/towebp/2.1/glass-photo-album-1440.webp 2x" type="image/webp">  
         
-      <source class="webp-img" srcset="images/towebp/min-glass-photo-album.webp" data-img="images/towebp/glass-photo-album-5120.webp 2x , images/towebp/glass-photo-album-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/min-glass-photo-album.jpg" data-img="images/towebp/glass-photo-album.jpg" alt="Acrylic glass photo album cover">
-    </picture>  
+      <source class="webp-img" srcset="images/towebp/2.1/min-glass-photo-album.webp" data-img="images/towebp/2.1/glass-photo-album-5120.webp 2x , images/towebp/2.1/glass-photo-album-1440.webp 1x" type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/2.1/min-glass-photo-album.jpg" data-img="images/towebp/2.1/glass-photo-album.jpg" alt="Acrylic glass photo album cover">
+    </picture>   
+
+ 
 </figure>
 
 
     </div>
     <div class="swiper-slide hero-tab-activator__js section-hero__tab-activator">
        
- <figure style="padding-bottom: calc(90% / 90 * 100)" class="figure-webp  ">
-    <picture  data-priority="1" class="picture-webp toggle-img--js">
+ <figure style="padding-bottom: calc(90% / 90 * 100)" class="figure-webp  "> 
+       <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/min-high-end-photo-books.webp" data-img="images/towebp/high-end-photo-books-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.1/min-high-end-photo-books.webp" data-img="images/towebp/2.1/high-end-photo-books-376.webp , images/towebp/2.1/high-end-photo-books-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/min-high-end-photo-books.webp" data-img="images/towebp/high-end-photo-books-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.1/min-high-end-photo-books.webp" data-img="images/towebp/2.1/high-end-photo-books-480.webp , images/towebp/2.1/high-end-photo-books-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/min-high-end-photo-books.webp" data-img="images/towebp/high-end-photo-books-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.1/min-high-end-photo-books.webp" data-img="images/towebp/2.1/high-end-photo-books-768.webp , images/towebp/2.1/high-end-photo-books-1440.webp 2x" type="image/webp">  
         
-      <source class="webp-img" srcset="images/towebp/min-high-end-photo-books.webp" data-img="images/towebp/high-end-photo-books-5120.webp 2x , images/towebp/high-end-photo-books-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/min-high-end-photo-books.jpg" data-img="images/towebp/high-end-photo-books.jpg" alt="Women holding stack of high-end photo books">
-    </picture>  
+      <source class="webp-img" srcset="images/towebp/2.1/min-high-end-photo-books.webp" data-img="images/towebp/2.1/high-end-photo-books-5120.webp 2x , images/towebp/2.1/high-end-photo-books-1440.webp 1x" type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/2.1/min-high-end-photo-books.jpg" data-img="images/towebp/2.1/high-end-photo-books.jpg" alt="Women holding stack of high-end photo books">
+    </picture>   
+
+ 
 </figure>
 
 
@@ -384,90 +397,100 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide section-hero__slide">
                  
- <figure style="padding-bottom: calc(620% / 620 * 100)" class="figure-webp  ">
-    <picture  data-priority="0" class="picture-webp toggle-img--js">
+ <figure style="padding-bottom: calc(620% / 620 * 100)" class="figure-webp  "> 
+       <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/min-premium-photo-album-covers.webp" data-img="images/towebp/premium-photo-album-covers-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.1/min-premium-photo-album-covers.webp" data-img="images/towebp/2.1/premium-photo-album-covers-376.webp , images/towebp/2.1/premium-photo-album-covers-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/min-premium-photo-album-covers.webp" data-img="images/towebp/premium-photo-album-covers-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.1/min-premium-photo-album-covers.webp" data-img="images/towebp/2.1/premium-photo-album-covers-480.webp , images/towebp/2.1/premium-photo-album-covers-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/min-premium-photo-album-covers.webp" data-img="images/towebp/premium-photo-album-covers-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.1/min-premium-photo-album-covers.webp" data-img="images/towebp/2.1/premium-photo-album-covers-768.webp , images/towebp/2.1/premium-photo-album-covers-1440.webp 2x" type="image/webp">  
         
-      <source class="webp-img" srcset="images/towebp/min-premium-photo-album-covers.webp" data-img="images/towebp/premium-photo-album-covers-5120.webp 2x , images/towebp/premium-photo-album-covers-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/min-premium-photo-album-covers.jpg" data-img="images/towebp/premium-photo-album-covers.jpg" alt="Premium photo book cover examples">
-    </picture>  
+      <source class="webp-img" srcset="images/towebp/2.1/min-premium-photo-album-covers.webp" data-img="images/towebp/2.1/premium-photo-album-covers-5120.webp 2x , images/towebp/2.1/premium-photo-album-covers-1440.webp 1x" type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/2.1/min-premium-photo-album-covers.jpg" data-img="images/towebp/2.1/premium-photo-album-covers.jpg" alt="Premium photo book cover examples">
+    </picture>   
+
+ 
 </figure>
 
 
             </div>
             <div class="swiper-slide section-hero__slide">
                  
- <figure style="padding-bottom: calc(620% / 620 * 100)" class="figure-webp  ">
-    <picture  data-priority="2" class="picture-webp toggle-img--js">
+ <figure style="padding-bottom: calc(620% / 620 * 100)" class="figure-webp  "> 
+       <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/min-flush-mount-album.webp" data-img="images/towebp/flush-mount-album-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.1/min-flush-mount-album.webp" data-img="images/towebp/2.1/flush-mount-album-376.webp , images/towebp/2.1/flush-mount-album-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/min-flush-mount-album.webp" data-img="images/towebp/flush-mount-album-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.1/min-flush-mount-album.webp" data-img="images/towebp/2.1/flush-mount-album-480.webp , images/towebp/2.1/flush-mount-album-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/min-flush-mount-album.webp" data-img="images/towebp/flush-mount-album-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.1/min-flush-mount-album.webp" data-img="images/towebp/2.1/flush-mount-album-768.webp , images/towebp/2.1/flush-mount-album-1440.webp 2x" type="image/webp">  
         
-      <source class="webp-img" srcset="images/towebp/min-flush-mount-album.webp" data-img="images/towebp/flush-mount-album-5120.webp 2x , images/towebp/flush-mount-album-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/min-flush-mount-album.jpg" data-img="images/towebp/flush-mount-album.jpg" alt="Flush mount album laying open on box">
-    </picture>  
+      <source class="webp-img" srcset="images/towebp/2.1/min-flush-mount-album.webp" data-img="images/towebp/2.1/flush-mount-album-5120.webp 2x , images/towebp/2.1/flush-mount-album-1440.webp 1x" type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/2.1/min-flush-mount-album.jpg" data-img="images/towebp/2.1/flush-mount-album.jpg" alt="Flush mount album laying open on box">
+    </picture>   
+
+ 
 </figure>
 
 
             </div>
             <div class="swiper-slide section-hero__slide">
                  
- <figure style="padding-bottom: calc(620% / 620 * 100)" class="figure-webp  ">
-    <picture  data-priority="2" class="picture-webp toggle-img--js">
+ <figure style="padding-bottom: calc(620% / 620 * 100)" class="figure-webp  "> 
+       <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/min-photo-album-thick.webp" data-img="images/towebp/photo-album-thick-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.1/min-photo-album-thick.webp" data-img="images/towebp/2.1/photo-album-thick-376.webp , images/towebp/2.1/photo-album-thick-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/min-photo-album-thick.webp" data-img="images/towebp/photo-album-thick-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.1/min-photo-album-thick.webp" data-img="images/towebp/2.1/photo-album-thick-480.webp , images/towebp/2.1/photo-album-thick-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/min-photo-album-thick.webp" data-img="images/towebp/photo-album-thick-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.1/min-photo-album-thick.webp" data-img="images/towebp/2.1/photo-album-thick-768.webp , images/towebp/2.1/photo-album-thick-1440.webp 2x" type="image/webp">  
         
-      <source class="webp-img" srcset="images/towebp/min-photo-album-thick.webp" data-img="images/towebp/photo-album-thick-5120.webp 2x , images/towebp/photo-album-thick-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/min-photo-album-thick.jpg" data-img="images/towebp/photo-album-thick.jpg" alt="Close-up to show thick pages of a premium photo album">
-    </picture>  
+      <source class="webp-img" srcset="images/towebp/2.1/min-photo-album-thick.webp" data-img="images/towebp/2.1/photo-album-thick-5120.webp 2x , images/towebp/2.1/photo-album-thick-1440.webp 1x" type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/2.1/min-photo-album-thick.jpg" data-img="images/towebp/2.1/photo-album-thick.jpg" alt="Close-up to show thick pages of a premium photo album">
+    </picture>   
+
+ 
 </figure>
 
 
             </div>
             <div class="swiper-slide section-hero__slide">
                  
- <figure style="padding-bottom: calc(620% / 620 * 100)" class="figure-webp  ">
-    <picture  data-priority="2" class="picture-webp toggle-img--js">
+ <figure style="padding-bottom: calc(620% / 620 * 100)" class="figure-webp  "> 
+       <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/min-glass-photo-album.webp" data-img="images/towebp/glass-photo-album-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.1/min-glass-photo-album.webp" data-img="images/towebp/2.1/glass-photo-album-376.webp , images/towebp/2.1/glass-photo-album-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/min-glass-photo-album.webp" data-img="images/towebp/glass-photo-album-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.1/min-glass-photo-album.webp" data-img="images/towebp/2.1/glass-photo-album-480.webp , images/towebp/2.1/glass-photo-album-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/min-glass-photo-album.webp" data-img="images/towebp/glass-photo-album-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.1/min-glass-photo-album.webp" data-img="images/towebp/2.1/glass-photo-album-768.webp , images/towebp/2.1/glass-photo-album-1440.webp 2x" type="image/webp">  
         
-      <source class="webp-img" srcset="images/towebp/min-glass-photo-album.webp" data-img="images/towebp/glass-photo-album-5120.webp 2x , images/towebp/glass-photo-album-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/min-glass-photo-album.jpg" data-img="images/towebp/glass-photo-album.jpg" alt="Acrylic glass photo album cover">
-    </picture>  
+      <source class="webp-img" srcset="images/towebp/2.1/min-glass-photo-album.webp" data-img="images/towebp/2.1/glass-photo-album-5120.webp 2x , images/towebp/2.1/glass-photo-album-1440.webp 1x" type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/2.1/min-glass-photo-album.jpg" data-img="images/towebp/2.1/glass-photo-album.jpg" alt="Acrylic glass photo album cover">
+    </picture>   
+
+ 
 </figure>
 
 
             </div>
             <div class="swiper-slide section-hero__slide">
                  
- <figure style="padding-bottom: calc(620% / 620 * 100)" class="figure-webp  ">
-    <picture  data-priority="2" class="picture-webp toggle-img--js">
+ <figure style="padding-bottom: calc(620% / 620 * 100)" class="figure-webp  "> 
+       <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/min-high-end-photo-books.webp" data-img="images/towebp/high-end-photo-books-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.1/min-high-end-photo-books.webp" data-img="images/towebp/2.1/high-end-photo-books-376.webp , images/towebp/2.1/high-end-photo-books-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/min-high-end-photo-books.webp" data-img="images/towebp/high-end-photo-books-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.1/min-high-end-photo-books.webp" data-img="images/towebp/2.1/high-end-photo-books-480.webp , images/towebp/2.1/high-end-photo-books-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/min-high-end-photo-books.webp" data-img="images/towebp/high-end-photo-books-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.1/min-high-end-photo-books.webp" data-img="images/towebp/2.1/high-end-photo-books-768.webp , images/towebp/2.1/high-end-photo-books-1440.webp 2x" type="image/webp">  
         
-      <source class="webp-img" srcset="images/towebp/min-high-end-photo-books.webp" data-img="images/towebp/high-end-photo-books-5120.webp 2x , images/towebp/high-end-photo-books-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/min-high-end-photo-books.jpg" data-img="images/towebp/high-end-photo-books.jpg" alt="Women holding stack of high-end photo books">
-    </picture>  
+      <source class="webp-img" srcset="images/towebp/2.1/min-high-end-photo-books.webp" data-img="images/towebp/2.1/high-end-photo-books-5120.webp 2x , images/towebp/2.1/high-end-photo-books-1440.webp 1x" type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/2.1/min-high-end-photo-books.jpg" data-img="images/towebp/2.1/high-end-photo-books.jpg" alt="Women holding stack of high-end photo books">
+    </picture>   
+
+ 
 </figure>
 
 
@@ -529,18 +552,20 @@
     <div class="description-img__wrap">
       <div class="description-img__img">
          
- <figure style="padding-bottom: calc(713% / 788 * 100)" class="figure-webp  ">
-    <picture  data-priority="1" class="picture-webp toggle-img--js">
+ <figure style="padding-bottom: calc(713% / 788 * 100)" class="figure-webp  "> 
+       <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/min-flush-mount-photo-book.webp" data-img="images/towebp/flush-mount-photo-book-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.1/min-flush-mount-photo-book.webp" data-img="images/towebp/2.1/flush-mount-photo-book-376.webp , images/towebp/2.1/flush-mount-photo-book-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/min-flush-mount-photo-book.webp" data-img="images/towebp/flush-mount-photo-book-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.1/min-flush-mount-photo-book.webp" data-img="images/towebp/2.1/flush-mount-photo-book-480.webp , images/towebp/2.1/flush-mount-photo-book-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/min-flush-mount-photo-book.webp" data-img="images/towebp/flush-mount-photo-book-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.1/min-flush-mount-photo-book.webp" data-img="images/towebp/2.1/flush-mount-photo-book-768.webp , images/towebp/2.1/flush-mount-photo-book-1440.webp 2x" type="image/webp">  
         
-      <source class="webp-img" srcset="images/towebp/min-flush-mount-photo-book.webp" data-img="images/towebp/flush-mount-photo-book-5120.webp 2x , images/towebp/flush-mount-photo-book-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/min-flush-mount-photo-book.jpg" data-img="images/towebp/flush-mount-photo-book.jpg" alt="Flush Mount Photo Book showing thick layflat pages">
-    </picture>  
+      <source class="webp-img" srcset="images/towebp/2.1/min-flush-mount-photo-book.webp" data-img="images/towebp/2.1/flush-mount-photo-book-5120.webp 2x , images/towebp/2.1/flush-mount-photo-book-1440.webp 1x" type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/2.1/min-flush-mount-photo-book.jpg" data-img="images/towebp/2.1/flush-mount-photo-book.jpg" alt="Flush Mount Photo Book showing thick layflat pages">
+    </picture>   
+
+ 
 </figure>
 
 
@@ -558,18 +583,20 @@
     <div class="description-img__wrap">    
       <div class="description-img__img">
          
- <figure style="padding-bottom: calc(713% / 788 * 100)" class="figure-webp  ">
-    <picture  data-priority="2" class="picture-webp toggle-img--js">
+ <figure style="padding-bottom: calc(713% / 788 * 100)" class="figure-webp  "> 
+       <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/min-luxury-photo-books.webp" data-img="images/towebp/luxury-photo-books-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.1/min-luxury-photo-books.webp" data-img="images/towebp/2.1/luxury-photo-books-376.webp , images/towebp/2.1/luxury-photo-books-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/min-luxury-photo-books.webp" data-img="images/towebp/luxury-photo-books-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.1/min-luxury-photo-books.webp" data-img="images/towebp/2.1/luxury-photo-books-480.webp , images/towebp/2.1/luxury-photo-books-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/min-luxury-photo-books.webp" data-img="images/towebp/luxury-photo-books-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.1/min-luxury-photo-books.webp" data-img="images/towebp/2.1/luxury-photo-books-768.webp , images/towebp/2.1/luxury-photo-books-1440.webp 2x" type="image/webp">  
         
-      <source class="webp-img" srcset="images/towebp/min-luxury-photo-books.webp" data-img="images/towebp/luxury-photo-books-5120.webp 2x , images/towebp/luxury-photo-books-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/min-luxury-photo-books.jpg" data-img="images/towebp/luxury-photo-books.jpg" alt="Luxury photo books from PikPerfect">
-    </picture>  
+      <source class="webp-img" srcset="images/towebp/2.1/min-luxury-photo-books.webp" data-img="images/towebp/2.1/luxury-photo-books-5120.webp 2x , images/towebp/2.1/luxury-photo-books-1440.webp 1x" type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/2.1/min-luxury-photo-books.jpg" data-img="images/towebp/2.1/luxury-photo-books.jpg" alt="Luxury photo books from PikPerfect">
+    </picture>   
+
+ 
 </figure>
 
 
@@ -587,18 +614,20 @@
     <div class="description-img__wrap">
       <div class="description-img__img">
          
- <figure style="padding-bottom: calc(713% / 788 * 100)" class="figure-webp  ">
-    <picture  data-priority="2" class="picture-webp toggle-img--js">
+ <figure style="padding-bottom: calc(713% / 788 * 100)" class="figure-webp  "> 
+       <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/min-luxury-photo-albums.webp" data-img="images/towebp/luxury-photo-albums-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.1/min-luxury-photo-albums.webp" data-img="images/towebp/2.1/luxury-photo-albums-376.webp , images/towebp/2.1/luxury-photo-albums-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/min-luxury-photo-albums.webp" data-img="images/towebp/luxury-photo-albums-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.1/min-luxury-photo-albums.webp" data-img="images/towebp/2.1/luxury-photo-albums-480.webp , images/towebp/2.1/luxury-photo-albums-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/min-luxury-photo-albums.webp" data-img="images/towebp/luxury-photo-albums-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.1/min-luxury-photo-albums.webp" data-img="images/towebp/2.1/luxury-photo-albums-768.webp , images/towebp/2.1/luxury-photo-albums-1440.webp 2x" type="image/webp">  
         
-      <source class="webp-img" srcset="images/towebp/min-luxury-photo-albums.webp" data-img="images/towebp/luxury-photo-albums-5120.webp 2x , images/towebp/luxury-photo-albums-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/min-luxury-photo-albums.jpg" data-img="images/towebp/luxury-photo-albums.jpg" alt="Luxury photo album laying on sofa cushion">
-    </picture>  
+      <source class="webp-img" srcset="images/towebp/2.1/min-luxury-photo-albums.webp" data-img="images/towebp/2.1/luxury-photo-albums-5120.webp 2x , images/towebp/2.1/luxury-photo-albums-1440.webp 1x" type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/2.1/min-luxury-photo-albums.jpg" data-img="images/towebp/2.1/luxury-photo-albums.jpg" alt="Luxury photo album laying on sofa cushion">
+    </picture>   
+
+ 
 </figure>
 
 
@@ -616,18 +645,20 @@
     <div class="description-img__wrap"> 
       <div class="description-img__img">
          
- <figure style="padding-bottom: calc(713% / 788 * 100)" class="figure-webp  ">
-    <picture  data-priority="2" class="picture-webp toggle-img--js">
+ <figure style="padding-bottom: calc(713% / 788 * 100)" class="figure-webp  "> 
+       <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/min-wooden-photo-album-box.webp" data-img="images/towebp/wooden-photo-album-box-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.1/min-wooden-photo-album-box.webp" data-img="images/towebp/2.1/wooden-photo-album-box-376.webp , images/towebp/2.1/wooden-photo-album-box-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/min-wooden-photo-album-box.webp" data-img="images/towebp/wooden-photo-album-box-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.1/min-wooden-photo-album-box.webp" data-img="images/towebp/2.1/wooden-photo-album-box-480.webp , images/towebp/2.1/wooden-photo-album-box-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/min-wooden-photo-album-box.webp" data-img="images/towebp/wooden-photo-album-box-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.1/min-wooden-photo-album-box.webp" data-img="images/towebp/2.1/wooden-photo-album-box-768.webp , images/towebp/2.1/wooden-photo-album-box-1440.webp 2x" type="image/webp">  
         
-      <source class="webp-img" srcset="images/towebp/min-wooden-photo-album-box.webp" data-img="images/towebp/wooden-photo-album-box-5120.webp 2x , images/towebp/wooden-photo-album-box-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/min-wooden-photo-album-box.jpg" data-img="images/towebp/wooden-photo-album-box.jpg" alt="Acrylic glass photo book in presentation box">
-    </picture>  
+      <source class="webp-img" srcset="images/towebp/2.1/min-wooden-photo-album-box.webp" data-img="images/towebp/2.1/wooden-photo-album-box-5120.webp 2x , images/towebp/2.1/wooden-photo-album-box-1440.webp 1x" type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/2.1/min-wooden-photo-album-box.jpg" data-img="images/towebp/2.1/wooden-photo-album-box.jpg" alt="Acrylic glass photo book in presentation box">
+    </picture>   
+
+ 
 </figure>
 
 

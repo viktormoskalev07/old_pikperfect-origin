@@ -17,11 +17,14 @@
 </head>
 
 <body class="no-transition">
-	<script> 
+	<script>
+	 function addFont(e){setTimeout(()=>{const e=document.createElement("link"),t=document.createElement("link");t.rel="preconnect",t.href="https://fonts.gstatic.com",e.rel="stylesheet",e.href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Spectral:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap",document.querySelector("head").append(t),document.querySelector("head").append(e),localStorage.setItem("font","1")},e)}localStorage.getItem("font")?addFont(0):window.matchMedia("(max-width: 480px)").matches?addFont(1e3):addFont(0);
+
 		window.addEventListener('load' , function(){
 			document.body.classList.remove('no-transition');
 		})
 	</script> 
+
     <div class="pre-header">
     <div class="container">
       <div class="promobar"> 
@@ -85,8 +88,7 @@
           </div>
         </li>
         <li><a href="https://www.pikperfect.com/album-design-service">design service</a></li>
-        <li><a style='color:blue' href="./1.0-homepage.html">1.0</a></li>
-<li><a style='color:rgb(206, 76, 53)' href="./1.0-jq.html">1.0 jquery test</a></li>
+        <li><a style='color:blue' href="./1.0-homepage.html">1.0</a></li> 
 <li><a style='color:blue' href="./2.0a-photo-books.html">2.0a</a></li>
 <li><a style='color:blue' href="./2.0b-memory-books.html">2.0b</a></li>
 <li><a style='color:green' href="./2.1-premium-layflat-albums.html">2.1</a></li>
@@ -107,8 +109,9 @@
 <li><a style='color:rgb(174, 0, 255)' href="./8.2-photo-book-example.html">8.2</a></li>
 <li><a style='color:rgb(174, 0, 255)' href="./9.0-about-us.html">9.0</a></li>
 <li><a style='color:rgb(174, 0, 255)' href="./10.0-contact-us.html">10.0</a></li>
+<li><a style='color:red' href="./12.0-photographer-photo-albums.html">12.0</a></li>
 <li><a style='color:rgb(174, 0, 255)' href="./13.0-share.html">13.0</a></li>
-<li><a style='color:rgb(174, 0, 255)' href="./15.0-myprofile.html">15.0</a></li> 
+<li><a style='color:rgb(174, 0, 255)' href="./15.0-myprofile.html">15.0</a></li>  
  
 
       </ul>
@@ -280,18 +283,20 @@
     <div class="discount__wrap">
         <div class="discount__img">
              
- <figure style="padding-bottom: calc(895% / 688 * 100)" class="figure-webp  ">
-  <picture  data-priority="0" class="picture-webp toggle-img--js">
+ <figure style="padding-bottom: calc(895% / 688 * 100)" class="figure-webp  "> 
+       <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
       
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/13.0-share/min-wedding-photo-book.webp" data-img="images/towebp/13.0-share/wedding-photo-book-376.webp" type="image/webp">  
+          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/13.0-share/min-wedding-photo-book.webp" data-img="images/towebp/13.0-share/wedding-photo-book-376.webp , images/towebp/13.0-share/wedding-photo-book-480.webp 2x" type="image/webp">  
       
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/13.0-share/min-wedding-photo-book.webp" data-img="images/towebp/13.0-share/wedding-photo-book-480.webp" type="image/webp">  
+          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/13.0-share/min-wedding-photo-book.webp" data-img="images/towebp/13.0-share/wedding-photo-book-480.webp , images/towebp/13.0-share/wedding-photo-book-768.webp 2x" type="image/webp">  
       
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/13.0-share/min-wedding-photo-book.webp" data-img="images/towebp/13.0-share/wedding-photo-book-768.webp" type="image/webp">  
+          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/13.0-share/min-wedding-photo-book.webp" data-img="images/towebp/13.0-share/wedding-photo-book-768.webp , images/towebp/13.0-share/wedding-photo-book-1440.webp 2x" type="image/webp">  
         
       <source class="webp-img" srcset="images/towebp/13.0-share/min-wedding-photo-book.webp" data-img="images/towebp/13.0-share/wedding-photo-book-5120.webp 2x , images/towebp/13.0-share/wedding-photo-book-1440.webp 1x" type="image/webp"> 
       <img loading="lazy" class="nowebp-img" src="images/towebp/13.0-share/min-wedding-photo-book.jpg" data-img="images/towebp/13.0-share/wedding-photo-book.jpg" alt="An open wedding photo book">
-    </picture>  
+    </picture>   
+
+ 
 </figure>
 
     
