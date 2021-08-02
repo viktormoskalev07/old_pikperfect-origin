@@ -4,22 +4,7 @@ const mediaQuery = window.matchMedia('(max-width: 480px)');
 let baseDelay = 100; 
 if (mediaQuery.matches) {
        baseDelay = 800;
-}  
-// function srcSeter(tag) {
-//        tag.srcset = tag.dataset.img;
-// }
-
-// function fullQuality(item,sizes) {
-//        const priority = item.dataset.priority || 0;
-//        setTimeout(function () { 
-//               srcSeter(item.querySelector('.nowebp-img')); 
-//               srcSeter(item.querySelector('.webp-img'));
-//               sizes.forEach(function(siz) {
-//                      srcSeter(item.querySelector('.webp-img-'+siz));
-//               }); 
-//        }, 1 + baseDelay * priority);
-// }
-
+}   
 function imgAdder(name ,path,sizes,pic){
       
        sizes.forEach(size => {
@@ -27,7 +12,7 @@ function imgAdder(name ,path,sizes,pic){
               if(!(size==sizes[sizes.length-1])){ 
                      source.media=`(max-width: ${size}px)`
               } 
-              source.srcset=`/images/towebp/${path}/${name}-${size*2}.webp 2x ,    /images/towebp/${path}/${name}-${size}.webp`;
+              source.srcset=`images/towebp/${path}/${name}-${size*2}.webp 2x ,    images/towebp/${path}/${name}-${size}.webp`;
               source.type='image/webp';
               const parent = pic.parentNode;
               parent.insertBefore(source, pic);
@@ -47,9 +32,9 @@ function toggleMinImg() {
              
                      setTimeout(() => {
                             imgAdder(name ,path,sizes,pic);   
-                     }, img.dataset.priority);
+                     }, img.dataset.priority*baseDelay);
                
-              // fullQuality(pic , [376,480,768]);
+               
        }
 }  
 

@@ -33,6 +33,7 @@
      function addScript(path ,stimeout){ 
       const scriptPlace = document.querySelector('#script-place'); 
       const someJs = document.createElement('script'); 
+      someJs.async=true;
       someJs.src=path;  
       setTimeout(() => {
         scriptPlace.appendChild(someJs);  
