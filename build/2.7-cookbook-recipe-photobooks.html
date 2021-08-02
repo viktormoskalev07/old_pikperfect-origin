@@ -17,11 +17,14 @@
 </head>
 
 <body class="no-transition">
-	<script> 
+	<script>
+	 function addFont(e){setTimeout(()=>{const e=document.createElement("link"),t=document.createElement("link");t.rel="preconnect",t.href="https://fonts.gstatic.com",e.rel="stylesheet",e.href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Spectral:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap",document.querySelector("head").append(t),document.querySelector("head").append(e),localStorage.setItem("font","1")},e)}localStorage.getItem("font")?addFont(0):window.matchMedia("(max-width: 480px)").matches?addFont(1e3):addFont(0);
+
 		window.addEventListener('load' , function(){
 			document.body.classList.remove('no-transition');
 		})
 	</script> 
+
     <div class="pre-header">
     <div class="container">
       <div class="promobar"> 
@@ -85,8 +88,7 @@
           </div>
         </li>
         <li><a href="https://www.pikperfect.com/album-design-service">design service</a></li>
-        <li><a style='color:blue' href="./1.0-homepage.html">1.0</a></li>
-<li><a style='color:rgb(206, 76, 53)' href="./1.0-jq.html">1.0 jquery test</a></li>
+        <li><a style='color:blue' href="./1.0-homepage.html">1.0</a></li> 
 <li><a style='color:blue' href="./2.0a-photo-books.html">2.0a</a></li>
 <li><a style='color:blue' href="./2.0b-memory-books.html">2.0b</a></li>
 <li><a style='color:green' href="./2.1-premium-layflat-albums.html">2.1</a></li>
@@ -107,8 +109,9 @@
 <li><a style='color:rgb(174, 0, 255)' href="./8.2-photo-book-example.html">8.2</a></li>
 <li><a style='color:rgb(174, 0, 255)' href="./9.0-about-us.html">9.0</a></li>
 <li><a style='color:rgb(174, 0, 255)' href="./10.0-contact-us.html">10.0</a></li>
+<li><a style='color:red' href="./12.0-photographer-photo-albums.html">12.0</a></li>
 <li><a style='color:rgb(174, 0, 255)' href="./13.0-share.html">13.0</a></li>
-<li><a style='color:rgb(174, 0, 255)' href="./15.0-myprofile.html">15.0</a></li> 
+<li><a style='color:rgb(174, 0, 255)' href="./15.0-myprofile.html">15.0</a></li>  
  
 
       </ul>
@@ -279,39 +282,25 @@
   <section class="section-hero__image-left">
   <div class="section-hero__wrap-flex">
     <div class="section-hero__image-col px-0">   
-       
- <figure style="padding-bottom: calc(505% / 880 * 100)" class="figure-webp  ">
-  <picture  data-priority="0" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.7-cookbook-recipe-photobooks/min-custom-cookbook.webp" data-img="images/towebp/2.7-cookbook-recipe-photobooks/custom-cookbook-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.7-cookbook-recipe-photobooks/min-custom-cookbook.webp" data-img="images/towebp/2.7-cookbook-recipe-photobooks/custom-cookbook-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.7-cookbook-recipe-photobooks/min-custom-cookbook.webp" data-img="images/towebp/2.7-cookbook-recipe-photobooks/custom-cookbook-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/2.7-cookbook-recipe-photobooks/min-custom-cookbook.webp" data-img="images/towebp/2.7-cookbook-recipe-photobooks/custom-cookbook-5120.webp 2x , images/towebp/2.7-cookbook-recipe-photobooks/custom-cookbook-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/2.7-cookbook-recipe-photobooks/min-custom-cookbook.jpg" data-img="images/towebp/2.7-cookbook-recipe-photobooks/custom-cookbook.jpg" alt="Custom cookbook standing on kitchen counter with dumpling recipe">
-    </picture>  
-</figure>
+        <figure style="padding-bottom: calc(505% / 880 * 100)" class="figure-webp  ">       <picture  data-priority="0" data-name="custom-cookbook" data-path="2.7-cookbook-recipe-photobooks" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/2.7-cookbook-recipe-photobooks/min-custom-cookbook.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/2.7-cookbook-recipe-photobooks/custom-cookbook.jpg"   alt="Custom cookbook standing on kitchen counter with dumpling recipe">
+    </picture>   
+
+  </figure>
 
        
     </div>
     <div class="section-hero__content-col section-hero__content-col_orange">
       <div class="section-hero__bg">
-           <picture  data-priority="0" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp//min-image_texture.webp" data-img="images/towebp//image_texture-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp//min-image_texture.webp" data-img="images/towebp//image_texture-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp//min-image_texture.webp" data-img="images/towebp//image_texture-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp//min-image_texture.webp" data-img="images/towebp//image_texture-5120.webp 2x , images/towebp//image_texture-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp//min-image_texture.jpg" data-img="images/towebp//image_texture.jpg" alt="bg-hero">
+           <picture  data-priority="0" data-name="image_texture" data-path="" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp//min-image_texture.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp//image_texture.jpg"   alt="bg-hero">
     </picture>   
 
-
-   
+    
       </div>        
       <h1>Custom Cookbooks</h1>
       <p>Connect with generations past and future with a custom family recipe book.</p>
@@ -348,20 +337,13 @@
 </section>
   <section class="section-img section-img_size-m">
   <div class="section-img__container">
-     
- <figure style="padding-bottom: calc(600% / 1376 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.7-cookbook-recipe-photobooks/min-recipe-photo-book.webp" data-img="images/towebp/2.7-cookbook-recipe-photobooks/recipe-photo-book-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.7-cookbook-recipe-photobooks/min-recipe-photo-book.webp" data-img="images/towebp/2.7-cookbook-recipe-photobooks/recipe-photo-book-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.7-cookbook-recipe-photobooks/min-recipe-photo-book.webp" data-img="images/towebp/2.7-cookbook-recipe-photobooks/recipe-photo-book-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/2.7-cookbook-recipe-photobooks/min-recipe-photo-book.webp" data-img="images/towebp/2.7-cookbook-recipe-photobooks/recipe-photo-book-5120.webp 2x , images/towebp/2.7-cookbook-recipe-photobooks/recipe-photo-book-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/2.7-cookbook-recipe-photobooks/min-recipe-photo-book.jpg" data-img="images/towebp/2.7-cookbook-recipe-photobooks/recipe-photo-book.jpg" alt="Personalized recipe photo book with clam chowder recipe">
-    </picture>  
-</figure>
+      <figure style="padding-bottom: calc(600% / 1376 * 100)" class="figure-webp  ">       <picture  data-priority="2" data-name="recipe-photo-book" data-path="2.7-cookbook-recipe-photobooks" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/2.7-cookbook-recipe-photobooks/min-recipe-photo-book.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/2.7-cookbook-recipe-photobooks/recipe-photo-book.jpg"   alt="Personalized recipe photo book with clam chowder recipe">
+    </picture>   
+
+  </figure>
 
   
   </div>  
@@ -371,20 +353,13 @@
     <div class="section-img-text__wrap">
       <div class="section-img-text__img">
         <figure>
-             <picture  data-priority="1" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.7-cookbook-recipe-photobooks/min-placeholder2.webp" data-img="images/towebp/2.7-cookbook-recipe-photobooks/placeholder2-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.7-cookbook-recipe-photobooks/min-placeholder2.webp" data-img="images/towebp/2.7-cookbook-recipe-photobooks/placeholder2-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.7-cookbook-recipe-photobooks/min-placeholder2.webp" data-img="images/towebp/2.7-cookbook-recipe-photobooks/placeholder2-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/2.7-cookbook-recipe-photobooks/min-placeholder2.webp" data-img="images/towebp/2.7-cookbook-recipe-photobooks/placeholder2-5120.webp 2x , images/towebp/2.7-cookbook-recipe-photobooks/placeholder2-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/2.7-cookbook-recipe-photobooks/min-placeholder2.jpg" data-img="images/towebp/2.7-cookbook-recipe-photobooks/placeholder2.jpg" alt="close cookbook munchimg in munchen">
+             <picture  data-priority="1" data-name="placeholder2" data-path="2.7-cookbook-recipe-photobooks" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/2.7-cookbook-recipe-photobooks/min-placeholder2.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/2.7-cookbook-recipe-photobooks/placeholder2.jpg"   alt="close cookbook munchimg in munchen">
     </picture>   
 
-
-
+ 
         </figure>        
       </div>
       <div class="section-img-text__content">
@@ -397,20 +372,13 @@
     <div class="section-img-text__wrap section-img-text__wrap_order"> 
       <div class="section-img-text__img">
         <figure>
-             <picture  data-priority="1" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.7-cookbook-recipe-photobooks/min-placeholder3.webp" data-img="images/towebp/2.7-cookbook-recipe-photobooks/placeholder3-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.7-cookbook-recipe-photobooks/min-placeholder3.webp" data-img="images/towebp/2.7-cookbook-recipe-photobooks/placeholder3-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.7-cookbook-recipe-photobooks/min-placeholder3.webp" data-img="images/towebp/2.7-cookbook-recipe-photobooks/placeholder3-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/2.7-cookbook-recipe-photobooks/min-placeholder3.webp" data-img="images/towebp/2.7-cookbook-recipe-photobooks/placeholder3-5120.webp 2x , images/towebp/2.7-cookbook-recipe-photobooks/placeholder3-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/2.7-cookbook-recipe-photobooks/min-placeholder3.jpg" data-img="images/towebp/2.7-cookbook-recipe-photobooks/placeholder3.jpg" alt="open cookbook on page chana masala">
+             <picture  data-priority="1" data-name="placeholder3" data-path="2.7-cookbook-recipe-photobooks" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/2.7-cookbook-recipe-photobooks/min-placeholder3.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/2.7-cookbook-recipe-photobooks/placeholder3.jpg"   alt="open cookbook on page chana masala">
     </picture>   
 
-
-
+ 
         </figure>        
       </div>       
       <div class="section-img-text__content">
@@ -433,77 +401,49 @@
     <div class="swiper-container swiperalbum ">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-           
- <figure style="padding-bottom: calc(362% / 362 * 100)" class="figure-webp  ">
-  <picture  data-priority="1" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.7-cookbook-recipe-photobooks/min-image_cookbook_example_1.webp" data-img="images/towebp/2.7-cookbook-recipe-photobooks/image_cookbook_example_1-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.7-cookbook-recipe-photobooks/min-image_cookbook_example_1.webp" data-img="images/towebp/2.7-cookbook-recipe-photobooks/image_cookbook_example_1-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.7-cookbook-recipe-photobooks/min-image_cookbook_example_1.webp" data-img="images/towebp/2.7-cookbook-recipe-photobooks/image_cookbook_example_1-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/2.7-cookbook-recipe-photobooks/min-image_cookbook_example_1.webp" data-img="images/towebp/2.7-cookbook-recipe-photobooks/image_cookbook_example_1-5120.webp 2x , images/towebp/2.7-cookbook-recipe-photobooks/image_cookbook_example_1-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/2.7-cookbook-recipe-photobooks/min-image_cookbook_example_1.png" data-img="images/towebp/2.7-cookbook-recipe-photobooks/image_cookbook_example_1.png" alt="album A Man, A Pan & A Plan light yellow">
-    </picture>  
-</figure>
+            <figure style="padding-bottom: calc(362% / 362 * 100)" class="figure-webp  ">       <picture  data-priority="1" data-name="image_cookbook_example_1" data-path="2.7-cookbook-recipe-photobooks" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/2.7-cookbook-recipe-photobooks/min-image_cookbook_example_1.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/2.7-cookbook-recipe-photobooks/image_cookbook_example_1.png"   alt="album A Man, A Pan & A Plan light yellow">
+    </picture>   
+
+  </figure>
 
 
           <h3 class="section-album__name-title">The Chopra Cookbook<span>Cookbook</span></h3>
         </div>
         <div class="swiper-slide">
-           
- <figure style="padding-bottom: calc(362% / 362 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.7-cookbook-recipe-photobooks/min-image_cookbook_example_2.webp" data-img="images/towebp/2.7-cookbook-recipe-photobooks/image_cookbook_example_2-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.7-cookbook-recipe-photobooks/min-image_cookbook_example_2.webp" data-img="images/towebp/2.7-cookbook-recipe-photobooks/image_cookbook_example_2-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.7-cookbook-recipe-photobooks/min-image_cookbook_example_2.webp" data-img="images/towebp/2.7-cookbook-recipe-photobooks/image_cookbook_example_2-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/2.7-cookbook-recipe-photobooks/min-image_cookbook_example_2.webp" data-img="images/towebp/2.7-cookbook-recipe-photobooks/image_cookbook_example_2-5120.webp 2x , images/towebp/2.7-cookbook-recipe-photobooks/image_cookbook_example_2-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/2.7-cookbook-recipe-photobooks/min-image_cookbook_example_2.png" data-img="images/towebp/2.7-cookbook-recipe-photobooks/image_cookbook_example_2.png" alt="album A Man, A Pan & A Plan gray">
-    </picture>  
-</figure>
+            <figure style="padding-bottom: calc(362% / 362 * 100)" class="figure-webp  ">       <picture  data-priority="2" data-name="image_cookbook_example_2" data-path="2.7-cookbook-recipe-photobooks" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/2.7-cookbook-recipe-photobooks/min-image_cookbook_example_2.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/2.7-cookbook-recipe-photobooks/image_cookbook_example_2.png"   alt="album A Man, A Pan & A Plan gray">
+    </picture>   
+
+  </figure>
 
 
           <h3 class="section-album__name-title">The Family Cookbook<span>Cookbook</span></h3>
         </div> 
         <div class="swiper-slide">
-           
- <figure style="padding-bottom: calc(362% / 362 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.7-cookbook-recipe-photobooks/min-image_cookbook_example_3.webp" data-img="images/towebp/2.7-cookbook-recipe-photobooks/image_cookbook_example_3-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.7-cookbook-recipe-photobooks/min-image_cookbook_example_3.webp" data-img="images/towebp/2.7-cookbook-recipe-photobooks/image_cookbook_example_3-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.7-cookbook-recipe-photobooks/min-image_cookbook_example_3.webp" data-img="images/towebp/2.7-cookbook-recipe-photobooks/image_cookbook_example_3-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/2.7-cookbook-recipe-photobooks/min-image_cookbook_example_3.webp" data-img="images/towebp/2.7-cookbook-recipe-photobooks/image_cookbook_example_3-5120.webp 2x , images/towebp/2.7-cookbook-recipe-photobooks/image_cookbook_example_3-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/2.7-cookbook-recipe-photobooks/min-image_cookbook_example_3.png" data-img="images/towebp/2.7-cookbook-recipe-photobooks/image_cookbook_example_3.png" alt="album A Man, A Pan & A Plan light brown">
-    </picture>  
-</figure>
+            <figure style="padding-bottom: calc(362% / 362 * 100)" class="figure-webp  ">       <picture  data-priority="2" data-name="image_cookbook_example_3" data-path="2.7-cookbook-recipe-photobooks" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/2.7-cookbook-recipe-photobooks/min-image_cookbook_example_3.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/2.7-cookbook-recipe-photobooks/image_cookbook_example_3.png"   alt="album A Man, A Pan & A Plan light brown">
+    </picture>   
+
+  </figure>
 
 
           <h3 class="section-album__name-title">A Man, A Pan & A Plan<span>Cookbook</span></h3>
         </div>
         <div class="swiper-slide">
-           
- <figure style="padding-bottom: calc(362% / 362 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/2.7-cookbook-recipe-photobooks/min-image_cookbook_example_4.webp" data-img="images/towebp/2.7-cookbook-recipe-photobooks/image_cookbook_example_4-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/2.7-cookbook-recipe-photobooks/min-image_cookbook_example_4.webp" data-img="images/towebp/2.7-cookbook-recipe-photobooks/image_cookbook_example_4-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/2.7-cookbook-recipe-photobooks/min-image_cookbook_example_4.webp" data-img="images/towebp/2.7-cookbook-recipe-photobooks/image_cookbook_example_4-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/2.7-cookbook-recipe-photobooks/min-image_cookbook_example_4.webp" data-img="images/towebp/2.7-cookbook-recipe-photobooks/image_cookbook_example_4-5120.webp 2x , images/towebp/2.7-cookbook-recipe-photobooks/image_cookbook_example_4-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/2.7-cookbook-recipe-photobooks/min-image_cookbook_example_4.png" data-img="images/towebp/2.7-cookbook-recipe-photobooks/image_cookbook_example_4.png" alt="album A Man, A Pan & A Plan light yellow">
-    </picture>  
-</figure>
+            <figure style="padding-bottom: calc(362% / 362 * 100)" class="figure-webp  ">       <picture  data-priority="2" data-name="image_cookbook_example_4" data-path="2.7-cookbook-recipe-photobooks" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/2.7-cookbook-recipe-photobooks/min-image_cookbook_example_4.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/2.7-cookbook-recipe-photobooks/image_cookbook_example_4.png"   alt="album A Man, A Pan & A Plan light yellow">
+    </picture>   
+
+  </figure>
 
 
           <h3 class="section-album__name-title">A Man & A Pan<span>Cookbook</span></h3>

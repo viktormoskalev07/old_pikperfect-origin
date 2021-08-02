@@ -17,11 +17,14 @@
 </head>
 
 <body class="no-transition">
-	<script> 
+	<script>
+	 function addFont(e){setTimeout(()=>{const e=document.createElement("link"),t=document.createElement("link");t.rel="preconnect",t.href="https://fonts.gstatic.com",e.rel="stylesheet",e.href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Spectral:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap",document.querySelector("head").append(t),document.querySelector("head").append(e),localStorage.setItem("font","1")},e)}localStorage.getItem("font")?addFont(0):window.matchMedia("(max-width: 480px)").matches?addFont(1e3):addFont(0);
+
 		window.addEventListener('load' , function(){
 			document.body.classList.remove('no-transition');
 		})
 	</script> 
+
     <div class="pre-header">
     <div class="container">
       <div class="promobar"> 
@@ -85,8 +88,7 @@
           </div>
         </li>
         <li><a href="https://www.pikperfect.com/album-design-service">design service</a></li>
-        <li><a style='color:blue' href="./1.0-homepage.html">1.0</a></li>
-<li><a style='color:rgb(206, 76, 53)' href="./1.0-jq.html">1.0 jquery test</a></li>
+        <li><a style='color:blue' href="./1.0-homepage.html">1.0</a></li> 
 <li><a style='color:blue' href="./2.0a-photo-books.html">2.0a</a></li>
 <li><a style='color:blue' href="./2.0b-memory-books.html">2.0b</a></li>
 <li><a style='color:green' href="./2.1-premium-layflat-albums.html">2.1</a></li>
@@ -107,8 +109,9 @@
 <li><a style='color:rgb(174, 0, 255)' href="./8.2-photo-book-example.html">8.2</a></li>
 <li><a style='color:rgb(174, 0, 255)' href="./9.0-about-us.html">9.0</a></li>
 <li><a style='color:rgb(174, 0, 255)' href="./10.0-contact-us.html">10.0</a></li>
+<li><a style='color:red' href="./12.0-photographer-photo-albums.html">12.0</a></li>
 <li><a style='color:rgb(174, 0, 255)' href="./13.0-share.html">13.0</a></li>
-<li><a style='color:rgb(174, 0, 255)' href="./15.0-myprofile.html">15.0</a></li> 
+<li><a style='color:rgb(174, 0, 255)' href="./15.0-myprofile.html">15.0</a></li>  
  
 
       </ul>
@@ -280,20 +283,13 @@
   <div class="section-hero__wrap-flex">
     <div class="section-hero__image-col px-0"> 
       <figure class="figure-webp"> 
-           <picture  data-priority="0" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/1.0-homepage/min-professional-photo-albums.webp" data-img="images/towebp/1.0-homepage/professional-photo-albums-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/1.0-homepage/min-professional-photo-albums.webp" data-img="images/towebp/1.0-homepage/professional-photo-albums-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/1.0-homepage/min-professional-photo-albums.webp" data-img="images/towebp/1.0-homepage/professional-photo-albums-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/1.0-homepage/min-professional-photo-albums.webp" data-img="images/towebp/1.0-homepage/professional-photo-albums-5120.webp 2x , images/towebp/1.0-homepage/professional-photo-albums-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/1.0-homepage/min-professional-photo-albums.jpg" data-img="images/towebp/1.0-homepage/professional-photo-albums.jpg" alt="Professional photo album samples on wooden table">
+           <picture  data-priority="0" data-name="professional-photo-albums" data-path="1.0-homepage" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/1.0-homepage/min-professional-photo-albums.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/1.0-homepage/professional-photo-albums.jpg"   alt="Professional photo album samples on wooden table">
     </picture>   
 
-
- 
+  
       </figure>       
     </div>
     <div class="section-hero__content-col section-hero__content-col_gray">
@@ -363,20 +359,13 @@
             <p>Learn more</p> 
             <img src="./images/arrow-right.svg" alt="arrow-right">
           </div>
-             
- <figure style="padding-bottom: calc(302% / 284 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/1.0-homepage/min-wedding-photo-albums.webp" data-img="images/towebp/1.0-homepage/wedding-photo-albums-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/1.0-homepage/min-wedding-photo-albums.webp" data-img="images/towebp/1.0-homepage/wedding-photo-albums-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/1.0-homepage/min-wedding-photo-albums.webp" data-img="images/towebp/1.0-homepage/wedding-photo-albums-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/1.0-homepage/min-wedding-photo-albums.webp" data-img="images/towebp/1.0-homepage/wedding-photo-albums-5120.webp 2x , images/towebp/1.0-homepage/wedding-photo-albums-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/1.0-homepage/min-wedding-photo-albums.png" data-img="images/towebp/1.0-homepage/wedding-photo-albums.png" alt="Wedding photo album with custom embossing title">
-    </picture>  
-</figure>
+              <figure style="padding-bottom: calc(302% / 284 * 100)" class="figure-webp  ">       <picture  data-priority="2" data-name="wedding-photo-albums" data-path="1.0-homepage" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/1.0-homepage/min-wedding-photo-albums.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/1.0-homepage/wedding-photo-albums.png"   alt="Wedding photo album with custom embossing title">
+    </picture>   
+
+  </figure>
 
 
         </div>
@@ -390,20 +379,13 @@
             <p>Learn more</p> 
             <img src="./images/arrow-right.svg" alt="arrow-right">
           </div>
-           
- <figure style="padding-bottom: calc(302% / 284 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/1.0-homepage/min-baby-photo-books.webp" data-img="images/towebp/1.0-homepage/baby-photo-books-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/1.0-homepage/min-baby-photo-books.webp" data-img="images/towebp/1.0-homepage/baby-photo-books-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/1.0-homepage/min-baby-photo-books.webp" data-img="images/towebp/1.0-homepage/baby-photo-books-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/1.0-homepage/min-baby-photo-books.webp" data-img="images/towebp/1.0-homepage/baby-photo-books-5120.webp 2x , images/towebp/1.0-homepage/baby-photo-books-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/1.0-homepage/min-baby-photo-books.jpg" data-img="images/towebp/1.0-homepage/baby-photo-books.jpg" alt="An open baby photo book">
-    </picture>  
-</figure>
+            <figure style="padding-bottom: calc(302% / 284 * 100)" class="figure-webp  ">       <picture  data-priority="2" data-name="baby-photo-books" data-path="1.0-homepage" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/1.0-homepage/min-baby-photo-books.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/1.0-homepage/baby-photo-books.jpg"   alt="An open baby photo book">
+    </picture>   
+
+  </figure>
 
 
         </div>
@@ -417,20 +399,13 @@
             <p>Learn more</p> 
             <img src="./images/arrow-right.svg" alt="arrow-right">
           </div>
-           
- <figure style="padding-bottom: calc(302% / 284 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/1.0-homepage/min-family-photo-albums.webp" data-img="images/towebp/1.0-homepage/family-photo-albums-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/1.0-homepage/min-family-photo-albums.webp" data-img="images/towebp/1.0-homepage/family-photo-albums-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/1.0-homepage/min-family-photo-albums.webp" data-img="images/towebp/1.0-homepage/family-photo-albums-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/1.0-homepage/min-family-photo-albums.webp" data-img="images/towebp/1.0-homepage/family-photo-albums-5120.webp 2x , images/towebp/1.0-homepage/family-photo-albums-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/1.0-homepage/min-family-photo-albums.jpg" data-img="images/towebp/1.0-homepage/family-photo-albums.jpg" alt="Family photo album cover">
-    </picture>  
-</figure>
+            <figure style="padding-bottom: calc(302% / 284 * 100)" class="figure-webp  ">       <picture  data-priority="2" data-name="family-photo-albums" data-path="1.0-homepage" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/1.0-homepage/min-family-photo-albums.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/1.0-homepage/family-photo-albums.jpg"   alt="Family photo album cover">
+    </picture>   
+
+  </figure>
 
 
         </div>
@@ -444,20 +419,13 @@
             <p>Learn more</p> 
             <img src="./images/arrow-right.svg" alt="arrow-right">
           </div>
-           
- <figure style="padding-bottom: calc(302% / 284 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/1.0-homepage/min-travel-photo-books.webp" data-img="images/towebp/1.0-homepage/travel-photo-books-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/1.0-homepage/min-travel-photo-books.webp" data-img="images/towebp/1.0-homepage/travel-photo-books-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/1.0-homepage/min-travel-photo-books.webp" data-img="images/towebp/1.0-homepage/travel-photo-books-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/1.0-homepage/min-travel-photo-books.webp" data-img="images/towebp/1.0-homepage/travel-photo-books-5120.webp 2x , images/towebp/1.0-homepage/travel-photo-books-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/1.0-homepage/min-travel-photo-books.jpg" data-img="images/towebp/1.0-homepage/travel-photo-books.jpg" alt="Turquoise photo book cover">
-    </picture>  
-</figure>
+            <figure style="padding-bottom: calc(302% / 284 * 100)" class="figure-webp  ">       <picture  data-priority="2" data-name="travel-photo-books" data-path="1.0-homepage" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/1.0-homepage/min-travel-photo-books.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/1.0-homepage/travel-photo-books.jpg"   alt="Turquoise photo book cover">
+    </picture>   
+
+  </figure>
 
 
         </div>
@@ -474,20 +442,13 @@
             <p>Learn more</p> 
             <img src="./images/arrow-right.svg" alt="arrow-right">
           </div>
-             
- <figure style="padding-bottom: calc(302% / 284 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/1.0-homepage/min-wedding-guest-books.webp" data-img="images/towebp/1.0-homepage/wedding-guest-books-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/1.0-homepage/min-wedding-guest-books.webp" data-img="images/towebp/1.0-homepage/wedding-guest-books-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/1.0-homepage/min-wedding-guest-books.webp" data-img="images/towebp/1.0-homepage/wedding-guest-books-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/1.0-homepage/min-wedding-guest-books.webp" data-img="images/towebp/1.0-homepage/wedding-guest-books-5120.webp 2x , images/towebp/1.0-homepage/wedding-guest-books-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/1.0-homepage/min-wedding-guest-books.png" data-img="images/towebp/1.0-homepage/wedding-guest-books.png" alt="Open wedding album guest book">
-    </picture>  
-</figure>
+              <figure style="padding-bottom: calc(302% / 284 * 100)" class="figure-webp  ">       <picture  data-priority="2" data-name="wedding-guest-books" data-path="1.0-homepage" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/1.0-homepage/min-wedding-guest-books.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/1.0-homepage/wedding-guest-books.png"   alt="Open wedding album guest book">
+    </picture>   
+
+  </figure>
 
 
         </div>
@@ -501,20 +462,13 @@
             <p>Learn more</p> 
             <img src="./images/arrow-right.svg" alt="arrow-right">
           </div>
-           
- <figure style="padding-bottom: calc(302% / 284 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/1.0-homepage/min-engagement-photo-albums.webp" data-img="images/towebp/1.0-homepage/engagement-photo-albums-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/1.0-homepage/min-engagement-photo-albums.webp" data-img="images/towebp/1.0-homepage/engagement-photo-albums-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/1.0-homepage/min-engagement-photo-albums.webp" data-img="images/towebp/1.0-homepage/engagement-photo-albums-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/1.0-homepage/min-engagement-photo-albums.webp" data-img="images/towebp/1.0-homepage/engagement-photo-albums-5120.webp 2x , images/towebp/1.0-homepage/engagement-photo-albums-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/1.0-homepage/min-engagement-photo-albums.jpg" data-img="images/towebp/1.0-homepage/engagement-photo-albums.jpg" alt="Engagement photo album cover">
-    </picture>  
-</figure>
+            <figure style="padding-bottom: calc(302% / 284 * 100)" class="figure-webp  ">       <picture  data-priority="2" data-name="engagement-photo-albums" data-path="1.0-homepage" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/1.0-homepage/min-engagement-photo-albums.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/1.0-homepage/engagement-photo-albums.jpg"   alt="Engagement photo album cover">
+    </picture>   
+
+  </figure>
 
 
         </div>
@@ -528,20 +482,13 @@
             <p>Learn more</p> 
             <img src="./images/arrow-right.svg" alt="arrow-right">
           </div>
-           
- <figure style="padding-bottom: calc(302% / 284 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/1.0-homepage/min-cookbook-photobooks.webp" data-img="images/towebp/1.0-homepage/cookbook-photobooks-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/1.0-homepage/min-cookbook-photobooks.webp" data-img="images/towebp/1.0-homepage/cookbook-photobooks-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/1.0-homepage/min-cookbook-photobooks.webp" data-img="images/towebp/1.0-homepage/cookbook-photobooks-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/1.0-homepage/min-cookbook-photobooks.webp" data-img="images/towebp/1.0-homepage/cookbook-photobooks-5120.webp 2x , images/towebp/1.0-homepage/cookbook-photobooks-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/1.0-homepage/min-cookbook-photobooks.jpg" data-img="images/towebp/1.0-homepage/cookbook-photobooks.jpg" alt="DIY Cookbook on kitchen counter">
-    </picture>  
-</figure>
+            <figure style="padding-bottom: calc(302% / 284 * 100)" class="figure-webp  ">       <picture  data-priority="2" data-name="cookbook-photobooks" data-path="1.0-homepage" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/1.0-homepage/min-cookbook-photobooks.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/1.0-homepage/cookbook-photobooks.jpg"   alt="DIY Cookbook on kitchen counter">
+    </picture>   
+
+  </figure>
 
 
         </div>
@@ -555,20 +502,13 @@
             <p>Learn more</p> 
             <img src="./images/arrow-right.svg" alt="arrow-right">
           </div>
-           
- <figure style="padding-bottom: calc(302% / 284 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/1.0-homepage/min-photographer-photo-albums.webp" data-img="images/towebp/1.0-homepage/photographer-photo-albums-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/1.0-homepage/min-photographer-photo-albums.webp" data-img="images/towebp/1.0-homepage/photographer-photo-albums-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/1.0-homepage/min-photographer-photo-albums.webp" data-img="images/towebp/1.0-homepage/photographer-photo-albums-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/1.0-homepage/min-photographer-photo-albums.webp" data-img="images/towebp/1.0-homepage/photographer-photo-albums-5120.webp 2x , images/towebp/1.0-homepage/photographer-photo-albums-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/1.0-homepage/min-photographer-photo-albums.jpg" data-img="images/towebp/1.0-homepage/photographer-photo-albums.jpg" alt="Professional photo album in presentation box">
-    </picture>  
-</figure>
+            <figure style="padding-bottom: calc(302% / 284 * 100)" class="figure-webp  ">       <picture  data-priority="2" data-name="photographer-photo-albums" data-path="1.0-homepage" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/1.0-homepage/min-photographer-photo-albums.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/1.0-homepage/photographer-photo-albums.jpg"   alt="Professional photo album in presentation box">
+    </picture>   
+
+  </figure>
 
 
         </div>
@@ -654,20 +594,13 @@
     </p>
     <div class="section-album__wrap">
       <a href="#" class="section-album__block">
-         
- <figure style="padding-bottom: calc(288% / 330 * 100)" class="figure-webp  ">
-  <picture  data-priority="1" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/1.0-homepage/min-pikPerfect-premium-albums.webp" data-img="images/towebp/1.0-homepage/pikPerfect-premium-albums-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/1.0-homepage/min-pikPerfect-premium-albums.webp" data-img="images/towebp/1.0-homepage/pikPerfect-premium-albums-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/1.0-homepage/min-pikPerfect-premium-albums.webp" data-img="images/towebp/1.0-homepage/pikPerfect-premium-albums-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/1.0-homepage/min-pikPerfect-premium-albums.webp" data-img="images/towebp/1.0-homepage/pikPerfect-premium-albums-5120.webp 2x , images/towebp/1.0-homepage/pikPerfect-premium-albums-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/1.0-homepage/min-pikPerfect-premium-albums.png" data-img="images/towebp/1.0-homepage/pikPerfect-premium-albums.png" alt="White wedding album with presentation box">
-    </picture>  
-</figure>
+          <figure style="padding-bottom: calc(288% / 330 * 100)" class="figure-webp  ">       <picture  data-priority="1" data-name="pikPerfect-premium-albums" data-path="1.0-homepage" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/1.0-homepage/min-pikPerfect-premium-albums.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/1.0-homepage/pikPerfect-premium-albums.png"   alt="White wedding album with presentation box">
+    </picture>   
+
+  </figure>
 
 
         <h3 class="section-album__name-album">Premium Albums
@@ -675,20 +608,13 @@
         <p class="section-album__price">From $299</p>
       </a>
       <a href="#" class="section-album__block">
-         
- <figure style="padding-bottom: calc(288% / 330 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/1.0-homepage/min-pikperfect-photo-albums.webp" data-img="images/towebp/1.0-homepage/pikperfect-photo-albums-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/1.0-homepage/min-pikperfect-photo-albums.webp" data-img="images/towebp/1.0-homepage/pikperfect-photo-albums-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/1.0-homepage/min-pikperfect-photo-albums.webp" data-img="images/towebp/1.0-homepage/pikperfect-photo-albums-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/1.0-homepage/min-pikperfect-photo-albums.webp" data-img="images/towebp/1.0-homepage/pikperfect-photo-albums-5120.webp 2x , images/towebp/1.0-homepage/pikperfect-photo-albums-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/1.0-homepage/min-pikperfect-photo-albums.png" data-img="images/towebp/1.0-homepage/pikperfect-photo-albums.png" alt="A blue linen layflat photo album">
-    </picture>  
-</figure>
+          <figure style="padding-bottom: calc(288% / 330 * 100)" class="figure-webp  ">       <picture  data-priority="2" data-name="pikperfect-photo-albums" data-path="1.0-homepage" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/1.0-homepage/min-pikperfect-photo-albums.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/1.0-homepage/pikperfect-photo-albums.png"   alt="A blue linen layflat photo album">
+    </picture>   
+
+  </figure>
 
 
         <h3 class="section-album__name-album">Layflat Photo Albums
@@ -696,20 +622,13 @@
           <p class="section-album__price">From $149</p>
       </a> 
       <a href="#" class="section-album__block">
-         
- <figure style="padding-bottom: calc(288% / 330 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/1.0-homepage/min-pikperfect-photobooks.webp" data-img="images/towebp/1.0-homepage/pikperfect-photobooks-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/1.0-homepage/min-pikperfect-photobooks.webp" data-img="images/towebp/1.0-homepage/pikperfect-photobooks-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/1.0-homepage/min-pikperfect-photobooks.webp" data-img="images/towebp/1.0-homepage/pikperfect-photobooks-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/1.0-homepage/min-pikperfect-photobooks.webp" data-img="images/towebp/1.0-homepage/pikperfect-photobooks-5120.webp 2x , images/towebp/1.0-homepage/pikperfect-photobooks-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/1.0-homepage/min-pikperfect-photobooks.png" data-img="images/towebp/1.0-homepage/pikperfect-photobooks.png" alt="Professional photo book examples">
-    </picture>  
-</figure>
+          <figure style="padding-bottom: calc(288% / 330 * 100)" class="figure-webp  ">       <picture  data-priority="2" data-name="pikperfect-photobooks" data-path="1.0-homepage" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/1.0-homepage/min-pikperfect-photobooks.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/1.0-homepage/pikperfect-photobooks.png"   alt="Professional photo book examples">
+    </picture>   
+
+  </figure>
 
 
         <h3 class="section-album__name-album">Photo Books

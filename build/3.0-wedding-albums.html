@@ -17,11 +17,14 @@
 </head>
 
 <body class="no-transition">
-	<script> 
+	<script>
+	 function addFont(e){setTimeout(()=>{const e=document.createElement("link"),t=document.createElement("link");t.rel="preconnect",t.href="https://fonts.gstatic.com",e.rel="stylesheet",e.href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Spectral:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap",document.querySelector("head").append(t),document.querySelector("head").append(e),localStorage.setItem("font","1")},e)}localStorage.getItem("font")?addFont(0):window.matchMedia("(max-width: 480px)").matches?addFont(1e3):addFont(0);
+
 		window.addEventListener('load' , function(){
 			document.body.classList.remove('no-transition');
 		})
 	</script> 
+
     <div class="pre-header">
     <div class="container">
       <div class="promobar"> 
@@ -85,8 +88,7 @@
           </div>
         </li>
         <li><a href="https://www.pikperfect.com/album-design-service">design service</a></li>
-        <li><a style='color:blue' href="./1.0-homepage.html">1.0</a></li>
-<li><a style='color:rgb(206, 76, 53)' href="./1.0-jq.html">1.0 jquery test</a></li>
+        <li><a style='color:blue' href="./1.0-homepage.html">1.0</a></li> 
 <li><a style='color:blue' href="./2.0a-photo-books.html">2.0a</a></li>
 <li><a style='color:blue' href="./2.0b-memory-books.html">2.0b</a></li>
 <li><a style='color:green' href="./2.1-premium-layflat-albums.html">2.1</a></li>
@@ -107,8 +109,9 @@
 <li><a style='color:rgb(174, 0, 255)' href="./8.2-photo-book-example.html">8.2</a></li>
 <li><a style='color:rgb(174, 0, 255)' href="./9.0-about-us.html">9.0</a></li>
 <li><a style='color:rgb(174, 0, 255)' href="./10.0-contact-us.html">10.0</a></li>
+<li><a style='color:red' href="./12.0-photographer-photo-albums.html">12.0</a></li>
 <li><a style='color:rgb(174, 0, 255)' href="./13.0-share.html">13.0</a></li>
-<li><a style='color:rgb(174, 0, 255)' href="./15.0-myprofile.html">15.0</a></li> 
+<li><a style='color:rgb(174, 0, 255)' href="./15.0-myprofile.html">15.0</a></li>  
  
 
       </ul>
@@ -280,38 +283,24 @@
   <div class="section-hero__wrap-flex">
     <div class="section-hero__image-col px-0"> 
       <figure class="figure-webp">
-           <picture  data-priority="0" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/3.0_wedding_ablums/min-pikperfect-wedding-albums.webp" data-img="images/towebp/3.0_wedding_ablums/pikperfect-wedding-albums-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/3.0_wedding_ablums/min-pikperfect-wedding-albums.webp" data-img="images/towebp/3.0_wedding_ablums/pikperfect-wedding-albums-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/3.0_wedding_ablums/min-pikperfect-wedding-albums.webp" data-img="images/towebp/3.0_wedding_ablums/pikperfect-wedding-albums-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/3.0_wedding_ablums/min-pikperfect-wedding-albums.webp" data-img="images/towebp/3.0_wedding_ablums/pikperfect-wedding-albums-5120.webp 2x , images/towebp/3.0_wedding_ablums/pikperfect-wedding-albums-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/3.0_wedding_ablums/min-pikperfect-wedding-albums.jpg" data-img="images/towebp/3.0_wedding_ablums/pikperfect-wedding-albums.jpg" alt="Wedding album examples on table">
+           <picture  data-priority="0" data-name="pikperfect-wedding-albums" data-path="3.0_wedding_ablums" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/3.0_wedding_ablums/min-pikperfect-wedding-albums.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/3.0_wedding_ablums/pikperfect-wedding-albums.jpg"   alt="Wedding album examples on table">
     </picture>   
 
-
- 
+  
       </figure>        
     </div>
     <div class="section-hero__content-col">
       <div class="section-hero__bg">
-           <picture  data-priority="0" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp//min-image_texture.webp" data-img="images/towebp//image_texture-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp//min-image_texture.webp" data-img="images/towebp//image_texture-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp//min-image_texture.webp" data-img="images/towebp//image_texture-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp//min-image_texture.webp" data-img="images/towebp//image_texture-5120.webp 2x , images/towebp//image_texture-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp//min-image_texture.jpg" data-img="images/towebp//image_texture.jpg" alt="bg-hero">
+           <picture  data-priority="0" data-name="image_texture" data-path="" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp//min-image_texture.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp//image_texture.jpg"   alt="bg-hero">
     </picture>   
 
-
-
+ 
       </div>
       <div class="section-hero__picture section-hero__picture_bottom">
         <img src="./images/towebp/3.0_wedding_ablums/Illustration-leaflets.png" alt="picture leaflets">
@@ -349,37 +338,23 @@
         <div class="swiper-container swiperDescription">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-               
- <figure style="padding-bottom: calc(713% / 788 * 100)" class="figure-webp  ">
-  <picture  data-priority="1" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/3.0_wedding_ablums/min-flushmount-wedding-album.webp" data-img="images/towebp/3.0_wedding_ablums/flushmount-wedding-album-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/3.0_wedding_ablums/min-flushmount-wedding-album.webp" data-img="images/towebp/3.0_wedding_ablums/flushmount-wedding-album-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/3.0_wedding_ablums/min-flushmount-wedding-album.webp" data-img="images/towebp/3.0_wedding_ablums/flushmount-wedding-album-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/3.0_wedding_ablums/min-flushmount-wedding-album.webp" data-img="images/towebp/3.0_wedding_ablums/flushmount-wedding-album-5120.webp 2x , images/towebp/3.0_wedding_ablums/flushmount-wedding-album-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/3.0_wedding_ablums/min-flushmount-wedding-album.jpg" data-img="images/towebp/3.0_wedding_ablums/flushmount-wedding-album.jpg" alt="Flush mount album with wedding couple">
-    </picture>  
-</figure>
+                <figure style="padding-bottom: calc(713% / 788 * 100)" class="figure-webp  ">       <picture  data-priority="1" data-name="flushmount-wedding-album" data-path="3.0_wedding_ablums" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/3.0_wedding_ablums/min-flushmount-wedding-album.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/3.0_wedding_ablums/flushmount-wedding-album.jpg"   alt="Flush mount album with wedding couple">
+    </picture>   
+
+  </figure>
 
 </div>
             <div class="swiper-slide">
-               
- <figure style="padding-bottom: calc(713% / 788 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/3.0_wedding_ablums/min-flush-mount-wedding-album.webp" data-img="images/towebp/3.0_wedding_ablums/flush-mount-wedding-album-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/3.0_wedding_ablums/min-flush-mount-wedding-album.webp" data-img="images/towebp/3.0_wedding_ablums/flush-mount-wedding-album-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/3.0_wedding_ablums/min-flush-mount-wedding-album.webp" data-img="images/towebp/3.0_wedding_ablums/flush-mount-wedding-album-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/3.0_wedding_ablums/min-flush-mount-wedding-album.webp" data-img="images/towebp/3.0_wedding_ablums/flush-mount-wedding-album-5120.webp 2x , images/towebp/3.0_wedding_ablums/flush-mount-wedding-album-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/3.0_wedding_ablums/min-flush-mount-wedding-album.jpg" data-img="images/towebp/3.0_wedding_ablums/flush-mount-wedding-album.jpg" alt="Open flush mount wedding album">
-    </picture>  
-</figure>
+                <figure style="padding-bottom: calc(713% / 788 * 100)" class="figure-webp  ">       <picture  data-priority="2" data-name="flush-mount-wedding-album" data-path="3.0_wedding_ablums" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/3.0_wedding_ablums/min-flush-mount-wedding-album.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/3.0_wedding_ablums/flush-mount-wedding-album.jpg"   alt="Open flush mount wedding album">
+    </picture>   
+
+  </figure>
 
 </div> 
           </div>
@@ -406,37 +381,23 @@
         <div class="swiper-container swiperDescription">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-               
- <figure style="padding-bottom: calc(713% / 788 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/3.0_wedding_ablums/min-layflat-wedding-album.webp" data-img="images/towebp/3.0_wedding_ablums/layflat-wedding-album-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/3.0_wedding_ablums/min-layflat-wedding-album.webp" data-img="images/towebp/3.0_wedding_ablums/layflat-wedding-album-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/3.0_wedding_ablums/min-layflat-wedding-album.webp" data-img="images/towebp/3.0_wedding_ablums/layflat-wedding-album-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/3.0_wedding_ablums/min-layflat-wedding-album.webp" data-img="images/towebp/3.0_wedding_ablums/layflat-wedding-album-5120.webp 2x , images/towebp/3.0_wedding_ablums/layflat-wedding-album-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/3.0_wedding_ablums/min-layflat-wedding-album.jpg" data-img="images/towebp/3.0_wedding_ablums/layflat-wedding-album.jpg" alt="Layflat wedding album with photos of bride">
-    </picture>  
-</figure>
+                <figure style="padding-bottom: calc(713% / 788 * 100)" class="figure-webp  ">       <picture  data-priority="2" data-name="layflat-wedding-album" data-path="3.0_wedding_ablums" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/3.0_wedding_ablums/min-layflat-wedding-album.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/3.0_wedding_ablums/layflat-wedding-album.jpg"   alt="Layflat wedding album with photos of bride">
+    </picture>   
+
+  </figure>
 
 </div>
             <div class="swiper-slide">
-               
- <figure style="padding-bottom: calc(713% / 788 * 100)" class="figure-webp  ">
-  <picture  data-priority="4" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/3.0_wedding_ablums/min-layflat-wedding-photo-album.webp" data-img="images/towebp/3.0_wedding_ablums/layflat-wedding-photo-album-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/3.0_wedding_ablums/min-layflat-wedding-photo-album.webp" data-img="images/towebp/3.0_wedding_ablums/layflat-wedding-photo-album-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/3.0_wedding_ablums/min-layflat-wedding-photo-album.webp" data-img="images/towebp/3.0_wedding_ablums/layflat-wedding-photo-album-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/3.0_wedding_ablums/min-layflat-wedding-photo-album.webp" data-img="images/towebp/3.0_wedding_ablums/layflat-wedding-photo-album-5120.webp 2x , images/towebp/3.0_wedding_ablums/layflat-wedding-photo-album-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/3.0_wedding_ablums/min-layflat-wedding-photo-album.jpg" data-img="images/towebp/3.0_wedding_ablums/layflat-wedding-photo-album.jpg" alt="Layflat wedding album binding">
-    </picture>  
-</figure>
+                <figure style="padding-bottom: calc(713% / 788 * 100)" class="figure-webp  ">       <picture  data-priority="4" data-name="layflat-wedding-photo-album" data-path="3.0_wedding_ablums" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/3.0_wedding_ablums/min-layflat-wedding-photo-album.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/3.0_wedding_ablums/layflat-wedding-photo-album.jpg"   alt="Layflat wedding album binding">
+    </picture>   
+
+  </figure>
 
 </div> 
           </div>
@@ -463,37 +424,23 @@
         <div class="swiper-container swiperDescription">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-               
- <figure style="padding-bottom: calc(713% / 788 * 100)" class="figure-webp  ">
-  <picture  data-priority="3" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/3.0_wedding_ablums/min-large-wedding-photo-book.webp" data-img="images/towebp/3.0_wedding_ablums/large-wedding-photo-book-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/3.0_wedding_ablums/min-large-wedding-photo-book.webp" data-img="images/towebp/3.0_wedding_ablums/large-wedding-photo-book-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/3.0_wedding_ablums/min-large-wedding-photo-book.webp" data-img="images/towebp/3.0_wedding_ablums/large-wedding-photo-book-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/3.0_wedding_ablums/min-large-wedding-photo-book.webp" data-img="images/towebp/3.0_wedding_ablums/large-wedding-photo-book-5120.webp 2x , images/towebp/3.0_wedding_ablums/large-wedding-photo-book-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/3.0_wedding_ablums/min-large-wedding-photo-book.jpg" data-img="images/towebp/3.0_wedding_ablums/large-wedding-photo-book.jpg" alt="Large wedding photo book laying open">
-    </picture>  
-</figure>
+                <figure style="padding-bottom: calc(713% / 788 * 100)" class="figure-webp  ">       <picture  data-priority="3" data-name="large-wedding-photo-book" data-path="3.0_wedding_ablums" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/3.0_wedding_ablums/min-large-wedding-photo-book.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/3.0_wedding_ablums/large-wedding-photo-book.jpg"   alt="Large wedding photo book laying open">
+    </picture>   
+
+  </figure>
 
 </div>
             <div class="swiper-slide">
-               
- <figure style="padding-bottom: calc(713% / 788 * 100)" class="figure-webp  ">
-  <picture  data-priority="5" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/3.0_wedding_ablums/min-wedding-photo-book.webp" data-img="images/towebp/3.0_wedding_ablums/wedding-photo-book-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/3.0_wedding_ablums/min-wedding-photo-book.webp" data-img="images/towebp/3.0_wedding_ablums/wedding-photo-book-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/3.0_wedding_ablums/min-wedding-photo-book.webp" data-img="images/towebp/3.0_wedding_ablums/wedding-photo-book-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/3.0_wedding_ablums/min-wedding-photo-book.webp" data-img="images/towebp/3.0_wedding_ablums/wedding-photo-book-5120.webp 2x , images/towebp/3.0_wedding_ablums/wedding-photo-book-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/3.0_wedding_ablums/min-wedding-photo-book.jpg" data-img="images/towebp/3.0_wedding_ablums/wedding-photo-book.jpg" alt="Wedding photo book details">
-    </picture>  
-</figure>
+                <figure style="padding-bottom: calc(713% / 788 * 100)" class="figure-webp  ">       <picture  data-priority="5" data-name="wedding-photo-book" data-path="3.0_wedding_ablums" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/3.0_wedding_ablums/min-wedding-photo-book.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/3.0_wedding_ablums/wedding-photo-book.jpg"   alt="Wedding photo book details">
+    </picture>   
+
+  </figure>
 
 </div> 
           </div>
@@ -548,20 +495,13 @@
   </div>
 </section>
   <section class="section-img">
-   
- <figure style="padding-bottom: calc(724% / 1440 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/3.0_wedding_ablums/min-custom-wedding-albums.webp" data-img="images/towebp/3.0_wedding_ablums/custom-wedding-albums-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/3.0_wedding_ablums/min-custom-wedding-albums.webp" data-img="images/towebp/3.0_wedding_ablums/custom-wedding-albums-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/3.0_wedding_ablums/min-custom-wedding-albums.webp" data-img="images/towebp/3.0_wedding_ablums/custom-wedding-albums-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/3.0_wedding_ablums/min-custom-wedding-albums.webp" data-img="images/towebp/3.0_wedding_ablums/custom-wedding-albums-5120.webp 2x , images/towebp/3.0_wedding_ablums/custom-wedding-albums-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/3.0_wedding_ablums/min-custom-wedding-albums.jpg" data-img="images/towebp/3.0_wedding_ablums/custom-wedding-albums.jpg" alt="bg-hero">
-    </picture>  
-</figure>
+    <figure style="padding-bottom: calc(724% / 1440 * 100)" class="figure-webp  ">       <picture  data-priority="2" data-name="custom-wedding-albums" data-path="3.0_wedding_ablums" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/3.0_wedding_ablums/min-custom-wedding-albums.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/3.0_wedding_ablums/custom-wedding-albums.jpg"   alt="bg-hero">
+    </picture>   
+
+  </figure>
 
   
 </section>
@@ -597,77 +537,49 @@
     <div class="swiper-container swiperalbum ">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-           
- <figure style="padding-bottom: calc(330% / 330 * 100)" class="figure-webp  ">
-  <picture  data-priority="1" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/3.0_wedding_ablums/min-album_our_best_day.webp" data-img="images/towebp/3.0_wedding_ablums/album_our_best_day-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/3.0_wedding_ablums/min-album_our_best_day.webp" data-img="images/towebp/3.0_wedding_ablums/album_our_best_day-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/3.0_wedding_ablums/min-album_our_best_day.webp" data-img="images/towebp/3.0_wedding_ablums/album_our_best_day-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/3.0_wedding_ablums/min-album_our_best_day.webp" data-img="images/towebp/3.0_wedding_ablums/album_our_best_day-5120.webp 2x , images/towebp/3.0_wedding_ablums/album_our_best_day-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/3.0_wedding_ablums/min-album_our_best_day.png" data-img="images/towebp/3.0_wedding_ablums/album_our_best_day.png" alt="album our best day">
-    </picture>  
-</figure>
+            <figure style="padding-bottom: calc(330% / 330 * 100)" class="figure-webp  ">       <picture  data-priority="1" data-name="album_our_best_day" data-path="3.0_wedding_ablums" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/3.0_wedding_ablums/min-album_our_best_day.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/3.0_wedding_ablums/album_our_best_day.png"   alt="album our best day">
+    </picture>   
+
+  </figure>
 
 
           <h3 class="section-album__name-title">Our Best Day<span>Wedding Album</span></h3>
         </div>
         <div class="swiper-slide">
-           
- <figure style="padding-bottom: calc(330% / 330 * 100)" class="figure-webp  ">
-  <picture  data-priority="1" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/3.0_wedding_ablums/min-album_william_emma.webp" data-img="images/towebp/3.0_wedding_ablums/album_william_emma-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/3.0_wedding_ablums/min-album_william_emma.webp" data-img="images/towebp/3.0_wedding_ablums/album_william_emma-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/3.0_wedding_ablums/min-album_william_emma.webp" data-img="images/towebp/3.0_wedding_ablums/album_william_emma-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/3.0_wedding_ablums/min-album_william_emma.webp" data-img="images/towebp/3.0_wedding_ablums/album_william_emma-5120.webp 2x , images/towebp/3.0_wedding_ablums/album_william_emma-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/3.0_wedding_ablums/min-album_william_emma.png" data-img="images/towebp/3.0_wedding_ablums/album_william_emma.png" alt="album william emma">
-    </picture>  
-</figure>
+            <figure style="padding-bottom: calc(330% / 330 * 100)" class="figure-webp  ">       <picture  data-priority="1" data-name="album_william_emma" data-path="3.0_wedding_ablums" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/3.0_wedding_ablums/min-album_william_emma.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/3.0_wedding_ablums/album_william_emma.png"   alt="album william emma">
+    </picture>   
+
+  </figure>
 
 
           <h3 class="section-album__name-title">William & Emma<span>Wedding Album</span></h3>
         </div> 
         <div class="swiper-slide">
-           
- <figure style="padding-bottom: calc(330% / 330 * 100)" class="figure-webp  ">
-  <picture  data-priority="1" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/3.0_wedding_ablums/min-album_diana_dennis.webp" data-img="images/towebp/3.0_wedding_ablums/album_diana_dennis-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/3.0_wedding_ablums/min-album_diana_dennis.webp" data-img="images/towebp/3.0_wedding_ablums/album_diana_dennis-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/3.0_wedding_ablums/min-album_diana_dennis.webp" data-img="images/towebp/3.0_wedding_ablums/album_diana_dennis-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/3.0_wedding_ablums/min-album_diana_dennis.webp" data-img="images/towebp/3.0_wedding_ablums/album_diana_dennis-5120.webp 2x , images/towebp/3.0_wedding_ablums/album_diana_dennis-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/3.0_wedding_ablums/min-album_diana_dennis.png" data-img="images/towebp/3.0_wedding_ablums/album_diana_dennis.png" alt="album diana dennis">
-    </picture>  
-</figure>
+            <figure style="padding-bottom: calc(330% / 330 * 100)" class="figure-webp  ">       <picture  data-priority="1" data-name="album_diana_dennis" data-path="3.0_wedding_ablums" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/3.0_wedding_ablums/min-album_diana_dennis.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/3.0_wedding_ablums/album_diana_dennis.png"   alt="album diana dennis">
+    </picture>   
+
+  </figure>
 
 
           <h3 class="section-album__name-title">Diana & Dennis<span>Wedding Album</span></h3>
         </div>
         <div class="swiper-slide">
-           
- <figure style="padding-bottom: calc(330% / 330 * 100)" class="figure-webp  ">
-  <picture  data-priority="1" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/3.0_wedding_ablums/min-album_william_emma.webp" data-img="images/towebp/3.0_wedding_ablums/album_william_emma-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/3.0_wedding_ablums/min-album_william_emma.webp" data-img="images/towebp/3.0_wedding_ablums/album_william_emma-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/3.0_wedding_ablums/min-album_william_emma.webp" data-img="images/towebp/3.0_wedding_ablums/album_william_emma-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/3.0_wedding_ablums/min-album_william_emma.webp" data-img="images/towebp/3.0_wedding_ablums/album_william_emma-5120.webp 2x , images/towebp/3.0_wedding_ablums/album_william_emma-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/3.0_wedding_ablums/min-album_william_emma.png" data-img="images/towebp/3.0_wedding_ablums/album_william_emma.png" alt="album william emma">
-    </picture>  
-</figure>
+            <figure style="padding-bottom: calc(330% / 330 * 100)" class="figure-webp  ">       <picture  data-priority="1" data-name="album_william_emma" data-path="3.0_wedding_ablums" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/3.0_wedding_ablums/min-album_william_emma.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/3.0_wedding_ablums/album_william_emma.png"   alt="album william emma">
+    </picture>   
+
+  </figure>
 
 
           <h3 class="section-album__name-title">William & Emma<span>Wedding Album</span></h3>
@@ -776,20 +688,13 @@
             <p>Learn more</p> 
             <img src="./images/arrow-right.svg" alt="arrow-right">
           </div>
-             
- <figure style="padding-bottom: calc(302% / 284 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/3.0_wedding_ablums/min-album_boxes.webp" data-img="images/towebp/3.0_wedding_ablums/album_boxes-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/3.0_wedding_ablums/min-album_boxes.webp" data-img="images/towebp/3.0_wedding_ablums/album_boxes-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/3.0_wedding_ablums/min-album_boxes.webp" data-img="images/towebp/3.0_wedding_ablums/album_boxes-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/3.0_wedding_ablums/min-album_boxes.webp" data-img="images/towebp/3.0_wedding_ablums/album_boxes-5120.webp 2x , images/towebp/3.0_wedding_ablums/album_boxes-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/3.0_wedding_ablums/min-album_boxes.png" data-img="images/towebp/3.0_wedding_ablums/album_boxes.png" alt="album boxes">
-    </picture>  
-</figure>
+              <figure style="padding-bottom: calc(302% / 284 * 100)" class="figure-webp  ">       <picture  data-priority="2" data-name="album_boxes" data-path="3.0_wedding_ablums" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/3.0_wedding_ablums/min-album_boxes.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/3.0_wedding_ablums/album_boxes.png"   alt="album boxes">
+    </picture>   
+
+  </figure>
 
 
         </div>
@@ -801,20 +706,13 @@
             <p>Learn more</p> 
             <img src="./images/arrow-right.svg" alt="arrow-right">
           </div>
-           
- <figure style="padding-bottom: calc(302% / 284 * 100)" class="figure-webp  ">
-  <picture  data-priority="1" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/3.0_wedding_ablums/min-wedding-album-parent-copies.webp" data-img="images/towebp/3.0_wedding_ablums/wedding-album-parent-copies-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/3.0_wedding_ablums/min-wedding-album-parent-copies.webp" data-img="images/towebp/3.0_wedding_ablums/wedding-album-parent-copies-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/3.0_wedding_ablums/min-wedding-album-parent-copies.webp" data-img="images/towebp/3.0_wedding_ablums/wedding-album-parent-copies-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/3.0_wedding_ablums/min-wedding-album-parent-copies.webp" data-img="images/towebp/3.0_wedding_ablums/wedding-album-parent-copies-5120.webp 2x , images/towebp/3.0_wedding_ablums/wedding-album-parent-copies-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/3.0_wedding_ablums/min-wedding-album-parent-copies.jpg" data-img="images/towebp/3.0_wedding_ablums/wedding-album-parent-copies.jpg" alt="wedding-album-parent-copies">
-    </picture>  
-</figure>
+            <figure style="padding-bottom: calc(302% / 284 * 100)" class="figure-webp  ">       <picture  data-priority="1" data-name="wedding-album-parent-copies" data-path="3.0_wedding_ablums" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/3.0_wedding_ablums/min-wedding-album-parent-copies.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/3.0_wedding_ablums/wedding-album-parent-copies.jpg"   alt="wedding-album-parent-copies">
+    </picture>   
+
+  </figure>
 
 
         </div>
@@ -826,20 +724,13 @@
             <p>Learn more</p> 
             <img src="./images/arrow-right.svg" alt="arrow-right">
           </div>
-           
- <figure style="padding-bottom: calc(302% / 284 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/3.0_wedding_ablums/min-wedding-guest-books.webp" data-img="images/towebp/3.0_wedding_ablums/wedding-guest-books-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/3.0_wedding_ablums/min-wedding-guest-books.webp" data-img="images/towebp/3.0_wedding_ablums/wedding-guest-books-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/3.0_wedding_ablums/min-wedding-guest-books.webp" data-img="images/towebp/3.0_wedding_ablums/wedding-guest-books-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/3.0_wedding_ablums/min-wedding-guest-books.webp" data-img="images/towebp/3.0_wedding_ablums/wedding-guest-books-5120.webp 2x , images/towebp/3.0_wedding_ablums/wedding-guest-books-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/3.0_wedding_ablums/min-wedding-guest-books.jpg" data-img="images/towebp/3.0_wedding_ablums/wedding-guest-books.jpg" alt="wedding guest books">
-    </picture>  
-</figure>
+            <figure style="padding-bottom: calc(302% / 284 * 100)" class="figure-webp  ">       <picture  data-priority="2" data-name="wedding-guest-books" data-path="3.0_wedding_ablums" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/3.0_wedding_ablums/min-wedding-guest-books.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/3.0_wedding_ablums/wedding-guest-books.jpg"   alt="wedding guest books">
+    </picture>   
+
+  </figure>
 
 
         </div>
@@ -851,20 +742,13 @@
             <p>Learn more</p> 
             <img src="./images/arrow-right.svg" alt="arrow-right">
           </div>
-           
- <figure style="padding-bottom: calc(302% / 284 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/3.0_wedding_ablums/min-engagement-photo-albums.webp" data-img="images/towebp/3.0_wedding_ablums/engagement-photo-albums-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/3.0_wedding_ablums/min-engagement-photo-albums.webp" data-img="images/towebp/3.0_wedding_ablums/engagement-photo-albums-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/3.0_wedding_ablums/min-engagement-photo-albums.webp" data-img="images/towebp/3.0_wedding_ablums/engagement-photo-albums-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/3.0_wedding_ablums/min-engagement-photo-albums.webp" data-img="images/towebp/3.0_wedding_ablums/engagement-photo-albums-5120.webp 2x , images/towebp/3.0_wedding_ablums/engagement-photo-albums-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/3.0_wedding_ablums/min-engagement-photo-albums.jpg" data-img="images/towebp/3.0_wedding_ablums/engagement-photo-albums.jpg" alt="engagement photo albums">
-    </picture>  
-</figure>
+            <figure style="padding-bottom: calc(302% / 284 * 100)" class="figure-webp  ">       <picture  data-priority="2" data-name="engagement-photo-albums" data-path="3.0_wedding_ablums" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/3.0_wedding_ablums/min-engagement-photo-albums.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/3.0_wedding_ablums/engagement-photo-albums.jpg"   alt="engagement photo albums">
+    </picture>   
+
+  </figure>
 
 
         </div>

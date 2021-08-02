@@ -17,11 +17,14 @@
 </head>
 
 <body class="no-transition">
-	<script> 
+	<script>
+	 function addFont(e){setTimeout(()=>{const e=document.createElement("link"),t=document.createElement("link");t.rel="preconnect",t.href="https://fonts.gstatic.com",e.rel="stylesheet",e.href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Spectral:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap",document.querySelector("head").append(t),document.querySelector("head").append(e),localStorage.setItem("font","1")},e)}localStorage.getItem("font")?addFont(0):window.matchMedia("(max-width: 480px)").matches?addFont(1e3):addFont(0);
+
 		window.addEventListener('load' , function(){
 			document.body.classList.remove('no-transition');
 		})
 	</script> 
+
     <div class="pre-header">
     <div class="container">
       <div class="promobar"> 
@@ -85,8 +88,7 @@
           </div>
         </li>
         <li><a href="https://www.pikperfect.com/album-design-service">design service</a></li>
-        <li><a style='color:blue' href="./1.0-homepage.html">1.0</a></li>
-<li><a style='color:rgb(206, 76, 53)' href="./1.0-jq.html">1.0 jquery test</a></li>
+        <li><a style='color:blue' href="./1.0-homepage.html">1.0</a></li> 
 <li><a style='color:blue' href="./2.0a-photo-books.html">2.0a</a></li>
 <li><a style='color:blue' href="./2.0b-memory-books.html">2.0b</a></li>
 <li><a style='color:green' href="./2.1-premium-layflat-albums.html">2.1</a></li>
@@ -107,8 +109,9 @@
 <li><a style='color:rgb(174, 0, 255)' href="./8.2-photo-book-example.html">8.2</a></li>
 <li><a style='color:rgb(174, 0, 255)' href="./9.0-about-us.html">9.0</a></li>
 <li><a style='color:rgb(174, 0, 255)' href="./10.0-contact-us.html">10.0</a></li>
+<li><a style='color:red' href="./12.0-photographer-photo-albums.html">12.0</a></li>
 <li><a style='color:rgb(174, 0, 255)' href="./13.0-share.html">13.0</a></li>
-<li><a style='color:rgb(174, 0, 255)' href="./15.0-myprofile.html">15.0</a></li> 
+<li><a style='color:rgb(174, 0, 255)' href="./15.0-myprofile.html">15.0</a></li>  
  
 
       </ul>
@@ -283,92 +286,57 @@
     <div thumbsSlider="" class="swiper-container section-hero__tab-activators">    
   <div class="swiper-wrapper">   
   <div class="swiper-slide hero-tab-activator__js section-hero__tab-activator">
-       
- <figure style="padding-bottom: calc(90% / 90 * 100)" class="figure-webp  ">
-  <picture  data-priority="0" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-layflat-wedding-photo-album.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/layflat-wedding-photo-album-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-layflat-wedding-photo-album.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/layflat-wedding-photo-album-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-layflat-wedding-photo-album.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/layflat-wedding-photo-album-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-layflat-wedding-photo-album.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/layflat-wedding-photo-album-5120.webp 2x , images/towebp/3.2_layflat_wedding-photo_albums/layflat-wedding-photo-album-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/3.2_layflat_wedding-photo_albums/min-layflat-wedding-photo-album.jpg" data-img="images/towebp/3.2_layflat_wedding-photo_albums/layflat-wedding-photo-album.jpg" alt="Was (Red wedding album cover)">
-    </picture>  
-</figure>
+        <figure style="padding-bottom: calc(90% / 90 * 100)" class="figure-webp  ">       <picture  data-priority="0" data-name="layflat-wedding-photo-album" data-path="3.2_layflat_wedding-photo_albums" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-layflat-wedding-photo-album.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/3.2_layflat_wedding-photo_albums/layflat-wedding-photo-album.jpg"   alt="Was (Red wedding album cover)">
+    </picture>   
+
+  </figure>
 
 
     </div>
     <div class="swiper-slide hero-tab-activator__js section-hero__tab-activator">
-       
- <figure style="padding-bottom: calc(90% / 90 * 100)" class="figure-webp  ">
-  <picture  data-priority="1" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-photo-album-covers.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/wedding-photo-album-covers-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-photo-album-covers.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/wedding-photo-album-covers-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-photo-album-covers.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/wedding-photo-album-covers-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-photo-album-covers.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/wedding-photo-album-covers-5120.webp 2x , images/towebp/3.2_layflat_wedding-photo_albums/wedding-photo-album-covers-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-photo-album-covers.jpg" data-img="images/towebp/3.2_layflat_wedding-photo_albums/wedding-photo-album-covers.jpg" alt="Custom wedding album cover designs">
-    </picture>  
-</figure>
+        <figure style="padding-bottom: calc(90% / 90 * 100)" class="figure-webp  ">       <picture  data-priority="1" data-name="wedding-photo-album-covers" data-path="3.2_layflat_wedding-photo_albums" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-photo-album-covers.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/3.2_layflat_wedding-photo_albums/wedding-photo-album-covers.jpg"   alt="Custom wedding album cover designs">
+    </picture>   
+
+  </figure>
 
 
     </div>
     <div class="swiper-slide hero-tab-activator__js section-hero__tab-activator">
-       
- <figure style="padding-bottom: calc(90% / 90 * 100)" class="figure-webp  ">
-  <picture  data-priority="1" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-layflat-wedding-photo-books.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/layflat-wedding-photo-books-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-layflat-wedding-photo-books.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/layflat-wedding-photo-books-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-layflat-wedding-photo-books.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/layflat-wedding-photo-books-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-layflat-wedding-photo-books.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/layflat-wedding-photo-books-5120.webp 2x , images/towebp/3.2_layflat_wedding-photo_albums/layflat-wedding-photo-books-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/3.2_layflat_wedding-photo_albums/min-layflat-wedding-photo-books.jpg" data-img="images/towebp/3.2_layflat_wedding-photo_albums/layflat-wedding-photo-books.jpg" alt="Layflat wedding photo album with Indian bride">
-    </picture>  
-</figure>
+        <figure style="padding-bottom: calc(90% / 90 * 100)" class="figure-webp  ">       <picture  data-priority="1" data-name="layflat-wedding-photo-books" data-path="3.2_layflat_wedding-photo_albums" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-layflat-wedding-photo-books.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/3.2_layflat_wedding-photo_albums/layflat-wedding-photo-books.jpg"   alt="Layflat wedding photo album with Indian bride">
+    </picture>   
+
+  </figure>
 
 
     </div>
     <div class="swiper-slide hero-tab-activator__js section-hero__tab-activator">
-       
- <figure style="padding-bottom: calc(90% / 90 * 100)" class="figure-webp  ">
-  <picture  data-priority="1" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-flat-lay-wedding-album-pages.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/flat-lay-wedding-album-pages-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-flat-lay-wedding-album-pages.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/flat-lay-wedding-album-pages-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-flat-lay-wedding-album-pages.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/flat-lay-wedding-album-pages-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-flat-lay-wedding-album-pages.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/flat-lay-wedding-album-pages-5120.webp 2x , images/towebp/3.2_layflat_wedding-photo_albums/flat-lay-wedding-album-pages-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/3.2_layflat_wedding-photo_albums/min-flat-lay-wedding-album-pages.jpg" data-img="images/towebp/3.2_layflat_wedding-photo_albums/flat-lay-wedding-album-pages.jpg" alt="wedding photo album with layflat pages">
-    </picture>  
-</figure>
+        <figure style="padding-bottom: calc(90% / 90 * 100)" class="figure-webp  ">       <picture  data-priority="1" data-name="flat-lay-wedding-album-pages" data-path="3.2_layflat_wedding-photo_albums" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-flat-lay-wedding-album-pages.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/3.2_layflat_wedding-photo_albums/flat-lay-wedding-album-pages.jpg"   alt="wedding photo album with layflat pages">
+    </picture>   
+
+  </figure>
 
 
     </div>
     <div class="swiper-slide hero-tab-activator__js section-hero__tab-activator">
-       
- <figure style="padding-bottom: calc(90% / 90 * 100)" class="figure-webp  ">
-  <picture  data-priority="1" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-photo-album-box.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/wedding-photo-album-box-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-photo-album-box.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/wedding-photo-album-box-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-photo-album-box.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/wedding-photo-album-box-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-photo-album-box.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/wedding-photo-album-box-5120.webp 2x , images/towebp/3.2_layflat_wedding-photo_albums/wedding-photo-album-box-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-photo-album-box.jpg" data-img="images/towebp/3.2_layflat_wedding-photo_albums/wedding-photo-album-box.jpg" alt="Wedding photo album with black presentation box">
-    </picture>  
-</figure>
+        <figure style="padding-bottom: calc(90% / 90 * 100)" class="figure-webp  ">       <picture  data-priority="1" data-name="wedding-photo-album-box" data-path="3.2_layflat_wedding-photo_albums" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-photo-album-box.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/3.2_layflat_wedding-photo_albums/wedding-photo-album-box.jpg"   alt="Wedding photo album with black presentation box">
+    </picture>   
+
+  </figure>
 
 
     </div>
@@ -383,92 +351,57 @@
     <div class="swiper-container section-hero__swiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide section-hero__slide">
-                 
- <figure style="padding-bottom: calc(620% / 620 * 100)" class="figure-webp  ">
-  <picture  data-priority="0" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-layflat-wedding-photo-album.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/layflat-wedding-photo-album-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-layflat-wedding-photo-album.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/layflat-wedding-photo-album-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-layflat-wedding-photo-album.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/layflat-wedding-photo-album-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-layflat-wedding-photo-album.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/layflat-wedding-photo-album-5120.webp 2x , images/towebp/3.2_layflat_wedding-photo_albums/layflat-wedding-photo-album-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/3.2_layflat_wedding-photo_albums/min-layflat-wedding-photo-album.jpg" data-img="images/towebp/3.2_layflat_wedding-photo_albums/layflat-wedding-photo-album.jpg" alt="Was (Red wedding album cover)">
-    </picture>  
-</figure>
+                  <figure style="padding-bottom: calc(620% / 620 * 100)" class="figure-webp  ">       <picture  data-priority="0" data-name="layflat-wedding-photo-album" data-path="3.2_layflat_wedding-photo_albums" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-layflat-wedding-photo-album.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/3.2_layflat_wedding-photo_albums/layflat-wedding-photo-album.jpg"   alt="Was (Red wedding album cover)">
+    </picture>   
+
+  </figure>
 
 
             </div>
             <div class="swiper-slide section-hero__slide">
-                 
- <figure style="padding-bottom: calc(620% / 620 * 100)" class="figure-webp  ">
-  <picture  data-priority="1" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-photo-album-covers.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/wedding-photo-album-covers-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-photo-album-covers.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/wedding-photo-album-covers-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-photo-album-covers.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/wedding-photo-album-covers-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-photo-album-covers.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/wedding-photo-album-covers-5120.webp 2x , images/towebp/3.2_layflat_wedding-photo_albums/wedding-photo-album-covers-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-photo-album-covers.jpg" data-img="images/towebp/3.2_layflat_wedding-photo_albums/wedding-photo-album-covers.jpg" alt="Custom wedding album cover designs">
-    </picture>  
-</figure>
+                  <figure style="padding-bottom: calc(620% / 620 * 100)" class="figure-webp  ">       <picture  data-priority="1" data-name="wedding-photo-album-covers" data-path="3.2_layflat_wedding-photo_albums" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-photo-album-covers.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/3.2_layflat_wedding-photo_albums/wedding-photo-album-covers.jpg"   alt="Custom wedding album cover designs">
+    </picture>   
+
+  </figure>
 
 
             </div>
             <div class="swiper-slide section-hero__slide">
-                 
- <figure style="padding-bottom: calc(620% / 620 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-layflat-wedding-photo-books.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/layflat-wedding-photo-books-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-layflat-wedding-photo-books.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/layflat-wedding-photo-books-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-layflat-wedding-photo-books.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/layflat-wedding-photo-books-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-layflat-wedding-photo-books.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/layflat-wedding-photo-books-5120.webp 2x , images/towebp/3.2_layflat_wedding-photo_albums/layflat-wedding-photo-books-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/3.2_layflat_wedding-photo_albums/min-layflat-wedding-photo-books.jpg" data-img="images/towebp/3.2_layflat_wedding-photo_albums/layflat-wedding-photo-books.jpg" alt="Layflat wedding photo album with Indian bride">
-    </picture>  
-</figure>
+                  <figure style="padding-bottom: calc(620% / 620 * 100)" class="figure-webp  ">       <picture  data-priority="2" data-name="layflat-wedding-photo-books" data-path="3.2_layflat_wedding-photo_albums" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-layflat-wedding-photo-books.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/3.2_layflat_wedding-photo_albums/layflat-wedding-photo-books.jpg"   alt="Layflat wedding photo album with Indian bride">
+    </picture>   
+
+  </figure>
 
 
             </div>
             <div class="swiper-slide section-hero__slide">
-                 
- <figure style="padding-bottom: calc(620% / 620 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-flat-lay-wedding-album-pages.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/flat-lay-wedding-album-pages-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-flat-lay-wedding-album-pages.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/flat-lay-wedding-album-pages-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-flat-lay-wedding-album-pages.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/flat-lay-wedding-album-pages-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-flat-lay-wedding-album-pages.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/flat-lay-wedding-album-pages-5120.webp 2x , images/towebp/3.2_layflat_wedding-photo_albums/flat-lay-wedding-album-pages-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/3.2_layflat_wedding-photo_albums/min-flat-lay-wedding-album-pages.jpg" data-img="images/towebp/3.2_layflat_wedding-photo_albums/flat-lay-wedding-album-pages.jpg" alt="wedding photo album with layflat pages">
-    </picture>  
-</figure>
+                  <figure style="padding-bottom: calc(620% / 620 * 100)" class="figure-webp  ">       <picture  data-priority="2" data-name="flat-lay-wedding-album-pages" data-path="3.2_layflat_wedding-photo_albums" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-flat-lay-wedding-album-pages.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/3.2_layflat_wedding-photo_albums/flat-lay-wedding-album-pages.jpg"   alt="wedding photo album with layflat pages">
+    </picture>   
+
+  </figure>
 
 
             </div>
             <div class="swiper-slide section-hero__slide">
-                 
- <figure style="padding-bottom: calc(620% / 620 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-photo-album-box.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/wedding-photo-album-box-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-photo-album-box.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/wedding-photo-album-box-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-photo-album-box.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/wedding-photo-album-box-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-photo-album-box.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/wedding-photo-album-box-5120.webp 2x , images/towebp/3.2_layflat_wedding-photo_albums/wedding-photo-album-box-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-photo-album-box.jpg" data-img="images/towebp/3.2_layflat_wedding-photo_albums/wedding-photo-album-box.jpg" alt="Wedding photo album with black presentation box">
-    </picture>  
-</figure>
+                  <figure style="padding-bottom: calc(620% / 620 * 100)" class="figure-webp  ">       <picture  data-priority="2" data-name="wedding-photo-album-box" data-path="3.2_layflat_wedding-photo_albums" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-photo-album-box.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/3.2_layflat_wedding-photo_albums/wedding-photo-album-box.jpg"   alt="Wedding photo album with black presentation box">
+    </picture>   
+
+  </figure>
 
 
             </div>
@@ -529,20 +462,13 @@
   <div class="container">
     <div class="description-img__wrap">
       <div class="description-img__img">
-         
- <figure style="padding-bottom: calc(713% / 788 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-photo-album-layflat.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/wedding-photo-album-layflat-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-photo-album-layflat.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/wedding-photo-album-layflat-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-photo-album-layflat.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/wedding-photo-album-layflat-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-photo-album-layflat.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/wedding-photo-album-layflat-5120.webp 2x , images/towebp/3.2_layflat_wedding-photo_albums/wedding-photo-album-layflat-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-photo-album-layflat.jpg" data-img="images/towebp/3.2_layflat_wedding-photo_albums/wedding-photo-album-layflat.jpg" alt="Women viewing a wedding photo album">
-    </picture>  
-</figure>
+          <figure style="padding-bottom: calc(713% / 788 * 100)" class="figure-webp  ">       <picture  data-priority="2" data-name="wedding-photo-album-layflat" data-path="3.2_layflat_wedding-photo_albums" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-photo-album-layflat.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/3.2_layflat_wedding-photo_albums/wedding-photo-album-layflat.jpg"   alt="Women viewing a wedding photo album">
+    </picture>   
+
+  </figure>
 
 
       </div>
@@ -558,20 +484,13 @@
   <div class="container">
     <div class="description-img__wrap">    
       <div class="description-img__img">
-         
- <figure style="padding-bottom: calc(713% / 788 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-linen-wedding-album-covers.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/linen-wedding-album-covers-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-linen-wedding-album-covers.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/linen-wedding-album-covers-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-linen-wedding-album-covers.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/linen-wedding-album-covers-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-linen-wedding-album-covers.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/linen-wedding-album-covers-5120.webp 2x , images/towebp/3.2_layflat_wedding-photo_albums/linen-wedding-album-covers-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/3.2_layflat_wedding-photo_albums/min-linen-wedding-album-covers.jpg" data-img="images/towebp/3.2_layflat_wedding-photo_albums/linen-wedding-album-covers.jpg" alt="Linen wedding photo album covers">
-    </picture>  
-</figure>
+          <figure style="padding-bottom: calc(713% / 788 * 100)" class="figure-webp  ">       <picture  data-priority="2" data-name="linen-wedding-album-covers" data-path="3.2_layflat_wedding-photo_albums" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-linen-wedding-album-covers.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/3.2_layflat_wedding-photo_albums/linen-wedding-album-covers.jpg"   alt="Linen wedding photo album covers">
+    </picture>   
+
+  </figure>
 
 
       </div>  
@@ -586,20 +505,13 @@
   <div class="container">
     <div class="description-img__wrap">
       <div class="description-img__img">
-         
- <figure style="padding-bottom: calc(713% / 788 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-layflat-album.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/wedding-layflat-album-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-layflat-album.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/wedding-layflat-album-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-layflat-album.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/wedding-layflat-album-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-layflat-album.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/wedding-layflat-album-5120.webp 2x , images/towebp/3.2_layflat_wedding-photo_albums/wedding-layflat-album-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-layflat-album.jpg" data-img="images/towebp/3.2_layflat_wedding-photo_albums/wedding-layflat-album.jpg" alt="Rustic wedding album design on layflat pages">
-    </picture>  
-</figure>
+          <figure style="padding-bottom: calc(713% / 788 * 100)" class="figure-webp  ">       <picture  data-priority="2" data-name="wedding-layflat-album" data-path="3.2_layflat_wedding-photo_albums" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-layflat-album.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/3.2_layflat_wedding-photo_albums/wedding-layflat-album.jpg"   alt="Rustic wedding album design on layflat pages">
+    </picture>   
+
+  </figure>
 
 
       </div>
@@ -615,20 +527,13 @@
   <div class="container">
     <div class="description-img__wrap">    
       <div class="description-img__img">
-         
- <figure style="padding-bottom: calc(713% / 788 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-album-box.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/wedding-album-box-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-album-box.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/wedding-album-box-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-album-box.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/wedding-album-box-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-album-box.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/wedding-album-box-5120.webp 2x , images/towebp/3.2_layflat_wedding-photo_albums/wedding-album-box-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-album-box.jpg" data-img="images/towebp/3.2_layflat_wedding-photo_albums/wedding-album-box.jpg" alt="Women opening box with wedding album">
-    </picture>  
-</figure>
+          <figure style="padding-bottom: calc(713% / 788 * 100)" class="figure-webp  ">       <picture  data-priority="2" data-name="wedding-album-box" data-path="3.2_layflat_wedding-photo_albums" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-album-box.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/3.2_layflat_wedding-photo_albums/wedding-album-box.jpg"   alt="Women opening box with wedding album">
+    </picture>   
+
+  </figure>
 
 
       </div>  
@@ -643,20 +548,13 @@
   <div class="container">
     <div class="description-img__wrap">    
       <div class="description-img__img">
-         
- <figure style="padding-bottom: calc(713% / 788 * 100)" class="figure-webp  ">
-  <picture  data-priority="2" class="picture-webp toggle-img--js">
-      
-          <source class="webp-img-376" media="(max-width: 376px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-photo-album-copies.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/wedding-photo-album-copies-376.webp" type="image/webp">  
-      
-          <source class="webp-img-480" media="(max-width: 480px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-photo-album-copies.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/wedding-photo-album-copies-480.webp" type="image/webp">  
-      
-          <source class="webp-img-768" media="(max-width: 768px)" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-photo-album-copies.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/wedding-photo-album-copies-768.webp" type="image/webp">  
-        
-      <source class="webp-img" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-photo-album-copies.webp" data-img="images/towebp/3.2_layflat_wedding-photo_albums/wedding-photo-album-copies-5120.webp 2x , images/towebp/3.2_layflat_wedding-photo_albums/wedding-photo-album-copies-1440.webp 1x" type="image/webp"> 
-      <img loading="lazy" class="nowebp-img" src="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-photo-album-copies.jpg" data-img="images/towebp/3.2_layflat_wedding-photo_albums/wedding-photo-album-copies.jpg" alt="Smaller parent copies of wedding photo album">
-    </picture>  
-</figure>
+          <figure style="padding-bottom: calc(713% / 788 * 100)" class="figure-webp  ">       <picture  data-priority="2" data-name="wedding-photo-album-copies" data-path="3.2_layflat_wedding-photo_albums" class="picture-webp">
+    
+      <source class="toggle-img--js" srcset="images/towebp/3.2_layflat_wedding-photo_albums/min-wedding-photo-album-copies.webp"  type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/3.2_layflat_wedding-photo_albums/wedding-photo-album-copies.jpg"   alt="Smaller parent copies of wedding photo album">
+    </picture>   
+
+  </figure>
 
 
       </div>  
