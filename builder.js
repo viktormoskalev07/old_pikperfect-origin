@@ -67,11 +67,11 @@ images.forEach(img => {
 
 
     const outputSizes =[
-        376, 480,768 , 1440 ,5120
+        375,460,768,1440
     ]
     let noTwiceResize = 0 
     outputSizes.forEach(item =>{
-        if(filename.includes('-'+item)) 
+        if(filename.includes('-'+item)||filename.includes('-'+(item*2))) 
         noTwiceResize++
     })  
     
@@ -98,17 +98,26 @@ images.forEach(img => {
            if(err){
                console.log(chalk.red(err));
            }  
-        });  
-  
+        });   
        } else {
            sharp(img).webp().resize(oldSize).toFile(dirname +'/'+ filename + '-'+size+ '.webp', (err,info)=>{
                if(err){
                    console.log(chalk.red(err));
                } 
-            });  
-            if(size <480){
-                console.log(chalk.red(`image smaller then ${size}!!!`+'   __'+img));
-            } 
+            });   
+       }
+        if(oldSize>size*2-1){
+            sharp(img).webp().resize(size*2).toFile(dirname +'/'+ filename +'-'+size*2+  '.webp', (err,info)=>{
+           if(err){
+               console.log(chalk.red(err));
+           }  
+        });   
+       } else {
+           sharp(img).webp().resize(oldSize).toFile(dirname +'/'+ filename + '-'+size*2+ '.webp', (err,info)=>{
+               if(err){
+                   console.log(chalk.red(err));
+               } 
+            });   
        }
      }
  
