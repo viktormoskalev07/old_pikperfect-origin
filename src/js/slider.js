@@ -72,6 +72,30 @@ var swiper = new Swiper(".section-reviews__swiper", {
   });
 
 
+  var swiper = new Swiper(".section-reviews-card__wrap", {
+    loop:true,
+    autoplay: {
+        delay: 3000,
+      },
+    navigation: {
+      el: ".swiperalbum-pagination",
+      clickable: true
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 32
+      },
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 32
+      },
+    }
+  });
 
 
  

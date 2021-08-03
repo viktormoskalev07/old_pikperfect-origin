@@ -1,0 +1,48 @@
+.cookie{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1002;
+    background: #2F353A;
+    padding: 24px 15px;
+    color: #fff;
+    font-size: 18px;
+    display: none;
+    @include tablet{
+        padding: 32px 20px;
+    }
+    &__wrap{
+        max-width: 1220px;
+        margin: 0 auto;
+        @include tablet{
+            display: flex;
+            justify-content: space-between;
+        }
+        
+    }
+    &__text{
+        margin-bottom: 20px;
+        @include tablet{
+            padding-right: 30px;
+            margin-bottom: 0;
+        }
+    }
+    &__btn{       
+        .button{
+            width: 100%;
+            @include tablet{
+                display: inline-block;
+                min-width: 250px;
+            }
+        }
+    }
+    .link{
+        color: #fff;
+        font-size: 14px;
+    }
+    &.block{
+        display: block;
+    }
+}

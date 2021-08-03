@@ -33,6 +33,7 @@
         margin-top: 32px;
     }
     &__btn{
+        z-index: 1001;
         position: fixed;
         bottom: 0;
         right: 20px;

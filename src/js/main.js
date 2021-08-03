@@ -137,7 +137,26 @@ if(textareaCount&&textCounter){
       PopuopHelpName.focus();
     })
   }
-}())
+}());
+
+
+
+////////// Cookie /////////
+(function(){
+  const btnCookie = document.querySelector('#btnCookie');
+  const sectionCookie = document.querySelector('.cookie');
+  if(localStorage.getItem('cookie')){
+    sectionCookie.classList.remove("block");
+  } else {
+    if(btnCookie&&sectionCookie){
+    sectionCookie.classList.add("block");
+    btnCookie.addEventListener('click', function(){
+      sectionCookie.classList.remove("block");
+      localStorage.setItem('cookie', '1');
+    })
+  }
+  } 
+}());
 
 
 

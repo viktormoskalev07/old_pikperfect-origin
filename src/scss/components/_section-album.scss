@@ -219,6 +219,12 @@
     }
     .section-album__block{
       margin-bottom: 24px;
+      @include tablet{
+        width: 44%;
+      }
+      @include desktop-md{
+        width: 28%;
+      }
     }
     .section-album__title{
       @include tablet{

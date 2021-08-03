@@ -43,6 +43,17 @@
         padding: 70px 8%;
       }
     }
+    &_l-padding{
+      @include desktop-sm{
+        padding: 70px 7%;
+      }
+    }
+    &_m-padding{
+      @include desktop-sm{
+        padding: 70px 6.5%;
+      }
+    }
+
   }
   &__title{
     font-size: 32px;

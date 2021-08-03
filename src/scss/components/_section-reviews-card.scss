@@ -1,0 +1,90 @@
+.section-reviews-card{
+    max-width: 1440px;
+    margin: 0 auto;
+    background: #567C8B;
+    padding: 60px 15px;
+    @include desktop-sm{
+        padding: 80px 20px;
+    }
+    &__title{
+        color: #fff;
+        text-align: center;
+        font-size: 32px;
+        @include desktop-sm{
+            font-size: 48px;
+        }
+        span{
+            margin-top: 16px;
+            display: block;
+            font-size: 20px;
+            font-family: 'Open Sans';
+        }
+    }
+    &__wrap{
+        max-width: 1260px;
+        margin: 48px auto 65px;
+        @include tablet{
+            margin-top: 56px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+    }
+    &__card{
+        padding: 40px 30px 24px;
+        text-align: center;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;    
+        @include desktop-sm{
+            padding: 40px 35px;
+        }
+        @include tablet{
+            width: 47%;
+        }
+        @include tabtoslide{
+            width: 32%;
+        }
+        .name, .profession{
+            font-size: 18px;
+            text-transform: capitalize;
+        }
+        .name{
+            font-weight: 800;            
+        }
+        .profession{
+            font-style: italic;
+            margin-bottom: 0;
+        }
+    }
+    &__text{
+        margin-bottom: 40px;
+    }
+    &__stars{
+        padding-bottom: 40px;
+        display: block;
+    }
+    &__button{
+        display: block;
+        max-width: 260px;
+        margin: 0 auto 16px;
+    }
+    &__bt-text{
+        font-size: 18px;
+        color: #fff;
+        text-align: center;
+    }
+    .swiper-pagination, .swiperalbum-pagination{
+        display: block;
+        @include tabtoslide{
+            display: none;
+        }
+    }
+    .swiper-slide{
+        @include tablet{
+           height: auto; 
+        }
+        
+    }
+}

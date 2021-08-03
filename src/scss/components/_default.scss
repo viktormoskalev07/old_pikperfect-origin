@@ -330,7 +330,7 @@ h6 {
 	cursor: pointer;
 }
 
-.header .menu>li>a:before {
+.header .menu>li>a:hover:before {
 	content: '';
 	position: absolute;
 	top: 0;
