@@ -66,9 +66,7 @@ function promobar (){
   xhr.open('GET', 'https://www.pikperfect.com/get-discount' );  
   xhr.responseType='json';
   xhr.addEventListener('load', function(){
-    if (xhr.status < 400) { 
-     console.log(xhr.response.code); 
-     console.log(xhr.response.text); 
+    if (xhr.status < 400) {  
      promoCode.innerHTML='Code:'+xhr.response.code;
      promoText.innerHTML=' '+xhr.response.text;
      promoText.classList.remove('promobar-hide');

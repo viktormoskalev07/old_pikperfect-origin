@@ -16,8 +16,7 @@
                 //     }, timeout);  
                 // } 
                 //   if(localStorage.getItem('font')){
-                //     addFont(0);
-                //     console.log(mediaQuery2.matches); 
+                //     addFont(0); 
                 //   }else{
                 //     if(window.matchMedia('(max-width: 480px)').matches){
                 //       addFont(1000);
@@ -26,17 +25,20 @@
                 //     }  
                 //   }
                   //fonts 
-
-
+ 
                   
      //scripts 
-     function addScript(path ,stimeout){ 
+     function addScript(path ,stimeout){  
+      if(localStorage.getItem(path)) {
+        stimeout=1; 
+      } 
       const scriptPlace = document.querySelector('#script-place'); 
       const someJs = document.createElement('script'); 
       someJs.async=true;
       someJs.src=path;  
       setTimeout(() => {
-        scriptPlace.appendChild(someJs);  
+        scriptPlace.appendChild(someJs);   
+      localStorage.setItem(path , true);
     }, stimeout);     
         return ( 
             someJs 
@@ -61,7 +63,8 @@ const mediaQuery2 = window.matchMedia('(max-width: 480px)').matches;
     addScript('js/slider.js' , 0);
  }) 
  
-  addScript('//code.jquery.com/jquery-1.11.2.min.js' , 1000).addEventListener('load',()=>{ 
+ 
+  addScript('//code.jquery.com/jquery-1.11.2.min.js' , 6000).addEventListener('load',()=>{ 
     addScript('js/jqueryWorksHere.js' , 0);
  })  
 // lazy-video 
