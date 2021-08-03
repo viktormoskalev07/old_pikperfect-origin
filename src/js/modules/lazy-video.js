@@ -1,8 +1,9 @@
 
 let videoTimeout=100;
 if(mediaQuery2){
-  videoTimeout=2000;
+  videoTimeout=6000;
 } 
+console.log(mediaQuery2);
 setTimeout(() => {
     if(document.querySelector('.lazy-video')){ 
       const videoPreloader = document.querySelector('.lazy-video__preloader'); 

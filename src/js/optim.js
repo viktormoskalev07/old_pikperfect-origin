@@ -61,7 +61,7 @@ const mediaQuery2 = window.matchMedia('(max-width: 480px)').matches;
     addScript('js/slider.js' , 0);
  }) 
  
-  addScript('//code.jquery.com/jquery-1.11.2.min.js' , 1000).addEventListener('load',()=>{ 
+  addScript('//code.jquery.com/jquery-1.11.2.min.js' , 6000).addEventListener('load',()=>{ 
     addScript('js/jqueryWorksHere.js' , 0);
  })  
 // lazy-video 
