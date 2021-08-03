@@ -1,21 +1,20 @@
 
 const videoLoder=()=>{
   const video=document.querySelector('.lazy-video__activator-js');
+  let loaded = 1;
   const videoStart=()=>{
     if(document.querySelector('.lazy-video')){ 
-      const videoPreloader = document.querySelector('.lazy-video__preloader'); 
-                        
-         video.src=video.dataset.src;  
-         loaded=0; 
-      setTimeout(() => {
-        videoPreloader.style.opacity=0;
-      }, 300);   
+      const videoPreloader = document.querySelector('.lazy-video__preloader');    
+         video.src=video.dataset.src;    
+         loaded=0;  
+        setTimeout(() => {
+          videoPreloader.style.opacity=0;
+        }, 300);   
     }
   } 
-
+ 
     if(video){
-        let videoTimeout=2000;
-        let loaded = 1;
+        let videoTimeout=2000; 
         if(mediaQuery2){
           videoTimeout=8000;
         }   
