@@ -2,8 +2,11 @@
   max-width: 1440px;
   margin: 0 auto;
   background: #567C8B;
-  padding: 51px 36px 48px;
+  padding: 51px 25px 48px;
   text-align: center;
+  .container{
+    padding: 0;
+  }
   @include tablet{
     padding: 90px 65px 80px;    
   }

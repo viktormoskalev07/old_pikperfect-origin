@@ -5,14 +5,32 @@
   @include tablet{
     padding: 60px 15px 108px;
   }
-  &_p-0{
+  &_with-img{
     padding: 0 15px;
     .section-service__cards{
         margin-bottom: 16px;
     }
+    .section-service__card{
+      max-width: 500px;
+      margin-bottom: 16px;
+      padding-bottom: 0;
+    }
     @include tablet{
       .section-service__card{
         margin-top: 0;
+        padding: 60px 0 0;
+        width: 45%;
+      }
+    }
+    @include desktop-md{
+      .section-service__card{
+        width: 31%;
+      }
+    }
+    p{
+      padding: 0 15px;
+      @include tabtoslide{
+        padding: 0;
       }
     }
   }
@@ -57,10 +75,9 @@
     }
     @include tablet{
       padding: 60px 33px 47px;
-      margin: 16px;
     }
     @include wide-screen-md{
-      max-width: 30%;
+      max-width: 31%;
     }
     p{
       max-width: 264px;
@@ -68,9 +85,11 @@
     }
   }
   &__img{
-    margin-top: 65px;
+    position: relative;
+
+    margin: 65px auto 0;
     @include tablet{
-      margin-top: 75px;
+      margin: 75px auto 0;
     }
   }
   &__number{

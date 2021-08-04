@@ -78,6 +78,9 @@
     background: transparent;
     color: #2E3031;
     margin-bottom: 0;
+    @include desktop-sm{
+      padding: 32px;
+    }
     h3{
       color: #2E3031;
       font-weight: 600;
