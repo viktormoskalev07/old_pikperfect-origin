@@ -74,6 +74,14 @@
         font-size: 24px;
       }
     }
+    .sub-title{
+      line-height: 1.5;
+      font-size: 16px;
+      font-style: normal;
+      color: #2E3031;
+      font-family: 'Open Sans';
+      font-weight: 300;
+    }
   }
   &__price{
     margin: 24px 0 40px;
@@ -186,6 +194,38 @@
     .description-img__buttons{
       @include tablet{
         margin-top: 70px;
+      }
+    }
+  }
+  &_different{
+    .description-img__content{
+      box-sizing: content-box;
+      max-width: 430px;
+      margin: 0 auto;
+      p{
+        max-width: 405px;
+      }
+    }
+    @include desktop-sm{
+      .description-img__col-5{
+        width: 50%;
+      }
+      .description-img__col-7{
+        width: 50%;
+      }
+      .button{
+        margin: 36px 0 60px;
+      }
+    }
+    @include wide-screen-sm{
+      .description-img__col-5{
+        width: 42%;
+      }
+      .description-img__col-7{
+        width: 58%;
+      }
+      .button{
+        margin: 36px 0 60px;
       }
     }
   }

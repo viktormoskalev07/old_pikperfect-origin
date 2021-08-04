@@ -2,9 +2,19 @@
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 15px 64px;
-  
   @include tablet{
     padding: 60px 15px 108px;
+  }
+  &_p-0{
+    padding: 0 15px;
+    .section-service__cards{
+        margin-bottom: 16px;
+    }
+    @include tablet{
+      .section-service__card{
+        margin-top: 0;
+      }
+    }
   }
   &__title{
     font-size: 32px;
@@ -50,11 +60,17 @@
       margin: 16px;
     }
     @include wide-screen-md{
-      max-width: 31%;
+      max-width: 30%;
     }
     p{
       max-width: 264px;
       margin: 0 auto;
+    }
+  }
+  &__img{
+    margin-top: 65px;
+    @include tablet{
+      margin-top: 75px;
     }
   }
   &__number{

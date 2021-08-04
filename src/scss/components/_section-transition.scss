@@ -7,6 +7,9 @@
   @include tablet{
     padding: 90px 65px 80px;    
   }
+  &__content{
+    margin-bottom: 48px;
+  }
   &_gray{
     background: #EDECEE;
     color: #2E3031;
@@ -17,14 +20,12 @@
   &__title{
     font-size: 32px;
     color: #fff;
-    margin-bottom: 38px;
+    margin-bottom: 20px;
     @include tablet{
       font-size: 40px;  
-      margin-bottom: 48px; 
     }
     @include desktop-md{
       font-size: 48px;   
-      margin-bottom: 62px;
     }
   }
   &__button{
@@ -42,5 +43,11 @@
         max-width: 330px;
       }      
     }
+  }
+  p{
+    max-width: 940px;
+    margin: 0 auto;
+    color: #fff;
+    margin-bottom: 48px;
   }
 }

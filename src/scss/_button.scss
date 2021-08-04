@@ -100,4 +100,11 @@
                      color: #5A6865;
               }
        }
+       &__dirty-orange{
+              background: rgba($color: #DEB299, $alpha: 1);            
+              &:hover{
+                     border: 1px solid #DEB299;
+                     color: #DEB299;
+              }
+       }
 }
