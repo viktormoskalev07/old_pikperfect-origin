@@ -54,8 +54,7 @@ images.forEach(img => {
         imageErrors.push('error!!!' + sizebit/1000 + 'kb it big!! ' );
         imageErrors.push( img );
         imageErrors.push( '\n');
-        imageErrors.push( '\n');
-
+        imageErrors.push( '\n'); 
     }
     
     const ext = path.extname(img);
@@ -67,7 +66,7 @@ images.forEach(img => {
 
 
     const outputSizes =[
-        375,460,768,1440
+        768,1440
     ]
     let noTwiceResize = 0 
     outputSizes.forEach(item =>{
