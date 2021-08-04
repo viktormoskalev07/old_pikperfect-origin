@@ -28,7 +28,7 @@ function toggleMinImg() {
               const img = pic.parentNode;
                const  name=img.dataset.name,
                      path=img.dataset.path,
-                     sizes=[375,460,768,1440];
+                     sizes=[768,1440];
              
                      setTimeout(() => {
                             imgAdder(name ,path,sizes,pic);   
