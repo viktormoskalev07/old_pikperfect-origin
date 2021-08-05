@@ -1,0 +1,49 @@
+.section-card{
+    &__container{
+        padding: 50px 15px;
+        max-width: 1300px;
+        margin: 0 auto;
+        @include tablet{
+            padding: 80px 15px;
+        }
+        @include desktop-md{
+            padding: 100px 15px;
+        }
+    }
+    &__wrap{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    &__card{
+        margin: 16px;
+        padding: 30px 20px;
+        background: #fff;
+        border: 1px solid #707070;
+        width: 100%;
+        transition: .3s;
+        &:hover{
+            background: #567C8B;
+            .section-card__title{
+                color: #fff;
+            }
+        }
+        @include tablet{
+            width: 43%;
+            padding: 30px 10px;
+        }
+        @include desktop-md{
+            width: 30%;
+        }
+        @include wide-screen-sm{
+            width: 22%;
+        }
+    }
+    &__title{
+        font-family: 'Open Sans';
+        text-align: center;
+        font-size: 18px;
+        color: #707070;
+        margin-bottom: 0;
+    }
+}
