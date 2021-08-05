@@ -7,17 +7,29 @@ if (mediaQuery.matches) {
 }   
 function imgAdder(name ,path,sizes,pic){
       
-       sizes.forEach(size => {
+       // sizes.forEach(size => {
+       //        const source = document.createElement('source');  
+       //        if(!(size==sizes[sizes.length-1])){ 
+       //               source.media=`(max-width: ${size}px)`
+       //        } 
+       //        source.srcset=`images/towebp/${path}/${name}-${size*2}.webp 2x ,    images/towebp/${path}/${name}-${size}.webp`;
+       //        source.type='image/webp';
+       //        const parent = pic.parentNode;
+       //        parent.insertBefore(source, pic);
+               
+       // });
+
+       for (let i = 0; i < sizes.length-1; i++) {
+              const size = sizes[i];
               const source = document.createElement('source');  
-              if(!(size==sizes[sizes.length-1])){ 
+              if(!(size==sizes[sizes.length-2])){ 
                      source.media=`(max-width: ${size}px)`
               } 
-              source.srcset=`images/towebp/${path}/${name}-${size*2}.webp 2x ,    images/towebp/${path}/${name}-${size}.webp`;
+              source.srcset=`images/towebp/${path}/${name}-${sizes[i+1]}.webp 2x ,    images/towebp/${path}/${name}-${size}.webp`;
               source.type='image/webp';
               const parent = pic.parentNode;
               parent.insertBefore(source, pic);
-               
-       });
+       }
       
 
 } 
@@ -28,7 +40,7 @@ function toggleMinImg() {
               const img = pic.parentNode;
                const  name=img.dataset.name,
                      path=img.dataset.path,
-                     sizes=[768,1440];
+                     sizes=[768,1440,2880];
              
                      setTimeout(() => {
                             imgAdder(name ,path,sizes,pic);   
