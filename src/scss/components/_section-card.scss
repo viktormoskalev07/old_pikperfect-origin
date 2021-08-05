@@ -7,7 +7,7 @@
             padding: 80px 15px;
         }
         @include desktop-md{
-            padding: 100px 15px;
+            padding: 100px 15px 95px;
         }
     }
     &__wrap{
@@ -45,5 +45,11 @@
         font-size: 18px;
         color: #707070;
         margin-bottom: 0;
+    }
+    &__button-text{
+        margin-top: 40px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400px;
     }
 }
