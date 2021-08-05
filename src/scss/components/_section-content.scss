@@ -1,0 +1,23 @@
+.section-content{
+    max-width: 1300px;
+    margin: 0 auto;
+    &__wrap{
+        padding: 70px 15px;
+        @include desktop-md{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+    }
+    &__context{
+        @include desktop-md{
+            width: calc(100% - 310px);
+        }
+    }
+    p{
+        text-align: center;
+        @include desktop-md{
+            text-align: left;        
+        }
+    }
+}

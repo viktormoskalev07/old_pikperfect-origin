@@ -35,10 +35,13 @@
     }
   }
   &__title{
+    text-align: center;
     font-size: 32px;
     @include tablet{
       font-size: 40px;
     }
+  }
+  h1{
     @include desktop-md{
       font-size: 48px;
     }
@@ -49,6 +52,17 @@
     margin-bottom: 0;
     @include tablet{
       font-size: 20px;
+    }
+  }
+  &__description{
+    font-size: 20px;
+    padding: 0 30px;
+    font-family: 'Spectral';
+    font-style: italic;
+    text-align: center;
+    margin-top: 24px;
+    @include tablet{
+      margin-top: 32px;
     }
   }
 }
