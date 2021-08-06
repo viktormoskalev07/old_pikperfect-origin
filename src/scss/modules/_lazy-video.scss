@@ -25,3 +25,9 @@ padding-bottom: calc(360% / 660 *100);
         }
     }
 }
+
+.video-full-hd{
+    .lazy-video{
+        padding-bottom: 56.25%; 
+    }
+}
