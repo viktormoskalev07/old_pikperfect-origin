@@ -101,6 +101,7 @@ gulp.task('image:build', async function() {
   return gulp.src(path.src.img)
       // .pipe(cache(imagemin([
       //     //png
+<<<<<<< HEAD
       //     imageminPngquant({
       //         speed: 1,
       //         quality: [0.95, 1] //lossy settings
@@ -109,12 +110,23 @@ gulp.task('image:build', async function() {
       //         more: true
       //         // iterations: 50 // very slow but more effective
       //     }),
+=======
+      //     // imageminPngquant({
+      //     //     speed: 1,
+      //     //     quality: [0.95, 1] //lossy settings
+      //     // }),
+      //     // imageminZopfli({
+      //     //     more: true
+      //     //     // iterations: 50 // very slow but more effective
+      //     // }),
+>>>>>>> main
       //     //gif
       //     // imagemin.gifsicle({
       //     //     interlaced: true,
       //     //     optimizationLevel: 3
       //     // }),
       //     //gif very light lossy, use only one of gifsicle or Giflossy
+<<<<<<< HEAD
       //     imageminGiflossy({
       //         optimizationLevel: 3,
       //         optimize: 3, //keep-empty: Preserve empty transparent frames
@@ -134,6 +146,27 @@ gulp.task('image:build', async function() {
       //     imageminMozjpeg({
       //         quality: 90
       //     })
+=======
+      //     // imageminGiflossy({
+      //     //     optimizationLevel: 3,
+      //     //     optimize: 3, //keep-empty: Preserve empty transparent frames
+      //     //     lossy: 2
+      //     // }),
+      //     //svg
+      //     // imagemin.svgo({
+      //     //     plugins: [{
+      //     //         removeViewBox: false
+      //     //     }]
+      //     // }),
+      //     //jpg lossless
+      //     // imagemin.jpegtran({
+      //     //     progressive: true
+      //     // }),
+      //     //jpg very light lossy, use vs jpegtran
+      //     // imageminMozjpeg({
+      //     //     quality: 90
+      //     // })
+>>>>>>> main
       // ])))
       .pipe(gulp.dest(path.build.img)); //И бросим в build
 });

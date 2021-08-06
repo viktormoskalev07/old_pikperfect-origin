@@ -66,7 +66,7 @@ images.forEach(img => {
 
 
     const outputSizes =[
-        768,1440
+        768,1440 , 2880
     ]
     let noTwiceResize = 0 
     outputSizes.forEach(item =>{
@@ -105,19 +105,19 @@ images.forEach(img => {
                } 
             });   
        }
-        if(oldSize>size*2-1){
-            sharp(img).webp().resize(size*2).toFile(dirname +'/'+ filename +'-'+size*2+  '.webp', (err,info)=>{
-           if(err){
-               console.log(chalk.red(err));
-           }  
-        });   
-       } else {
-           sharp(img).webp().resize(oldSize).toFile(dirname +'/'+ filename + '-'+size*2+ '.webp', (err,info)=>{
-               if(err){
-                   console.log(chalk.red(err));
-               } 
-            });   
-       }
+    //     if(oldSize>size*2-1){
+    //         sharp(img).webp().resize(size*2).toFile(dirname +'/'+ filename +'-'+size*2+  '.webp', (err,info)=>{
+    //        if(err){
+    //            console.log(chalk.red(err));
+    //        }  
+    //     });   
+    //    } else {
+    //        sharp(img).webp().resize(oldSize).toFile(dirname +'/'+ filename + '-'+size*2+ '.webp', (err,info)=>{
+    //            if(err){
+    //                console.log(chalk.red(err));
+    //            } 
+    //         });   
+    //    }
      }
  
      outputSizes.forEach(item =>{
