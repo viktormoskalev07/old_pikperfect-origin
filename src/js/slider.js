@@ -1,15 +1,4 @@
 
-if (document.querySelector('.swiperDescription')){
-  var swiper = new Swiper(".swiperDescription", {
-    pagination: {
-      el: ".swiperDescription-pagination",
-      clickable: true
-    } ,
-         
-  grabCursor:true,	 
-});
-}
-
 if (document.querySelector('.swiperalbum')){
   var swiper = new Swiper(".swiperalbum", {
     pagination: {
@@ -178,4 +167,17 @@ if (document.querySelector('.section-hero__tab-activators')){
       clickable: true,
     },
   });
+
+
+    const   BigSlider = new Swiper(".swiperBigSlider", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiperDescription-pagination",
+        clickable: true,
+      },
+    }); 
+
  
