@@ -20,4 +20,33 @@
             text-align: left;        
         }
     }
+    &__text-bottom{
+        margin-bottom: 32px;
+        @include tablet{
+            margin-bottom: 48px;
+        }
+    }
+    &__img{
+        margin-bottom: 32px;
+        @include tablet{
+
+        }
+    }
+    &__text-strong{
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    &__text-answer{
+        margin-bottom: 32px;
+        @include tablet{
+            margin-bottom: 64px;
+        }
+        strong{
+            font-weight: 600;
+        }
+    }
+    ol li{
+        margin-bottom: 20px;
+    }
 }

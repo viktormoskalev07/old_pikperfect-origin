@@ -1,0 +1,63 @@
+<div class="section-content">
+    <div class="section-content__wrap">
+        <div class="section-sidebar">
+            <h3 class="section-sidebar__title">Help Topics</h3>
+            <ul class="section-sidebar__list">
+                <li class="section-sidebar__item"><a href="4.1-photo-book-vs-photo-album.html">Product Comparision</a></li>
+                <li class="section-sidebar__item"><a href="4.2-photo-book-design-service.html">Design Service</a></li>
+                <li class="section-sidebar__item"><a href="4.3-photo-selection-service.html">Photo Selection Service</a></li>
+                <li class="section-sidebar__item"><a href="4.4-photo-album-cover-designs.html">Photo Editing Service</a></li>
+                <li class="section-sidebar__item"><a href="#">Photo Album Cover Designs</a></li>
+                <li class="section-sidebar__item"><a href="4.6-photo-book-printing-papers.html">Paper Types & Printing</a></li>
+                <li class="section-sidebar__item"><a href="4.7-uploading-photos.html">Uploading Photos</a></li>
+                <li class="section-sidebar__item"><a href="#">Prices & Delivery Times</a></li>
+                <li class="section-sidebar__item active"><a href="4.9-payment-shipping.html">Payment & Shipping</a></li>
+                <li class="section-sidebar__item"><a href="4.10-my-account.html">Orders & Account</a></li>
+                <li class="section-sidebar__item"><a href="4.11-quality-guarantee.html">Quality Guarantee</a></li>
+                <li class="section-sidebar__item"><a href="4.12-pikperfect-discounts.html">Volume Discounts</a></li>
+            </ul>
+        </div>
+        <div class="section-content__context">
+            @@include('./section-question.html',{
+                question: 'What payment options do you accept?',
+                answer: 'We accept payment via credit card (most major card types like Visa, Mastercard, American Express etc. are accepted). In the EU, Switzerland & UK, we also accept payment via bank transfer. We do not accept payment via PayPal.',
+            })
+            @@include('./section-question.html',{
+                question: 'Can I make partial payments?',
+                answer: 'Yes, you can split your payment into two parts. However, your order will only be sent to print once the complete payment has been received.',
+            })
+            @@include('./section-question.html',{
+                question: 'Which countries do you ship to?',
+                answer: 'We’re happy to say we ship to over 140 countries in the world. If you do not find your country listed in the dropdown at checkout, please email us at <a href="mailto:support@pikperfect.com" class="link">support@pikperfect.com</a> and we’ll be happy to look into this for you.',
+            })
+            @@include('./section-question.html',{
+                question: 'What is flat rate shipping?',
+                answer: 'We offer a flat rate shipping which means you can order as many books or copies of a book as you like at one time, and still pay the same shipping fee!',
+            })
+            @@include('./section-question.html',{
+                question: 'Local customs and duty charges',
+                answer: 'Applicable VAT is included in orders shipped to Switzerland, Germany and Ireland. Orders shipped to other countries do not include any VAT or taxes in the prices quoted. While books are often zero or reduced VAT rated, including the UK which currently has zero VAT on books, please check with your local authorities as PikPerfect will not be responsible for any local taxes or duties that may be levied by your local customs office.',
+            })
+            @@include('./section-question.html',{
+                question: 'What mode of shipping do you use?',
+                answer: 'We offer standard shipping where final delivery will be made by your local postal service. We also offer delivery via DHL Express, which is recommended as the more reliable and faster option. You can view the times and cost for the different options here.',
+            })
+            @@include('./section-question.html',{
+                question: 'Can I ship to multiple addresses?',
+                answer: 'A single order (which can contain multiple books) can only be shipped to one address. If you would like to ship to multiple addresses, please reorder the book/s a second time and then update your cart with the new shipping address.',
+            })
+            @@include('./section-question.html',{
+                question: 'How do I track my order?',
+                answer: 'You will be emailed a tracking number when your order ships.',
+            })
+            @@include('./section-question.html',{
+                question: 'What is the new user discount?',
+                answer: 'When offered, the new user discount offers first-time customers a 25% discount on the design fee (not the order total) for all photobooks in your first order. The new user discount code must be applied to your cart before purchase, it cannot be retroactively applied to a past order.',
+            })
+            @@include('./section-question.html',{
+                question: 'Do you require prepayment in order to print my book?',
+                answer: 'Yes. As every book is custom-printed with your photos, we can only start production once payment has been received.',
+            })
+        </div>
+    </div>
+</div>
