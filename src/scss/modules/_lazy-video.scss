@@ -11,7 +11,7 @@ padding-bottom: calc(360% / 660 *100);
         display: flex;
         justify-content: center;
         align-items: center; 
-        transition:0.3s;
+        transition:0.8s;
     } 
     &__item{
             position: absolute;
@@ -22,6 +22,8 @@ padding-bottom: calc(360% / 660 *100);
         iframe{
             height: 100%;
             width: 100%;
+            transition: 0.7s;
+            opacity: 0;
         }
     }
 }
