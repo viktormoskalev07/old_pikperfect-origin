@@ -3,6 +3,11 @@
   max-width: 1440px;
   margin: 0 auto;
   margin-bottom: 32px;
+  &_mb{
+    @include wide-screen-md{
+      margin-bottom: 112px;
+    }
+  }
   &_size-m{ 
     margin: 0 15px 15px;   
     @include wide-screen-md{
@@ -13,15 +18,21 @@
     margin: 0 auto; 
     max-width: 1376px;
   }
-  &__block{
+  &__block-wrap{
     position: absolute;
     width: 100%;
-    max-width: 510px;
+    max-width: 540px;
     height: 180px;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+    margin: auto;
+    @include tablet{
+      height: 245px;
+    }
+  }
+  &__block{
     background: rgba(255, 255, 255, 0.85);
     text-align: center;
     padding: 32px;
@@ -29,9 +40,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: auto;
-    @include tablet{
-      height: 245px;
+    margin: 0 15px;
+    @include desktop-md{
+      padding: 75px 20px;
     }
   }
   &__title{
@@ -40,6 +51,15 @@
     @include tablet{
       font-size: 40px;
       margin-bottom: 24px;
+    }
+    &_small{
+      font-size: 24px;
+      @include mobile-lg{
+        font-size: 32px;
+      }
+      @include desktop-md{
+        font-size: 40px;
+      }
     }
   }
   h1{
@@ -63,7 +83,7 @@
     text-align: center !important;
     margin-top: 24px;
     @include tablet{
-      margin-top: 32px;
+      margin-top: 38px;
     }
   }
   &__img{
@@ -71,5 +91,15 @@
     @include desktop-md{
       margin-bottom: 32px;
     }
+  }
+  figure{
+    padding-bottom: calc(265% / 360 * 100);
+    height: 100%;
+    @include tablet{
+      padding-bottom: calc(630% / 1000 * 100);
+    }		
+    @include wide-screen-sm{
+      padding-bottom: calc(505% / 1440 * 100);
+    }		
   }
 }
