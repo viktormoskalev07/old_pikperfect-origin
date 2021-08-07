@@ -9,7 +9,11 @@ const videoLoder=()=>{
          loaded=0;  
         setTimeout(() => {
           videoPreloader.style.opacity=0;
-        }, 300);   
+         
+          setTimeout(() => {
+            video.style.opacity=1;
+          }, 100);
+        }, 900);   
     }
   } 
  
