@@ -1,35 +1,9 @@
-// <section class="gallery__container">
-
-//         <div class="gallery__background"></div>
-//         <button type="button" class="gallery__close"> close gallery</button>
-//     <div class="gallery__content">
  
-//         <div class="swiper-container mySwiper">
-//             <div class="swiper-wrapper">
-//               <div class="swiper-slide">
-//                 <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-//               </div>
-//               <div class="swiper-slide">
-//                 <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-//               </div>
-//               <div class="swiper-slide">
-//                 <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-//               </div>
-//               <div class="swiper-slide">
-//                 <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-//               </div>
-//             </div>
-//             <div class="swiper-button-next"></div>
-//             <div class="swiper-button-prev"></div>
-//             <div class="swiper-pagination"></div>
-//           </div>
-//     </div>
-
-// </section>
 
 .gallery{
     &__container{
-        z-index: 1001;
+        transition: all 0.4s;
+        z-index: 1002;
         position: fixed;
         top: 0;
         left: 0;
@@ -37,22 +11,26 @@
         bottom: 0; 
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center; 
+         overflow: hidden;
     }
   
     &__close{
-        border: solid black 2px;
-        z-index: 1002;
+        border: solid black 1px;
+        z-index: 1003;
+        background-color: #fff;
         display: block;
         cursor: pointer;
         transition: 0.4s;
         position: fixed;
-        right: 90px;
+        right: 4%; 
         font-size: 0;
         height: 40px;
-        width: 40px;
-        background-color: transparent;
-        top: 40px;
+        width: 40px; 
+        top: 4vh;
+        @include wide-screen-md{
+            top: 40px;
+        }
         border-radius: 50%;
         &:hover{
             transform: rotate(180deg); 
@@ -65,7 +43,7 @@
             top:calc(50% - 1px); 
             content: ''; 
             font-size: 0;
-            height: 3px; 
+            height: 2px; 
             padding:0 20%;
             background-color: rgb(0, 0, 0);
             background-clip: content-box;
@@ -80,15 +58,144 @@
     &__background{
         background-color: white;
         opacity: 0.9;
-        position: fixed;
+        position: absolute;
         top: 0;bottom: 0;right: 0;left: 0;
     }
     &__content{
-        max-width: 1024px;
-        max-height: 540px;
+        width: calc(100% - 20px); 
+        @include mobile-lg{
+            width: calc(100% - 120px);  
+        }  
+        @include wide-screen-md{
+            width: calc(100% - 400px); 
+        } 
         margin: 0 auto;
+        overflow: hidden; 
+            img{
+                width: 100%;
+            }
+    }
+
+    &__next, &__prev{
+        height: 86px;
+        width: 86px;
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+        @include mobile-lg{
+         
+            position: absolute;
+            top:calc(50% - 48px);
+        }   
+     
+    }
+    &__next{
+        @include mobile-lg{
+            right: -10px;
+        }
+        @include wide-screen-md{
+        right: 70px; 
+        }
+    }
+    &__prev{
+        @include mobile-lg{
+            left: -10px;
+        }
+        @include wide-screen-md{
+        left:70px;
+        }
+    }
+    &__fade{
+        opacity: 0;
+        pointer-events: none;
+    }
+    &__d-none{
+        display: none;
+    }
+    &__item{
+        background-color: $primary;
+        height: 0;
         overflow: hidden;
-            border:solid 4px   $primary;
+        padding-bottom: calc(540 / 1043 * 100%);
+          
+    }
+    &__image{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0; 
+        right: 0;
+        height: auto;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    &__controls{
+        padding-top: 10px;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        width: 320px;
+        align-items: center;
+    }
+    &__fullscreen-btn{
+        transition: 1s;
+          border:solid rgb(223, 223, 223)    1px;
+         background-color: rgb(255, 255, 255);
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+         padding:  10px;
+        position: relative;
+        margin-bottom: 8px;
+        img{
+            height: 100%;
+            width: auto;
+            object-fit: contain;
+        }
+        @include mobile-lg{
+            display: none;
+        }
+    }
+    &__fullscreen-open{
+        transform: rotate(90deg);
+        transform-origin: 0% 0%;
+        width: 100vh;
+        height: 100vw;
+         left: 100vw;
+         top: 0;
+         bottom: 0;
+         .gallery{
+            &__next , &__prev{
+                position: absolute;
+                bottom: 0px;
+            }
+            &__next{
+                right: 0px;
+            }
+            &__prev{
+                left: 0px;
+                
+            }
+            &__fullscreen-btn{
+                z-index: 1004;
+              position: absolute;
+              right: 20px;
+              top: 10px; 
+              transform: rotate(90deg);
+            }
+            &__close{
+                left: 20px;
+                top: 10px;
+            }
+            &__content{
+                width: 80%;
+            }
+         } 
     }
 }
+ 
  

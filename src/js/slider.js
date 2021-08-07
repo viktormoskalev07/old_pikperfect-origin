@@ -1,6 +1,6 @@
 
 if (document.querySelector('.swiperalbum')){
-  var swiper = new Swiper(".swiperalbum", {
+  var swiperAlbum = new Swiper(".swiperalbum", {
     pagination: {
       el: ".swiperalbum-pagination",
       clickable: true
@@ -25,13 +25,10 @@ if (document.querySelector('.swiperalbum')){
     }, 
 });
 }
+  
  
-
-
-
-
-
-var swiper = new Swiper(".section-reviews__swiper", {
+if (document.querySelector(".section-reviews__swiper")){
+var swiper123 = new Swiper(".section-reviews__swiper", {
     loop:true,
     autoplay: {
         delay: 3000,
@@ -59,9 +56,9 @@ var swiper = new Swiper(".section-reviews__swiper", {
       },
     }
   });
-
-
-  var swiper = new Swiper(".section-reviews-card__wrap", {
+}
+if (document.querySelector(".section-reviews-card__wrap")){
+  var swiper312 = new Swiper(".section-reviews-card__wrap", {
     loop:true,
     autoplay: {
         delay: 3000,
@@ -85,11 +82,8 @@ var swiper = new Swiper(".section-reviews__swiper", {
       },
     }
   });
-
-
+}
  
-
-
   function videoInSlider(){ 
     const videoSlide = document.querySelector('.hero-video-slide'); 
     const videoPreloader = document.querySelector('.hero-video-slide__preloader'); 
@@ -152,23 +146,7 @@ if (document.querySelector('.section-hero__tab-activators')){
     });     
     videoInSlider(); 
 }
-
-
- 
-  const   Gallery = new Swiper(".swiperGallery", {
-    spaceBetween: 30,
-    effect: "fade",
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
-
-
+if (document.querySelector('.swiperBigSlider')){ 
     const   BigSlider = new Swiper(".swiperBigSlider", {
       navigation: {
         nextEl: ".swiper-button-next",
@@ -179,5 +157,7 @@ if (document.querySelector('.section-hero__tab-activators')){
         clickable: true,
       },
     }); 
-
+  }
  
+
+  @@include('galery.js')
