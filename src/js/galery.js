@@ -1,21 +1,33 @@
 (function(){
    const container = document.querySelector('.gallery__container');
-   const activator = document.querySelectorAll('.gallery__activator-js');
-   const close = document.querySelector('.gallery__close');
-   const slidePlace =container.querySelector('.swiper-wrapper');
-   const fullscreen = container.querySelector('.gallery__fullscreen-btn')
-   
+   let activator  ;
+   let close      ;
+   let slidePlace ;
+   let fullscreen ;
+   let closeGalery;
+   if(container){
+          activator = document.querySelectorAll('.gallery__activator-js');
+          activator.forEach(i => {
+            i.classList.add('cursor-pointer');
+          });
+           
+         close = document.querySelector('.gallery__close');
+         slidePlace =container.querySelector('.swiper-wrapper');
+         fullscreen = container.querySelector('.gallery__fullscreen-btn')  
+          closeGalery=()=>{
+            container.classList.add('gallery__fade');
+            setTimeout(() => {
+                container.classList.add('gallery__d-none');
+            }, 400);   
+            GallerySlider.destroy(true, true);
+            slidePlace.innerHTML=''; 
+            document.body.style.overflow='auto';
+        } 
+   }
+ 
    let slides;
    let GallerySlider 
-    const closeGalery=()=>{
-        container.classList.add('gallery__fade');
-        setTimeout(() => {
-            container.classList.add('gallery__d-none');
-        }, 400);   
-        GallerySlider.destroy(true, true);
-        slidePlace.innerHTML=''; 
-        document.body.style.overflow='auto';
-    }
+  
  const openGalery =function(){  
 
     const folder = this.dataset.folder;
@@ -64,6 +76,7 @@
      }, 1);
  }
     if(container&&activator){ 
+      
         close.addEventListener('click' ,closeGalery); 
         document.addEventListener('keydown' , function(event){
             console.log(event.keyCode==27);
