@@ -20,14 +20,18 @@
         font-size: 24px;
         @include tablet{
             font-size: 40px;
+            margin-bottom: 28px;
         }
     }
     th{
         background: #7070704D;
         text-align: center;
-        padding: 48px 20px;
+        padding: 62px 20px;
         span{
             display: block;
+        }
+        @include tablet{
+            padding: 35px 20px;
         }
     }
     td{
@@ -62,7 +66,7 @@
         }
     }
     .name-type{
-        padding: 48px 15px;
+        padding: 38px 15px;
         font-size: 14px;
         font-weight: 400;
         background: #70707026;

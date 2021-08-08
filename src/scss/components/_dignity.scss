@@ -8,6 +8,11 @@
   @include desktop-sm{
     padding: 88px 32px 57px;
   }
+  &_more{
+    @include desktop-sm{
+      padding: 88px 32px 76px;
+    }
+  }
   &__container{
     max-width: 1200px;
     margin: 0 auto;
@@ -36,18 +41,19 @@
   &__block{
     padding: 0 50px;
     text-align: center;
-    margin-bottom: 45px;
+    margin-bottom: 65px;
     @include tablet{
       width: 45%;
       padding: 0 15px;
+      margin-bottom: 45px;
     }
     @include desktop-md{
       display: flex;
       width: 31%;
       text-align: left;
+      justify-content: center;
       margin: 0;
     }
-    
   }
   &__img {
     width: 60px;
@@ -68,10 +74,13 @@
     }
   }
   h3{
-    font-size: 24px;
+    font-size: 20px;
     color: #fff;
     margin-bottom: 5px;
     line-height: 1.3;
+    @include tabtoslide{
+      font-size: 24px;
+    }
   }
   &_blocks{    
     padding: 32px 15px;
@@ -118,11 +127,33 @@
       
     }
   }
+  &_p-0{
+    padding: 32px 15px 0;
+    @include desktop-sm{
+      padding: 32px;
+    }
+  }
   &_gray{
     background-color: #EDECEE;
     color: #2F353A;
     h2, h3{
       color: #2F353A;
+    }
+  }
+  &__block_center{
+    @include desktop-md{
+      padding: 45px 32px 43px;
+    }
+    .dignity__img{
+      @include tabtoslide{
+        margin: 0 15px 0 0;
+      }
+    }
+    .dignity__content{
+      width: auto;
+      @include tabtoslide{
+        max-width: 190px;
+      }
     }
   }
 }

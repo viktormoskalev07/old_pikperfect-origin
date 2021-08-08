@@ -10,6 +10,12 @@
   @include desktop-md{
     padding: 125px 23px 112px;
   }
+  &_size-s{
+    padding: 61px 16px;
+    @include desktop-md{
+      padding: 125px 23px 112px;
+    }
+  }
   &__container{
     max-width: 880px;
     margin: 0 auto;

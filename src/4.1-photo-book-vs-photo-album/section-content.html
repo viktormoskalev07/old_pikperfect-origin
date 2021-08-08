@@ -18,18 +18,23 @@
             </ul>
         </div>
         <div class="section-content__context">
-            <p style="font-size: 20px;"><strong>What is the difference between a photo book and a photo album, and which one is right for you?</strong></p>
+            <p class="section-content__text-entered"><strong>What is the difference between a photo book and a photo album, and which one is right for you?</strong></p>
             <p class="section-content__text-bottom">We’ve created an easy to understand album guide to help you select the book that tells your story the way it’s meant to be told. If you are unsure of which album to select, our designers will be happy to recommend one for you based on your photographs.</p>
             <div class="section-content__img">
-                @@include('../i/resp-img2.html',{
-                    src:'photobook-vs-photo-album-comparision',
-                    type:'jpg',
-                    alt:'The same design printed as a photo book and a photo album',
-                    priority:'1',  
-                    width:'938',
-                    height:'377',
-                    folder:'4.1-photo-book-vs-photo-album',
-                }) 
+                <figure class="figure-webp figure-webp_mini">
+                    @@include('../i/img-2.html',{
+                      src:'photobook-vs-photo-album-comparision',
+                      type:'jpg',
+                      alt:'The same design printed as a photo book and a photo album',
+                      priority:'1',
+                      folder:'4.1-photo-book-vs-photo-album',
+                      })   
+                  </figure> 
+                <div class="section-content__signature">
+                    <p>Photobook (72 pages)</p>
+                    <p>Layflat Photo Album (72 pages)</p>
+                    <p style="padding: 26px 10px">Premium Layflat Photo Album (72 pages)</p>
+                </div>
             </div>
 
             <div class="section-img video-full-hd">
@@ -42,7 +47,7 @@
             </div>
 
             <div class="section-img">
-                <h2 class="section-img__title">What is a Photo Book?</h2>
+                <h2 class="section-img__title section-img__title_small">What is a Photo Book?</h2>
                 <div class="section-img__img">
                     @@include('../i/resp-img2.html',{
                         src:'photo-book',
@@ -59,7 +64,7 @@
             </div>
 
             <div class="section-img">
-                <h2 class="section-img__title">What is a Layflat Photo Album?</h2>
+                <h2 class="section-img__title section-img__title_small">What is a Layflat Photo Album?</h2>
                 <div class="section-img__img">
                     @@include('../i/resp-img2.html',{
                         src:'layflat-photobook',
@@ -76,7 +81,7 @@
             </div>
 
             <div class="section-img">
-                <h2 class="section-img__title">What is a Premium Layflat Photo Album?</h2>
+                <h2 class="section-img__title section-img__title_small">What is a Premium Layflat Photo Album?</h2>
                 <div class="section-img__img">
                     @@include('../i/resp-img2.html',{
                         src:'flush-mount-album',
