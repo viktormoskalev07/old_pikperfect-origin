@@ -35,8 +35,7 @@
                 /> 
                 </figure> 
                 <div class="swiper-lazy-preloader swiper-lazy-preloader-white "></div>
-                    </div> 
-                 
+                    </div>  
                 `; 
         });
         slidePlace.innerHTML=slides; 

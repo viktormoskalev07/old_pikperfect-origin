@@ -22,7 +22,7 @@
         display: block;
         cursor: pointer;
         transition: 0.4s;
-        position: fixed;
+        position: absolute;
         right: 4%; 
         font-size: 0;
         height: 40px;
@@ -62,6 +62,7 @@
         top: 0;bottom: 0;right: 0;left: 0;
     }
     &__content{
+         
         width: calc(100% - 20px); 
         @include mobile-lg{
             width: calc(100% - 120px);  
@@ -142,6 +143,7 @@
         align-items: center;
     }
     &__fullscreen-btn{
+        z-index: 1003;
         transition: 1s;
           border:solid rgb(223, 223, 223)    1px;
          background-color: rgb(255, 255, 255);
@@ -157,7 +159,10 @@
             object-fit: contain;
         }
         @include mobile-lg{
-            display: none;
+            left: 3%; 
+            font-size: 0;
+             top: 4vh; 
+             position: absolute;
         }
     }
     &__fullscreen-open{
@@ -185,6 +190,7 @@
               position: absolute;
               right: 20px;
               top: 10px; 
+              left: auto;
               transform: rotate(90deg);
             }
             &__close{
