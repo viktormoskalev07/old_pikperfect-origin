@@ -117,16 +117,10 @@ const popupLogin = (hasLogin) => {
     accordTrigger.addEventListener("click", () => {
 
         if (accordTrigger.checked === true) {
-          accordBody.style.display = 'block'
-          setTimeout(() => {
-            accordBody.classList.add("active");
-            accordInputSocial.setAttribute('required', true)
-            accordInputPurchase.setAttribute('required', true)
-          }, 0);
+          accordBody.style.display = 'block' 
+            accordBody.classList.add("active");  
         } else {
-          accordBody.classList.remove("active");
-          accordInputSocial.setAttribute('required', false)
-          accordInputPurchase.setAttribute('required', false)
+          accordBody.classList.remove("active"); 
           setTimeout(() => {
             accordBody.style.display = 'none'
           }, 300);

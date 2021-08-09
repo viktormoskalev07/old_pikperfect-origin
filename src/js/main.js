@@ -155,3 +155,4 @@ promobar();
 @@include('modules/popup-login.js')
 @@include('modules/card-filter.js')
 @@include('modules/optim.js')
+@@include('modules/form-errors.js')
