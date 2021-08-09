@@ -1,17 +1,19 @@
 .popup-help{
     border-radius: 5px;
-    
     position: fixed;
     display: none;
-  
     bottom: 100px;
- 
-    
-    @include mobile-md {
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    max-width: 355px;
+    @include tablet{
         right: 20px;
-        max-width: 355px;
+        margin: 0;
+        left: auto;
     }
     @media (max-height:760px) {
+        right: 20px;
         .tab-content__textarea{
             max-height: 80px;
         }
