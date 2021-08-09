@@ -13,9 +13,9 @@ window.addEventListener("load", function () {
     }
 
     if (window.scrollY >= 50) {
-      header.classList.add("header-shadow"); 
+      header.classList.add("header-shadow");
     } else {
-      header.classList.remove("header-shadow"); 
+      header.classList.remove("header-shadow");
     }
   });
   // body = document.body;
@@ -27,14 +27,7 @@ window.addEventListener("load", function () {
     .querySelector(".header .menu-btn")
     .addEventListener("click", function (e) {
       header.classList.toggle("menu-open");
-      if (header.classList.contains("menu-open")) {
-        // scrollWidth = window.innerWidth - html.offsetWidth + "px";
-        // body.style.paddingRight = scrollWidth;
-      } else {
-        // body.style.paddingRight = 0;
-      }
       document.querySelector("body").classList.toggle("overflow");
-
       e.preventDefault();
     });
 
@@ -51,87 +44,87 @@ window.addEventListener("load", function () {
     })
   );
 });
- 
+
 
 // promobar
 
 
 
- 
-function promobar (){
+
+function promobar() {
   const xhr = new XMLHttpRequest();
   const promoText = document.querySelector('#promo-place-text');
   const promoCode = document.querySelector('#promo-place-code');
-   
-  xhr.open('GET', 'https://www.pikperfect.com/get-discount' );  
-  xhr.responseType='json';
-  xhr.addEventListener('load', function(){
-    if (xhr.status < 400) {  
-     promoCode.innerHTML='Code:'+xhr.response.code;
-     promoText.innerHTML=' '+xhr.response.text;
-     promoText.classList.remove('promobar-hide');
-     setTimeout(() => {
-         promoCode.classList.remove('promobar-hide');
-     }, 600); 
-  } 
+
+  xhr.open('GET', 'https://www.pikperfect.com/get-discount');
+  xhr.responseType = 'json';
+  xhr.addEventListener('load', function () {
+    if (xhr.status < 400) {
+      promoCode.innerHTML = 'Code:' + xhr.response.code;
+      promoText.innerHTML = ' ' + xhr.response.text;
+      promoText.classList.remove('promobar-hide');
+      setTimeout(() => {
+        promoCode.classList.remove('promobar-hide');
+      }, 600);
+    }
   })
-    xhr.send();
+  xhr.send();
 }
- 
-  // promobar(); 
+
+promobar(); 
 // promobar
 
- (function(){
-const changePass = document.querySelector("#change-pass");
- if(changePass){
-  changePass.addEventListener('click', function(){
-    document.querySelector('.tab-content__wrap-block').classList.toggle('block');
-    document.querySelector("#register-current-password").focus();
-  })
- }
- }());
-
- 
-
-(function(){
-const textareaCount = document.querySelector("#textareaCount");
-const textCounter = document.querySelector("#textCounter");
-if(textareaCount&&textCounter){
-  textareaCount.addEventListener('input', function(){
-   textCounter.innerText = textareaCount.value.length;
-  })
-}
+(function () {
+  const changePass = document.querySelector("#change-pass");
+  if (changePass) {
+    changePass.addEventListener('click', function () {
+      document.querySelector('.tab-content__wrap-block').classList.toggle('block');
+      document.querySelector("#register-current-password").focus();
+    })
+  }
 }());
 
 
-  (function(){
-    const copyText = document.getElementById("copyCode");
-    const copyLink = document.getElementById("copyLink");
-    if(copyText&&copyLink){
-      copyLink.addEventListener('click', function(){
+
+(function () {
+  const textareaCount = document.querySelector("#textareaCount");
+  const textCounter = document.querySelector("#textCounter");
+  if (textareaCount && textCounter) {
+    textareaCount.addEventListener('input', function () {
+      textCounter.innerText = textareaCount.value.length;
+    })
+  }
+}());
+
+
+(function () {
+  const copyText = document.getElementById("copyCode");
+  const copyLink = document.getElementById("copyLink");
+  if (copyText && copyLink) {
+    copyLink.addEventListener('click', function () {
       window.navigator.clipboard.writeText(copyText.innerText)
     })
-  }    
+  }
 }());
 
-(function(){
+(function () {
   const btnPopupHelp = document.querySelector('#popupHelp');
   const PopupHelp = document.querySelector('.popup-help');
-  const PopuopHelpName = document.querySelector("#popup-help-name");
-  
-  function helpPopupClose(e){
-    if(!(e.target.matches('.popup-help *'))){
-    PopupHelp.classList.remove('active');
-    btnPopupHelp.classList.remove('active');
-    document.body.removeEventListener('click',helpPopupClose)
-    }    
+  const PopuopHelpName = document.querySelector("#popupHelpName");
+
+  function helpPopupClose(e) {
+    if (!(e.target.matches('.popup-help *'))) {
+      PopupHelp.classList.remove('active');
+      btnPopupHelp.classList.remove('active');
+      document.body.removeEventListener('click', helpPopupClose)
+    }
   }
-  if(btnPopupHelp&&PopupHelp){
-    btnPopupHelp.addEventListener('click', function(e){
+  if (btnPopupHelp && PopupHelp) {
+    btnPopupHelp.addEventListener('click', function (e) {
       e.stopPropagation()
       PopupHelp.classList.toggle('active');
       btnPopupHelp.classList.toggle('active');
-      document.body.addEventListener('click' ,helpPopupClose );
+      document.body.addEventListener('click', helpPopupClose);
       PopuopHelpName.focus();
     })
   }
@@ -140,27 +133,25 @@ if(textareaCount&&textCounter){
 
 
 ////////// Cookie /////////
-(function(){
+(function () {
   const btnCookie = document.querySelector('#btnCookie');
   const sectionCookie = document.querySelector('.cookie');
-  if(localStorage.getItem('cookie')){
+  if (localStorage.getItem('cookie')) {
     sectionCookie.classList.remove("block");
   } else {
-    if(btnCookie&&sectionCookie){
-    sectionCookie.classList.add("block");
-    btnCookie.addEventListener('click', function(){
-      sectionCookie.classList.remove("block");
-      localStorage.setItem('cookie', '1');
-    })
+    if (btnCookie && sectionCookie) {
+      sectionCookie.classList.add("block");
+      btnCookie.addEventListener('click', function () {
+        sectionCookie.classList.remove("block");
+        localStorage.setItem('cookie', '1');
+      })
+    }
   }
-  } 
 }());
-
-
-
+ 
 
 @@include('modules/imgpreloader.js')
 @@include('modules/accordion.js') 
-@@include('modules/popup-mobile.js')
 @@include('modules/popup-login.js')
 @@include('modules/card-filter.js')
+@@include('modules/optim.js')

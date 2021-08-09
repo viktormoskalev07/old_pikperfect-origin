@@ -1,10 +1,29 @@
 .popup-help{
     border-radius: 5px;
-    max-width: 355px;
+    
     position: fixed;
     display: none;
+  
     bottom: 100px;
-    right: 20px;
+ 
+    
+    @include mobile-md {
+        right: 20px;
+        max-width: 355px;
+    }
+    @media (max-height:760px) {
+        .tab-content__textarea{
+            max-height: 80px;
+        }
+        bottom: 70px;
+    }
+    @media (max-height:600px) {
+        bottom: 20px;
+        .tab-content__textarea{
+            max-height: 40px;
+        }
+    }
+ 
     background: #fff;
     z-index: 1001;
     box-shadow: 0px -2px 15px #21252926;
@@ -34,10 +53,25 @@
     }
     &__btn{
         z-index: 1001;
+     
         position: fixed;
         bottom: 0;
         right: 20px;
         cursor: pointer;
+        @media (max-height:600px) {
+            z-index: 1002;
+            height: 50px;
+            width: 50px;
+            right: 5px;
+            bottom: 5px;
+        }
+        @media (max-height:750px) {
+            z-index: 1002;
+            height: 70px;
+            width: 70px;
+            right: 0px;
+            bottom: 0px;
+        }
         .first-img{
             position: relative;
         }

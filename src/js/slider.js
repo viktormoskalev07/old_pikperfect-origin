@@ -160,4 +160,4 @@ if (document.querySelector('.swiperBigSlider')){
   }
  
 
-  @@include('galery.js')
+  @@include('modules/galery.js')

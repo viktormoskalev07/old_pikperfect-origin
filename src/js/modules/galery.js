@@ -21,7 +21,7 @@
             }, 400);   
             GallerySlider.destroy(true, true);
             slidePlace.innerHTML=''; 
-            document.body.style.overflow='auto';
+            document.body.classList.remove('overflow-h');
         } 
    }
  
@@ -69,7 +69,7 @@
   
      }
 
-     document.body.style.overflow='hidden';
+     document.body.classList.add('overflow-h');
      container.classList.remove('gallery__d-none');
      setTimeout(() => { 
         container.classList.remove('gallery__fade');

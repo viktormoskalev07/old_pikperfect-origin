@@ -6,18 +6,7 @@ if (mediaQuery.matches) {
        baseDelay = 800;
 }   
 function imgAdder(name ,path,sizes,pic){
-      
-       // sizes.forEach(size => {
-       //        const source = document.createElement('source');  
-       //        if(!(size==sizes[sizes.length-1])){ 
-       //               source.media=`(max-width: ${size}px)`
-       //        } 
-       //        source.srcset=`images/towebp/${path}/${name}-${size*2}.webp 2x ,    images/towebp/${path}/${name}-${size}.webp`;
-       //        source.type='image/webp';
-       //        const parent = pic.parentNode;
-       //        parent.insertBefore(source, pic);
-               
-       // });
+ 
 
        for (let i = 0; i < sizes.length-1; i++) {
               const size = sizes[i];

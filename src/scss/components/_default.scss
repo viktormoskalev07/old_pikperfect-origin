@@ -28,7 +28,7 @@ body {
 
 a {
 	text-decoration: none;
-	transition: 0.4;
+	transition: 0.4s;
 }
 
 a:hover {
@@ -485,8 +485,8 @@ h6 {
   display: block;
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   min-width: 27.9375rem;
   left: auto!important;
   right: -8.2rem!important;
