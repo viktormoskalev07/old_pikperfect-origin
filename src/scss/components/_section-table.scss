@@ -23,6 +23,22 @@
             margin-bottom: 28px;
         }
     }
+    &__img{
+        margin-bottom: 20px;
+    }
+    &__link{
+        color: #567C8B;
+        text-align: right;
+        display: block;
+        font-weight: 400;
+        transition: .3s;
+        img{
+            margin-left: 12px;
+        }
+        &:hover{
+            color: #004a68; 
+        }
+    }
     th{
         background: #7070704D;
         text-align: center;
@@ -65,6 +81,12 @@
             text-decoration: none;
         }
     }
+    .size-album{
+        font-weight: 300;
+    }
+    .pages-album{
+        font-weight: 400;
+    }
     .name-type{
         padding: 38px 15px;
         font-size: 14px;
@@ -75,6 +97,16 @@
         }
         @include wide-screen-sm{
             min-width: 195px;
+        }
+    }
+    &_album{
+        margin-bottom: 32px;
+        @include tablet{
+            margin-bottom: 74px;
+        }
+        th{
+            vertical-align: bottom;
+            padding: 35px 16px;
         }
     }
 }

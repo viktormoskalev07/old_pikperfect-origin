@@ -58,4 +58,9 @@
       color: #2E3031;
     }
   }
+  &__text{
+    @include tablet{
+      font-size: 20px;
+    }
+  }
 }

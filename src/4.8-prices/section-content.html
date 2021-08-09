@@ -1,0 +1,73 @@
+<section class="section-content">
+    <div class="section-content__wrap">
+        <div class="section-sidebar">
+            <h3 class="section-sidebar__title">Help Topics</h3>
+            <ul class="section-sidebar__list">
+                <li class="section-sidebar__item"><a href="4.1-photo-book-vs-photo-album.html">Product Comparision</a></li>
+                <li class="section-sidebar__item"><a href="4.2-photo-book-design-service.html">Design Service</a></li>
+                <li class="section-sidebar__item"><a href="4.3-photo-selection-service.html">Photo Selection Service</a></li>
+                <li class="section-sidebar__item"><a href="4.4-photo-album-cover-designs.html">Photo Editing Service</a></li>
+                <li class="section-sidebar__item"><a href="#">Photo Album Cover Designs</a></li>
+                <li class="section-sidebar__item"><a href="4.6-photo-book-printing-papers.html">Paper Types & Printing</a></li>
+                <li class="section-sidebar__item"><a href="4.7-uploading-photos.html">Uploading Photos</a></li>
+                <li class="section-sidebar__item active"><a href="4.8-prices.html">Prices & Delivery Times</a></li>
+                <li class="section-sidebar__item"><a href="4.9-payment-shipping.html">Payment & Shipping</a></li>
+                <li class="section-sidebar__item"><a href="4.10-my-account.html">Orders & Account</a></li>
+                <li class="section-sidebar__item"><a href="4.11-quality-guarantee.html">Quality Guarantee</a></li>
+                <li class="section-sidebar__item"><a href="4.12-pikperfect-discounts.html">Volume Discounts</a></li>
+            </ul>
+        </div>
+        <div class="section-content__context">
+            <div class="section-block">
+                <p class="section-block__text-entered">PikPerfect offers a wide range of photo books and wedding albums, to suit every need and budget. Start by choosing which album type that appeals to you most, and then customize your photobook by choosing the size, cover and number of pages.</p>
+                <div class="section-block__wrap">
+                    @@include('./section-block.html',{
+                        img:'layflat-photo-album',
+                        typeImg:'jpg',
+                        alt:'A open layflat photo album showing beautiful panoramic spreads',
+                        folder:'4.8-prices',
+                        width:'270',
+                        height:'180',
+                        title:'Premium Layflat Albums',
+                        typeAlbum:'Our Luxury Line',
+                        price:'From $199',
+                        link:'#',
+                    })
+                    @@include('./section-block.html',{
+                        img:'premium-layflat-album',
+                        typeImg:'jpg',
+                        alt:'A open premium layflat album showing thick pages',
+                        folder:'4.8-prices',
+                        width:'270',
+                        height:'180',
+                        title:'Layflat Photo Album',
+                        typeAlbum:'Our Bestseller',
+                        price:'From $74.90',
+                        link:'#',
+                    })
+                    @@include('./section-block.html',{
+                        img:'photo-book',
+                        typeImg:'jpg',
+                        alt:'An open everyday photo book with image of dogs',
+                        folder:'4.8-prices',
+                        width:'270',
+                        height:'180',
+                        title:'Photo Books',
+                        typeAlbum:'Our Everyday Classic',
+                        price:'From $39.90',
+                        link:'#',
+                    })
+                </div>
+                <p>Not sure which photo book or album is best for you?<br> Learn more about your options at <a href="#" target="_blank" class="link">Photo Book vs Photo Album</a>.</p>
+                <div class="bb-line"></div>
+            </div>
+            @@include('./section-table-first.html')
+            @@include('./section-table-second.html')
+            @@include('./section-table-third.html')
+            <div class="bb-line"></div>
+            @@include('./section-inform.html')
+            <div class="bb-line"></div>
+            @@include('./section-inform-prices.html')
+        </div>
+    </div>
+</section>
