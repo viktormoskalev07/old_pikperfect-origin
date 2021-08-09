@@ -9,6 +9,11 @@
             justify-content: space-between;
             align-items: flex-start;
         }
+        &_big{
+            @include desktop-md{
+                padding: 65px 15px 112px;
+            }
+        }
     }
     &__context{
         padding-top: 10px;
