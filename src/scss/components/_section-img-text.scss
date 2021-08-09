@@ -25,7 +25,6 @@
         }  
     }
     &__content-wrap{
-        
         margin: 0 auto;
         p{
           max-width: 360px;  
@@ -47,7 +46,7 @@
         }
         @include desktop-sm{
             padding: 70px 9%;
-          }
+        }
         p{
             max-width: 360px;
             @include desktop-sm{
@@ -94,5 +93,15 @@
     }
     &__button{
         margin-top: 30px;
+    }
+    &_wrapper{
+        .section-img-text__content{
+            @include desktop-sm{
+                padding: 70px 6.5%;
+            }
+            p{
+                max-width: 550px;
+            }
+        }
     }
 }

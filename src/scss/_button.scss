@@ -65,15 +65,17 @@
        }
        &__green-opacity{
               background: rgba($color: #7A8A6A, $alpha: .5);
-              opacity: 50;
        }
        &__blue-opacity{
               background: #61AEB8;
               opacity: 50;
        }
+       &__blue-dark{
+              background: rgba($color: #538992, $alpha: .7);
+              border-radius: 0;
+       }
        &__blue-gray-opacity{
               background: rgba($color: #547D8C, $alpha: .5);
-              opacity: 50;
        }
        &__light-orange-opacity{
               background: #FBB695;

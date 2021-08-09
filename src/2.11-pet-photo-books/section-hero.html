@@ -1,0 +1,37 @@
+<section class="section-hero__image-left">
+  <div class="section-hero__wrap-flex">
+    <div class="section-hero__image-col px-0">   
+      @@include('../i/resp-img2.html',{
+        src:'pet-photo-books',
+        type:'jpg',
+        alt:'Dog photo book laying open on a table',
+        priority:'0',  
+        width:'880',
+        height:'505',
+        folder:'2.11-pet-photo-books',
+        })       
+    </div>
+    <div class="section-hero__content-col section-hero__content-col_blue-black">
+      <div class="section-hero__bg">
+        @@include('../i/img-2.html',{
+          src:'image_texture',
+          type:'jpg',
+          alt:'bg-hero',
+          priority:'0',
+          folder:'',
+          })  
+      </div>  
+      <div class="section-hero__picture section-hero__picture_pet">
+        <picture>
+          <source  media="(max-width: 500px)" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" >
+          <img src="./images/towebp/2.11-pet-photo-books/illustration_hero_pet_books.svg" alt="picture hero fox"> 
+        </picture>
+      </div>    
+      <h1>Pet Photo Books</h1>
+      <p>Create the perfect pet photo album with a little help from our experienced photo book design team.</p>
+      <a href="#" class="button button__blue-dark">start now</a>
+      <p class="price">From $49</p>
+      <p class="small">No advance payment required</p>
+    </div>
+  </div>
+</section>

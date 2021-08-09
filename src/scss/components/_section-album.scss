@@ -177,6 +177,15 @@
       max-width: 980px;
     }
   }
+  &_size-xxl{
+    padding-bottom: 0;
+    @include tablet{
+      padding: 80px 15px 0px;
+    }
+    .section-album__entered{
+      max-width: 1040px;
+    }
+  }
   &__name-album{
     margin-top: 24px;
     margin-bottom: 6px;

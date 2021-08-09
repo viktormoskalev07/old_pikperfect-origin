@@ -251,6 +251,12 @@
 			height: 120px;
 			bottom: 0;
 			right: 0;
+		}
+		&_pet{
+			width: 81px;
+			height: 65px;
+			bottom: 21px;
+			right: 30px;
 		}	
 		img{
 			width: 100%; 
@@ -289,6 +295,13 @@
 			color: #fff;
 			h1{
 				color: #fff;
+			}
+		}
+		&_blue-black{
+			background-color: rgba($color: #76C8DF, $alpha: .7);	
+			color: #2F353A;
+			h1{
+				color: #2F353A;
 			}
 		}
 		&_light-orange{
