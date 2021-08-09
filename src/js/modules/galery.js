@@ -79,7 +79,7 @@
       
         close.addEventListener('click' ,closeGalery); 
         document.addEventListener('keydown' , function(event){
-            console.log(event.keyCode==27);
+            
             if(event.keyCode==27){
                 closeGalery();
             } 

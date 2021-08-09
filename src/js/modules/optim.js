@@ -41,7 +41,7 @@ const mediaQuery2 = window.matchMedia('(max-width: 480px)').matches;
  })  
 // lazy-video 
          @@include('lazy-video.js')    
-})
+});
 
 
 
