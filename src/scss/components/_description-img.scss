@@ -1,0 +1,238 @@
+.description-img{  
+  margin-bottom: 24px;
+  @include tablet{
+    margin-bottom: 32px;
+  }
+  &__wrap{
+    background-color: #EDECEE;    
+    @include desktop-sm{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }    
+  }
+  &__order{
+    @include desktop-sm{
+      .description-img__img{
+        order: 1;
+      }
+    }
+  }
+  &__container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+    @include tablet{
+      padding: 0 32px;
+    }
+  }
+  &__content{
+    padding:  40px 16px 24px;
+    @include tablet{
+      padding: 40px;
+    }
+    @include desktop-sm{
+      padding: 70px 68px;
+      width: 50%;
+    }
+    @include wide-screen-sm{
+      width: 42.5%;
+    }
+    &_padding{
+      @include desktop-sm{
+        padding: 70px 8%;
+      }
+    }
+    &_l-padding{
+      @include desktop-sm{
+        padding: 70px 7%;
+      }
+    }
+    &_m-padding{
+      @include desktop-sm{
+        padding: 70px 6.5%;
+      }
+    }
+
+  }
+  &__title{
+    font-size: 32px;
+    @include desktop-sm{
+      font-size: 30px;
+      margin-bottom: 28px;
+    }
+    @include wide-screen-sm{
+      font-size: 40px;
+    }
+    span{
+      color: #575D61;
+      font-weight: 400;
+      font-size: 20px;
+      font-style: italic;
+      display: block;
+      @include tablet{
+        font-size: 24px;
+      }
+    }
+    .sub-title{
+      line-height: 1.5;
+      font-size: 16px;
+      font-style: normal;
+      color: #2E3031;
+      font-family: 'Open Sans';
+      font-weight: 300;
+    }
+  }
+  &__price{
+    margin: 24px 0 40px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Spectral', serif;
+    @include tablet{
+      font-size: 20px;
+      margin: 24px 0 48px;
+    }
+  }
+  &__img{    
+    @include desktop-sm{
+      width: 50%;
+    }
+    @include wide-screen-sm{
+      width: 57.5%;
+    } 
+  }
+  &__buttons{
+    display: flex;
+    .button{
+      padding: 14px 0;
+      max-width: 143px;
+      width: 100%;
+      text-align: center;
+      &:last-child{
+        margin-left: 12px;
+        @include tablet{
+          margin-left: 16px;
+        }
+      }
+      @include desktop-md{
+        max-width: 168px;
+      }
+    }
+    &_big{
+      .button{
+        max-width: 232px;
+        padding: 15px 10px;
+      }
+    }
+  }
+  figure{
+    margin: 0;
+  }
+  .swiper-slide{
+    position: relative;
+  }
+  .swiperDescription-pagination{
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    text-align: center;
+  }
+  .swiper-pagination-bullet{
+    width: 1.225rem;
+    height: 1.225rem;
+    border-radius: 50%;
+    border: 1px solid #575d61;
+    background-color: #fff;
+    margin: 0 .3rem;
+    opacity: 1;
+    &-active{
+      background-color: #8ba4b4;
+    }
+  }
+  &_opposite{
+    .description-img__img{
+      @include desktop-sm{
+        width: 50%;
+      }
+      @include wide-screen-sm{
+        width: 42.5%;
+      }
+    }
+    .description-img__content{
+      @include desktop-sm{
+        padding: 70px 6.5%;
+        width: 50%;
+        p{
+          max-width: 520px;
+        }
+      }
+      @include wide-screen-sm{
+        width: 57.5%;
+        img{
+          height: auto;
+        }
+      } 
+    }
+  }
+  &_half{
+    .description-img__img{
+      @include desktop-sm{
+        width: 49%;
+      }
+    }
+    .description-img__content{
+      @include desktop-sm{
+        padding: 70px 8.5%;
+        width: 51%;
+        p{
+          font-size: 18px;
+        }
+      }
+    }
+    .description-img__buttons{
+      @include tablet{
+        margin-top: 70px;
+      }
+    }
+  }
+  &_different{
+    .description-img__content{
+      box-sizing: content-box;
+      max-width: 430px;
+      margin: 0 auto;
+      p{
+        max-width: 405px;
+      }
+    }
+    .button{
+      width: 100%;
+      margin: 36px 0 0px;
+    }
+    @include desktop-sm{
+      .description-img__col-5{
+        width: 50%;
+      }
+      .description-img__col-7{
+        width: 50%;
+      }
+      .button{
+        margin: 36px 0 60px;
+        max-width: 220px;
+        padding: 15px;
+      }
+    }
+    @include wide-screen-sm{
+      .description-img__col-5{
+        width: 42%;
+      }
+      .description-img__col-7{
+        width: 58%;
+      }
+      .button{
+        margin: 36px 0 60px;
+      }
+    }
+  }
+}

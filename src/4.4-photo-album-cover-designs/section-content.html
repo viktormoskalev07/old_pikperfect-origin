@@ -1,0 +1,31 @@
+<section class="section-content">
+    <div class="section-content__wrap">
+        <div class="section-sidebar">
+            <h3 class="section-sidebar__title">Help Topics</h3>
+            <ul class="section-sidebar__list">
+                <li class="section-sidebar__item"><a href="4.1-photo-book-vs-photo-album.html">Product Comparision</a></li>
+                <li class="section-sidebar__item"><a href="4.2-photo-book-design-service.html">Design Service</a></li>
+                <li class="section-sidebar__item"><a href="4.3-photo-selection-service.html">Photo Selection Service</a></li>
+                <li class="section-sidebar__item active"><a href="4.4-photo-album-cover-designs.html">Photo Editing Service</a></li>
+                <li class="section-sidebar__item"><a href="#">Photo Album Cover Designs</a></li>
+                <li class="section-sidebar__item"><a href="4.6-photo-book-printing-papers.html">Paper Types & Printing</a></li>
+                <li class="section-sidebar__item"><a href="4.7-uploading-photos.html">Uploading Photos</a></li>
+                <li class="section-sidebar__item"><a href="4.8-prices.html">Prices & Delivery Times</a></li>
+                <li class="section-sidebar__item"><a href="4.9-payment-shipping.html">Payment & Shipping</a></li>
+                <li class="section-sidebar__item"><a href="4.10-my-account.html">Orders & Account</a></li>
+                <li class="section-sidebar__item"><a href="4.11-quality-guarantee.html">Quality Guarantee</a></li>
+                <li class="section-sidebar__item"><a href="4.12-pikperfect-discounts.html">Volume Discounts</a></li>
+            </ul>
+        </div>
+        <div class="section-content__context">
+            @@include('./section-question.html',{
+                question: 'Do you edit my photos?',
+                answer: 'Standard photo editing is included with all album design. This includes optimizing your images for print, straighten, cropping and red-eye removal. If you have already applied a special filter on the photos you send us and you would prefer these are not edited in any way, please make note of these when you start your album and we’ll be happy to use your photos as-is.',
+            })
+            @@include('./section-question.html',{
+                question: 'How do you know which photos to select?',
+                answer: 'Keeping in mind the album type and size you’re looking to have made, we sort through the photos and then choose the ones that we feel best represent the events. If there are multiple photos from a similar setting, we choose the ones that have the best quality, are well composed, have good facial expressions, and which would give us the most options while designing the albums. For example, if there is an image that is tightly cropped but another similar image with more space around it, we’ll choose the latter as it allows us to then more easily resize or zoom, if needed, during the design phase.',
+            })
+        </div>
+    </div>
+</section>

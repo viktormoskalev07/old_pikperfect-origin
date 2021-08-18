@@ -1,0 +1,126 @@
+.section-inform{
+    background: #EDECEE;
+    &__wrap{
+        @include tablet{
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__img{
+        @include tablet{
+            width: 45%;
+        }
+    }
+    &__text-wrap{
+        margin: 5% 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @include tablet{
+            width: 55%;
+        }
+        p{
+            text-align: center;
+            margin-bottom: 0;
+        }
+    }
+    &__context{
+        max-width: 410px;
+        margin: 0 auto 32px;
+        @include tablet{
+            margin-bottom: 60px;
+        }
+        &_bottom{
+            @include tablet{
+                margin-bottom: 0px;
+            }
+        }
+    }
+    &__block{
+        margin-top: 32px;
+        @include tablet{
+            margin-top: 48px;
+        }
+    }
+    &__main-title{
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 20px;
+        @include tablet{
+            font-size: 40px;
+            margin-bottom: 40px;
+        }
+    }
+    &__title{
+        font-weight: 600;
+        line-height: 1.4;
+        font-size: 22px;
+        margin-bottom: 20px;
+        @include tablet{
+            font-size: 32px;
+            margin-bottom: 24px;
+        }
+        span{
+            display: block;
+            font-size: 18px;
+            font-weight: 300;
+            font-style: italic;
+        }
+    }
+    &__time{
+        margin-top: 16px;
+        @include tablet{
+            margin-top: 24px;
+        }
+    }
+    &__wrapper{
+        z-index: 1;
+        position: relative;
+    }
+    &_max-wrap{
+        padding: 20px;
+        position: relative;
+        @include tablet{
+            padding: 64px 40px 48px;
+        }
+        &:after{
+            display: none;
+            background: url('../images/towebp/4.8-prices/bg-section-inform.svg');
+            background-repeat: no-repeat;
+            position: absolute;
+            content: "";
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            max-width: 450px;
+            max-height: 385px;
+            background-position: bottom;
+            background-size: contain;
+            @include tablet{
+                display: block;
+            }
+        }
+        .section-inform__title{
+            @include tablet{
+                margin-bottom: 12px;
+            }
+        }
+        p{
+            margin-bottom: 8px;
+            text-align: left;
+        }
+        .tab-content__select{
+            width: auto;
+            min-width: 225px;
+            display: block;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+        label{
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+ 
+ <figure style="padding-bottom: calc(@@height% / @@width * 100)" class="figure-webp  ">
+    <picture  data-priority="@@priority" class="picture-webp toggle-img--js">
+      @@for(var i =0 , u=[376,480,768]; i <u.length ;i++){
+          <source class="webp-img-${u[i]}" media="(max-width: ${u[i]}px)" srcset="images/towebp/min-@@src.webp" data-img="images/towebp/@@src-${u[i]}.webp" type="image/webp">  
+      }  
+      <source class="webp-img" srcset="images/towebp/min-@@src.webp" data-img="images/towebp/@@src-5120.webp 2x , images/towebp/@@src-1440.webp 1x" type="image/webp"> 
+      <img loading="lazy" class="nowebp-img" src="images/towebp/min-@@src.@@type" data-img="images/towebp/@@src.@@type" alt="@@alt">
+    </picture>  
+</figure>
+

@@ -1,0 +1,29 @@
+<div class="popup__item popup-login">
+  <div class="popup__overlay"></div>
+  <div class="popup__body">
+    <h2 class="popup-login__title"></h2>
+    <button class="popup__close close-login">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <rect fill="transparent" width="24" height="24"/>
+        <g style="stroke:#2f353a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;" transform="translate(-0.662 -0.662)">
+        <line x1="14" y2="14" transform="translate(5.662 5.662)"/>
+        <line x2="14" y2="14" transform="translate(5.662 5.662)"/>
+        </g>
+      </svg>
+    </button>
+    <div class="popup-login__tab">
+      <div class="popup-login__tab-bar">
+        <button class="popup-login__tab-btn" data-for-tab="login">
+          <span class="popup-login__tab-btn--after"></span>Login</button>
+        <button class="popup-login__tab-btn" data-for-tab="register">
+          <span class="popup-login__tab-btn--after"></span>Create Account</button>
+      </div>
+      <!-- login tab content -->
+      @@include('_login.html')
+      <!-- register tab content -->
+      @@include('_register.html')
+    </div>
+  </div>
+</div>
+<!-- popup forgot password  -->
+@@include('_forgot.html')

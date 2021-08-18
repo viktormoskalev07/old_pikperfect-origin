@@ -1,0 +1,66 @@
+.section-transition{
+  max-width: 1440px;
+  margin: 0 auto;
+  background: #567C8B;
+  padding: 51px 25px 48px;
+  text-align: center;
+  .container{
+    padding: 0;
+  }
+  @include tablet{
+    padding: 90px 65px 80px;    
+  }
+  &__content{
+    margin-bottom: 48px;
+  }
+  &__title{
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 20px;
+    @include tablet{
+      font-size: 40px;  
+    }
+    @include desktop-md{
+      font-size: 48px;   
+    }
+    &_fs-40{
+      @include desktop-md{
+        font-size: 40px;   
+      }
+    }
+  }
+  &__button{
+    padding: 10px 15px; 
+    max-width: 230px;
+    width: 100%;
+    font-size: 14px;
+    @include tablet{
+    }
+    @include desktop-md{
+      font-size: 18px;
+    }
+    &_big{
+      @include tablet{
+        max-width: 330px;
+      }      
+    }
+  }
+  p{
+    max-width: 940px;
+    margin: 0 auto;
+    color: #fff;
+    margin-bottom: 48px;
+  }
+  &_gray{
+    background: #EDECEE;
+    color: #2E3031;
+    h1, h2, h3, p{
+      color: #2E3031;
+    }
+  }
+  &__text{
+    @include tablet{
+      font-size: 20px;
+    }
+  }
+}

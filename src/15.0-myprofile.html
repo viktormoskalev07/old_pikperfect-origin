@@ -1,0 +1,122 @@
+@@include("./html-templates/head.html",{
+    title:"My Account | PikPerfect",
+    desc:"",
+  })
+<main class="main-content"> 
+    <section class="section-form section-form_800">
+        <h1 class="section-form__title">My account</h1>
+        <form action="#" method="#" class="tab-content__form">
+            <div class="tab-content__row50">
+                <div class="tab-content__input">
+                <label for="register-first-name">First Name</label>
+                <input type="text" name="first name" id="register-first-name">
+                </div>
+                <div class="tab-content__input">
+                <label for="register-last-name">Last Name</label>
+                <input type="text" name="last name" id="register-last-name">
+                </div>
+            </div>
+            <div class="tab-content__input">
+                <label for="register-email-user">Email</label>
+                <input type="email" name="email" id="register-email-user">
+            </div>
+            </div>
+            <div class="tab-content__input">
+                <label for="register-password-user">Password</label>
+                <div class="tab-content__pass">
+                    <input type="password" name="password" id="register-password-user" autocomplete="off">
+                    <span class="show-hide-password">
+                        <img class="password-pass" src="images/closed-eye.svg" alt="closed-eye">
+                        <img class="password-text" style="display: none;" src="images/open-eye.svg" alt="open-eye">
+                    </span>                    
+                    <button class="tab-content__change-pass" id="change-pass">Change password</button>
+                </div>
+            </div>  
+            <div class="tab-content__wrap-block">
+                <div class="tab-content__row50">
+                    <div class="tab-content__input">
+                        <label for="register-current-password">current password</label>
+                        <div class="tab-content__pass">
+                            <input type="password" name="register-current-password" id="register-current-password" autocomplete="off">
+                            <span class="show-hide-password">
+                                <img class="password-pass" src="images/closed-eye.svg" alt="closed-eye">
+                                <img class="password-text" style="display: none;" src="images/open-eye.svg" alt="open-eye">
+                            </span>
+                        </div>
+                    </div>  
+                    <div class="tab-content__input">
+                        <label for="register-new-password">new password</label>
+                        <div class="tab-content__pass">
+                            <input type="password" name="register-new-password" id="register-new-password" autocomplete="off">
+                            <span class="show-hide-password">
+                                <img class="password-pass" src="images/closed-eye.svg" alt="closed-eye">
+                                <img class="password-text" style="display: none;" src="images/open-eye.svg" alt="open-eye">
+                            </span>
+                        </div>
+                    </div>  
+                </div>                  
+            </div> 
+            <div class="tab-content__row50">
+                <div class="tab-content__input">
+                    <label for="register-street-name">street name</label>
+                    <input type="text" name="street name" id="register-street-name">
+                </div>
+                <div class="tab-content__input">
+                    <label for="register-street-number">Street Number</label>
+                    <input type="number" name="street number" id="register-street-number">
+                </div>
+            </div>               
+            <div class="tab-content__row50">
+                <div class="tab-content__input">
+                    <label for="register-address2">Address 2</label>
+                    <input type="text" name="register-address2" id="register-address2" placeholder="e.g Apartment, Suite or Unit">
+                </div>
+                <div class="tab-content__input">
+                    <label for="register-postal-code">postal code</label>
+                    <input type="number" name="register-postal-code" id="register-postal-code">
+                </div>
+            </div> 
+            <div class="tab-content__row50">
+                <div class="tab-content__input">
+                    <label for="register-city">city</label>
+                    <input type="text" name="register-city" id="register-city">
+                </div>
+                <div class="tab-content__input">
+                    <label for="register-country">country</label>
+                    <select name="register-country" class="tab-content__select" id="register-country">
+                        <option value="country">Country</option>
+                        <option value="Albania">Albania</option>
+                        <option value="Algeria">Algeria</option>
+                        <option value="Andorra">Andorra</option>
+                        <option value="Angola">Angola</option>
+                        <option value="Anguilla">Anguilla</option>
+                        <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Armenia">Armenia</option>
+                        <option value="Aruba">Aruba</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Austria">Austria</option>
+                        <option value="Azerbaijan republic">Azerbaijan republic</option>
+                    </select>
+                </div>
+            </div> 
+            <div class="tab-content__row50">
+                <div class="tab-content__input">
+                    <label for="register-phone-number">phone number</label>
+                    <input type="number" name="register-phone-number" id="register-phone-number">
+                </div>
+                <div class="tab-content__input">
+                    <label for="register-language-user">language</label>
+                    <select name="register-language" class="tab-content__select" id="register-language-user">
+                        <option value="english">English</option>
+                        <option value="other">other</option>
+                    </select>
+                </div>   
+                <button class="section-form__button button" type="submit">save</button>
+            </div>
+        </form>
+    </section>
+  @@include("./html-templates/section-subscribe.html")
+</main>
+<div class="swiper-delay" data-time="20000"></div>
+@@include("./html-templates/footer.html" )

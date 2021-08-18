@@ -1,0 +1,25 @@
+.section-accordion{
+  max-width: 1440px;
+  margin: 0 auto;
+  background: #F4F5F6;
+  padding: 48px 0px;
+  @include tablet{
+    padding: 118px 70px 96px;
+  }
+  &__title{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 32px;
+    @include tablet{
+      margin-bottom: 49px;
+      font-size: 38px;
+    }
+    @include desktop-md{
+      font-size: 48px;
+    }
+  }
+  .bottom-text{
+    padding-top: 32px;
+    padding-left: 35px;
+  }
+}

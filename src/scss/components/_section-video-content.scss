@@ -1,0 +1,45 @@
+.section-video-content{
+  max-width: 1440px;
+  margin: 0 auto;
+  background: #567C8B;
+  padding: 32px 15px 40px;
+  color: #fff;
+  @include desktop-md{
+    padding: 64px 15px 36px;
+  }
+  &__container{
+    max-width: 1376px;
+    margin: 0 auto;
+    @include desktop-md{
+      display: flex;
+      align-items: center;
+    }    
+  }
+  &__content{
+    width: 90%;
+    @include desktop-md{
+      width: 39%;
+    }
+  }
+  &__video{
+    padding-bottom: 32px;
+    @include desktop-md{
+      width: 48%;
+      margin-right: 64px;
+    }
+  }
+  &__title{
+    font-size: 32px;
+    font-family: 'Spectral';
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #fff;
+    @include tablet{
+      font-size: 40px;
+      margin-bottom: 34px;
+    }
+    @include desktop-md{
+      font-size: 48px;
+    }
+  }
+}

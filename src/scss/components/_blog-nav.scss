@@ -1,0 +1,55 @@
+.section-blog {
+  padding: 20px 0;
+
+  @include tablet {
+    padding: 40px 0;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__nav {
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include tablet {
+      margin-bottom: 20px;
+    }
+    @include desktop-md {
+      margin-bottom: 6px;
+    }
+
+    li {
+      padding: 0 12px;
+      margin-bottom: 12px;
+      font-size: 0.875rem;
+
+      &:not(:last-of-type) {
+        border-right: .5px solid #2F353A;
+      }
+    }
+
+    button {
+      color: #2E3031;
+      background-color: transparent;
+      text-transform: uppercase;
+      border: none;
+      font-size: 14px;
+      line-height: 24px;
+      font-family: 'Open Sans';
+      transition:   .5s;
+ 
+      letter-spacing: 0;
+
+      &:hover {
+        color: #567C8B;
+        font-weight: 800; 
+        text-shadow: 0px 0px 0px #567C8B;
+        cursor: pointer;
+      }
+    }
+  }
+}

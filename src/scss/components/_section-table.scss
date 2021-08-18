@@ -1,0 +1,112 @@
+.section-table{
+    &_mobile{
+        @include desktop-md{
+            display: none;
+        }
+    }
+    &_desktop{
+        display: none;
+        @include desktop-md{
+            display: block;
+        }
+    }
+    table{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    &__title{
+        text-align: center;
+        font-size: 24px;
+        @include tablet{
+            font-size: 40px;
+            margin-bottom: 28px;
+        }
+    }
+    &__img{
+        margin-bottom: 20px;
+    }
+    &__link{
+        color: #567C8B;
+        text-align: right;
+        display: block;
+        font-weight: 400;
+        transition: .3s;
+        img{
+            margin-left: 12px;
+        }
+        &:hover{
+            color: #004a68; 
+        }
+    }
+    th{
+        background: #7070704D;
+        text-align: center;
+        padding: 62px 20px;
+        span{
+            display: block;
+        }
+        @include tablet{
+            padding: 35px 20px;
+        }
+    }
+    td{
+        font-size: 14px;
+        padding: 15px;
+        background: #EDECEE;
+        @include tablet{
+            padding: 15px 32px;
+        }
+    }
+    .name-album{
+        font-size: 20px;
+        font-weight: 500;
+        font-family: 'Spectral';
+    }
+    .type-album{
+        font-weight: 400;
+        font-style: italic;
+        font-family: 'Spectral';
+        margin-bottom: 16px;
+    }
+    .price-album{
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+    .link-album{
+        color: #567C8B;
+        font-weight: 500;
+        text-decoration: underline;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    .size-album{
+        font-weight: 300;
+    }
+    .pages-album{
+        font-weight: 400;
+    }
+    .name-type{
+        padding: 38px 15px;
+        font-size: 14px;
+        font-weight: 400;
+        background: #70707026;
+        @include tablet{
+            font-size: 18px;
+        }
+        @include wide-screen-sm{
+            min-width: 195px;
+        }
+    }
+    &_album{
+        margin-bottom: 32px;
+        @include tablet{
+            margin-bottom: 74px;
+        }
+        th{
+            vertical-align: bottom;
+            padding: 35px 16px;
+        }
+    }
+}

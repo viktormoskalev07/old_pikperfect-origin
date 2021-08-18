@@ -1,0 +1,30 @@
+.section-title{
+    max-width: 1440px;
+    margin: 0 auto; 
+    background: #EDECEE;
+    padding: 38px 40px 27px;
+    @include tablet{
+        padding: 43px;
+    }
+    &__title{
+        text-align: center;
+        font-size: 34px;
+        span{
+            font-family: "Open Sans";
+            font-weight: 400;
+            display: block;
+            text-transform: uppercase;
+            font-size: 20px;
+            @include tablet{
+                font-size: 24px;
+                margin-bottom: 7px;
+            }
+        }
+        @include tablet{
+            font-size: 42px;
+        }
+        @include desktop-md{
+            font-size: 52px;
+        }
+    }
+}

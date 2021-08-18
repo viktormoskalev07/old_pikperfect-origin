@@ -1,0 +1,43 @@
+<section class="section-content">
+    <div class="section-content__wrap">
+        <div class="section-sidebar">
+            <h3 class="section-sidebar__title">Help Topics</h3>
+            <ul class="section-sidebar__list">
+                <li class="section-sidebar__item"><a href="4.1-photo-book-vs-photo-album.html">Product Comparision</a></li>
+                <li class="section-sidebar__item"><a href="4.2-photo-book-design-service.html">Design Service</a></li>
+                <li class="section-sidebar__item active"><a href="4.3-photo-selection-service.html">Photo Selection Service</a></li>
+                <li class="section-sidebar__item"><a href="4.4-photo-album-cover-designs.html">Photo Editing Service</a></li>
+                <li class="section-sidebar__item"><a href="#">Photo Album Cover Designs</a></li>
+                <li class="section-sidebar__item"><a href="4.6-photo-book-printing-papers.html">Paper Types & Printing</a></li>
+                <li class="section-sidebar__item"><a href="4.7-uploading-photos.html">Uploading Photos</a></li>
+                <li class="section-sidebar__item"><a href="4.8-prices.html">Prices & Delivery Times</a></li>
+                <li class="section-sidebar__item"><a href="4.9-payment-shipping.html">Payment & Shipping</a></li>
+                <li class="section-sidebar__item"><a href="4.10-my-account.html">Orders & Account</a></li>
+                <li class="section-sidebar__item"><a href="4.11-quality-guarantee.html">Quality Guarantee</a></li>
+                <li class="section-sidebar__item"><a href="4.12-pikperfect-discounts.html">Volume Discounts</a></li>
+            </ul>
+        </div>
+        <div class="section-content__context">
+            @@include('./section-question.html',{
+                question: 'What is the photo selection service?',
+                answer: 'With hundreds, and often thousands of photos to sort through, choosing the best images for your photo book can be a daunting task. Instead of letting this paralyze you, our photo selection service allows you to upload ALL your photos, we then meticulously sort through and choose the ones that best tell your story.',
+            })
+            @@include('./section-question.html',{
+                question: 'How do you know which photos to select?',
+                answer: 'Keeping in mind the album type and size you’re looking to have made, we sort through the photos and then choose the ones that we feel best represent the events. If there are multiple photos from a similar setting, we choose the ones that have the best quality, are well composed, have good facial expressions, and which would give us the most options while designing the albums. For example, if there is an image that is tightly cropped but another similar image with more space around it, we’ll choose the latter as it allows us to then more easily resize or zoom, if needed, during the design phase.',
+            })
+            @@include('./section-question.html',{
+                question: 'What if I don’t like the photos you select?',
+                answer: 'We know there are always going to be those special images that you would like to include, even if they may not be the best quality. To allow for this, and to give you the opportunity to review and make any other needed changes, we’ll send you a photo selection review link and only start with the album design once you have approved the selection. On the odd chance we are not able to make a selection that you like, you will not be charged for the service.',
+            })
+            @@include('./section-question.html',{
+                question: 'Can I make changes after I approve the selection?',
+                answer: 'While it helps to have the photo selection approved before we start with the album design, we’re always happy to add or remove photos during the design process too.',
+            })
+            @@include('./section-question.html',{
+                question: 'Why do you charge per image uploaded and not per image selected?',
+                answer: 'To select the best images, we have to go through all photos a number of times before making the final selection. The more photos you send us, the longer it takes which is why we charge per photo uploaded and not per photo selected.',
+            })
+        </div>
+    </div>
+</section>

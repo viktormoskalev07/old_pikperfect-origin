@@ -1,0 +1,133 @@
+.tab-content {
+  &__row50 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    .tab-content__input {
+      width: 100%;
+
+      @include tablet {
+        width: calc(50% - 15px);
+      }
+    }
+  }
+
+  &__input {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    z-index: 1;
+
+    label {
+      font-weight: 400;
+      text-transform: capitalize;
+    }
+
+    input {
+      width: 100%;
+      margin-bottom: 30px;
+      padding: 13px 20px;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 0.875rem;
+    }
+  }
+
+  &__pass {
+    width: 100%;
+    position: relative;
+
+    input[type="password"] {
+      padding-right: 40px;
+    }
+
+    svg {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      width: 22px;
+      height: 22px;
+      cursor: pointer;
+      will-change: transform;
+      transition: transform .3s;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+    img {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      will-change: transform;
+      transition: transform .3s;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  &-login {
+    &__forgot {
+      z-index: 1;
+      padding: 0;
+      margin-top: -15px;
+      font-size: .875rem;
+      font-family: 'Open Sans', sans-serif;
+      border: none;
+      text-decoration: underline;
+      background-color: transparent;
+      transition: color .2s;
+
+      &:hover {
+        color: $accent-color;
+      }
+    }
+  }
+  &__select{
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-family: 'Open Sans';
+  }
+  &__textarea{
+    width: 100%;
+    padding: 13px 20px;
+  }  
+  &__counter{
+    display: block;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  &__change-pass{
+    border: 0;
+    background: transparent;
+    color: #567C8B;
+    text-decoration: underline;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    &:hover{
+      font-weight: 600;
+    }
+  }
+  &__wrap-block{
+    display: none;
+    &.block{
+      display: block;
+      animation: showBlock 0.5s linear forwards;
+    }
+  }
+}
+
+@keyframes showBlock {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

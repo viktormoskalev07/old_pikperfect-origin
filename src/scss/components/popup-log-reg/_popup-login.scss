@@ -1,0 +1,68 @@
+
+.popup {
+
+  &-login {
+
+    &__title {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+  
+    &__tab {
+      &-bar {
+        margin-bottom: 50px;
+      }
+
+      &-btn {
+        border: none;
+        position: relative;
+        background-color: transparent;
+        font-size: 0.875rem;
+        padding: 5px 35px;
+        color: $text-color;
+
+        &--after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+          border-radius: 50%;
+          width: 22px;
+          height: 22px;
+          border: 1.5px solid $accent-color;
+
+          &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 14px;
+            height: 14px;
+            transform: translateX(-50%) translateY(-50%);
+            border-radius: 50%;
+            background-color: transparent;
+          }
+        }
+
+        &.active {
+          text-shadow: 1px 0 0 $text-color;
+
+          .popup-login__tab-btn--after {
+            &::after {
+              background-color: $accent-color;
+            }
+          }
+        }
+      }
+
+      &-content {
+        display: none;
+
+        &.active {
+          display: block;
+        }
+      }
+    }
+  }
+}

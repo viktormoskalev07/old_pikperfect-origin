@@ -1,0 +1,43 @@
+@@include("./html-templates/head.html",{
+    title:"Refer a Friend and Earn Photo Book Credit | PikPerfect",
+    desc:"It pays to spread the love: earn credits every time a friend purchases their first PikPerfect photo book.",
+  })
+<main class="main-content"> 
+  <section class="discount">
+    <div class="discount__wrap">
+        <div class="discount__img">
+            @@include("./i/resp-img2.html",{
+                src:"wedding-photo-book",
+                type:"jpg",
+                alt:"An open wedding photo book",
+                priority:"0",  
+                width:"688",
+                height:"895",
+                folder:"13.0-share",
+            })    
+        </div>
+        <div class="discount__content">
+            <div class="discount__wrap-content">
+                <h1 class="discount__title">Refer a Friend</h1>
+                <div class="discount__ad">
+                    <h2>Give $20, Earn $20</h2>
+                    <p>Every time a friend makes a photo book!</p>
+                </div>
+                <p>Invite your friends and family to try PikPerfect and we’ll give them a $20 discount on their first purchase. You will also earn a $20 credit in your account every time a friend makes their first purchase. There is no limit to how many friends you can invite or how many credits you can earn!</p>
+                <p class="discount__size-m">Start earning credits today by sharing the below link with your friends and family.</p>                             
+            </div>  
+            <div class="discount__form">
+                <span class="discount__copy-link" id="copyCode">You must be logged in for your referral link to display</span>
+                <button id="copyLink" class="btn btn-green">copy link</button>
+            </div> 
+            <div class="discount__wrap-content">
+                <p class="discount__size-l">Go ahead and spread the love!</p> 
+                <p class="discount__size-s">Terms: Offer is only valid for new accounts that register on pikperfect.com using a referral link. Referral credit cannot be applied to shipping and cannot be retroactively applied. Refer to our Terms for complete details.</p>  
+            </div>                     
+        </div>
+    </div>
+  </section>
+  @@include("./html-templates/section-subscribe.html")
+</main>
+<div class="swiper-delay" data-time="15000"></div>
+@@include("./html-templates/footer.html" )

@@ -1,0 +1,103 @@
+.section-form{
+    padding: 64px 16px;
+    @include desktop-sm{
+        padding: 112px 32px;
+    }
+    &_800{
+        max-width: 865px;
+        margin: 0 auto;
+        .tab-content__form{
+            margin: 0 16px;
+            @include tablet{
+                margin: 0 32px;
+            }
+        }
+    }
+    &_gray{
+        background: #EDECEE;
+        padding: 40px 20px;
+        @include desktop-sm{
+            padding: 90px 20px;
+        }
+    }
+    &__container{
+        max-width: 865px;
+        margin: 0 auto;
+    }
+    &__wrap{
+        max-width: 1252px;
+        margin: 0 auto;
+        @include desktop-sm{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    &__banner{
+        @include desktop-sm{
+            width: 45%;
+        }
+    }
+    &__title{
+        text-align: center;
+        font-size: 32px;
+        @include tablet{
+            font-size: 40px;    
+            margin-bottom: 56px;
+        }
+        @include desktop-sm{
+            font-size: 48px;
+        }
+    }
+    &__entered{
+        text-align: center;
+        @include desktop-sm{
+            font-size: 18px;
+            margin-bottom: 35px;
+        }
+        &_w-720{
+            max-width: 720px;
+            margin: 32px auto;
+        }
+       
+    }
+    &__form{
+        padding-top: 56px;
+        @include desktop-sm{
+            width: 45%;
+            padding-top: 0;
+        }
+    }
+    &__form-wrap{
+        margin: 30px 0;
+        @include desktop-sm{
+           margin: 56px 0;
+        }
+    }
+    &__text{
+        font-size: 14px;
+        text-align: center;
+        @include desktop-sm{
+            text-align: left;
+        }
+    }
+    &__button{
+        max-width: 250px;
+        margin: 30px auto;
+        width: 100%;
+        &:hover{
+            background: #575D6199;
+            color: #FFFFFF80;
+        }
+    }
+    .tab-content__input{
+        margin-bottom: 32px;
+        input{
+            margin-bottom: 0;
+        }
+    }
+    .popup__submit{
+        margin: 30px 0;
+    }   
+     
+}
